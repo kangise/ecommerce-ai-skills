@@ -57,7 +57,7 @@
  },
  "https://aimegazine.com/ai-roi-measurement-how-to-calculate-return-on/": {
   "hard_fail": false,
-  "status": 200
+  "status": "[Errno 101] Network is unreachable"
  },
  "https://aisearch.similarweb.com/blog/best-competitor-analysis-tools/": {
   "hard_fail": false,
@@ -169,7 +169,7 @@
  },
  "https://blog.lueurexterne.com/en/blog/social-commerce-in-2026-how-to-sell-on-instagram-tiktok-pinterest": {
   "hard_fail": false,
-  "status": 403
+  "status": 200
  },
  "https://blog.shoppingfeed.com/en-us/otto-marketplace-what-brands-need-to-know-about-germanys-second-largest-platform": {
   "hard_fail": false,
@@ -205,7 +205,7 @@
  },
  "https://calculatecreator.com/blog/tiktok-shop-expansion-2026/": {
   "hard_fail": false,
-  "status": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violatio"
+  "status": 200
  },
  "https://canopymanagement.com/amazon-ads-mcp-server-ai/": {
   "hard_fail": false,
@@ -257,15 +257,15 @@
  },
  "https://developer-docs.amazon.com/sp-api": {
   "hard_fail": false,
-  "status": 403
+  "status": 200
  },
  "https://developer-docs.amazon.com/sp-api/docs/orders-api-v0-reference": {
   "hard_fail": false,
-  "status": 403
+  "status": 200
  },
  "https://developer-docs.amazon.com/sp-api/docs/report-type-values": {
   "hard_fail": false,
-  "status": 403
+  "status": 200
  },
  "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server": {
   "hard_fail": false,
@@ -313,7 +313,7 @@
  },
  "https://docs.vllm.ai/": {
   "hard_fail": false,
-  "status": 200
+  "status": 429
  },
  "https://duckdb.org/": {
   "hard_fail": false,
@@ -393,7 +393,7 @@
  },
  "https://finimize.com/content/meli-asset-snapshot": {
   "hard_fail": false,
-  "status": 200
+  "status": 202
  },
  "https://futurumgroup.com/insights/amazon-ads-mcp-server-debuts-streamlining-ai-managed-campaign-execution/": {
   "hard_fail": false,
@@ -705,11 +705,11 @@
  },
  "https://hexmos.com/freedevtools/mcp/ecommerce-and-retail/asaricorp--mcp-shopify/": {
   "hard_fail": false,
-  "status": 403
+  "status": 200
  },
  "https://hexmos.com/freedevtools/mcp/other-tools-and-integrations/QuentinCody--shopify-storefront-mcp-server/": {
   "hard_fail": false,
-  "status": 403
+  "status": 200
  },
  "https://hts.usitc.gov/": {
   "hard_fail": false,
@@ -821,7 +821,7 @@
  },
  "https://launchfast.ai/": {
   "hard_fail": false,
-  "status": "_ssl.c:1064: The handshake operation timed out"
+  "status": "timed out"
  },
  "https://learndevrel.com/blog/mcp-vs-a2a": {
   "hard_fail": false,
@@ -953,7 +953,7 @@
  },
  "https://momentum.asia/insights/detail/tiktok-shop-in-the-us-2025": {
   "hard_fail": false,
-  "status": 200
+  "status": 403
  },
  "https://morpheusmark.com/": {
   "hard_fail": false,
@@ -989,7 +989,7 @@
  },
  "https://nekuda.substack.com/p/whats-your-2026-agentic-commerce": {
   "hard_fail": false,
-  "status": 200
+  "status": 403
  },
  "https://neuwark.com/blog/conversational-commerce-2026-ai-replacing-shopping-cart": {
   "hard_fail": false,
@@ -1021,7 +1021,7 @@
  },
  "https://open.substack.com/pub/theaicorner1/p/context-engineering-guide-2026": {
   "hard_fail": false,
-  "status": 200
+  "status": 403
  },
  "https://openpyxl.readthedocs.io/": {
   "hard_fail": false,
@@ -1197,7 +1197,7 @@
  },
  "https://sqmagazine.co.uk/social-media-marketing-statistics/": {
   "hard_fail": false,
-  "status": 403
+  "status": 200
  },
  "https://stormy.ai/blog/ecommerce-ppc-automation-claude-code": {
   "hard_fail": false,
@@ -1213,7 +1213,7 @@
  },
  "https://techbuzzchina.substack.com/p/temu-watch-9-temu-rebounds": {
   "hard_fail": false,
-  "status": 200
+  "status": 403
  },
  "https://techcrunch.com/2026/02/19/reddit-is-testing-a-new-ai-search-feature-for-shopping/": {
   "hard_fail": false,
@@ -1241,11 +1241,11 @@
  },
  "https://thelowdown.momentum.asia/new-report-southeast-asias-platform-ecommerce-reaches-us157-6b-in-2025-with-top-platforms-expanding-share-to-98-8/": {
   "hard_fail": false,
-  "status": 200
+  "status": 403
  },
  "https://thelowdown.momentum.asia/new-report-tiktok-shop-u-s-gmv-grew-68-to-reach-us15-1b-in-2025/": {
   "hard_fail": false,
-  "status": 200
+  "status": 403
  },
  "https://tmsearch.uspto.gov/": {
   "hard_fail": false,
@@ -1329,15 +1329,15 @@
  },
  "https://windowsnews.ai/article/amazon-ends-commingling-in-2026-new-barcode-rules-impact-windows-software-hardware-sellers.398059": {
   "hard_fail": false,
-  "status": 403
+  "status": 200
  },
  "https://windowsnews.ai/article/microsoft-365-copilot-roi-measuring-ais-true-business-impact-beyond-time-savings.400597": {
   "hard_fail": false,
-  "status": 403
+  "status": 200
  },
  "https://windowsnews.ai/article/whatsapp-bans-general-ai-bots-business-api-policy-shift-migration-guide.397847": {
   "hard_fail": false,
-  "status": 403
+  "status": 200
  },
  "https://wise.com/us/blog/sell-on-aliexpress": {
   "hard_fail": false,
@@ -1345,15 +1345,15 @@
  },
  "https://worldofcalculator.com/aliexpress-fee-calculator/": {
   "hard_fail": false,
-  "status": "[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error"
+  "status": "timed out"
  },
  "https://www.aboutamazon.com/news/innovation-at-amazon/amazon-sellers-canvas-artificial-intelligence": {
   "hard_fail": false,
   "status": 200
  },
  "https://www.accenor.com/blog/The-Complete-ROI-Framework-for-AI-Implementation-From-Cost-Analysis-to-Measurable-Outcomes.html": {
-  "hard_fail": false,
-  "status": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violatio"
+  "hard_fail": true,
+  "status": "[Errno -2] Name or service not known"
  },
  "https://www.adgully.com/post/12649/the-end-of-campaign-led-growth-why-ecommerce-leaders-are-rebuilding-around-ai-agents": {
   "hard_fail": false,
@@ -1365,11 +1365,11 @@
  },
  "https://www.ainvest.com/news/coupang-export-platform-scalable-gateway-336-billion-global-market-2602/": {
   "hard_fail": false,
-  "status": 403
+  "status": 200
  },
  "https://www.ainvest.com/news/coupang-global-scalability-assessing-tam-tech-moat-growth-investors-2601/": {
   "hard_fail": false,
-  "status": 403
+  "status": 200
  },
  "https://www.aipromptlibrary.app/blog/advanced-prompt-engineering-techniques": {
   "hard_fail": false,
@@ -1433,11 +1433,11 @@
  },
  "https://www.canva.com/": {
   "hard_fail": false,
-  "status": 200
+  "status": 403
  },
  "https://www.canva.com/designschool/": {
   "hard_fail": false,
-  "status": 200
+  "status": 403
  },
  "https://www.channelengine.com/en/blog/ecommerce-predictions": {
   "hard_fail": false,
@@ -1521,31 +1521,31 @@
  },
  "https://www.deeplearning.ai/courses/ai-agents-in-langgraph": {
   "hard_fail": false,
-  "status": 200
+  "status": 403
  },
  "https://www.deeplearning.ai/courses/building-agentic-rag-with-llamaindex": {
   "hard_fail": false,
-  "status": 200
+  "status": 403
  },
  "https://www.deeplearning.ai/courses/building-evaluating-advanced-rag": {
   "hard_fail": false,
-  "status": 200
+  "status": 403
  },
  "https://www.deeplearning.ai/courses/chatgpt-prompt-eng": {
   "hard_fail": false,
-  "status": 200
+  "status": 403
  },
  "https://www.deeplearning.ai/courses/finetuning-large-language-models": {
   "hard_fail": false,
-  "status": 200
+  "status": 403
  },
  "https://www.deeplearning.ai/courses/multi-ai-agent-systems-with-crewai": {
   "hard_fail": false,
-  "status": 200
+  "status": 403
  },
  "https://www.deeplearning.ai/the-batch/": {
   "hard_fail": false,
-  "status": 200
+  "status": 403
  },
  "https://www.devopsschool.com/blog/top-10-ai-intellectual-property-tools-in-2025-features-pros-cons-comparison/": {
   "hard_fail": false,
@@ -1584,8 +1584,8 @@
   "status": 200
  },
  "https://www.estorefactory.com/blog/amazon-account-suspension-guide-2026/": {
-  "hard_fail": false,
-  "status": 200
+  "hard_fail": true,
+  "status": 404
  },
  "https://www.estorefactory.com/blog/multi-channel-ecommerce-strategy-2026/": {
   "hard_fail": false,
@@ -1605,7 +1605,7 @@
  },
  "https://www.forecastly.com/": {
   "hard_fail": false,
-  "status": "_ssl.c:1064: The handshake operation timed out"
+  "status": 200
  },
  "https://www.fortunebusinessinsights.com/ai-video-generator-market-110060": {
   "hard_fail": false,
@@ -1637,7 +1637,7 @@
  },
  "https://www.hexmos.com/freedevtools/mcp/": {
   "hard_fail": false,
-  "status": 403
+  "status": 200
  },
  "https://www.hyperfx.ai/blog/meta-ads-mcp-guide-ai-advertising-agents": {
   "hard_fail": false,
@@ -1649,7 +1649,7 @@
  },
  "https://www.intertek.com/": {
   "hard_fail": false,
-  "status": 403
+  "status": 200
  },
  "https://www.inventorylab.com/": {
   "hard_fail": false,
@@ -1761,7 +1761,7 @@
  },
  "https://www.pwc.com/gx/en/issues/data-and-analytics/publications/artificial-intelligence-study.html": {
   "hard_fail": false,
-  "status": "timed out"
+  "status": 200
  },
  "https://www.retailtouchpoints.com/features/how-amazons-anti-counterfeit-unit-keeps-fake-products-off-its-site/141899/": {
   "hard_fail": false,
@@ -1881,11 +1881,11 @@
  },
  "https://www.trendos.io/blog/ecommerce-competitive-intelligence-guide": {
   "hard_fail": false,
-  "status": "The read operation timed out"
+  "status": 200
  },
  "https://www.trendos.io/blog/ecommerce-competitive-intelligence-tools-2026": {
   "hard_fail": false,
-  "status": "The read operation timed out"
+  "status": 200
  },
  "https://www.triplewhale.com/blog/cross-channel-attribution": {
   "hard_fail": false,
