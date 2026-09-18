@@ -384,4 +384,4 @@ ecommerce-ai-skills は **AAAI China Chapter** のオープンソースプロジ
 
 ---
 
-[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) — 帰属表示不要で自由に利用可能 · [免責事項](DISCLAIMER.md) · *An AAAI China Chapter Initiative*
+[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) — 帰属表示不要で自由に利用可能 · [免責事項](DISCLAIMER.md) · [プライバシー](PRIVACY.md) · [セキュリティ](SECURITY.md) · *An AAAI China Chapter Initiative*

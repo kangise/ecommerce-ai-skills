@@ -25,10 +25,10 @@
       "tree_sha256": "12f873ddada2d2a05aca52b22d38dd98eb83107635491aba0f9de23bc52fb606"
     },
     "scripts": {
-      "byte_count": 381476,
+      "byte_count": 381630,
       "file_count": 24,
       "name": "scripts",
-      "tree_sha256": "0ce0070462008a3db673e7c474e74be34fbefac51d280601323adf022d14d0bb"
+      "tree_sha256": "6bad4fffc491e91e3da3233f150c50e24f887e4101a00d471bcd39b1cf012bc1"
     },
     "tests": {
       "byte_count": 565288,
@@ -53,16 +53,16 @@
       "size": 3510
     },
     "CHANGELOG.md": {
-      "sha256": "68de8287b2f77ea3675161720281c8ed1ca017e87395cf4700b11f4845ac566d",
-      "size": 20490
+      "sha256": "bd503e614f30208655592c568d94d141aac166e99e1f9f2e8c3d05622548824e",
+      "size": 20719
     },
     "LICENSE": {
       "sha256": "977372677acaaaa0f419556e5a24d8c869534c25d8f4f8d3db4df888c095bd9d",
       "size": 6468
     },
     "README.md": {
-      "sha256": "be3eaf7393b98ff3d41a124796349fc293134a1d89663bd3562c36f2a64b3f41",
-      "size": 30781
+      "sha256": "a628c55b7d42d85a023a0bc378c085a554137982ff9b6b52a332418a662298b3",
+      "size": 30833
     },
     "design-qa.md": {
       "sha256": "86d1eb097b9aeeceda1e8f71d7b73a48b73a9c4cd36e7a62863e866ca67c30dd",
@@ -97,8 +97,8 @@
       "size": 37516
     },
     "scripts/verify_all.py": {
-      "sha256": "f31ec20a7f93c393cfb8f6f6b1a747aa23943fbabebb57a6c87485380a11f7df",
-      "size": 69753
+      "sha256": "b6b1d88bfeccf9bca7f1e17b0972c215d73deae31e8644e946d2aa80f6fbac8b",
+      "size": 69907
     }
   },
   "release": {

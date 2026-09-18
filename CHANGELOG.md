@@ -35,6 +35,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
   now uses `--refresh-links`.
 - `SECURITY.md` (reporting path, scope, what the runtime does with
   credentials) and `CITATION.cff`.
+- `PRIVACY.md`: per component, what is stored, for how long, and which hosts
+  are contacted and with what — each statement traced to the code that does
+  it. Required by Anthropic's plugin directory; linked from every README.
 - Claude Code plugin marketplace: `/plugin marketplace add
   kangise/ecommerce-ai-skills` then `/plugin install
   ecommerce-ai-skills@ecommerce-ai-skills` installs the 9 skills.

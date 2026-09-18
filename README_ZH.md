@@ -648,4 +648,4 @@ flowchart LR
 
 欢迎贡献。详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
-[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) · [免责声明](DISCLAIMER.md) · *An AAAI China Chapter Initiative*
+[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) · [免责声明](DISCLAIMER.md) · [隐私](PRIVACY.md) · [安全](SECURITY.md) · *An AAAI China Chapter Initiative*

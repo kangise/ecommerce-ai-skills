@@ -194,6 +194,9 @@ def gate_e3() -> tuple[int, list[str]]:
     required = [
         "README.md", "README_ZH.md", "README_JA.md",
         "CHANGELOG.md", "CONTRIBUTING.md", "DISCLAIMER.md",
+        # Linked from every README footer; PRIVACY.md is also what a plugin
+        # directory reviewer is sent to.
+        "PRIVACY.md", "SECURITY.md",
     ]
     for rel in required:
         p = ROOT_V / rel

@@ -488,4 +488,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ---
 
-[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) — free to use, no attribution required · [Disclaimer](DISCLAIMER.md) · *An AAAI China Chapter Initiative*
+[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) — free to use, no attribution required · [Disclaimer](DISCLAIMER.md) · [Privacy](PRIVACY.md) · [Security](SECURITY.md) · *An AAAI China Chapter Initiative*
