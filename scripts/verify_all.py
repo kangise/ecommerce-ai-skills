@@ -192,7 +192,7 @@ def gate_e3() -> tuple[int, list[str]]:
     """
     problems = []
     required = [
-        "README.md", "README_EN.md", "README_JA.md",
+        "README.md", "README_ZH.md", "README_JA.md",
         "CHANGELOG.md", "CONTRIBUTING.md", "DISCLAIMER.md",
     ]
     for rel in required:
@@ -403,7 +403,7 @@ def main() -> int:
         # Includes the three book landing pages: src/README.md is what a reader
         # actually lands on in the published site, and it carried a stale "56 篇指南"
         # for the whole repositioning because D2 only scanned the repo-root files.
-        for readme_name in ["README.md", "README_EN.md", "README_JA.md",
+        for readme_name in ["README.md", "README_ZH.md", "README_JA.md",
                             "src/README.md", "i18n/en/src/README.md", "i18n/ja/src/README.md"]:
             path = ROOT_V / readme_name
             if not path.exists():
@@ -489,7 +489,7 @@ def main() -> int:
                         problems.append(f"{readme_name}: says {num} {label}, actual {expected}")
 
         # Also verify dist/ is mentioned in READMEs
-        for readme_name in ["README.md", "README_EN.md", "README_JA.md"]:
+        for readme_name in ["README.md", "README_ZH.md", "README_JA.md"]:
             path = ROOT_V / readme_name
             if path.exists() and "dist/" not in path.read_text(encoding="utf-8"):
                 problems.append(f"{readme_name}: does not mention dist/")

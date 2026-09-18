@@ -6,7 +6,7 @@
 
 **すべての数字は CI で検証済み · すべてのプロンプトに幻覚防止のガードレール · すべての章に「効かないとき」を明記**
 
-🇯🇵 日本語&nbsp;·&nbsp;[🇨🇳 中文](README.md)&nbsp;·&nbsp;[🇺🇸 English](README_EN.md)&nbsp;&nbsp;|&nbsp;&nbsp;📖 [オンラインで読む](https://kangise.github.io/ecommerce-ai-skills/)&nbsp;&nbsp;|&nbsp;&nbsp;📦 [agent にインストール](dist/)
+🇯🇵 日本語&nbsp;·&nbsp;[🇨🇳 中文](README_ZH.md)&nbsp;·&nbsp;[🇺🇸 English](README.md)&nbsp;&nbsp;|&nbsp;&nbsp;📖 [オンラインで読む](https://kangise.github.io/ecommerce-ai-skills/)&nbsp;&nbsp;|&nbsp;&nbsp;📦 [agent にインストール](dist/)
 
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Stars](https://img.shields.io/github/stars/kangise/ecommerce-ai-skills?style=social)](https://github.com/kangise/ecommerce-ai-skills)

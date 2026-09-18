@@ -22,7 +22,7 @@ jobs:
           args: >-
             --offline --no-progress
             README.md
-            README_EN.md
+            README_ZH.md
             README_JA.md
             src/**/*.md
             i18n/en/src/**/*.md
