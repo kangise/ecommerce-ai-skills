@@ -442,12 +442,14 @@ This package is framework-agnostic. Choose your integration path:
 
 | Framework | Guide | Why |
 |-----------|-------|-----|
+| Claude Code plugin | `/plugin marketplace add kangise/ecommerce-ai-skills` then `/plugin install ecommerce-ai-skills@ecommerce-ai-skills` | This directory is the plugin (`.claude-plugin/plugin.json`); the 9 skills load on demand, no server |
 | MCP (Model Context Protocol) | [integration/mcp.md](integration/mcp.md) | Natural fit: resources + prompts + tools |
 | Runtime API | [integration/runtime-api.md](integration/runtime-api.md) | Authenticated persistence, Weekly Ops agents, approvals, and actions |
 | Direct file loading | [integration/mcp-system-prompt.md](integration/mcp-system-prompt.md) | No server needed — load files directly |
 
 ## Which Framework?
 
+- **Claude Code plugin** — Best for Claude Code: skills only, nothing to run
 - **MCP** — Best for Claude Desktop, Cursor, and any MCP-compatible client
 - **Direct loading** — Works with any agent that can read files and follow instructions
 
@@ -468,6 +470,35 @@ This package is framework-agnostic. Choose your integration path:
             target = dist / rel
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(source, target)
+
+    # 7c. Claude Code plugin manifest. dist/ is already an Agent Skills tree
+    # (skills/<name>/SKILL.md with references/ and assets/ beside it), so the
+    # repository's .claude-plugin/marketplace.json points its one plugin here
+    # and `/plugin install` gets exactly the artifact the gates verified.
+    # Generated rather than hand-written so the version cannot drift from
+    # pyproject.toml, and so it is covered by the checksums below.
+    plugin_manifest = {
+        "name": "ecommerce-ai-skills",
+        "version": PACKAGE_VERSION,
+        "description": (
+            f"{len(capabilities)} cross-border e-commerce skills (listing, advertising, pricing, "
+            "inventory, research, compliance, customer service, social, AI applicability) "
+            f"backed by {n_constraints} platform constraints and {prompt_count} prompts that "
+            "declare their data requirements. Amazon, Shopify, TikTok Shop and more. CC0."
+        ),
+        "author": {"name": "kangise", "url": "https://github.com/kangise"},
+        "homepage": "https://kangise.github.io/ecommerce-ai-skills/",
+        "repository": "https://github.com/kangise/ecommerce-ai-skills",
+        "license": "CC0-1.0",
+        "keywords": ["ecommerce", "cross-border", "amazon", "shopify", "tiktok-shop",
+                     "listing", "ppc", "inventory", "compliance", "skills"],
+        "skills": "./skills/",
+    }
+    (dist / ".claude-plugin").mkdir(exist_ok=True)
+    (dist / ".claude-plugin" / "plugin.json").write_text(
+        json.dumps(plugin_manifest, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
 
     # 8. package-manifest.json — runtime completeness and integrity contract.
     # The MCP server validates this before exposing any capability, so a partial

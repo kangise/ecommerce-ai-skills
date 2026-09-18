@@ -82,7 +82,8 @@ def test_release_manifest_is_deterministic_fresh_and_tamper_evident(tmp_path: Pa
         ".gitignore", readme_path, "LICENSE", "design-qa.md",
         "roadmap/ui-design-system-l7.md",
     }.issubset(manifest["contracts"])
-    assert manifest["artifacts"]["dist"]["file_count"] == 153
+    # 154 since dist/.claude-plugin/plugin.json (Claude Code plugin manifest).
+    assert manifest["artifacts"]["dist"]["file_count"] == 154
     assert manifest["artifacts"]["design_evidence"]["file_count"] >= 10
     first.write_text(first.read_text(encoding="utf-8") + " ", encoding="utf-8")
     stale = run(sys.executable, "scripts/build_release_manifest.py", "--check", "--output", str(first))

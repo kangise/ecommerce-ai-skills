@@ -12,7 +12,8 @@
     "skills": 9
   },
   "sha256": {
-    "INTEGRATION.md": "e77a6487c5c28c66233fe08a9c3be2ab13f203a2c50010ade1bc4abf710c2c9d",
+    ".claude-plugin/plugin.json": "34a631af5edff2f5ba840404e4d622f36d43213e2f83338ee745c33a07310536",
+    "INTEGRATION.md": "2631ca6e32477efc00671408700b0f311d4e1a7b37afa269f029ce045df1a896",
     "README.md": "aaf0bba2d681d2b09732497942987b5613ccf49e9f6fab65c6f0b28dfdb01734",
     "SKILL.md": "af7ee8f1f84a5b1027656616927e5502583b8ec39d5335872815b574abbcd3ba",
     "integration/mcp-server.py": "84e2c9bd9210dc5b43f504072e798428e861110454979ce150ff800bd1b18705",

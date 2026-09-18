@@ -24,6 +24,15 @@
 
 <br>
 
+**Claude Code では**：9 個の skill をインストール。常駐するのは名前と説明だけで、本文は使うときに読み込まれます。
+
+```
+/plugin marketplace add kangise/ecommerce-ai-skills
+/plugin install ecommerce-ai-skills@ecommerce-ai-skills
+```
+
+**運用 UI をローカルで動かす：**
+
 ```bash
 pip install "ecommerce-ai-skills[mcp] @ git+https://github.com/kangise/ecommerce-ai-skills"
 opc-ecommerce demo-seed --db ./demo.sqlite && opc-ecommerce demo --db ./demo.sqlite --port 8788
@@ -44,7 +53,7 @@ opc-ecommerce demo-seed --db ./demo.sqlite && opc-ecommerce demo --db ./demo.sql
 | 使い方 | 何か | 入口 |
 |---|---|---|
 | **本として読む** | 69 章、選品から成長まで、中/英/日 3 言語で完訳 | [オンラインサイト](https://kangise.github.io/ecommerce-ai-skills/ja/) |
-| **agent にインストール** | 知識 + 領域モデル + ガード付き能力。MCP 一行の設定で Claude / Cursor に接続 | [`dist/`](dist/) |
+| **agent にインストール** | 知識 + 領域モデル + ガード付き能力。Claude Code プラグイン、または MCP 一行の設定で Claude Desktop / Cursor に接続 | [`dist/`](dist/) |
 | **そのまま動かす** | Commerce Agent OS — 実店舗データに接続し、複数 agent が検証し、人が承認する運用ランタイム | `opc-ecommerce demo` |
 
 3 つとも**同じ CI ゲート**が守る。ゲートを通らなければ、どれも出荷されない。

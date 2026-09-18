@@ -24,6 +24,15 @@
 
 <br>
 
+**在 Claude Code 里**：安装 9 个 skill；只有名称和描述常驻上下文，用到时才加载正文。
+
+```
+/plugin marketplace add kangise/ecommerce-ai-skills
+/plugin install ecommerce-ai-skills@ecommerce-ai-skills
+```
+
+**在本地运行运营界面：**
+
 ```bash
 pip install "ecommerce-ai-skills[mcp] @ git+https://github.com/kangise/ecommerce-ai-skills"
 opc-ecommerce demo-seed --db ./demo.sqlite && opc-ecommerce demo --db ./demo.sqlite --port 8788
@@ -44,7 +53,7 @@ opc-ecommerce demo-seed --db ./demo.sqlite && opc-ecommerce demo --db ./demo.sql
 | 用法 | 说明 | 入口 |
 |---|---|---|
 | **当书读** | 69 章，覆盖选品到增长，中英日三语完整 | [在线站点](https://kangise.github.io/ecommerce-ai-skills/) |
-| **给 agent 装** | 知识、领域模型、带护栏的能力打包成能力包，MCP 一行配置接入 Claude / Cursor | [`dist/`](dist/) |
+| **给 agent 装** | 知识、领域模型、带护栏的能力打包成能力包：Claude Code 插件，或一行 MCP 配置接入 Claude Desktop / Cursor | [`dist/`](dist/) |
 | **直接运行** | Commerce Agent OS：连接真实店铺数据，多个 agent 并行审查，写操作需人工审批 | `opc-ecommerce demo` |
 
 三种用法共用同一套 CI 门禁。门禁不通过，三者都不发布。

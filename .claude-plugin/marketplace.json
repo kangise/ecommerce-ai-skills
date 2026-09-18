@@ -1,0 +1,21 @@
+{
+  "name": "ecommerce-ai-skills",
+  "owner": {
+    "name": "kangise",
+    "url": "https://github.com/kangise"
+  },
+  "metadata": {
+    "description": "Cross-border e-commerce skills for Claude Code, generated from a CI-verified trilingual knowledge base and a 322-constraint platform ontology. CC0."
+  },
+  "plugins": [
+    {
+      "name": "ecommerce-ai-skills",
+      "source": "./dist",
+      "description": "9 e-commerce skills — listing, advertising, pricing, inventory, research, compliance, customer service, social, and AI applicability — with platform constraints for Amazon, Shopify, TikTok Shop and more.",
+      "category": "productivity",
+      "homepage": "https://kangise.github.io/ecommerce-ai-skills/",
+      "repository": "https://github.com/kangise/ecommerce-ai-skills",
+      "license": "CC0-1.0"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "ecommerce-ai-skills",
+  "version": "1.3.0",
+  "description": "9 cross-border e-commerce skills (listing, advertising, pricing, inventory, research, compliance, customer service, social, AI applicability) backed by 322 platform constraints and 878 prompts that declare their data requirements. Amazon, Shopify, TikTok Shop and more. CC0.",
+  "author": {
+    "name": "kangise",
+    "url": "https://github.com/kangise"
+  },
+  "homepage": "https://kangise.github.io/ecommerce-ai-skills/",
+  "repository": "https://github.com/kangise/ecommerce-ai-skills",
+  "license": "CC0-1.0",
+  "keywords": [
+    "ecommerce",
+    "cross-border",
+    "amazon",
+    "shopify",
+    "tiktok-shop",
+    "listing",
+    "ppc",
+    "inventory",
+    "compliance",
+    "skills"
+  ],
+  "skills": "./skills/"
+}

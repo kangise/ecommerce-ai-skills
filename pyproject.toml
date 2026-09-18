@@ -24,6 +24,9 @@ include = ["ecommerce_ai_skills*"]
 ecommerce_ai_skills = [
   "package_data/dist/**/*",
   "package_data/dist/**",
+  # setuptools globs skip dot-directories; the plugin manifest is listed in
+  # package-manifest.json, so leaving it out fails the MCP integrity check.
+  "package_data/dist/.claude-plugin/*",
   "runtime/web/*",
   "runtime/web/assets/brands/*",
   "runtime/web/assets/fonts/*",

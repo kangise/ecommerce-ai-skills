@@ -24,6 +24,15 @@
 
 <br>
 
+**In Claude Code** — installs the 9 skills; only their names and descriptions load until one is used:
+
+```
+/plugin marketplace add kangise/ecommerce-ai-skills
+/plugin install ecommerce-ai-skills@ecommerce-ai-skills
+```
+
+**Run the operations UI locally:**
+
 ```bash
 pip install "ecommerce-ai-skills[mcp] @ git+https://github.com/kangise/ecommerce-ai-skills"
 opc-ecommerce demo-seed --db ./demo.sqlite && opc-ecommerce demo --db ./demo.sqlite --port 8788
@@ -43,7 +52,7 @@ An AI operations knowledge base for cross-border e-commerce. **One source, three
 | Use | What it is | Entry |
 |---|---|---|
 | **Read it** | 69 chapters, sourcing to growth, complete in zh/en/ja | [Online site](https://kangise.github.io/ecommerce-ai-skills/en/) |
-| **Install it for your agent** | Knowledge + domain model + guarded capabilities, one MCP config line to Claude / Cursor | [`dist/`](dist/) |
+| **Install it for your agent** | Knowledge + domain model + guarded capabilities: a Claude Code plugin, or one MCP config line for Claude Desktop / Cursor | [`dist/`](dist/) |
 | **Run it** | Commerce Agent OS — an operations runtime on real store data, with multi-agent review and human approval | `opc-ecommerce demo` |
 
 All three are held to the **same CI gates**. Gates fail, nothing ships.

@@ -7,10 +7,10 @@
       "tree_sha256": "5244a5085dc1631bd7aa4b9c79a522c3bd080ee7607b3b5be327b631ece1a17b"
     },
     "dist": {
-      "byte_count": 6575369,
-      "file_count": 153,
+      "byte_count": 6576588,
+      "file_count": 154,
       "name": "dist",
-      "tree_sha256": "56c4f84a312c84c9b58e99d1916db110c0b263f1b987cccc99bfb0d701112b3b"
+      "tree_sha256": "744f0bd24b267352d4f3387c48aae16dfd083eab047dfc8f7bfcf38ebf2e9050"
     },
     "package_sources": {
       "byte_count": 950881,
@@ -25,22 +25,22 @@
       "tree_sha256": "12f873ddada2d2a05aca52b22d38dd98eb83107635491aba0f9de23bc52fb606"
     },
     "scripts": {
-      "byte_count": 379081,
+      "byte_count": 381028,
       "file_count": 24,
       "name": "scripts",
-      "tree_sha256": "da46cd1f3e29c08266a463c88f0239d4db5500c0fc37cfcb91a830d96b48d109"
+      "tree_sha256": "274770afa5cd071e0f65f3e292ee07e33402262a2428e28a4744f7c83460627e"
     },
     "tests": {
-      "byte_count": 560598,
-      "file_count": 34,
+      "byte_count": 565288,
+      "file_count": 35,
       "name": "tests",
-      "tree_sha256": "bb5032736e5edeb7e03644adf98fde01d07ee2eb908333d36215e969e8ed6ca1"
+      "tree_sha256": "f30c0b2a9e3f46961c4e6b6781cdee4b7a371610e3f954a00e4dc95db3ce855a"
     },
     "wheel_package_data": {
-      "byte_count": 6575369,
-      "file_count": 153,
+      "byte_count": 6576588,
+      "file_count": 154,
       "name": "wheel_package_data",
-      "tree_sha256": "ace2b19939b6a2ae9bb8bc7d4486b10335381497ecbf1dbbd0d4cdb1883f4352"
+      "tree_sha256": "40353832d3f275d7b063aeaf3d0d01d79b46c6f3de65395128b766fcda314aad"
     }
   },
   "contracts": {
@@ -49,20 +49,20 @@
       "size": 9984
     },
     ".gitignore": {
-      "sha256": "00f3214dfd9850a2599c6f578c1bf5f7f4e11ef1678eda7e9b5499c78f062ed7",
-      "size": 3242
+      "sha256": "8b8a083249f59e7e0f62106618632a345751e5a1dbf28d23b99cd40b4735ac27",
+      "size": 3510
     },
     "CHANGELOG.md": {
-      "sha256": "905481786cfaa15d8a6c03e6fbc896cc13ea62509b61c33c0e8af2333f5c48a7",
-      "size": 19403
+      "sha256": "1429d7813575603836f7c306c4de76ffde824e072342cf0f8da3597fbf5fc022",
+      "size": 20178
     },
     "LICENSE": {
       "sha256": "977372677acaaaa0f419556e5a24d8c869534c25d8f4f8d3db4df888c095bd9d",
       "size": 6468
     },
     "README.md": {
-      "sha256": "80eae9dc947ba2391bd181d96dc3286c1208eb8af0ef839e90da336e3a27664f",
-      "size": 30489
+      "sha256": "be3eaf7393b98ff3d41a124796349fc293134a1d89663bd3562c36f2a64b3f41",
+      "size": 30781
     },
     "design-qa.md": {
       "sha256": "86d1eb097b9aeeceda1e8f71d7b73a48b73a9c4cd36e7a62863e866ca67c30dd",
@@ -73,8 +73,8 @@
       "size": 174649
     },
     "pyproject.toml": {
-      "sha256": "16bcd562417dbdd81bb85d75bb4c3c9062dc82217215a8625f89a7d76fc23494",
-      "size": 1002
+      "sha256": "8c9e782985a780568115d53012af88056ee2add90cca5a0e7ad1fdc8ca56dfd1",
+      "size": 1194
     },
     "release/v1.3.0-rc.md": {
       "sha256": "ce40f6ed44764e87a914439f9ff6a38c740f998666a280df6b362aa0c521e2dd",
@@ -89,8 +89,8 @@
       "size": 7793
     },
     "scripts/build_dist.py": {
-      "sha256": "01bfc116606673fc36030aa290235199015f89ba166c85dd0ce4f88635b22690",
-      "size": 23926
+      "sha256": "bf1b3ccc21834cea6b6b67e5baeaa2101eb27320536d497bfe20292a49d159b7",
+      "size": 25873
     },
     "scripts/loop/v1_3_progress.md": {
       "sha256": "9808e365ab6b52d1ae7e94e6bf7f5833bab230aacec164af758177690ae1a61c",

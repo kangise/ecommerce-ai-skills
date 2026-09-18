@@ -198,6 +198,11 @@ docs/build/
 !ecommerce_ai_skills/package_data/dist/package-manifest.json
 !ecommerce_ai_skills/package_data/dist/prompts.json
 !release/v1.3.0-rc-manifest.json
+# Claude Code plugin marketplace: the blanket *.json rule above would drop
+# these, and a clone without them has no installable plugin.
+!.claude-plugin/marketplace.json
+!dist/.claude-plugin/plugin.json
+!ecommerce_ai_skills/package_data/dist/.claude-plugin/plugin.json
 *.xml
 *.xlsx
 *.xls

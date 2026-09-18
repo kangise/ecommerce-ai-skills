@@ -39,6 +39,9 @@ def test_dist_and_link_cache_are_not_ignored() -> None:
         "ecommerce_ai_skills/package_data/dist/package-manifest.json",
         "ecommerce_ai_skills/package_data/dist/prompts.json",
         "release/v1.3.0-rc-manifest.json",
+        ".claude-plugin/marketplace.json",
+        "dist/.claude-plugin/plugin.json",
+        "ecommerce_ai_skills/package_data/dist/.claude-plugin/plugin.json",
     ]
     for path in required:
         assert run("git", "check-ignore", "-q", path).returncode == 1
@@ -55,6 +58,9 @@ def test_generated_json_required_by_a_clean_clone_is_tracked() -> None:
         "ecommerce_ai_skills/package_data/dist/package-manifest.json",
         "ecommerce_ai_skills/package_data/dist/prompts.json",
         "release/v1.3.0-rc-manifest.json",
+        ".claude-plugin/marketplace.json",
+        "dist/.claude-plugin/plugin.json",
+        "ecommerce_ai_skills/package_data/dist/.claude-plugin/plugin.json",
     ]
     result = run("git", "ls-files", "--error-unmatch", *required)
     assert result.returncode == 0, result.stderr or result.stdout
