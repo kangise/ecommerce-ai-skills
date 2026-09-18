@@ -2,7 +2,7 @@
 
 **agent 改不了，需要仓库主人在 GitHub 设置里或用自己的账号操作。**
 
-最后核对：2026-09-17（数字由 `scripts/verify_all.py --d2` 的口径实测得出）
+最后核对：2026-09-18（数字由 `scripts/verify_all.py --d2` 的口径实测得出）
 
 ## About 描述 —— 待改
 
@@ -18,7 +18,7 @@
 建议改成：
 
 ```
-Cross-border e-commerce AI knowledge base, designed to be read by people and installed by agents. 69 trilingual guides, 878 structured prompts, a 100-entity / 322-constraint domain ontology, and 9 agent skills served over MCP. Factual claims are dated and CI-verified; prompts declare their data requirements and failure boundaries. CC0.
+Cross-border e-commerce AI knowledge base, read by people and installed by agents: 69 trilingual guides, 878 prompts, a 100-entity / 322-constraint ontology, and 9 skills as a Claude Code plugin or over MCP. Factual claims are dated and CI-verified. CC0.
 ```
 
 ## Social Preview —— 文件已备好，待上传
