@@ -91,6 +91,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
   persisted Demo state and SSE behavior remain unchanged.
 
 ### Fixed
+- The site's Agent Integration page was the Chinese text on the English and
+  Japanese sites too, and it listed bare `dist/` paths a site reader cannot
+  open. Rewritten in all three languages with the Claude Code, MCP and
+  direct-loading paths and GitHub links; the landing pages now link to the
+  repository.
 - The wheel now ships `package_data/dist/.claude-plugin/plugin.json`.
   setuptools' package-data globs skip dot-directories, so the file was listed
   in `package-manifest.json` but missing from the wheel, and the installed

@@ -551,7 +551,23 @@
   "hard_fail": false,
   "status": 200
  },
+ "https://github.com/kangise/ecommerce-ai-skills": {
+  "hard_fail": false,
+  "status": 200
+ },
+ "https://github.com/kangise/ecommerce-ai-skills/blob/main/dist/SKILL.md": {
+  "hard_fail": false,
+  "status": 200
+ },
+ "https://github.com/kangise/ecommerce-ai-skills/blob/main/integration/mcp.md": {
+  "hard_fail": false,
+  "status": 200
+ },
  "https://github.com/kangise/ecommerce-ai-skills/issues": {
+  "hard_fail": false,
+  "status": 200
+ },
+ "https://github.com/kangise/ecommerce-ai-skills/tree/main/dist": {
   "hard_fail": false,
   "status": 200
  },

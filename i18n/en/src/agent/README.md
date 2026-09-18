@@ -1,24 +1,54 @@
-# Agent 接入
+# Agent Integration
 
-本仓库不仅是一本书。`dist/` 目录是即插即用的 agent 能力包。
+`dist/` is this repository's agent package: 9 skills, a domain ontology, the prompt library and an MCP server, built from the same source as the chapters on this site and held to the same CI gates. Pick one of three ways to connect it.
 
-> `dist/SKILL.md` — Agent 系统 prompt（含路由规则）
-> `dist/README.md` — 快速开始
-> `dist/integration/mcp.md` — MCP Server 接入
+## Claude Code
 
-三层结构：
+Two commands install the 9 skills; no Python environment needed:
 
-| 层 | 内容 | 给谁 |
-|---|---|---|
-| 知识库 (src/) | 69 章，三语 | 人读 · agent 检索 |
-| Ontology (ontology/) | 100 实体 · 322 约束 | agent 之间的共享契约 |
-| Skills (skills/) | 9 个可安装 skill · 878 条 Prompt | agent 直接调用 |
+```
+/plugin marketplace add kangise/ecommerce-ai-skills
+/plugin install ecommerce-ai-skills@ecommerce-ai-skills
+```
 
----
+Only each skill's name and description stay in context; the body, platform constraints and prompt sets load when a skill is used.
 
-## 验证
+## Claude Desktop / Cursor (MCP)
 
 ```bash
-python3 scripts/verify_all.py   # 所有门禁
-python3 scripts/build_dist.py   # 构建 dist/
+pip install "ecommerce-ai-skills[mcp] @ git+https://github.com/kangise/ecommerce-ai-skills"
+```
+
+```json
+{
+  "mcpServers": {
+    "opc-ecommerce": {
+      "command": "opc-ecommerce",
+      "args": ["mcp"]
+    }
+  }
+}
+```
+
+The MCP server provides 8 resources and 5 tools; pointed at a running Commerce Agent OS, it adds 4 read-only operations tools. See the [MCP guide](https://github.com/kangise/ecommerce-ai-skills/blob/main/integration/mcp.md).
+
+## Load the files directly
+
+Agents that use neither Claude Code nor MCP can read [`dist/SKILL.md`](https://github.com/kangise/ecommerce-ai-skills/blob/main/dist/SKILL.md): it is the entry point and carries the rules for routing a request to the right skill. The full package is in [`dist/`](https://github.com/kangise/ecommerce-ai-skills/tree/main/dist).
+
+## What's inside
+
+| Layer | Content | For |
+|---|---|---|
+| Knowledge base | 69 chapters in Chinese, English and Japanese | People reading · agent retrieval |
+| Ontology | 100 entities · 322 constraints | A shared contract between agents |
+| Skills | 9 installable skills · 878 prompts | Agents calling them directly |
+
+## Verify
+
+From the repository root:
+
+```bash
+python3 scripts/verify_all.py   # all gates
+python3 scripts/build_dist.py   # build dist/
 ```

@@ -25,10 +25,10 @@
       "tree_sha256": "12f873ddada2d2a05aca52b22d38dd98eb83107635491aba0f9de23bc52fb606"
     },
     "scripts": {
-      "byte_count": 381028,
+      "byte_count": 381476,
       "file_count": 24,
       "name": "scripts",
-      "tree_sha256": "274770afa5cd071e0f65f3e292ee07e33402262a2428e28a4744f7c83460627e"
+      "tree_sha256": "0ce0070462008a3db673e7c474e74be34fbefac51d280601323adf022d14d0bb"
     },
     "tests": {
       "byte_count": 565288,
@@ -53,8 +53,8 @@
       "size": 3510
     },
     "CHANGELOG.md": {
-      "sha256": "1429d7813575603836f7c306c4de76ffde824e072342cf0f8da3597fbf5fc022",
-      "size": 20178
+      "sha256": "68de8287b2f77ea3675161720281c8ed1ca017e87395cf4700b11f4845ac566d",
+      "size": 20490
     },
     "LICENSE": {
       "sha256": "977372677acaaaa0f419556e5a24d8c869534c25d8f4f8d3db4df888c095bd9d",

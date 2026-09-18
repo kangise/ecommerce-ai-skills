@@ -4,7 +4,7 @@
 
 跨境电商 AI 实操手册 — 69 章指南，从选品到增长，每个环节都有可直接复制的 Prompt。
 
-**这不只是一本书。** [`dist/` 是即插即用的 agent 能力包](agent/README.md)——100 实体的领域 ontology、9 个可安装 skill、MCP Server 接入。
+**这不只是一本书。** [`dist/` 是即插即用的 agent 能力包](agent/README.md)——100 实体的领域 ontology、9 个可安装 skill、MCP Server 接入。Claude Code 用户两条命令即可安装，源码在 [GitHub](https://github.com/kangise/ecommerce-ai-skills)。
 
 ## 先试一下
 
