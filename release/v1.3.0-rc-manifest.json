@@ -31,10 +31,10 @@
       "tree_sha256": "b779a5f6339a97ca8429c23ffc793681cdbb5472ce43f627ea2990b96121902a"
     },
     "tests": {
-      "byte_count": 579680,
-      "file_count": 36,
+      "byte_count": 580936,
+      "file_count": 37,
       "name": "tests",
-      "tree_sha256": "88ed534c079cd0934eacd93994dc41138060e39c17d5af1bc9d11f88bc837ed5"
+      "tree_sha256": "105a464fd7032b55b908f6f551ebd52a3027450fc600f7548f13b762477e1963"
     },
     "wheel_package_data": {
       "byte_count": 6565183,
