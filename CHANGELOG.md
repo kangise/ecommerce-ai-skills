@@ -35,6 +35,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
   now uses `--refresh-links`.
 - `SECURITY.md` (reporting path, scope, what the runtime does with
   credentials) and `CITATION.cff`.
+- Pages site: every page gets share-card metadata (Open Graph and Twitter
+  card with the social preview image), a canonical URL and hreflang links
+  between the Chinese, English and Japanese versions; the build also writes
+  `sitemap.xml` (231 URLs) and `llms.txt` (77 chapters with one-line notes
+  taken from each English chapter). `scripts/build_site_meta.py`, run by
+  pages.yml right after the three books are built; idempotent.
 - `PRIVACY.md`: per component, what is stored, for how long, and which hosts
   are contacted and with what — each statement traced to the code that does
   it. Required by Anthropic's plugin directory; linked from every README.
@@ -94,6 +100,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
   persisted Demo state and SSE behavior remain unchanged.
 
 ### Fixed
+- Removed a research-tool artifact from the chapters: the English sentence
+  "Content rephrased for compliance with licensing restrictions." sat as its
+  own paragraph 521 times across 135 files, including in the middle of
+  Chinese and Japanese text, and in two places was glued onto real content
+  (one of them broke an eBay blockquote). Where it prefixed real citations
+  the links are kept, labelled 来源／出典／Sources per language. All gates,
+  parity and the built-site anchor check are unchanged.
 - The site's Agent Integration page was the Chinese text on the English and
   Japanese sites too, and it listed bare `dist/` paths a site reader cannot
   open. Rewritten in all three languages with the Claude Code, MCP and

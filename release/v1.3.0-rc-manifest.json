@@ -25,16 +25,16 @@
       "tree_sha256": "12f873ddada2d2a05aca52b22d38dd98eb83107635491aba0f9de23bc52fb606"
     },
     "scripts": {
-      "byte_count": 381630,
-      "file_count": 24,
+      "byte_count": 407042,
+      "file_count": 25,
       "name": "scripts",
-      "tree_sha256": "6bad4fffc491e91e3da3233f150c50e24f887e4101a00d471bcd39b1cf012bc1"
+      "tree_sha256": "b779a5f6339a97ca8429c23ffc793681cdbb5472ce43f627ea2990b96121902a"
     },
     "tests": {
-      "byte_count": 565288,
-      "file_count": 35,
+      "byte_count": 579680,
+      "file_count": 36,
       "name": "tests",
-      "tree_sha256": "f30c0b2a9e3f46961c4e6b6781cdee4b7a371610e3f954a00e4dc95db3ce855a"
+      "tree_sha256": "88ed534c079cd0934eacd93994dc41138060e39c17d5af1bc9d11f88bc837ed5"
     },
     "wheel_package_data": {
       "byte_count": 6565183,
@@ -53,8 +53,8 @@
       "size": 3510
     },
     "CHANGELOG.md": {
-      "sha256": "bd503e614f30208655592c568d94d141aac166e99e1f9f2e8c3d05622548824e",
-      "size": 20719
+      "sha256": "c963359861f04a14cae0cb65fb12288bb4abf5585ad846a7db20d3c18be034e9",
+      "size": 21665
     },
     "LICENSE": {
       "sha256": "977372677acaaaa0f419556e5a24d8c869534c25d8f4f8d3db4df888c095bd9d",

@@ -60,6 +60,12 @@ jobs:
           done
           echo "zh/en/ja all present"
 
+      - name: Add share-card metadata, sitemap.xml and llms.txt
+        # mdBook's own <head> has no og:/twitter: tags, and the build has no
+        # sitemap.xml or llms.txt — this is what makes a pasted chapter link
+        # unfurl in X/Slack/Discord/WeChat instead of showing a bare URL.
+        run: python3 scripts/build_site_meta.py docs
+
       - name: Run automated tests
         run: python3 -m pytest
 

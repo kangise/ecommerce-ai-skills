@@ -5,6 +5,7 @@
 | 文件 | 作用 |
 |------|------|
 | `verify_content.py` | 内容校验套件。CI 在构建之后跑，任何一项非零就让部署失败 |
+| `build_site_meta.py` | 给构建产物注入 og/twitter 标签、canonical/hreflang，并写 sitemap.xml 与 llms.txt。CI 紧接三语构建之后跑 |
 | `apply_indent.py` | 把手工重建好的代码块缩进按行套用到三语树 |
 | `gen_i18n_stubs.py` | 生成 EN/JA 章节骨架，并统计翻译覆盖率 |
 | `link-status.json` | 外链探测结果缓存，由 `verify_content.py --probe-links` 写入 |
@@ -191,3 +192,29 @@ python3 scripts/apply_indent.py <章节> <块序号> <修好的文件> --only i1
 代码块缩进只能手工重建，不能写启发式：`if x:` 后面跟一串非终止语句时，"块在哪结束"在语法上不可判定，猜出来的错答案看着像对的，而读者会照抄。
 
 三语树在代码围栏内逐行对齐，所以中文侧算出的缩进可以直接套用。这个前提偶尔会破（翻译后的 docstring 可能多换一行）——**不要为了绕过去而放宽行数校验**，那道校验正是防止写坏的东西。用 `--only <tree>` 分树套用。
+
+## build_site_meta.py
+
+```bash
+python3 scripts/build_site_meta.py docs   # pages.yml 紧接三语构建之后跑这个
+```
+
+mdBook 自己写的 `<head>` 只有 `<title>` 和一条从 book.toml 生成的 `<meta name="description">`。
+章节链接贴到 X / Slack / Discord / 微信时只显示为裸链接，因为没有 og/twitter 标签；三语
+版本之间也没有 canonical/hreflang 信号；站点没有 sitemap.xml，也没有 llms.txt。本脚本在已经
+构建好的产物上原地补齐这些，不重新渲染任何页面。
+
+og:description 不重新生成，直接读回 mdBook 已经写好的 `<meta name="description">` 内容——
+这样它不可能和 book.toml 里的描述对不上。每页只注入一次，用 `<!-- site-meta -->` 标记；
+标记已经在，就跳过整页，重复跑不会重复注入，也不会改动任何字节。
+
+不生成 robots.txt：爬虫只认 host 根目录（kangise.github.io）下的 `/robots.txt`，这层这个
+项目站点管不到，放一个没人会读的文件只会误导读者，让人以为这里能设置抓取策略。
+
+llms.txt 每条的说明取自该章英文正文的第一句正文：跳过标题、引用块（含
+`> **Track**: ...` 这类头部元数据）、表格、代码围栏、HTML 注释，读到"When this doesn't
+work"一节即停止（那一节写的是本章不适用的情形）。以问句、引用来源行或"Path X is done
+when"开头的段落不取；没有句末标点的段落（列表项、标签行）不取；"e.g."等缩写不算句末；
+第一句不足 60 字符时并入同段下一句。都不满足时这一条不写说明——llms.txt 规范允许，
+写一句不相干的话比不写更差。词汇表的每个标题都是一个词条，没有引言段，说明单独给定。
+这一步只读 `i18n/en/src/`，不依赖构建产物，可以离线单独测试。
