@@ -1,59 +1,60 @@
 <svg viewBox="0 0 1280 640" width="1280" height="640" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
-  <title id="t">跨境电商 AI 实战知识库 — 社交预览图</title>
+  <title id="t">Cross-Border E-Commerce AI Knowledge Base — social preview</title>
   <style>
-    text{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+    text{font-family:"Inter",-apple-system,"Segoe UI","Helvetica Neue",Arial,sans-serif}
     .eyebrow{font-size:17px;font-weight:600;letter-spacing:3px;fill:#818cf8}
-    .h1{font-size:78px;font-weight:800;fill:#ffffff}
-    .h2{font-size:31px;fill:#c7d2fe}
+    .h1{font-size:52px;font-weight:800;fill:#ffffff;letter-spacing:-1px}
+    .h2{font-size:27px;fill:#c7d2fe}
     .badge{font-size:19px;font-weight:800;fill:#ffffff}
-    .pill{font-size:26px;font-weight:600;fill:#e2e8f0}
-    .val{font-size:27px;fill:#a5b4fc}
-    .valb{font-size:27px;font-weight:700;fill:#ffffff}
+    .pill{font-size:24px;font-weight:600;fill:#e2e8f0}
+    .val{font-size:26px;fill:#a5b4fc}
+    .valb{font-size:26px;font-weight:700;fill:#ffffff}
     .url{font-size:19px;fill:#6771c4}
   </style>
 
   <rect width="1280" height="640" fill="#0f0e2e"/>
 
-  <text class="eyebrow" x="82" y="100">AN AAAI CHINA CHAPTER INITIATIVE</text>
-  <text class="h1" x="76" y="212">跨境电商 AI 实战知识库</text>
-  <text class="h2" x="82" y="282">56 篇实战指南 · 每篇都有可直接复制的 Prompt · CC0 完全免费</text>
+  <text class="eyebrow" x="82" y="100">READ IT AS A BOOK · INSTALL IT AS AGENT CAPABILITY · RUN IT AS OPERATIONS</text>
+  <text class="h1" x="80" y="190">Cross-Border E-Commerce AI Knowledge Base</text>
+  <text class="h2" x="82" y="248">69 chapters in three languages · 878 prompts that declare their data needs</text>
+  <text class="h2" x="82" y="286">MCP server for agents · operations runtime with human approval on every action</text>
 
   <!-- Path pills -->
   <g>
-    <rect x="82"  y="352" width="182" height="62" rx="31" fill="#232057"/>
-    <circle cx="119" cy="383" r="17" fill="#4338ca"/>
-    <text class="badge" x="119" y="390" text-anchor="middle">0</text>
-    <text class="pill" x="148" y="392">AI 基础</text>
+    <rect x="82"  y="342" width="206" height="62" rx="31" fill="#232057"/>
+    <circle cx="119" cy="373" r="17" fill="#4338ca"/>
+    <text class="badge" x="119" y="380" text-anchor="middle">0</text>
+    <text class="pill" x="148" y="382">Foundations</text>
 
-    <rect x="278" y="352" width="140" height="62" rx="31" fill="#232057"/>
-    <circle cx="315" cy="383" r="17" fill="#4338ca"/>
-    <text class="badge" x="315" y="390" text-anchor="middle">A</text>
-    <text class="pill" x="344" y="392">运营</text>
+    <rect x="302" y="342" width="176" height="62" rx="31" fill="#232057"/>
+    <circle cx="339" cy="373" r="17" fill="#4338ca"/>
+    <text class="badge" x="339" y="380" text-anchor="middle">A</text>
+    <text class="pill" x="368" y="382">Operators</text>
 
-    <rect x="432" y="352" width="140" height="62" rx="31" fill="#232057"/>
-    <circle cx="469" cy="383" r="17" fill="#4338ca"/>
-    <text class="badge" x="469" y="390" text-anchor="middle">B</text>
-    <text class="pill" x="498" y="392">技术</text>
+    <rect x="492" y="342" width="188" height="62" rx="31" fill="#232057"/>
+    <circle cx="529" cy="373" r="17" fill="#4338ca"/>
+    <text class="badge" x="529" y="380" text-anchor="middle">B</text>
+    <text class="pill" x="558" y="382">Developers</text>
 
-    <rect x="586" y="352" width="140" height="62" rx="31" fill="#232057"/>
-    <circle cx="623" cy="383" r="17" fill="#4338ca"/>
-    <text class="badge" x="623" y="390" text-anchor="middle">C</text>
-    <text class="pill" x="652" y="392">管理</text>
+    <rect x="694" y="342" width="172" height="62" rx="31" fill="#232057"/>
+    <circle cx="731" cy="373" r="17" fill="#4338ca"/>
+    <text class="badge" x="731" y="380" text-anchor="middle">C</text>
+    <text class="pill" x="760" y="382">Managers</text>
 
-    <rect x="740" y="352" width="166" height="62" rx="31" fill="#232057"/>
-    <circle cx="777" cy="383" r="17" fill="#4338ca"/>
-    <text class="badge" x="777" y="390" text-anchor="middle">D</text>
-    <text class="pill" x="806" y="392">多平台</text>
+    <rect x="880" y="342" width="166" height="62" rx="31" fill="#232057"/>
+    <circle cx="917" cy="373" r="17" fill="#4338ca"/>
+    <text class="badge" x="917" y="380" text-anchor="middle">D</text>
+    <text class="pill" x="946" y="382">Platforms</text>
 
-    <rect x="920" y="352" width="192" height="62" rx="31" fill="#232057"/>
-    <circle cx="957" cy="383" r="17" fill="#4338ca"/>
-    <text class="badge" x="957" y="390" text-anchor="middle">E</text>
-    <text class="pill" x="986" y="392">社交媒体</text>
+    <rect x="1060" y="342" width="138" height="62" rx="31" fill="#232057"/>
+    <circle cx="1097" cy="373" r="17" fill="#4338ca"/>
+    <text class="badge" x="1097" y="380" text-anchor="middle">E</text>
+    <text class="pill" x="1126" y="382">Social</text>
   </g>
 
-  <line x1="82" y1="496" x2="1198" y2="496" stroke="#232057" stroke-width="2"/>
-  <text x="82" y="552">
-    <tspan class="valb">18</tspan><tspan class="val"> 个 Notebook 一键运行  ·  </tspan><tspan class="valb">ACOS 35% → 18%</tspan><tspan class="val">  ·  Listing </tspan><tspan class="valb">4h → 45min</tspan><tspan class="val">  ·  </tspan><tspan class="valb">CC0</tspan><tspan class="val"> 免费商用</tspan>
+  <line x1="82" y1="478" x2="1198" y2="478" stroke="#232057" stroke-width="2"/>
+  <text x="82" y="536">
+    <tspan class="valb">100</tspan><tspan class="val"> entities  ·  </tspan><tspan class="valb">322</tspan><tspan class="val"> platform constraints  ·  </tspan><tspan class="valb">9</tspan><tspan class="val"> agent skills  ·  </tspan><tspan class="valb">43</tspan><tspan class="val"> CI gates  ·  </tspan><tspan class="valb">CC0</tspan>
   </text>
-  <text class="url" x="1198" y="608" text-anchor="end">github.com/kangise/ecommerce-ai-skills</text>
+  <text class="url" x="1198" y="606" text-anchor="end">github.com/kangise/ecommerce-ai-skills</text>
 </svg>

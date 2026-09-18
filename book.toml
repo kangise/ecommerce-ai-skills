@@ -1,7 +1,7 @@
 [book]
 title = "跨境电商 AI 实战知识库"
 authors = ["kangise"]
-description = "跨境电商 AI 实操手册 — 56 篇指南，从选品到增长，每个环节都有可直接复制的 Prompt"
+description = "跨境电商 AI 实战知识库 — 69 章三语指南、878 条声明数据前提的 Prompt、MCP 服务器与带人工审批的 Agent Runtime。CC0。"
 language = "zh"
 src = "src"
 
