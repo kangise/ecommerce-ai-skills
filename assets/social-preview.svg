@@ -3,7 +3,7 @@
   <style>
     text{font-family:"Inter",-apple-system,"Segoe UI","Helvetica Neue",Arial,sans-serif}
     .eyebrow{font-size:17px;font-weight:600;letter-spacing:3px;fill:#818cf8}
-    .h1{font-size:52px;font-weight:800;fill:#ffffff;letter-spacing:-1px}
+    .h1{font-size:51px;font-weight:800;fill:#ffffff;letter-spacing:-1px}
     .h2{font-size:27px;fill:#c7d2fe}
     .badge{font-size:19px;font-weight:800;fill:#ffffff}
     .pill{font-size:24px;font-weight:600;fill:#e2e8f0}
@@ -17,7 +17,7 @@
   <text class="eyebrow" x="82" y="100">READ IT AS A BOOK · INSTALL IT AS AGENT CAPABILITY · RUN IT AS OPERATIONS</text>
   <text class="h1" x="80" y="190">Cross-Border E-Commerce AI Knowledge Base</text>
   <text class="h2" x="82" y="248">69 chapters in three languages · 878 prompts that declare their data needs</text>
-  <text class="h2" x="82" y="286">MCP server for agents · operations runtime with human approval on every action</text>
+  <text class="h2" x="82" y="286">Claude Code plugin · MCP server · operations runtime with human approval</text>
 
   <!-- Path pills -->
   <g>
