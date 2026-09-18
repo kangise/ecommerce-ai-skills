@@ -7,10 +7,10 @@
       "tree_sha256": "5244a5085dc1631bd7aa4b9c79a522c3bd080ee7607b3b5be327b631ece1a17b"
     },
     "dist": {
-      "byte_count": 6565183,
+      "byte_count": 6565457,
       "file_count": 154,
       "name": "dist",
-      "tree_sha256": "b52ee0550b910149eca38c3dec1be5334ce9f62d991851252c4ef0b105ee6666"
+      "tree_sha256": "dd0c57161ccdba5a74862682b9e13b9f48fd1dd0c6e450b8e352f6dcfadd6958"
     },
     "package_sources": {
       "byte_count": 950881,
@@ -25,10 +25,10 @@
       "tree_sha256": "12f873ddada2d2a05aca52b22d38dd98eb83107635491aba0f9de23bc52fb606"
     },
     "scripts": {
-      "byte_count": 407042,
+      "byte_count": 407316,
       "file_count": 25,
       "name": "scripts",
-      "tree_sha256": "b779a5f6339a97ca8429c23ffc793681cdbb5472ce43f627ea2990b96121902a"
+      "tree_sha256": "be23ee063e4d8cfaf0d3c0b92e1d09819a6538434fc27ee236dcc571fb5d3c13"
     },
     "tests": {
       "byte_count": 580936,
@@ -37,10 +37,10 @@
       "tree_sha256": "105a464fd7032b55b908f6f551ebd52a3027450fc600f7548f13b762477e1963"
     },
     "wheel_package_data": {
-      "byte_count": 6565183,
+      "byte_count": 6565457,
       "file_count": 154,
       "name": "wheel_package_data",
-      "tree_sha256": "37c6c2d446be7915c411f1ad6d4e6db4e0dda8d4450378eedfb999c0d6802b41"
+      "tree_sha256": "3d14edb938b4929102f18db94191bf16c5b814c7e434e28ffbf5fe7639e88d7d"
     }
   },
   "contracts": {
@@ -89,8 +89,8 @@
       "size": 7793
     },
     "scripts/build_dist.py": {
-      "sha256": "bf1b3ccc21834cea6b6b67e5baeaa2101eb27320536d497bfe20292a49d159b7",
-      "size": 25873
+      "sha256": "75730dd83e939d7eaf916921a362e4f42bc51265baaaef63eaf49224337abd9e",
+      "size": 26147
     },
     "scripts/loop/v1_3_progress.md": {
       "sha256": "9808e365ab6b52d1ae7e94e6bf7f5833bab230aacec164af758177690ae1a61c",

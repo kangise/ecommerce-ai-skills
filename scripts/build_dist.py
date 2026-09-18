@@ -371,9 +371,20 @@ See `integration/` for framework-specific setup guides.
 
 ## Quick Start (30 seconds)
 
+**Claude Code** — this directory is a plugin:
+
+```
+/plugin marketplace add kangise/ecommerce-ai-skills
+/plugin install ecommerce-ai-skills@ecommerce-ai-skills
+```
+
+**Any other agent:**
+
 1. **Point your agent at this directory.** The entry point is `SKILL.md`.
 2. Your agent now has {len(capabilities)} domain skills: {capability_quicklist}.
 3. Ask: *"Help me write an Amazon listing"* — agent routes to `ecom-listing`, loads platform constraints, executes.
+
+For Claude Desktop or Cursor over MCP, see [integration/mcp.md](integration/mcp.md).
 
 ## What's Inside
 
