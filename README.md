@@ -73,7 +73,12 @@ The demo tenant is marked `DEMO DATA` throughout and is physically isolated from
 | Human approval gate | Writes go through proposal → approval → execution; advertising actions carry an extra capability gate and are blocked without authorization |
 | Durable execution | Four worker classes (job / schedule / report-sync / daily-ops) resume after interruption, with idempotency leases and recovery |
 | Full audit trail | Every conclusion must cite its input source; tenant isolation, API key rotation, operation audit log |
-| Operations UI | `/app` with seven views — briefing, agents, evidence, approvals, connections, automation, audit; persisted zh/en preference, light and dark themes |
+| Operations UI | `/app` with seven views — briefing, agents, evidence, approvals, connections, automation, audit; persisted zh/en/ja preference, light and dark themes |
+
+<p align="center">
+  <img src="assets/screenshots/approvals-en-dark.png" alt="Approvals view: an action proposal form with operation, risk, rollback plan and expiry, and an executed human-review record below it" width="100%">
+</p>
+<p align="center"><sub>Approvals: every external write is a proposal with a rollback plan and an expiry; another authorized user approves before an operator can execute.</sub></p>
 
 **Model providers**: OpenAI by default; set `EAI_AGENT_PROVIDER=anthropic` to run on Claude. Both providers share one contract — credentials stay environment-only, the endpoint is pinned to the official host, and the audit record names the provider actually used. An unrecognised value fails at startup rather than rerouting silently.
 

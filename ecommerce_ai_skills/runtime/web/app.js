@@ -109,6 +109,7 @@ function applyLocale(locale, persist = true) {
   else renderDisconnected();
   updateTodayLabel();
   applyTranslations();
+  refreshProposalPayloadTemplates();
   return document.documentElement.dataset.localeStorage !== "unavailable";
 }
 
@@ -177,7 +178,7 @@ function busy(button, value) {
 }
 
 async function api(path, options = {}) {
-  if (!state.apiKey) throw new Error("请先连接 Runtime");
+  if (!state.apiKey) throw new Error(tr("请先连接 Runtime"));
   const headers = {Authorization: `Bearer ${state.apiKey}`, ...(options.headers || {})};
   if (options.json !== undefined) {
     headers["Content-Type"] = "application/json";
@@ -186,7 +187,7 @@ async function api(path, options = {}) {
   const response = await fetch(path, {...options, headers});
   let payload = {};
   try { payload = await response.json(); } catch { payload = {}; }
-  if (!response.ok) throw new Error(payload.error?.message || `请求失败 (${response.status})`);
+  if (!response.ok) throw new Error(payload.error?.message || `${tr("请求失败")} (${response.status})`);
   return payload;
 }
 
@@ -465,10 +466,10 @@ function connectorDetails(connector) {
   if (connector.provider === "amazon_spapi") {
     const marketplaces = details.marketplaces || details.marketplace_ids || [];
     const catalog = new Map((state.catalog?.amazon_marketplaces || []).map(item => [item.id, marketplaceDisplayName(item)]));
-    return [details.region, marketplaces.map(item => catalog.get(typeof item === "string" ? item : item.id) || (typeof item === "string" ? item : item.id)).join("、")].filter(Boolean).join(" · ") || "未配置 region 或 marketplace";
+    return [details.region, marketplaces.map(item => catalog.get(typeof item === "string" ? item : item.id) || (typeof item === "string" ? item : item.id)).join("、")].filter(Boolean).join(" · ") || tr("未配置 region 或 marketplace");
   }
-  if (connector.provider === "shopify") return details.shop_domain || "未配置 Shopify domain";
-  if (connector.provider === "amazon_ads") return [details.region, details.profile_id ? `Profile ${details.profile_id}` : "未配置 profile"].filter(Boolean).join(" · ");
+  if (connector.provider === "shopify") return details.shop_domain || tr("未配置 Shopify domain");
+  if (connector.provider === "amazon_ads") return [details.region, details.profile_id ? `Profile ${details.profile_id}` : tr("未配置 profile")].filter(Boolean).join(" · ");
   return connector.external_account_id;
 }
 
@@ -476,16 +477,16 @@ function renderConnectors() {
   const target = $("connector-list"), note = $("connector-permission"), add = $("add-connector-btn");
   if (!state.apiKey) {
     add.disabled = true;
-    add.title = "请先连接 Runtime";
-    note.hidden = false; note.textContent = "连接 Runtime 后才能查看或管理租户账户。";
+    add.title = tr("请先连接 Runtime");
+    note.hidden = false; note.textContent = tr("连接 Runtime 后才能查看或管理租户账户。");
     designedEmpty(target, "尚未连接 Runtime", "账户列表需要已认证的租户会话。", "key");
     return;
   }
   const manage = connectorCanManage(), check = connectorCanCheck();
   add.disabled = !manage;
-  add.title = manage ? "" : "需要 admin 或 owner 角色";
+  add.title = tr(manage ? "" : "需要 admin 或 owner 角色");
   note.hidden = manage;
-  note.textContent = manage ? "" : "当前角色只能查看账户。添加或编辑配置需要 admin 或 owner 角色。";
+  note.textContent = tr(manage ? "" : "当前角色只能查看账户。添加或编辑配置需要 admin 或 owner 角色。");
   if (!state.connectors.length) {
     designedEmpty(target, "还没有连接账户", manage ? "添加 Amazon SP-API、Amazon Ads 或 Shopify 账户，并使用环境变量引用授权凭据。" : "当前租户尚未连接账户；需要 admin 或 owner 添加。", "key");
     return;
@@ -493,9 +494,9 @@ function renderConnectors() {
   target.innerHTML = state.connectors.map(connector => {
     const healthStatus = connector.health_status || "unchecked";
     const smokeEligible = ["amazon_spapi", "shopify"].includes(connector.provider);
-    const edit = manage ? `<button data-action="edit-connector" data-id="${escapeHtml(connector.id)}" class="secondary-button">编辑</button>` : "";
-    const healthAction = smokeEligible ? "" : check ? `<button data-action="health-check-connector" data-id="${escapeHtml(connector.id)}" class="primary-button">健康检查</button>` : `<span class="permission-reason">需要 operator、admin 或 owner 执行健康检查</span>`;
-    const adsGateAction = connector.provider === "amazon_ads" ? (connectorCanManage() ? `<button data-action="open-ads-capability-form" data-id="${escapeHtml(connector.id)}" class="secondary-button">运行准入检查</button>` : `<span class="permission-reason">需要 admin 或 owner 运行 Ads 准入检查</span>`) : "";
+    const edit = manage ? `<button data-action="edit-connector" data-id="${escapeHtml(connector.id)}" class="secondary-button">${escapeHtml(tr("编辑"))}</button>` : "";
+    const healthAction = smokeEligible ? "" : check ? `<button data-action="health-check-connector" data-id="${escapeHtml(connector.id)}" class="primary-button">${escapeHtml(tr("健康检查"))}</button>` : `<span class="permission-reason">${escapeHtml(tr("需要 operator、admin 或 owner 执行健康检查"))}</span>`;
+    const adsGateAction = connector.provider === "amazon_ads" ? (connectorCanManage() ? `<button data-action="open-ads-capability-form" data-id="${escapeHtml(connector.id)}" class="secondary-button">${escapeHtml(tr("运行准入检查"))}</button>` : `<span class="permission-reason">${escapeHtml(tr("需要 admin 或 owner 运行 Ads 准入检查"))}</span>`) : "";
     const failure = connector.health_error_message || connector.health_error_code;
     const refCount = Object.keys(connector.credential_refs || {}).length;
     const smokeSurface = smokeEligible ? `<section class="connector-smoke"><div class="connector-smoke-head"><div><strong>${escapeHtml(connectorProviderLabel(connector.provider))} · ${escapeHtml(tr("连通性验证"))}</strong><span>${escapeHtml(tr("执行最小真实读取请求，不保存响应内容。"))}</span></div>${providerSmokeActionHtml(connector.provider, connector.id)}</div>${providerSmokeStatusHtml(connector.provider, connector.id)}</section>` : "";
@@ -508,7 +509,7 @@ function renderAdsAdapterStatus() {
   if (!target) return;
   if (!state.apiKey) { designedEmpty(target, "尚未连接 Runtime", "连接后读取真实 Amazon Ads Adapter 状态。", "key"); return; }
   if (state.adsAdapterLoading) { designedEmpty(target, "正在读取 Adapter 状态", "正在获取当前构建的真实注册与写入能力。", "database"); return; }
-  if (state.adsAdapterError) { target.innerHTML = `<div class="ads-adapter-failure" role="alert"><strong>无法加载 Adapter 状态</strong><span>${escapeHtml(state.adsAdapterError)}</span></div>`; return; }
+  if (state.adsAdapterError) { target.innerHTML = `<div class="ads-adapter-failure" role="alert"><strong>${escapeHtml(tr("无法加载 Adapter 状态"))}</strong><span>${escapeHtml(state.adsAdapterError)}</span></div>`; return; }
   const value = state.adsAdapterStatus || {};
   const status = value.status || "blocked";
   const reasonLabels = {no_amazon_ads_account: "尚无 Amazon Ads 账户", no_capability_gate: "尚无 L5 准入记录", gate_not_passed: "L5 Gate 未通过", required_capabilities_missing: "必需能力不完整", gate_account_config_mismatch: "账户 region 或 Profile 已变化", gate_not_checked: "Gate 尚未完成", gate_stale_account_changed: "账户在 Gate 后已更新", gate_expired: "Gate 已超过 24 小时", gate_checked_in_future: "Gate 时间异常", adapter_not_installed: "Adapter 未安装", write_surface_disabled: "写入面已关闭"};
@@ -549,14 +550,14 @@ function renderConnectorMarketplaces(selected = []) {
   const region = $("connector-region").value;
   const selectedIds = new Set(selected.map(item => typeof item === "string" ? item : item.id));
   const markets = (state.catalog?.amazon_marketplaces || []).filter(item => !region || item.region === region);
-  $("connector-marketplaces").innerHTML = markets.length ? markets.map(item => `<label><input type="checkbox" name="connector-marketplace" value="${escapeHtml(item.id)}" ${selectedIds.has(item.id) ? "checked" : ""}>${escapeHtml(marketplaceDisplayName(item))}</label>`).join("") : "<span class=\"permission-reason\">Catalog 中没有此 region 的 marketplace。</span>";
+  $("connector-marketplaces").innerHTML = markets.length ? markets.map(item => `<label><input type="checkbox" name="connector-marketplace" value="${escapeHtml(item.id)}" ${selectedIds.has(item.id) ? "checked" : ""}>${escapeHtml(marketplaceDisplayName(item))}</label>`).join("") : `<span class="permission-reason">${escapeHtml(tr("Catalog 中没有此 region 的 marketplace。"))}</span>`;
 }
 
 function openConnectorForm(connector = null) {
   if (!connectorCanManage()) { notice("需要 admin 或 owner 角色", "error"); return; }
   $("connector-form").reset();
   $("connector-id").value = connector?.id || "";
-  $("connector-dialog-title").textContent = connector ? "编辑账户" : "添加账户";
+  $("connector-dialog-title").textContent = tr(connector ? "编辑账户" : "添加账户");
   $("connector-external-account-id").value = connector?.external_account_id || "";
   const details = connector?.provider_details || {};
   $("amazon-lwa-client-id-ref").value = "";
@@ -584,7 +585,7 @@ function amazonAdsAccounts() {
 function adsCheckList(gate) {
   const checks = gate.checks || gate.check_results || gate.results || {};
   const normalized = Array.isArray(checks) ? checks : Object.entries(checks).map(([key, value]) => ({key, ...(typeof value === "object" ? value : {status: value})}));
-  if (!normalized.length) return "<span class=\"permission-reason\">检查详情将在请求完成后显示。</span>";
+  if (!normalized.length) return `<span class="permission-reason">${escapeHtml(tr("检查详情将在请求完成后显示。"))}</span>`;
   const labels = {lwa: "LWA 授权", profiles_read: "Ads Profiles", target_profile: "Profile 匹配", campaigns_list_read: "Sponsored Products 只读", external_attestation: "外部批准证明"};
   return `<ul class="ads-check-list">${normalized.map(check => `<li>${badge(check.status || check.outcome || "checking")}<span>${escapeHtml(tr(check.label || labels[check.name || check.key] || check.name || check.key || "check"))}</span>${check.detail || check.message ? `<small>${escapeHtml(tr(check.detail || check.message))}</small>` : ""}</li>`).join("")}</ul>`;
 }
@@ -592,18 +593,18 @@ function adsCheckList(gate) {
 function renderAdsCapabilityGates() {
   const target = $("ads-capability-list"), note = $("ads-capability-permission"), add = $("add-ads-capability-btn");
   if (!state.apiKey) {
-    add.disabled = true; add.title = "请先连接 Runtime";
-    note.hidden = false; note.textContent = "连接 Runtime 后才能读取或运行 Amazon Ads 准入检查。";
+    add.disabled = true; add.title = tr("请先连接 Runtime");
+    note.hidden = false; note.textContent = tr("连接 Runtime 后才能读取或运行 Amazon Ads 准入检查。");
     designedEmpty(target, "尚未连接 Runtime", "准入状态需要已认证的租户会话。", "key");
     return;
   }
   const canRun = adsCapabilityCanRun(), accounts = amazonAdsAccounts();
   add.disabled = !canRun || !accounts.length;
-  add.title = !canRun ? "需要 admin 或 owner 角色" : !accounts.length ? "请先添加 Amazon Ads 账户" : "";
+  add.title = tr(!canRun ? "需要 admin 或 owner 角色" : !accounts.length ? "请先添加 Amazon Ads 账户" : "");
   note.hidden = canRun;
-  note.textContent = canRun ? "" : "当前角色可查看准入结果；只有 admin 或 owner 可以运行检查。";
+  note.textContent = tr(canRun ? "" : "当前角色可查看准入结果；只有 admin 或 owner 可以运行检查。");
   if (state.adsCapabilityLoading) { designedEmpty(target, "正在读取 Ads 准入状态", "正在获取此租户最近的真实检查结果。", "database"); return; }
-  if (state.adsCapabilityError) { target.innerHTML = `<div class="ads-capability-failure" role="alert"><strong>无法加载 Amazon Ads 准入状态</strong><span>${escapeHtml(state.adsCapabilityError)}</span></div>`; return; }
+  if (state.adsCapabilityError) { target.innerHTML = `<div class="ads-capability-failure" role="alert"><strong>${escapeHtml(tr("无法加载 Amazon Ads 准入状态"))}</strong><span>${escapeHtml(state.adsCapabilityError)}</span></div>`; return; }
   if (!accounts.length) {
     designedEmpty(target, "还没有 Amazon Ads 账户", "请使用页面上方“添加账户”，配置 region、Profile ID 和 LWA 环境变量引用后再验证。", "key");
     return;
@@ -614,7 +615,7 @@ function renderAdsCapabilityGates() {
     const status = gate.overall_status || gate.status || "checking";
     const blockers = gate.blockers || gate.safe_blockers || (gate.status === "blocked" || gate.status === "failed" ? [gate.error_message || gate.error_code].filter(Boolean) : []);
     const requestId = Array.isArray(gate.request_ids) ? gate.request_ids.join(" · ") : gate.request_id || gate.external_request_id;
-    return `<article class="ads-capability-card"><div class="ads-capability-head"><div><p class="kicker">${escapeHtml(account?.external_account_id || "Amazon Ads account")}</p><h3>${escapeHtml(account ? connectorDetails(account) : gate.connector_account_id)}</h3><p>${escapeHtml(isoLocal(gate.checked_at || gate.created_at || gate.updated_at))}</p></div>${badge(status)}</div><div class="ads-checks">${adsCheckList(gate)}</div>${blockers.length ? `<p class="ads-blockers"><strong>${escapeHtml(tr("阻塞原因"))}</strong>${escapeHtml(blockers.map(item => tr(typeof item === "string" ? item : item.message || item.code)).join(" · "))}</p>` : ""}<dl class="ads-capability-meta"><div><dt>Request ID</dt><dd>${escapeHtml(requestId || "—")}</dd></div><div><dt>${escapeHtml(tr("外部证明"))}</dt><dd>${escapeHtml(gate.attestation_reference || "—")}</dd></div></dl><div class="row-actions"><button data-action="view-ads-capability-gate" data-id="${escapeHtml(gate.id)}" class="secondary-button">查看详情</button></div></article>`;
+    return `<article class="ads-capability-card"><div class="ads-capability-head"><div><p class="kicker">${escapeHtml(account?.external_account_id || "Amazon Ads account")}</p><h3>${escapeHtml(account ? connectorDetails(account) : gate.connector_account_id)}</h3><p>${escapeHtml(isoLocal(gate.checked_at || gate.created_at || gate.updated_at))}</p></div>${badge(status)}</div><div class="ads-checks">${adsCheckList(gate)}</div>${blockers.length ? `<p class="ads-blockers"><strong>${escapeHtml(tr("阻塞原因"))}</strong>${escapeHtml(blockers.map(item => tr(typeof item === "string" ? item : item.message || item.code)).join(" · "))}</p>` : ""}<dl class="ads-capability-meta"><div><dt>Request ID</dt><dd>${escapeHtml(requestId || "—")}</dd></div><div><dt>${escapeHtml(tr("外部证明"))}</dt><dd>${escapeHtml(gate.attestation_reference || "—")}</dd></div></dl><div class="row-actions"><button data-action="view-ads-capability-gate" data-id="${escapeHtml(gate.id)}" class="secondary-button">${escapeHtml(tr("查看详情"))}</button></div></article>`;
   }).join("");
 }
 
@@ -664,11 +665,11 @@ function toDatetimeLocal(value, fallback = null) {
 }
 
 function recipeSyncAvailability(recipe) {
-  if (!recipeCanManage()) return {enabled: false, reason: "需要 operator、admin 或 owner 角色才能排队同步。"};
+  if (!recipeCanManage()) return {enabled: false, reason: tr("需要 operator、admin 或 owner 角色才能排队同步。")};
   const account = state.connectors.find(item => item.id === recipe.connector_account_id);
-  if (!account) return {enabled: false, reason: "关联的 Amazon account 不可用，无法排队同步。"};
+  if (!account) return {enabled: false, reason: tr("关联的 Amazon account 不可用，无法排队同步。")};
   if (account.health_status !== "healthy") {
-    return {enabled: false, reason: `账户健康状态为 ${account.health_status || "unchecked"}；通过健康检查后才能排队同步。`};
+    return {enabled: false, reason: `${tr("账户健康状态为")} ${account.health_status || "unchecked"}${tr("；通过健康检查后才能排队同步。")}`};
   }
   return {enabled: true, reason: ""};
 }
@@ -677,9 +678,9 @@ function renderReportRecipes() {
   const target = $("recipe-list"), note = $("recipe-permission"), add = $("add-recipe-btn");
   if (!state.apiKey) {
     add.disabled = true;
-    add.title = "请先连接 Runtime";
+    add.title = tr("请先连接 Runtime");
     note.hidden = false;
-    note.textContent = "连接 Runtime 后才能查看或管理 Report Recipes。";
+    note.textContent = tr("连接 Runtime 后才能查看或管理 Report Recipes。");
     designedEmpty(target, "尚未连接 Runtime", "Recipe 列表需要已认证的租户会话。", "database");
     return;
   }
@@ -687,15 +688,15 @@ function renderReportRecipes() {
   const accounts = amazonRecipeAccounts();
   const types = reportRecipeTypes();
   add.disabled = !manage || !accounts.length || !types.length;
-  add.title = !manage ? "需要 operator、admin 或 owner 角色" : !accounts.length ? "请先添加 Amazon SP-API 账户" : !types.length ? "Catalog 未提供 Recipe 类型" : "";
+  add.title = tr(!manage ? "需要 operator、admin 或 owner 角色" : !accounts.length ? "请先添加 Amazon SP-API 账户" : !types.length ? "Catalog 未提供 Recipe 类型" : "");
   note.hidden = manage;
-  note.textContent = manage ? "" : "当前角色只能查看 Report Recipes。创建或编辑需要 operator、admin 或 owner 角色。";
+  note.textContent = tr(manage ? "" : "当前角色只能查看 Report Recipes。创建或编辑需要 operator、admin 或 owner 角色。");
   if (state.recipeLoading) {
     designedEmpty(target, "正在加载 Report Recipes", "正在读取此租户保存的采集规则。", "database");
     return;
   }
   if (state.recipeError) {
-    target.innerHTML = `<div class="recipe-failure" role="alert"><strong>无法加载 Report Recipes</strong><span>${escapeHtml(state.recipeError)}</span></div>`;
+    target.innerHTML = `<div class="recipe-failure" role="alert"><strong>${escapeHtml(tr("无法加载 Report Recipes"))}</strong><span>${escapeHtml(state.recipeError)}</span></div>`;
     return;
   }
   if (!state.reportRecipes.length) {
@@ -706,10 +707,10 @@ function renderReportRecipes() {
   target.innerHTML = state.reportRecipes.map(recipe => {
     const account = state.connectors.find(item => item.id === recipe.connector_account_id);
     const type = recipeType(recipe);
-    const edit = manage ? `<button data-action="edit-recipe" data-id="${escapeHtml(recipe.id)}" class="secondary-button">编辑</button>` : "";
+    const edit = manage ? `<button data-action="edit-recipe" data-id="${escapeHtml(recipe.id)}" class="secondary-button">${escapeHtml(tr("编辑"))}</button>` : "";
     const sync = recipeSyncAvailability(recipe);
-    const enqueue = `<button data-action="enqueue-report-sync" data-id="${escapeHtml(recipe.id)}" class="primary-button" ${sync.enabled ? "" : `disabled title="${escapeHtml(sync.reason)}"`}>运行同步</button>`;
-    return `<article class="recipe-card"><div class="recipe-card-head"><div><p class="kicker">${escapeHtml(type.label || type.key)}</p><h3>${escapeHtml(recipe.name)}</h3><p>${escapeHtml(account ? recipeAccountLabel(account) : "Amazon account unavailable")}</p></div>${badge(recipe.enabled ? "enabled" : "disabled")}</div><dl class="recipe-meta"><div><dt>Report type</dt><dd>${escapeHtml(recipe.amazon_report_type)} → ${escapeHtml(recipe.evidence_report_type)}</dd></div><div><dt>Marketplaces</dt><dd>${escapeHtml((recipe.marketplace_ids || []).map(recipeMarketplaceLabel).join("、") || "—")}</dd></div><div><dt>Cadence / lookback</dt><dd>${escapeHtml(`${recipe.interval_minutes} min · ${recipe.lookback_days} days`)}</dd></div><div><dt>Next run</dt><dd>${escapeHtml(isoLocal(recipe.next_run_at))}</dd></div></dl><div class="row-actions">${enqueue}${edit}</div>${sync.reason ? `<span class="permission-reason">${escapeHtml(sync.reason)}</span>` : ""}<span class="sync-async-note">L3 Worker 将异步执行和轮询，不会在此页面即时完成。</span></article>`;
+    const enqueue = `<button data-action="enqueue-report-sync" data-id="${escapeHtml(recipe.id)}" class="primary-button" ${sync.enabled ? "" : `disabled title="${escapeHtml(sync.reason)}"`}>${escapeHtml(tr("运行同步"))}</button>`;
+    return `<article class="recipe-card"><div class="recipe-card-head"><div><p class="kicker">${escapeHtml(type.label || type.key)}</p><h3>${escapeHtml(recipe.name)}</h3><p>${escapeHtml(account ? recipeAccountLabel(account) : "Amazon account unavailable")}</p></div>${badge(recipe.enabled ? "enabled" : "disabled")}</div><dl class="recipe-meta"><div><dt>Report type</dt><dd>${escapeHtml(recipe.amazon_report_type)} → ${escapeHtml(recipe.evidence_report_type)}</dd></div><div><dt>Marketplaces</dt><dd>${escapeHtml((recipe.marketplace_ids || []).map(recipeMarketplaceLabel).join("、") || "—")}</dd></div><div><dt>Cadence / lookback</dt><dd>${escapeHtml(`${recipe.interval_minutes} min · ${recipe.lookback_days} days`)}</dd></div><div><dt>Next run</dt><dd>${escapeHtml(isoLocal(recipe.next_run_at))}</dd></div></dl><div class="row-actions">${enqueue}${edit}</div>${sync.reason ? `<span class="permission-reason">${escapeHtml(sync.reason)}</span>` : ""}<span class="sync-async-note">${escapeHtml(tr("L3 Worker 将异步执行和轮询，不会在此页面即时完成。"))}</span></article>`;
   }).join("");
 }
 
@@ -728,7 +729,7 @@ function renderReportSyncs() {
     return;
   }
   if (state.syncError) {
-    target.innerHTML = `<div class="sync-failure" role="alert"><strong>无法加载 Sync Activity</strong><span>${escapeHtml(state.syncError)}</span></div>`;
+    target.innerHTML = `<div class="sync-failure" role="alert"><strong>${escapeHtml(tr("无法加载 Sync Activity"))}</strong><span>${escapeHtml(state.syncError)}</span></div>`;
     return;
   }
   if (!state.reportSyncs.length) {
@@ -740,7 +741,7 @@ function renderReportSyncs() {
     const stage = reportSyncStage(sync);
     const processing = sync.processing_status && sync.processing_status !== stage ? `${badge(sync.processing_status)}<span class="sync-lifecycle">processing</span>` : "";
     const error = sync.error_message || sync.error_code;
-    return `<article class="sync-card"><div class="sync-card-head"><div><p class="kicker">L3 Worker</p><h3>${escapeHtml(recipe?.name || sync.recipe_id)}</h3><p>${escapeHtml(recipe ? "Report Recipe sync" : "Report Recipe unavailable")}</p></div><div class="sync-status">${badge(stage)}${processing}</div></div><dl class="sync-meta"><div><dt>Attempt</dt><dd>${escapeHtml(`${sync.attempt_count ?? 0}/${sync.max_attempts ?? "—"}`)}</dd></div><div><dt>Next poll</dt><dd>${escapeHtml(isoLocal(sync.available_at))}</dd></div><div><dt>Evidence</dt><dd>${escapeHtml(sync.evidence_import_id || "—")}</dd></div><div><dt>Completed</dt><dd>${escapeHtml(isoLocal(sync.completed_at))}</dd></div></dl>${error ? `<p class="sync-error">${escapeHtml(error)}</p>` : ""}<div class="row-actions"><button data-action="view-report-sync" data-id="${escapeHtml(sync.id)}" class="secondary-button">详情</button></div></article>`;
+    return `<article class="sync-card"><div class="sync-card-head"><div><p class="kicker">L3 Worker</p><h3>${escapeHtml(recipe?.name || sync.recipe_id)}</h3><p>${escapeHtml(recipe ? "Report Recipe sync" : "Report Recipe unavailable")}</p></div><div class="sync-status">${badge(stage)}${processing}</div></div><dl class="sync-meta"><div><dt>Attempt</dt><dd>${escapeHtml(`${sync.attempt_count ?? 0}/${sync.max_attempts ?? "—"}`)}</dd></div><div><dt>Next poll</dt><dd>${escapeHtml(isoLocal(sync.available_at))}</dd></div><div><dt>Evidence</dt><dd>${escapeHtml(sync.evidence_import_id || "—")}</dd></div><div><dt>Completed</dt><dd>${escapeHtml(isoLocal(sync.completed_at))}</dd></div></dl>${error ? `<p class="sync-error">${escapeHtml(error)}</p>` : ""}<div class="row-actions"><button data-action="view-report-sync" data-id="${escapeHtml(sync.id)}" class="secondary-button">${escapeHtml(tr("详情"))}</button></div></article>`;
   }).join("");
 }
 
@@ -767,7 +768,7 @@ function renderRecipeMarketplaces(selected = []) {
   const account = state.connectors.find(item => item.id === $("recipe-connector-account").value);
   const selectedIds = new Set(selected.map(item => typeof item === "string" ? item : item.id));
   const marketplaces = recipeAccountMarketplaces(account);
-  $("recipe-marketplaces").innerHTML = marketplaces.length ? marketplaces.map(item => `<label><input type="checkbox" name="recipe-marketplace" value="${escapeHtml(item.id)}" ${selectedIds.has(item.id) ? "checked" : ""}>${escapeHtml(item.name || item.label || item.id)}</label>`).join("") : "<span class=\"permission-reason\">该 Amazon account 没有可用的已配置 marketplace。</span>";
+  $("recipe-marketplaces").innerHTML = marketplaces.length ? marketplaces.map(item => `<label><input type="checkbox" name="recipe-marketplace" value="${escapeHtml(item.id)}" ${selectedIds.has(item.id) ? "checked" : ""}>${escapeHtml(item.name || item.label || item.id)}</label>`).join("") : `<span class="permission-reason">${escapeHtml(tr("该 Amazon account 没有可用的已配置 marketplace。"))}</span>`;
 }
 
 function openRecipeForm(recipe = null) {
@@ -775,7 +776,7 @@ function openRecipeForm(recipe = null) {
   if (!amazonRecipeAccounts().length || !reportRecipeTypes().length) { notice("需要已配置的 Amazon SP-API 账户和 Catalog Recipe 类型。", "error"); return; }
   $("recipe-form").reset();
   $("recipe-id").value = recipe?.id || "";
-  $("recipe-dialog-title").textContent = recipe ? "编辑 Recipe" : "添加 Recipe";
+  $("recipe-dialog-title").textContent = tr(recipe ? "编辑 Recipe" : "添加 Recipe");
   $("recipe-name").value = recipe?.name || "";
   $("recipe-interval").value = recipe?.interval_minutes || 1440;
   $("recipe-lookback").value = recipe?.lookback_days || 7;
@@ -783,7 +784,7 @@ function openRecipeForm(recipe = null) {
   $("recipe-enabled").checked = recipe?.enabled ?? true;
   renderRecipeAccountOptions(recipe?.connector_account_id || "");
   $("recipe-connector-account").disabled = Boolean(recipe);
-  $("recipe-connector-account").title = recipe ? "已创建的 Recipe 不能更换 Amazon account" : "";
+  $("recipe-connector-account").title = tr(recipe ? "已创建的 Recipe 不能更换 Amazon account" : "");
   renderRecipeTypeOptions(recipe?.recipe_key || "");
   renderRecipeMarketplaces(recipe?.marketplace_ids || []);
   $("recipe-dialog").showModal();
@@ -937,7 +938,7 @@ function renderPriorities() {
   target.innerHTML = priorities.map((priority, index) => `<article class="priority-row">
     <span class="priority-rank">${escapeHtml(priority.rank || index + 1)}</span>
     <div class="priority-copy"><strong>${escapeHtml(priority.title)}</strong><p>${escapeHtml(priority.why_now)}</p><div class="priority-meta"><span class="meta-chip">${escapeHtml(tr("影响"))}${state.locale === "en" ? ": " : "："}${escapeHtml(priority.expected_impact)}</span><span class="meta-chip">${escapeHtml(tr("Owner"))}${state.locale === "en" ? ": " : "："}${escapeHtml(agentDisplayName(priority.recommended_owner))}</span><span class="meta-chip">${state.locale === "en" ? `${priority.evidence_refs?.length || 0} ${(priority.evidence_refs?.length || 0) === 1 ? "Evidence source" : "Evidence sources"}` : state.locale === "ja" ? `証拠 ${priority.evidence_refs?.length || 0} 件` : `证据 ${priority.evidence_refs?.length || 0} 条`}</span></div></div>
-    <div class="priority-actions"><button data-action="view-priority" data-index="${index}" class="secondary-button">查看证据</button><span class="confidence ${escapeHtml(priority.confidence)}">${escapeHtml(tr(priority.confidence))} ${escapeHtml(tr("confidence"))}</span></div>
+    <div class="priority-actions"><button data-action="view-priority" data-index="${index}" class="secondary-button">${escapeHtml(tr("查看证据"))}</button><span class="confidence ${escapeHtml(priority.confidence)}">${escapeHtml(tr(priority.confidence))} ${escapeHtml(tr("confidence"))}</span></div>
   </article>`).join("");
 }
 
@@ -956,7 +957,7 @@ function operationLabel(operation) {
 function actionContext(action) {
   const payload = action.payload || {};
   const pieces = [payload.evidence_report_type, payload.report_type, payload.report_id, payload.external_account_id, payload.marketplace_id].filter(Boolean);
-  return pieces.length ? pieces.join(" · ") : `请求于 ${isoLocal(action.created_at)}`;
+  return pieces.length ? pieces.join(" · ") : `${tr("请求于")} ${isoLocal(action.created_at)}`;
 }
 
 function canApprove() {
@@ -967,8 +968,8 @@ function approvalCard(action, compact = false) {
   const approveAllowed = canApprove();
   return `<article class="${compact ? "decision-card" : "data-row"}">
     <div class="${compact ? "" : "data-main"}"><strong>${escapeHtml(tr(operationLabel(action.operation)))}</strong><p>${escapeHtml(actionContext(action))}</p>${compact ? "" : `<small>${badge(action.status)}${escapeHtml(isoLocal(action.created_at))}</small>`}</div>
-    <div class="${compact ? "card-actions" : "row-actions"}"><button data-action="view-action" data-id="${action.id}" class="secondary-button">查看</button><button data-action="approve-action" data-id="${action.id}" class="primary-button" ${approveAllowed ? "" : 'disabled title="需要 admin 或 owner 角色"'}>批准</button></div>
-    ${approveAllowed ? "" : '<span class="permission-reason">当前角色只能查看；批准需要 admin 或 owner。</span>'}
+    <div class="${compact ? "card-actions" : "row-actions"}"><button data-action="view-action" data-id="${action.id}" class="secondary-button">${escapeHtml(tr("查看"))}</button><button data-action="approve-action" data-id="${action.id}" class="primary-button" ${approveAllowed ? "" : `disabled title="${escapeHtml(tr("需要 admin 或 owner 角色"))}"`}>${escapeHtml(tr("批准"))}</button></div>
+    ${approveAllowed ? "" : `<span class="permission-reason">${escapeHtml(tr("当前角色只能查看；批准需要 admin 或 owner。"))}</span>`}
   </article>`;
 }
 
@@ -1030,7 +1031,7 @@ function renderBriefing() {
   const evidence = state.briefing?.evidence;
   $("evidence-range").textContent = evidence ? (state.locale === "en" ? `${evidence.source_count} sources · ${evidence.row_count} verified rows` : state.locale === "ja" ? `${evidence.source_count} 件のソース · ${evidence.row_count} 件の検証済み行` : `${evidence.source_count} 个来源 · ${evidence.row_count} 行真实数据`) : tr("尚未连接");
   $("evidence-freshness").textContent = evidence?.latest_observed_at ? `${tr("最新观测")} ${isoLocal(evidence.latest_observed_at)}` : tr("等待 Evidence");
-  $("briefing-summary").textContent = state.briefing?.executive_summary || (evidence?.source_count ? "Evidence 已连接；完成一次 Weekly Ops 后生成有证据引用的经营结论。" : "还没有该平台的真实 Evidence；导入数据后再生成经营简报。");
+  $("briefing-summary").textContent = state.briefing?.executive_summary || tr(evidence?.source_count ? "Evidence 已连接；完成一次 Weekly Ops 后生成有证据引用的经营结论。" : "还没有该平台的真实 Evidence；导入数据后再生成经营简报。");
 }
 
 function renderEvidence() {
@@ -1044,10 +1045,10 @@ function renderEvidence() {
   target.innerHTML = state.imports.map(item => {
     const supported = (state.catalog?.metric_materialization_report_types || []).includes(item.report_type);
     const enabled = canMaterialize && supported;
-    const disabledReason = supported ? "需要 operator、admin 或 owner 角色" : "该报告类型尚无指标映射";
-    const materialize = `<button data-action="materialize-evidence-metrics" data-id="${escapeHtml(item.id)}" class="primary-button" ${enabled ? "" : `disabled title="${escapeHtml(disabledReason)}"`}>物化指标</button>`;
-    const reason = enabled ? "" : `<span class="permission-reason">${escapeHtml(supported ? "当前角色只能查看；物化指标需要 operator、admin 或 owner。" : "该报告类型尚无指标映射；当前不会生成指标观测。")}</span>`;
-    return `<div class="data-row"><div class="data-main"><strong>${escapeHtml(item.filename)}</strong><small>${badge(item.platform)}${escapeHtml(item.report_type)} · ${item.row_count} rows · ${escapeHtml(isoLocal(item.observed_at))}</small></div><div class="row-actions"><button data-action="view-import" data-id="${escapeHtml(item.id)}" class="secondary-button">查看</button>${materialize}</div>${reason}</div>`;
+    const disabledReason = tr(supported ? "需要 operator、admin 或 owner 角色" : "该报告类型尚无指标映射");
+    const materialize = `<button data-action="materialize-evidence-metrics" data-id="${escapeHtml(item.id)}" class="primary-button" ${enabled ? "" : `disabled title="${escapeHtml(disabledReason)}"`}>${escapeHtml(tr("物化指标"))}</button>`;
+    const reason = enabled ? "" : `<span class="permission-reason">${escapeHtml(tr(supported ? "当前角色只能查看；物化指标需要 operator、admin 或 owner。" : "该报告类型尚无指标映射；当前不会生成指标观测。"))}</span>`;
+    return `<div class="data-row"><div class="data-main"><strong>${escapeHtml(item.filename)}</strong><small>${badge(item.platform)}${escapeHtml(item.report_type)} · ${item.row_count} rows · ${escapeHtml(isoLocal(item.observed_at))}</small></div><div class="row-actions"><button data-action="view-import" data-id="${escapeHtml(item.id)}" class="secondary-button">${escapeHtml(tr("查看"))}</button>${materialize}</div>${reason}</div>`;
   }).join("");
   options.innerHTML = state.imports.map(item => `<label><input type="checkbox" name="run-evidence" value="${item.id}">${escapeHtml(item.platform)} · ${escapeHtml(item.filename)}</label>`).join("");
 }
@@ -1098,7 +1099,7 @@ function graphExecutionHash(graph) {
 function graphNodeLabel(node) {
   const name = typeof node === "string" ? node : node.role || node.key || node.label || node.name || node.agent || node.id || "Agent";
   const labels = {evidence_analyst: "Evidence Analyst", platform_specialist: "平台专家 × 输入市场", cross_controller: "跨平台 Controller（多平台时）", manager: "Manager", reviewer: "Reviewer"};
-  return labels[name] || String(name).replaceAll("_", " ");
+  return tr(labels[name] || String(name).replaceAll("_", " "));
 }
 
 function renderAgentGraphs() {
@@ -1107,26 +1108,26 @@ function renderAgentGraphs() {
   if (!state.apiKey) {
     designedEmpty(target, "尚未连接 Runtime", "连接后读取当前租户已发布的协作图。", "robot");
     designedEmpty(options, "尚未连接", "连接 Runtime 后才能选择已发布协作图。", "robot");
-    reason.hidden = false; reason.textContent = "请先连接 Runtime。"; submit.disabled = true; submit.title = reason.textContent;
+    reason.hidden = false; reason.textContent = tr("请先连接 Runtime。"); submit.disabled = true; submit.title = reason.textContent;
     return;
   }
   if (state.agentGraphsLoading) {
     designedEmpty(target, "正在加载协作图", "正在读取已发布版本与节点拓扑。", "robot");
     designedEmpty(options, "正在加载协作图", "等待已发布版本返回。", "robot");
-    reason.hidden = false; reason.textContent = "协作图加载中。"; submit.disabled = true; submit.title = reason.textContent;
+    reason.hidden = false; reason.textContent = tr("协作图加载中。"); submit.disabled = true; submit.title = reason.textContent;
     return;
   }
   if (state.agentGraphsError) {
-    target.innerHTML = `<div class="agent-graph-failure" role="alert"><strong>无法加载协作图</strong><span>${escapeHtml(state.agentGraphsError)}</span></div>`;
+    target.innerHTML = `<div class="agent-graph-failure" role="alert"><strong>${escapeHtml(tr("无法加载协作图"))}</strong><span>${escapeHtml(state.agentGraphsError)}</span></div>`;
     designedEmpty(options, "协作图不可用", "加载失败时不能创建新的 Agent Run。", "robot");
-    reason.hidden = false; reason.textContent = "协作图加载失败，无法运行。"; submit.disabled = true; submit.title = reason.textContent;
+    reason.hidden = false; reason.textContent = tr("协作图加载失败，无法运行。"); submit.disabled = true; submit.title = reason.textContent;
     return;
   }
   const published = state.agentGraphs.filter(graph => graphVersionId(graph));
   if (!published.length) {
     designedEmpty(target, "尚无已发布协作图", "管理员需要先通过 Agent Graph API 发布版本；这里不会创建未持久化的图。", "robot");
     designedEmpty(options, "暂无可选协作图", "没有已发布版本时，不能创建 Agent Run。", "robot");
-    reason.hidden = false; reason.textContent = "当前租户没有已发布协作图。"; submit.disabled = true; submit.title = reason.textContent;
+    reason.hidden = false; reason.textContent = tr("当前租户没有已发布协作图。"); submit.disabled = true; submit.title = reason.textContent;
     return;
   }
   target.innerHTML = published.map(graph => {
@@ -1136,11 +1137,11 @@ function renderAgentGraphs() {
       ? [[byRole("evidence_analyst"), byRole("platform_specialist")].filter(Boolean), [byRole("cross_controller")].filter(Boolean), [byRole("manager")].filter(Boolean), [byRole("reviewer")].filter(Boolean)].filter(stage => stage.length)
       : [["evidence_analyst", "platform_specialist"], ["cross_controller"], ["manager"], ["reviewer"]];
     const nodeMarkup = stages.map(stage => `<span class="graph-stage">${stage.map(node => `<span class="graph-node">${escapeHtml(graphNodeLabel(node))}</span>`).join('<span class="graph-plus" aria-hidden="true">＋</span>')}</span>`).join('<span class="graph-arrow" aria-hidden="true">→</span>');
-    return `<article class="agent-graph-card"><div class="agent-graph-head"><div><p class="kicker">Published graph</p><h3>${escapeHtml(graph.name || graph.slug || graph.id || "Agent Graph")}</h3><p>Version ${escapeHtml(graphVersionLabel(graph))} · tool policy: none</p></div>${badge("published")}</div><div class="graph-topology" aria-label="${escapeHtml(graph.name || "Agent Graph")} 拓扑">${nodeMarkup}</div><dl class="agent-graph-meta"><div><dt>Version ID</dt><dd>${escapeHtml(versionId)}</dd></div><div><dt>Definition hash</dt><dd>${escapeHtml(graphHash(graph))}</dd></div><div><dt>Execution hash</dt><dd>${escapeHtml(graphExecutionHash(graph))}</dd></div><div><dt>Edges</dt><dd>${escapeHtml(String(edges.length))}</dd></div><div><dt>Tool policy</dt><dd>none</dd></div></dl></article>`;
+    return `<article class="agent-graph-card"><div class="agent-graph-head"><div><p class="kicker">Published graph</p><h3>${escapeHtml(graph.name || graph.slug || graph.id || "Agent Graph")}</h3><p>Version ${escapeHtml(graphVersionLabel(graph))} · tool policy: none</p></div>${badge("published")}</div><div class="graph-topology" aria-label="${escapeHtml(graph.name || "Agent Graph")} ${escapeHtml(tr("拓扑"))}">${nodeMarkup}</div><dl class="agent-graph-meta"><div><dt>Version ID</dt><dd>${escapeHtml(versionId)}</dd></div><div><dt>Definition hash</dt><dd>${escapeHtml(graphHash(graph))}</dd></div><div><dt>Execution hash</dt><dd>${escapeHtml(graphExecutionHash(graph))}</dd></div><div><dt>Edges</dt><dd>${escapeHtml(String(edges.length))}</dd></div><div><dt>Tool policy</dt><dd>none</dd></div></dl></article>`;
   }).join("");
   options.innerHTML = published.map((graph, index) => `<label><input type="radio" name="run-graph-version" value="${escapeHtml(graphVersionId(graph))}" ${index === 0 ? "checked" : ""}>${escapeHtml(graph.name || graph.slug || graph.id || "Agent Graph")} · v${escapeHtml(graphVersionLabel(graph))}</label>`).join("");
   reason.hidden = operator;
-  reason.textContent = operator ? "" : "当前角色只能查看协作图；创建 Agent Run 需要 operator、admin 或 owner。";
+  reason.textContent = tr(operator ? "" : "当前角色只能查看协作图；创建 Agent Run 需要 operator、admin 或 owner。");
   submit.disabled = !operator;
   submit.title = operator ? "" : reason.textContent;
 }
@@ -1149,7 +1150,7 @@ function renderRunMetricOptions() {
   const target = $("run-metric-options");
   if (!state.apiKey) { designedEmpty(target, "尚未连接", "连接后选择真实指标观测。", "chart-line-up"); return; }
   if (state.metricLoading) { designedEmpty(target, "正在加载指标观测", "正在读取可作为 Agent 输入的真实数值。", "chart-line-up"); return; }
-  if (state.metricError) { target.innerHTML = `<div class="metric-failure" role="alert"><strong>无法加载指标观测</strong><span>${escapeHtml(state.metricError)}</span></div>`; return; }
+  if (state.metricError) { target.innerHTML = `<div class="metric-failure" role="alert"><strong>${escapeHtml(tr("无法加载指标观测"))}</strong><span>${escapeHtml(state.metricError)}</span></div>`; return; }
   if (!state.metricObservations.length) { designedEmpty(target, "暂无可选 Metric Observation", "可以只选择 Evidence；指标物化完成后可在这里附加。", "chart-line-up"); return; }
   target.innerHTML = state.metricObservations.slice(0, 100).map(observation => `<label><input type="checkbox" name="run-metric-observation" value="${escapeHtml(observation.id)}">${escapeHtml(observation.metric_key || observation.metric_name || observation.name || observation.id)} · ${escapeHtml(metricDisplayValue(observation))}</label>`).join("");
 }
@@ -1173,14 +1174,14 @@ function metricPeriod(observation) {
   const start = observation.period_start || observation.period_start_at;
   const end = observation.period_end || observation.period_end_at;
   const grain = observation.grain || observation.period_grain || observation.time_grain;
-  const range = start || end ? `${shortDate(start)} — ${shortDate(end)}` : "未提供周期";
+  const range = start || end ? `${shortDate(start)} — ${shortDate(end)}` : tr("未提供周期");
   return grain ? `${range} · ${grain}` : range;
 }
 
 function metricFlags(observation) {
   const flags = observation.quality?.flags || observation.quality_flags || observation.quality_flag_codes || [];
   const values = Array.isArray(flags) ? flags : Object.entries(flags).filter(([, enabled]) => Boolean(enabled)).map(([key]) => key);
-  return values.length ? values.map(flag => `<span class="quality-flag">${escapeHtml(typeof flag === "string" ? flag : flag.code || flag.label || JSON.stringify(flag))}</span>`).join("") : '<span class="quality-clear">未报告质量警告</span>';
+  return values.length ? values.map(flag => `<span class="quality-flag">${escapeHtml(typeof flag === "string" ? flag : flag.code || flag.label || JSON.stringify(flag))}</span>`).join("") : `<span class="quality-clear">${escapeHtml(tr("未报告质量警告"))}</span>`;
 }
 
 function materializationStatus(materialization) {
@@ -1202,7 +1203,7 @@ function renderMetricObservations() {
     return;
   }
   if (state.metricError) {
-    target.innerHTML = `<div class="metric-failure" role="alert"><strong>无法加载指标观测</strong><span>${escapeHtml(state.metricError)}</span></div>`;
+    target.innerHTML = `<div class="metric-failure" role="alert"><strong>${escapeHtml(tr("无法加载指标观测"))}</strong><span>${escapeHtml(state.metricError)}</span></div>`;
     return;
   }
   if (!state.metricObservations.length) {
@@ -1211,12 +1212,12 @@ function renderMetricObservations() {
   }
   const visible = state.metricObservations.slice(0, 8);
   const summary = state.metricObservations.length > visible.length
-    ? `<p class="result-count">显示最近 ${visible.length} 条，共 ${state.metricObservations.length} 条；完整历史可通过 API 分页查看。</p>`
+    ? `<p class="result-count">${tr("显示最近")} ${visible.length} ${tr("条，共")} ${state.metricObservations.length} ${tr("条；完整历史可通过 API 分页查看。")}</p>`
     : "";
   target.innerHTML = summary + visible.map(observation => {
-    const name = observation.metric_key || observation.metric_name || observation.name || "未命名指标";
+    const name = observation.metric_key || observation.metric_name || observation.name || tr("未命名指标");
     const source = observation.evidence_import_id || observation.source_evidence_import_id || "—";
-    return `<article class="metric-observation-card"><div class="metric-observation-head"><div><p class="kicker">${escapeHtml(observation.platform || "Evidence")}</p><h3>${escapeHtml(name)}</h3></div><strong>${escapeHtml(metricDisplayValue(observation))}</strong></div><dl class="metric-observation-meta"><div><dt>Period / grain</dt><dd>${escapeHtml(metricPeriod(observation))}</dd></div><div><dt>Observed</dt><dd>${escapeHtml(isoLocal(observation.observed_at || observation.created_at))}</dd></div><div><dt>Evidence</dt><dd>${escapeHtml(source)}</dd></div></dl><div class="quality-flags"><span>质量</span>${metricFlags(observation)}</div><div class="row-actions"><button data-action="view-metric-observation" data-id="${escapeHtml(observation.id)}" class="secondary-button">查看来源</button></div></article>`;
+    return `<article class="metric-observation-card"><div class="metric-observation-head"><div><p class="kicker">${escapeHtml(observation.platform || "Evidence")}</p><h3>${escapeHtml(name)}</h3></div><strong>${escapeHtml(metricDisplayValue(observation))}</strong></div><dl class="metric-observation-meta"><div><dt>Period / grain</dt><dd>${escapeHtml(metricPeriod(observation))}</dd></div><div><dt>Observed</dt><dd>${escapeHtml(isoLocal(observation.observed_at || observation.created_at))}</dd></div><div><dt>Evidence</dt><dd>${escapeHtml(source)}</dd></div></dl><div class="quality-flags"><span>${escapeHtml(tr("质量"))}</span>${metricFlags(observation)}</div><div class="row-actions"><button data-action="view-metric-observation" data-id="${escapeHtml(observation.id)}" class="secondary-button">${escapeHtml(tr("查看来源"))}</button></div></article>`;
   }).join("");
 }
 
@@ -1231,7 +1232,7 @@ function renderMetricMaterializations() {
     return;
   }
   if (state.materializationError) {
-    target.innerHTML = `<div class="metric-failure" role="alert"><strong>无法加载物化任务</strong><span>${escapeHtml(state.materializationError)}</span></div>`;
+    target.innerHTML = `<div class="metric-failure" role="alert"><strong>${escapeHtml(tr("无法加载物化任务"))}</strong><span>${escapeHtml(state.materializationError)}</span></div>`;
     return;
   }
   if (!state.metricMaterializations.length) {
@@ -1243,8 +1244,8 @@ function renderMetricMaterializations() {
     const status = materializationStatus(materialization);
     const evidenceId = materializationEvidenceId(materialization);
     const error = materialization.error_message || materialization.error_code;
-    const retry = status === "failed" ? `<button data-action="retry-metric-materialization" data-evidence-id="${escapeHtml(evidenceId)}" class="primary-button" ${operator && evidenceId ? "" : `disabled title="${escapeHtml(operator ? "缺少 Evidence 标识，无法重试" : "需要 operator、admin 或 owner 角色" )}"`}>重试物化</button>` : "";
-    const reason = status === "failed" && !operator ? '<span class="permission-reason">当前角色只能查看；重试物化需要 operator、admin 或 owner。</span>' : "";
+    const retry = status === "failed" ? `<button data-action="retry-metric-materialization" data-evidence-id="${escapeHtml(evidenceId)}" class="primary-button" ${operator && evidenceId ? "" : `disabled title="${escapeHtml(tr(operator ? "缺少 Evidence 标识，无法重试" : "需要 operator、admin 或 owner 角色" ))}"`}>${escapeHtml(tr("重试物化"))}</button>` : "";
+    const reason = status === "failed" && !operator ? `<span class="permission-reason">${escapeHtml(tr("当前角色只能查看；重试物化需要 operator、admin 或 owner。"))}</span>` : "";
     return `<article class="materialization-card"><div class="materialization-head"><div><p class="kicker">Evidence materialization</p><h3>${escapeHtml(evidenceId || "Evidence unavailable")}</h3></div>${badge(status)}</div><dl class="metric-observation-meta"><div><dt>Observations</dt><dd>${escapeHtml(String(materialization.observation_count ?? 0))}</dd></div><div><dt>Quarantined</dt><dd>${escapeHtml(String(materialization.quarantined_count ?? materialization.quarantine_count ?? 0))}</dd></div><div><dt>Updated</dt><dd>${escapeHtml(isoLocal(materialization.updated_at || materialization.completed_at || materialization.created_at))}</dd></div></dl>${error ? `<p class="metric-error">${escapeHtml(error)}</p>` : ""}<div class="row-actions">${retry}</div>${reason}</article>`;
   }).join("");
 }
@@ -1256,12 +1257,12 @@ function renderRuns() {
     return;
   }
   target.innerHTML = state.runs.map(run => {
-    const actions = [`<button data-action="view-run" data-id="${run.id}" class="secondary-button">详情</button>`];
+    const actions = [`<button data-action="view-run" data-id="${run.id}" class="secondary-button">${escapeHtml(tr("详情"))}</button>`];
     if (["requested", "failed"].includes(run.status)) {
-      actions.push(`<button data-action="execute-run" data-id="${run.id}" class="primary-button">执行</button>`);
-      actions.push(`<button data-action="queue-run" data-id="${run.id}" class="secondary-button">加入队列</button>`);
+      actions.push(`<button data-action="execute-run" data-id="${run.id}" class="primary-button">${escapeHtml(tr("执行"))}</button>`);
+      actions.push(`<button data-action="queue-run" data-id="${run.id}" class="secondary-button">${escapeHtml(tr("加入队列"))}</button>`);
     }
-    if (run.status === "completed") actions.push(`<button data-action="evaluate-run" data-id="${run.id}" class="secondary-button">评测</button>`);
+    if (run.status === "completed") actions.push(`<button data-action="evaluate-run" data-id="${run.id}" class="secondary-button">${escapeHtml(tr("评测"))}</button>`);
     const review = run.review_status || run.reviewer_status || "pending";
     const reviewerTask = run.reviewer_task || run.reviewer_task_id || (
       run.status === "completed"
@@ -1270,8 +1271,8 @@ function renderRuns() {
           ? "Reviewer 未完成；查看详情了解失败阶段"
           : "等待 Reviewer 任务"
     );
-    const downstream = review === "approved" ? "" : '<span class="review-guard">未获批准：不可进入下游动作</span>';
-    return `<div class="data-row agent-run-row"><div class="data-main"><strong>${escapeHtml(run.objective)}</strong><small>${badge(run.status)}${escapeHtml((run.platforms || []).join(", "))} · Graph ${escapeHtml(run.graph_version_id || "default")} · Review ${escapeHtml(review)} · ${escapeHtml(isoLocal(run.updated_at))}</small><span class="reviewer-task">Reviewer task: ${escapeHtml(reviewerTask)}</span>${downstream}</div><div class="row-actions">${actions.join("")}</div></div>`;
+    const downstream = review === "approved" ? "" : `<span class="review-guard">${escapeHtml(tr("未获批准：不可进入下游动作"))}</span>`;
+    return `<div class="data-row agent-run-row"><div class="data-main"><strong>${escapeHtml(run.objective)}</strong><small>${badge(run.status)}${escapeHtml((run.platforms || []).join(", "))} · Graph ${escapeHtml(run.graph_version_id || "default")} · Review ${escapeHtml(review)} · ${escapeHtml(isoLocal(run.updated_at))}</small><span class="reviewer-task">Reviewer task: ${escapeHtml(tr(reviewerTask))}</span>${downstream}</div><div class="row-actions">${actions.join("")}</div></div>`;
   }).join("");
 }
 
@@ -1281,7 +1282,7 @@ function renderJobs() {
     designedEmpty(target, "暂无后台任务", "排队执行 Agent Run 后显示 Worker 状态。", "pulse");
     return;
   }
-  target.innerHTML = state.jobs.map(job => `<div class="data-row"><div class="data-main"><strong>${escapeHtml(job.kind)}</strong><small>${badge(job.status)}attempt ${job.attempt_count}/${job.max_attempts} · ${escapeHtml(isoLocal(job.updated_at))}</small></div><div class="row-actions"><button data-action="view-job" data-id="${job.id}" class="secondary-button">查看</button></div></div>`).join("");
+  target.innerHTML = state.jobs.map(job => `<div class="data-row"><div class="data-main"><strong>${escapeHtml(job.kind)}</strong><small>${badge(job.status)}attempt ${job.attempt_count}/${job.max_attempts} · ${escapeHtml(isoLocal(job.updated_at))}</small></div><div class="row-actions"><button data-action="view-job" data-id="${job.id}" class="secondary-button">${escapeHtml(tr("查看"))}</button></div></div>`).join("");
 }
 
 function renderSchedules() {
@@ -1290,7 +1291,7 @@ function renderSchedules() {
     designedEmpty(target, "暂无 Schedule", "创建后由 Scheduler 使用最新匹配 Evidence 触发周度复盘。", "calendar-dots");
     return;
   }
-  target.innerHTML = state.schedules.map(item => `<div class="data-row"><div class="data-main"><strong>${escapeHtml(item.name)}</strong><small>${badge(item.enabled ? "enabled" : "disabled")}${item.interval_minutes} min · next ${escapeHtml(isoLocal(item.next_run_at))}</small></div><div class="row-actions"><button data-action="toggle-schedule" data-id="${item.id}" data-enabled="${!item.enabled}" class="secondary-button">${item.enabled ? "停用" : "启用"}</button></div></div>`).join("");
+  target.innerHTML = state.schedules.map(item => `<div class="data-row"><div class="data-main"><strong>${escapeHtml(item.name)}</strong><small>${badge(item.enabled ? "enabled" : "disabled")}${item.interval_minutes} min · next ${escapeHtml(isoLocal(item.next_run_at))}</small></div><div class="row-actions"><button data-action="toggle-schedule" data-id="${item.id}" data-enabled="${!item.enabled}" class="secondary-button">${escapeHtml(tr(item.enabled ? "停用" : "启用"))}</button></div></div>`).join("");
 }
 
 function dailyOpsCanManage() { return ["operator", "admin", "owner"].includes(state.me?.role); }
@@ -1299,7 +1300,7 @@ function renderDailyOpsOptions() {
   const graph = $("daily-ops-graph"), evidence = $("daily-ops-evidence"), reason = $("daily-ops-permission-reason");
   if (!graph || !evidence) return;
   const versions = publishedGraphs();
-  graph.innerHTML = versions.length ? versions.map(item => `<option value="${escapeHtml(item.id)}">${escapeHtml(item.graph_name)} · ${escapeHtml(item.id)}</option>`).join("") : `<option value="">暂无已发布 Graph</option>`;
+  graph.innerHTML = versions.length ? versions.map(item => `<option value="${escapeHtml(item.id)}">${escapeHtml(item.graph_name)} · ${escapeHtml(item.id)}</option>`).join("") : `<option value="">${escapeHtml(tr("暂无已发布 Graph"))}</option>`;
   const catalogTypes = (state.catalog?.report_types || []).filter(reportType => (
     state.selectedPlatform === "amazon"
       ? reportType === "platform_generic" || reportType.startsWith("amazon_")
@@ -1307,29 +1308,29 @@ function renderDailyOpsOptions() {
   ));
   const observedTypes = state.imports.filter(item => (item.platform || item.source_platform) === state.selectedPlatform).map(item => item.report_type).filter(Boolean);
   const reportTypes = [...new Set([...catalogTypes, ...observedTypes])].sort();
-  evidence.innerHTML = reportTypes.length ? reportTypes.map(reportType => `<option value="${escapeHtml(reportType)}">${escapeHtml(state.selectedPlatform)} · ${escapeHtml(reportType)}</option>`).join("") : `<option value="">当前平台暂无 Evidence report type</option>`;
+  evidence.innerHTML = reportTypes.length ? reportTypes.map(reportType => `<option value="${escapeHtml(reportType)}">${escapeHtml(state.selectedPlatform)} · ${escapeHtml(reportType)}</option>`).join("") : `<option value="">${escapeHtml(tr("当前平台暂无 Evidence report type"))}</option>`;
   const can = dailyOpsCanManage() && versions.length && reportTypes.length && !state.dailyOpsLoading;
   document.querySelectorAll("#daily-ops-form input, #daily-ops-form select, #daily-ops-form textarea, #daily-ops-form button").forEach(node => { node.disabled = !can; });
-  if (!dailyOpsCanManage()) { reason.hidden = false; reason.textContent = "当前角色只能查看；创建 Daily Ops 需要 operator、admin 或 owner。"; }
-  else if (state.dailyOpsLoading) { reason.hidden = false; reason.textContent = "Daily Ops 数据加载中。"; }
-  else if (!versions.length || !reportTypes.length) { reason.hidden = false; reason.textContent = "需要至少一个已发布 Agent Graph 和当前平台支持的 Evidence report type。"; }
+  if (!dailyOpsCanManage()) { reason.hidden = false; reason.textContent = tr("当前角色只能查看；创建 Daily Ops 需要 operator、admin 或 owner。"); }
+  else if (state.dailyOpsLoading) { reason.hidden = false; reason.textContent = tr("Daily Ops 数据加载中。"); }
+  else if (!versions.length || !reportTypes.length) { reason.hidden = false; reason.textContent = tr("需要至少一个已发布 Agent Graph 和当前平台支持的 Evidence report type。"); }
   else reason.hidden = true;
 }
 function renderDailyOpsSchedules() {
   const target = $("daily-ops-schedule-list"); if (!target) return;
   if (state.dailyOpsLoading) { designedEmpty(target, "正在加载 Daily Ops 计划", "正在读取租户内持久化日历计划。", "calendar-dots"); return; }
-  if (state.dailyOpsScheduleError) { target.innerHTML = `<div class="agent-graph-failure" role="alert"><strong>无法加载 Daily Ops 计划</strong><span>${escapeHtml(state.dailyOpsScheduleError)}</span></div>`; return; }
+  if (state.dailyOpsScheduleError) { target.innerHTML = `<div class="agent-graph-failure" role="alert"><strong>${escapeHtml(tr("无法加载 Daily Ops 计划"))}</strong><span>${escapeHtml(state.dailyOpsScheduleError)}</span></div>`; return; }
   if (!state.dailyOpsSchedules.length) { designedEmpty(target, "暂无 Daily Ops 计划", "创建后按本地时区触发真实 Daily Ops。", "calendar-dots"); return; }
   const canManage = dailyOpsCanManage();
-  target.innerHTML = state.dailyOpsSchedules.map(item => { const disabled = !canManage ? 'disabled title="需要 operator、admin 或 owner 角色"' : ""; const trigger = item.enabled === false ? '<span class="permission-reason">计划已停用</span>' : `<button data-action="trigger-daily-ops" data-id="${escapeHtml(item.id)}" class="secondary-button" ${disabled}>立即触发</button>`; const toggle = `<button data-action="toggle-daily-ops-schedule" data-id="${escapeHtml(item.id)}" data-enabled="${item.enabled ? "false" : "true"}" class="secondary-button" ${disabled}>${item.enabled ? "停用" : "启用"}</button>`; return `<div class="data-row"><div class="data-main"><strong>${escapeHtml(item.name || item.id)}</strong><small>${badge(item.enabled === false ? "disabled" : "enabled")} · ${escapeHtml(item.local_time || "—")} · ${escapeHtml(item.timezone || "—")} · ${escapeHtml(item.platform || "—")} · cursor ${escapeHtml(item.next_local_date || "—")} · max age ${escapeHtml(String(item.max_source_age_hours || "—"))}h</small></div><div class="row-actions">${trigger}${toggle}</div></div>`; }).join("");
+  target.innerHTML = state.dailyOpsSchedules.map(item => { const disabled = !canManage ? `disabled title="${escapeHtml(tr("需要 operator、admin 或 owner 角色"))}"` : ""; const trigger = item.enabled === false ? `<span class="permission-reason">${escapeHtml(tr("计划已停用"))}</span>` : `<button data-action="trigger-daily-ops" data-id="${escapeHtml(item.id)}" class="secondary-button" ${disabled}>${escapeHtml(tr("立即触发"))}</button>`; const toggle = `<button data-action="toggle-daily-ops-schedule" data-id="${escapeHtml(item.id)}" data-enabled="${item.enabled ? "false" : "true"}" class="secondary-button" ${disabled}>${escapeHtml(tr(item.enabled ? "停用" : "启用"))}</button>`; return `<div class="data-row"><div class="data-main"><strong>${escapeHtml(item.name || item.id)}</strong><small>${badge(item.enabled === false ? "disabled" : "enabled")} · ${escapeHtml(item.local_time || "—")} · ${escapeHtml(item.timezone || "—")} · ${escapeHtml(item.platform || "—")} · cursor ${escapeHtml(item.next_local_date || "—")} · max age ${escapeHtml(String(item.max_source_age_hours || "—"))}h</small></div><div class="row-actions">${trigger}${toggle}</div></div>`; }).join("");
 }
 function renderDailyOpsRuns() {
   const target = $("daily-ops-run-list"); if (!target) return;
   if (state.dailyOpsLoading) { designedEmpty(target, "正在加载 Daily Ops 运行", "正在读取每日运行与持久化 Brief。", "pulse"); return; }
-  if (state.dailyOpsRunError) { target.innerHTML = `<div class="agent-graph-failure" role="alert"><strong>无法加载 Daily Ops 运行</strong><span>${escapeHtml(state.dailyOpsRunError)}</span></div>`; return; }
+  if (state.dailyOpsRunError) { target.innerHTML = `<div class="agent-graph-failure" role="alert"><strong>${escapeHtml(tr("无法加载 Daily Ops 运行"))}</strong><span>${escapeHtml(state.dailyOpsRunError)}</span></div>`; return; }
   if (!state.dailyOpsRuns.length) { designedEmpty(target, "暂无 Daily Ops 运行", "计划触发或立即运行后，持久化结果会显示在这里。", "pulse"); return; }
   const canManage = dailyOpsCanManage();
-  target.innerHTML = state.dailyOpsRuns.map(run => { const status = run.status || "scheduled"; const review = run.brief?.review_status || (status === "completed" ? "approved" : "pending"); const evidenceCount = Array.isArray(run.selected_evidence_import_ids) ? run.selected_evidence_import_ids.length : 0; const metricCount = Array.isArray(run.selected_metric_observation_ids) ? run.selected_metric_observation_ids.length : 0; const roleDisabled = !canManage ? 'disabled title="需要 operator、admin 或 owner 角色"' : ""; const future = run.scheduled_for && new Date(run.scheduled_for).getTime() > Date.now(); const executeDisabled = !canManage || future ? `disabled title="${escapeHtml(!canManage ? "需要 operator、admin 或 owner 角色" : "尚未到计划执行时间")}"` : ""; const actions = [`<button data-action="view-daily-ops-run" data-id="${escapeHtml(run.id)}" class="secondary-button">详情</button>`]; if (run.brief) actions.push(`<button data-action="view-daily-ops-brief" data-id="${escapeHtml(run.id)}" class="secondary-button">查看 Brief</button>`); if (status === "scheduled") actions.push(`<button data-action="execute-daily-ops" data-id="${escapeHtml(run.id)}" class="primary-button" ${executeDisabled}>执行</button>`); if (["failed", "empty", "blocked"].includes(status)) actions.push(`<button data-action="retry-daily-ops" data-id="${escapeHtml(run.id)}" class="secondary-button" ${roleDisabled}>重试</button>`); const error = run.error_message ? `<span class="review-guard">${escapeHtml(run.error_message)}</span>` : ""; return `<div class="data-row"><div class="data-main"><strong>${escapeHtml(run.local_date || "Daily Ops")}</strong><small>${badge(status)} · ${escapeHtml(run.timezone || "—")} · ${escapeHtml(isoLocal(run.scheduled_for))} · sources ${evidenceCount + metricCount} · Graph ${escapeHtml(run.graph_version_id || "—")} · Reviewer ${escapeHtml(review)}</small>${run.brief ? `<span class="reviewer-task">已持久化 ${escapeHtml(run.brief.status || status)} Brief</span>` : ""}${error}</div><div class="row-actions">${actions.join("")}</div></div>`; }).join("");
+  target.innerHTML = state.dailyOpsRuns.map(run => { const status = run.status || "scheduled"; const review = run.brief?.review_status || (status === "completed" ? "approved" : "pending"); const evidenceCount = Array.isArray(run.selected_evidence_import_ids) ? run.selected_evidence_import_ids.length : 0; const metricCount = Array.isArray(run.selected_metric_observation_ids) ? run.selected_metric_observation_ids.length : 0; const roleDisabled = !canManage ? `disabled title="${escapeHtml(tr("需要 operator、admin 或 owner 角色"))}"` : ""; const future = run.scheduled_for && new Date(run.scheduled_for).getTime() > Date.now(); const executeDisabled = !canManage || future ? `disabled title="${escapeHtml(tr(!canManage ? "需要 operator、admin 或 owner 角色" : "尚未到计划执行时间"))}"` : ""; const actions = [`<button data-action="view-daily-ops-run" data-id="${escapeHtml(run.id)}" class="secondary-button">${escapeHtml(tr("详情"))}</button>`]; if (run.brief) actions.push(`<button data-action="view-daily-ops-brief" data-id="${escapeHtml(run.id)}" class="secondary-button">${escapeHtml(tr("查看 Brief"))}</button>`); if (status === "scheduled") actions.push(`<button data-action="execute-daily-ops" data-id="${escapeHtml(run.id)}" class="primary-button" ${executeDisabled}>${escapeHtml(tr("执行"))}</button>`); if (["failed", "empty", "blocked"].includes(status)) actions.push(`<button data-action="retry-daily-ops" data-id="${escapeHtml(run.id)}" class="secondary-button" ${roleDisabled}>${escapeHtml(tr("重试"))}</button>`); const error = run.error_message ? `<span class="review-guard">${escapeHtml(run.error_message)}</span>` : ""; return `<div class="data-row"><div class="data-main"><strong>${escapeHtml(run.local_date || "Daily Ops")}</strong><small>${badge(status)} · ${escapeHtml(run.timezone || "—")} · ${escapeHtml(isoLocal(run.scheduled_for))} · sources ${evidenceCount + metricCount} · Graph ${escapeHtml(run.graph_version_id || "—")} · Reviewer ${escapeHtml(review)}</small>${run.brief ? `<span class="reviewer-task">${escapeHtml(tr("已持久化"))} ${escapeHtml(run.brief.status || status)} Brief</span>` : ""}${error}</div><div class="row-actions">${actions.join("")}</div></div>`; }).join("");
 }
 function renderDailyOps() { renderDailyOpsOptions(); renderDailyOpsSchedules(); renderDailyOpsRuns(); }
 
@@ -1421,7 +1422,7 @@ function renderPilotStatus() {
     workersTarget.innerHTML = ""; checksTarget.innerHTML = ""; return;
   }
   if (state.pilotError) {
-    summary.innerHTML = `<div class="agent-graph-failure" role="alert"><strong>无法读取 Pilot Runtime</strong><span>${escapeHtml(state.pilotError)}</span></div>`;
+    summary.innerHTML = `<div class="agent-graph-failure" role="alert"><strong>${escapeHtml(tr("无法读取 Pilot Runtime"))}</strong><span>${escapeHtml(state.pilotError)}</span></div>`;
     workersTarget.innerHTML = ""; checksTarget.innerHTML = ""; return;
   }
   if (!state.pilotStatus) {
@@ -1437,18 +1438,18 @@ function renderPilotStatus() {
   const modelIssue = issues.some(item => ["OPENAI_API_KEY_MISSING", "OPENAI_MODEL_MISSING"].includes(item.code));
   const marketplaceIssue = issues.some(item => String(item.code || "").startsWith("AMAZON_"));
   const repairAction = modelIssue
-    ? '<button class="primary-button pilot-repair-action" data-action="open-connection-settings" data-connection-section="ai">配置模型 API</button>'
+    ? `<button class="primary-button pilot-repair-action" data-action="open-connection-settings" data-connection-section="ai">${escapeHtml(tr("配置模型 API"))}</button>`
     : marketplaceIssue
-      ? '<button class="primary-button pilot-repair-action" data-action="open-connection-settings" data-connection-section="marketplaces">配置 Marketplace API</button>'
+      ? `<button class="primary-button pilot-repair-action" data-action="open-connection-settings" data-connection-section="marketplaces">${escapeHtml(tr("配置 Marketplace API"))}</button>`
       : "";
-  summary.innerHTML = `<div class="pilot-summary-head"><div><strong>Commerce Agent Pilot</strong><span>${escapeHtml(tenant.tenant_name || state.me?.tenant_name || "当前租户")}</span></div>${badge(overall)}</div><div class="pilot-summary-meta"><span>Runtime ${escapeHtml(runtime.status || "stopped")}</span><span>Generation ${escapeHtml(runtime.generation ?? "—")}</span><span>Heartbeat ${escapeHtml(isoLocal(runtime.last_heartbeat_at))}</span></div>${issues.length ? `<div class="pilot-blockers">${issues.map(item => `<span>${escapeHtml(pilotBlockerLabels[item.code] || item.code || "未知阻塞")}</span>`).join("")}</div>${repairAction}` : '<div class="pilot-ready-note">运行环境与当前租户已通过 Pilot 检查。</div>'}`;
+  summary.innerHTML = `<div class="pilot-summary-head"><div><strong>Commerce Agent Pilot</strong><span>${escapeHtml(tr(tenant.tenant_name || state.me?.tenant_name || "当前租户"))}</span></div>${badge(overall)}</div><div class="pilot-summary-meta"><span>Runtime ${escapeHtml(runtime.status || "stopped")}</span><span>Generation ${escapeHtml(runtime.generation ?? "—")}</span><span>Heartbeat ${escapeHtml(isoLocal(runtime.last_heartbeat_at))}</span></div>${issues.length ? `<div class="pilot-blockers">${issues.map(item => `<span>${escapeHtml(tr(pilotBlockerLabels[item.code] || item.code || "未知阻塞"))}</span>`).join("")}</div>${repairAction}` : `<div class="pilot-ready-note">${escapeHtml(tr("运行环境与当前租户已通过 Pilot 检查。"))}</div>`}`;
   const workers = Array.isArray(runtime.workers) ? runtime.workers : [];
   if (!workers.length) designedEmpty(workersTarget, "Pilot Workers 未运行", "启动 `opc-ecommerce pilot` 后，六个 Worker 会在此持续报告心跳。", "gear-six");
-  else workersTarget.innerHTML = workers.map(worker => `<div class="pilot-worker-row"><div><strong>${escapeHtml(pilotWorkerLabels[worker.name] || worker.name)}</strong><small>tick ${escapeHtml(worker.iteration_count ?? 0)} · heartbeat ${escapeHtml(isoLocal(worker.last_heartbeat_at))}${worker.last_error_type ? ` · ${escapeHtml(worker.last_error_type)}` : ""}</small></div>${badge(worker.status || "starting")}</div>`).join("");
+  else workersTarget.innerHTML = workers.map(worker => `<div class="pilot-worker-row"><div><strong>${escapeHtml(tr(pilotWorkerLabels[worker.name] || worker.name))}</strong><small>tick ${escapeHtml(worker.iteration_count ?? 0)} · heartbeat ${escapeHtml(isoLocal(worker.last_heartbeat_at))}${worker.last_error_type ? ` · ${escapeHtml(worker.last_error_type)}` : ""}</small></div>${badge(worker.status || "starting")}</div>`).join("");
   const components = tenant.components || {};
   const entries = Object.entries(components);
   if (!entries.length) designedEmpty(checksTarget, "暂无租户检查", "Pilot 会在不读取密钥值的前提下检查真实依赖。", "shield-check");
-  else checksTarget.innerHTML = entries.map(([key, component]) => `<div class="pilot-check-row"><div><strong>${escapeHtml(pilotComponentLabels[key] || key)}</strong><small>${component.required === false ? "可选能力" : "Pilot 必需"}</small></div>${badge(component.status || "unknown")}</div>`).join("");
+  else checksTarget.innerHTML = entries.map(([key, component]) => `<div class="pilot-check-row"><div><strong>${escapeHtml(tr(pilotComponentLabels[key] || key))}</strong><small>${escapeHtml(tr(component.required === false ? "可选能力" : "Pilot 必需"))}</small></div>${badge(component.status || "unknown")}</div>`).join("");
 }
 
 function proposalCanCreate() { return ["operator", "admin", "owner"].includes(state.me?.role); }
@@ -1459,8 +1460,25 @@ const proposalPayloadTemplates = {
   "amazon_spapi.import_report": {external_account_id: "", report_id: "", evidence_report_type: "amazon_business_report"},
   "amazon_ads.campaign_update": {external_account_id: "", campaign_id: "", changes: {state: "paused"}},
 };
-function proposalPayloadTemplate(operation) { return JSON.stringify(proposalPayloadTemplates[operation] || {}, null, 2); }
+function proposalPayloadTemplate(operation) {
+  // Default values are UI copy, not data: render them in the active locale.
+  const template = proposalPayloadTemplates[operation] || {};
+  return JSON.stringify(Object.fromEntries(Object.entries(template).map(([key, value]) => [key, typeof value === "string" ? tr(value) : value])), null, 2);
+}
 function setProposalPayloadTemplate() { $("proposal-payload").value = proposalPayloadTemplate($("proposal-operation").value); }
+
+function refreshProposalPayloadTemplates() {
+  // A locale switch replaces the default payload only while the user has not edited it:
+  // the value is compared against the template rendered in every supported locale.
+  for (const [payloadId, operationId] of [["proposal-payload", "proposal-operation"], ["proposal-revision-payload", "proposal-revision-operation"]]) {
+    const payload = $(payloadId);
+    const operation = $(operationId);
+    if (!payload || !operation) continue;
+    const template = proposalPayloadTemplates[operation.value] || {};
+    const rendered = locale => JSON.stringify(Object.fromEntries(Object.entries(template).map(([key, value]) => [key, typeof value === "string" ? i18n.translate(value, locale) : value])), null, 2);
+    if (i18n.SUPPORTED.some(locale => payload.value === rendered(locale))) payload.value = proposalPayloadTemplate(operation.value);
+  }
+}
 function localDateTimeValue(value) {
   const instant = value ? new Date(value) : new Date();
   return new Date(instant.getTime() - instant.getTimezoneOffset() * 60000).toISOString().slice(0, 16);
@@ -1473,23 +1491,23 @@ function populateProposalPriorities() {
   const priorities = proposalPriorities(run);
   prioritySelect.innerHTML = priorities.length
     ? priorities.map((priority, index) => `<option value="${index}">${escapeHtml(priority.title || `Priority ${index + 1}`)}</option>`).join("")
-    : '<option value="">暂无优先事项</option>';
+    : `<option value="">${escapeHtml(tr("暂无优先事项"))}</option>`;
 }
 function renderProposals() {
   const runs = state.dailyOpsRuns.filter(run => ["completed", "approved"].includes(run.status) && proposalPriorities(run).length);
   const runSelect = $("proposal-run"), prioritySelect = $("proposal-priority"), form = $("proposal-form"), reason = $("proposal-permission");
   if (runSelect) {
     const previous = runSelect.value;
-    runSelect.innerHTML = runs.length ? runs.map(run => `<option value="${escapeHtml(run.id)}">${escapeHtml(run.local_date || "Daily Ops")} · ${escapeHtml(run.status || "completed")}</option>`).join("") : '<option value="">暂无已完成 Daily Ops</option>';
+    runSelect.innerHTML = runs.length ? runs.map(run => `<option value="${escapeHtml(run.id)}">${escapeHtml(run.local_date || "Daily Ops")} · ${escapeHtml(run.status || "completed")}</option>`).join("") : `<option value="">${escapeHtml(tr("暂无已完成 Daily Ops"))}</option>`;
     if (runs.some(run => run.id === previous)) runSelect.value = previous;
   }
   if (prioritySelect) populateProposalPriorities();
   const can = proposalCanCreate() && runs.length;
   if (form) form.querySelector("button[type=submit]").disabled = !can;
-  if (reason) { reason.hidden = can; reason.textContent = !proposalCanCreate() ? "当前角色只能查看；创建提案需要 operator、admin 或 owner。" : "需要一个已完成且有 priorities 的 Daily Ops 运行。"; }
+  if (reason) { reason.hidden = can; reason.textContent = tr(!proposalCanCreate() ? "当前角色只能查看；创建提案需要 operator、admin 或 owner。" : "需要一个已完成且有 priorities 的 Daily Ops 运行。"); }
   const target = $("proposal-list"); if (!target) return;
   if (state.proposalsLoading) { designedEmpty(target, "正在加载提案", "正在读取租户内持久化提案。", "pulse"); return; }
-  if (state.proposalsError) { target.innerHTML = `<div class="agent-graph-failure" role="alert"><strong>无法加载提案</strong><span>${escapeHtml(state.proposalsError)}</span></div>`; return; }
+  if (state.proposalsError) { target.innerHTML = `<div class="agent-graph-failure" role="alert"><strong>${escapeHtml(tr("无法加载提案"))}</strong><span>${escapeHtml(state.proposalsError)}</span></div>`; return; }
   if (!state.proposals.length) { designedEmpty(target, "暂无行动提案", "从已完成的 Daily Ops 优先事项创建第一项提案。", "shield-check"); return; }
   target.innerHTML = state.proposals.map(item => {
     const approval = item.required_approvals ?? 1;
@@ -1503,27 +1521,27 @@ function renderProposals() {
     const version = Number(item.version || 1);
     const execution = state.proposalExecutions.find(entry => entry.proposal_id === item.id);
     const capabilityNote = capabilityUnavailable
-      ? `<span class="review-guard">${escapeHtml(item.capability_reason || "当前平台能力不可用；执行已禁用。")}</span>`
-      : expired ? '<span class="review-guard">提案已过期。</span>' : "";
+      ? `<span class="review-guard">${escapeHtml(tr(item.capability_reason || "当前平台能力不可用；执行已禁用。"))}</span>`
+      : expired ? `<span class="review-guard">${escapeHtml(tr("提案已过期。"))}</span>` : "";
     let decisionControl = "";
     if (item.status === "submitted") {
       decisionControl = canDecide
-        ? `<button class="primary-button" data-action="approve-proposal" data-id="${escapeHtml(item.id)}" data-version="${version}">审批</button>`
-        : '<button class="primary-button" disabled title="需要 admin/owner，且创建者不能审批自己的提案">审批</button>';
+        ? `<button class="primary-button" data-action="approve-proposal" data-id="${escapeHtml(item.id)}" data-version="${version}">${escapeHtml(tr("审批"))}</button>`
+        : `<button class="primary-button" disabled title="${escapeHtml(tr("需要 admin/owner，且创建者不能审批自己的提案"))}">${escapeHtml(tr("审批"))}</button>`;
     }
     let executionControl = "";
     if (item.status === "approved") {
       executionControl = canExecute
-        ? `<button class="primary-button" data-action="execute-proposal" data-id="${escapeHtml(item.id)}" data-version="${version}">执行</button>`
-        : `<button class="primary-button" disabled title="${escapeHtml(item.capability_reason || "当前角色或平台能力不允许执行")}">执行</button>`;
+        ? `<button class="primary-button" data-action="execute-proposal" data-id="${escapeHtml(item.id)}" data-version="${version}">${escapeHtml(tr("执行"))}</button>`
+        : `<button class="primary-button" disabled title="${escapeHtml(tr(item.capability_reason || "当前角色或平台能力不允许执行"))}">${escapeHtml(tr("执行"))}</button>`;
     }
     let retryControl = "";
     if (execution?.status === "failed") {
       retryControl = proposalCanCreate() && !expired && !capabilityUnavailable
-        ? `<button class="secondary-button" data-action="retry-proposal" data-id="${escapeHtml(item.id)}" data-version="${version}">重试</button>`
-        : `<button class="secondary-button" disabled title="${escapeHtml(expired ? "提案已过期" : item.capability_reason || "重试需要 operator、admin 或 owner")}">重试</button>`;
+        ? `<button class="secondary-button" data-action="retry-proposal" data-id="${escapeHtml(item.id)}" data-version="${version}">${escapeHtml(tr("重试"))}</button>`
+        : `<button class="secondary-button" disabled title="${escapeHtml(tr(expired ? "提案已过期" : item.capability_reason || "重试需要 operator、admin 或 owner"))}">${escapeHtml(tr("重试"))}</button>`;
     }
-    return `<article class="data-row proposal-row"><div class="data-main"><strong>${escapeHtml(item.title || operationLabel(item.operation))}</strong><small>${badge(item.status || "draft")} · ${escapeHtml(operationLabel(item.operation))} · 风险 ${escapeHtml(item.risk || "—")} · approvals ${current}/${approval} · expires ${escapeHtml(isoLocal(item.expires_at))}</small><span class="reviewer-task technical-meta">content ${escapeHtml(item.content_hash || "—")} · payload ${escapeHtml(item.payload_hash || "—")} · Daily ${escapeHtml(item.daily_ops_run_id || "—")} · Agent ${escapeHtml(item.agent_run_id || "—")} · Graph ${escapeHtml(item.graph_version_hash || "—")}</span>${capabilityNote}${execution ? `<span class="reviewer-task">Execution ${escapeHtml(execution.status || "—")} · attempt ${escapeHtml(execution.attempt_count ?? 0)}/${escapeHtml(execution.max_attempts ?? "—")}</span>` : ""}</div><div class="row-actions"><button class="secondary-button" data-action="view-proposal" data-id="${escapeHtml(item.id)}">详情</button>${canRevise ? `<button class="secondary-button" data-action="revise-proposal" data-id="${escapeHtml(item.id)}" data-version="${version}">修订</button>` : ""}${item.status === "draft" && isCreator ? `<button class="primary-button" data-action="submit-proposal" data-id="${escapeHtml(item.id)}" data-version="${version}">提交审批</button>` : ""}${decisionControl}${executionControl}${retryControl}</div></article>`;
+    return `<article class="data-row proposal-row"><div class="data-main"><strong>${escapeHtml(item.title || tr(operationLabel(item.operation)))}</strong><small>${badge(item.status || "draft")} · ${escapeHtml(tr(operationLabel(item.operation)))} · ${escapeHtml(tr("风险"))} ${escapeHtml(item.risk || "—")} · approvals ${current}/${approval} · expires ${escapeHtml(isoLocal(item.expires_at))}</small><span class="reviewer-task technical-meta">content ${escapeHtml(item.content_hash || "—")} · payload ${escapeHtml(item.payload_hash || "—")} · Daily ${escapeHtml(item.daily_ops_run_id || "—")} · Agent ${escapeHtml(item.agent_run_id || "—")} · Graph ${escapeHtml(item.graph_version_hash || "—")}</span>${capabilityNote}${execution ? `<span class="reviewer-task">Execution ${escapeHtml(execution.status || "—")} · attempt ${escapeHtml(execution.attempt_count ?? 0)}/${escapeHtml(execution.max_attempts ?? "—")}</span>` : ""}</div><div class="row-actions"><button class="secondary-button" data-action="view-proposal" data-id="${escapeHtml(item.id)}">${escapeHtml(tr("详情"))}</button>${canRevise ? `<button class="secondary-button" data-action="revise-proposal" data-id="${escapeHtml(item.id)}" data-version="${version}">${escapeHtml(tr("修订"))}</button>` : ""}${item.status === "draft" && isCreator ? `<button class="primary-button" data-action="submit-proposal" data-id="${escapeHtml(item.id)}" data-version="${version}">${escapeHtml(tr("提交审批"))}</button>` : ""}${decisionControl}${executionControl}${retryControl}</div></article>`;
   }).join("");
 }
 
@@ -1533,20 +1551,20 @@ function renderAssurance() {
   if (!target) return;
   document.querySelectorAll('[data-action="run-assurance"]').forEach(button => {
     button.disabled = !assuranceCanRun() || state.assuranceLoading;
-    button.title = button.disabled ? "需要 admin 或 owner 角色" : "";
+    button.title = button.disabled ? tr("需要 admin 或 owner 角色") : "";
   });
   if (reason) {
     reason.hidden = assuranceCanRun();
-    reason.textContent = "当前角色只能查看；运行 Assurance 需要 admin 或 owner。";
+    reason.textContent = tr("当前角色只能查看；运行 Assurance 需要 admin 或 owner。");
   }
   if (state.assuranceLoading) { designedEmpty(target, "正在运行 Assurance", "正在执行真实评测与安全完整性检查。", "shield-check"); return; }
-  if (state.assuranceError) { target.innerHTML = `<div class="agent-graph-failure" role="alert"><strong>无法读取 Assurance</strong><span>${escapeHtml(state.assuranceError)}</span></div>`; return; }
+  if (state.assuranceError) { target.innerHTML = `<div class="agent-graph-failure" role="alert"><strong>${escapeHtml(tr("无法读取 Assurance"))}</strong><span>${escapeHtml(state.assuranceError)}</span></div>`; return; }
   if (!state.assuranceRuns.length) { designedEmpty(target, "尚无 Assurance 记录", "运行 Eval 或 Security 后，结果与检查项会持久保留。", "shield-check"); return; }
   target.innerHTML = state.assuranceRuns.map(run => {
     const checks = Array.isArray(run.checks) ? run.checks : [];
     const passed = checks.filter(check => check.status === "passed").length;
     const failure = checks.find(check => ["failed", "blocked"].includes(check.status));
-    return `<article class="assurance-card"><div class="assurance-card-head"><div><p class="kicker">${escapeHtml(run.kind || "assurance")}</p><strong>${escapeHtml(run.kind === "restore" ? "恢复演练" : run.kind === "security" ? "安全检查" : "工作流评测")}</strong></div>${badge(run.status || "running")}</div><div class="assurance-meta"><span>${passed}/${checks.length} checks passed</span><span>${escapeHtml(isoLocal(run.completed_at || run.created_at))}</span></div>${failure ? `<div class="review-guard">${escapeHtml(failure.code || "检查未通过")}</div>` : ""}<div class="row-actions"><button data-action="view-assurance" data-id="${escapeHtml(run.id)}" class="secondary-button">查看检查项</button></div></article>`;
+    return `<article class="assurance-card"><div class="assurance-card-head"><div><p class="kicker">${escapeHtml(run.kind || "assurance")}</p><strong>${escapeHtml(tr(run.kind === "restore" ? "恢复演练" : run.kind === "security" ? "安全检查" : "工作流评测"))}</strong></div>${badge(run.status || "running")}</div><div class="assurance-meta"><span>${passed}/${checks.length} checks passed</span><span>${escapeHtml(isoLocal(run.completed_at || run.created_at))}</span></div>${failure ? `<div class="review-guard">${escapeHtml(tr(failure.code || "检查未通过"))}</div>` : ""}<div class="row-actions"><button data-action="view-assurance" data-id="${escapeHtml(run.id)}" class="secondary-button">${escapeHtml(tr("查看检查项"))}</button></div></article>`;
   }).join("");
 }
 
@@ -1556,7 +1574,7 @@ function renderAudit() {
     designedEmpty(target, "暂无审计事件", "Runtime 中的真实操作记录会按时间倒序显示。", "clipboard-text");
     return;
   }
-  target.innerHTML = state.audit.slice(0, 100).map(item => `<div class="data-row"><div class="data-main"><strong>${escapeHtml(item.action)}</strong><small>${badge(item.outcome)}${escapeHtml(item.resource_type)} · ${escapeHtml(isoLocal(item.created_at))}</small>${item.event_hash ? `<span class="reviewer-task">chain ${escapeHtml(item.event_hash.slice(0, 16))}… · previous ${escapeHtml((item.previous_hash || "").slice(0, 16))}…</span>` : ""}</div><div class="row-actions"><button data-action="view-json" data-json="${encodeURIComponent(JSON.stringify(item))}" class="secondary-button">查看</button></div></div>`).join("");
+  target.innerHTML = state.audit.slice(0, 100).map(item => `<div class="data-row"><div class="data-main"><strong>${escapeHtml(item.action)}</strong><small>${badge(item.outcome)}${escapeHtml(item.resource_type)} · ${escapeHtml(isoLocal(item.created_at))}</small>${item.event_hash ? `<span class="reviewer-task">chain ${escapeHtml(item.event_hash.slice(0, 16))}… · previous ${escapeHtml((item.previous_hash || "").slice(0, 16))}…</span>` : ""}</div><div class="row-actions"><button data-action="view-json" data-json="${encodeURIComponent(JSON.stringify(item))}" class="secondary-button">${escapeHtml(tr("查看"))}</button></div></div>`).join("");
 }
 
 function renderAll() {
@@ -1828,7 +1846,7 @@ async function act(button, task, success, refresh = true) {
 }
 
 function showDetail(title, value) {
-  $("detail-title").textContent = title;
+  $("detail-title").textContent = tr(title);
   $("detail-content").textContent = JSON.stringify(value, null, 2);
   $("detail-dialog").showModal();
 }
@@ -1895,7 +1913,7 @@ function handleMissionEvent(frame) {
   } else if (["mission.reset", "mission_control.reset"].includes(frame.event)) {
     state.missionEvents = [];
     state.liveStatus = "empty";
-    state.liveError = payload.reason || "历史实时游标已过期，已从当前状态重新同步。";
+    state.liveError = payload.reason || tr("历史实时游标已过期，已从当前状态重新同步。");
     scheduleLiveRefresh();
   } else if (["mission.reconnect", "mission_control.reconnect"].includes(frame.event)) {
     state.liveStatus = "reconnecting";
@@ -1903,7 +1921,7 @@ function handleMissionEvent(frame) {
       lifetime_limit: "实时连接正在按安全周期轮换，并从最后游标继续。",
       backlog_limit: "待发送事件较多，正在分批从最后游标继续。",
     };
-    state.liveError = reasons[payload.reason] || "服务端要求从最后游标重新连接。";
+    state.liveError = tr(reasons[payload.reason] || "服务端要求从最后游标重新连接。");
     if (Number.isFinite(Number(payload.retry_after_seconds))) {
       state.liveServerRetryMs = Math.max(1000, Number(payload.retry_after_seconds) * 1000);
     }
@@ -1912,7 +1930,7 @@ function handleMissionEvent(frame) {
 }
 
 async function consumeMissionStream(body) {
-  if (!body?.getReader) throw new Error("浏览器不支持经过身份验证的实时流读取");
+  if (!body?.getReader) throw new Error(tr("浏览器不支持经过身份验证的实时流读取"));
   const reader = body.getReader(), decoder = new TextDecoder();
   let buffer = "";
   while (true) {
@@ -1920,7 +1938,7 @@ async function consumeMissionStream(body) {
     buffer += decoder.decode(value || new Uint8Array(), {stream: !done});
     buffer = buffer.replaceAll("\r\n", "\n");
     if (done) buffer = buffer.replaceAll("\r", "\n");
-    if (buffer.length > 1_000_000) throw new Error("实时事件帧超过浏览器安全上限");
+    if (buffer.length > 1_000_000) throw new Error(tr("实时事件帧超过浏览器安全上限"));
     let boundary;
     while ((boundary = buffer.indexOf("\n\n")) >= 0) {
       const raw = buffer.slice(0, boundary); buffer = buffer.slice(boundary + 2);
@@ -1937,7 +1955,7 @@ async function consumeMissionStream(body) {
       if (data.length) {
         let parsed;
         try { parsed = JSON.parse(data.join("\n")); }
-        catch { throw new Error("Runtime 返回了无效的实时事件 JSON"); }
+        catch { throw new Error(tr("Runtime 返回了无效的实时事件 JSON")); }
         handleMissionEvent({event, id, data: parsed});
       }
     }
@@ -1976,7 +1994,7 @@ async function startLiveStream() {
       state.apiKey = "";
       state.me = null;
       state.liveStatus = "auth_failed";
-      state.liveError = "实时连接认证失败";
+      state.liveError = tr("实时连接认证失败");
       setConnected(false);
       renderDisconnected();
       renderLiveMissionControl();
@@ -1985,15 +2003,15 @@ async function startLiveStream() {
     }
     if (response.status === 422) {
       clearLiveCursor();
-      throw new Error("实时游标无效，已清理并准备重新同步");
+      throw new Error(tr("实时游标无效，已清理并准备重新同步"));
     }
     if (response.status === 429) {
       const retrySeconds = Number(response.headers.get("Retry-After"));
       retryDelay = Number.isFinite(retrySeconds) ? Math.max(1000, retrySeconds * 1000) : 5000;
-      throw new Error("实时连接数已达上限");
+      throw new Error(tr("实时连接数已达上限"));
     }
-    if (!response.ok) throw new Error(`实时事件流请求失败 (${response.status})`);
-    if (!(response.headers.get("Content-Type") || "").includes("text/event-stream")) throw new Error("Runtime 未返回 text/event-stream");
+    if (!response.ok) throw new Error(`${tr("实时事件流请求失败")} (${response.status})`);
+    if (!(response.headers.get("Content-Type") || "").includes("text/event-stream")) throw new Error(tr("Runtime 未返回 text/event-stream"));
     state.liveAttempt = 0;
     state.liveStatus = state.missionEvents.length ? "live" : "empty";
     renderLiveMissionControl();
@@ -2055,7 +2073,7 @@ function pauseLiveStream() {
   if (active) active.abort();
   if (!state.liveStopped && state.apiKey) {
     state.liveStatus = "reconnecting";
-    state.liveError = "页面暂停后将从最后游标继续。";
+    state.liveError = tr("页面暂停后将从最后游标继续。");
     renderLiveMissionControl();
   }
 }
@@ -2231,7 +2249,7 @@ async function selectPlatform(button) {
   state.selectedPlatform = button.dataset.platform;
   state.chartMetric = null;
   updatePlatformChrome();
-  await act(button, refreshBriefing, `${platformName()} 简报已切换。`, false);
+  await act(button, refreshBriefing, `${platformName()} ${tr("简报已切换。")}`, false);
 }
 
 $("evidence-platform").addEventListener("change", () => renderReportOptions("evidence-platform", "evidence-type"));

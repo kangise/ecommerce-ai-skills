@@ -34,6 +34,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
   switcher, full key parity across the four catalogs, and the platform and
   connector labels now follow the active locale instead of a zh/en binary
   (Rakuten showed 乐天市场 rather than 楽天市場 under any third locale).
+- Every user-visible string in `app.js` now goes through the catalog: about
+  150 call sites and 282 catalog entries (empty states, disabled-button
+  reasons, dialog titles, error fallbacks, SSE status, proposal operation
+  names) that had been raw Chinese literals and showed as Chinese under the
+  English and Japanese locales. A test parses `app.js` and fails on any new
+  CJK literal that is not a catalog key.
 - Added a tenant-owned Provider Smoke control plane for OpenAI Responses,
   Amazon SP-API, and Shopify: operator-gated live probes, viewer-readable
   persisted results, 30-second per-target cooldowns, idempotent lease-fenced

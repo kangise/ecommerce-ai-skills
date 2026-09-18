@@ -7,6 +7,7 @@ from html.parser import HTMLParser
 
 ROOT = Path(__file__).resolve().parents[1]
 I18N = ROOT / "ecommerce_ai_skills/runtime/web/i18n.js"
+APP_JS = ROOT / "ecommerce_ai_skills/runtime/web/app.js"
 
 
 def _catalogs():
@@ -186,3 +187,201 @@ def test_storage_failure_keeps_locale_in_memory_for_current_page():
     '''
     result = subprocess.run(["node", "-e", script, str(I18N)], capture_output=True, text=True)
     assert result.returncode == 0, result.stderr
+
+
+_REGEX_ALLOWED_BEFORE_KEYWORDS = {
+    "return", "typeof", "instanceof", "in", "of", "new", "delete", "void",
+    "else", "yield", "case", "do", "throw",
+}
+
+
+def _regex_allowed_before(source, pos):
+    """True if a `/` at `pos` can start a regex literal rather than being a
+    division operator, based on the nearest significant token before it."""
+    j = pos - 1
+    while j >= 0 and source[j] in " \t\r\n":
+        j -= 1
+    if j < 0:
+        return True
+    ch = source[j]
+    if ch.isalnum() or ch in "_$":
+        k = j
+        while k >= 0 and (source[k].isalnum() or source[k] in "_$"):
+            k -= 1
+        return source[k + 1:j + 1] in _REGEX_ALLOWED_BEFORE_KEYWORDS
+    if ch in ")]`'\"":
+        return False
+    return True
+
+
+def _iter_js_string_tokens(source):
+    """Yield (kind, text, line, preceding) for every string-literal value
+    and template-literal quasi (static text chunk) in a JS source, skipping
+    comments and regex literals. `kind` is "string" or "template"; for
+    "string" tokens, `preceding` is a slice of source right before the
+    opening quote, used to sniff the enclosing call (e.g. `console.error(`).
+
+    This is a hand-rolled lexer, not a real parser -- but its output was
+    cross-checked line-for-line against an acorn AST walk of this exact
+    file (every CJK-containing Literal/TemplateElement node) with zero
+    differences, including through the file's two `${...}` interpolation
+    nesting patterns and its five regex literals.
+    """
+    i, n, line = 0, len(source), 1
+    stack = [{"kind": "TOP"}]
+
+    def advance(count):
+        nonlocal i, line
+        line += source.count("\n", i, i + count)
+        i += count
+
+    while i < n:
+        frame = stack[-1]
+        if frame["kind"] == "TMPL":
+            ch = source[i]
+            if ch == "\\" and i + 1 < n:
+                frame["buf"].append(source[i + 1])
+                advance(2)
+                continue
+            if ch == "`":
+                yield ("template", "".join(frame["buf"]), frame["start_line"], "")
+                stack.pop()
+                advance(1)
+                continue
+            if ch == "$" and i + 1 < n and source[i + 1] == "{":
+                yield ("template", "".join(frame["buf"]), frame["start_line"], "")
+                frame["buf"] = []
+                advance(2)
+                stack.append({"kind": "INTERP", "depth": 0})
+                continue
+            frame["buf"].append(ch)
+            advance(1)
+            continue
+        ch = source[i]
+        if ch == "\n":
+            advance(1)
+            continue
+        if ch == "/" and i + 1 < n and source[i + 1] == "/":
+            j = source.find("\n", i)
+            advance((n if j == -1 else j) - i)
+            continue
+        if ch == "/" and i + 1 < n and source[i + 1] == "*":
+            j = source.find("*/", i + 2)
+            end = n if j == -1 else j + 2
+            advance(end - i)
+            continue
+        if ch in ("'", '"'):
+            start_line, start = line, i
+            advance(1)
+            buf = []
+            while i < n and source[i] != ch:
+                if source[i] == "\\" and i + 1 < n:
+                    buf.append(source[i + 1])
+                    advance(2)
+                    continue
+                buf.append(source[i])
+                advance(1)
+            advance(1)
+            yield ("string", "".join(buf), start_line, source[max(0, start - 60):start])
+            continue
+        if ch == "`":
+            stack.append({"kind": "TMPL", "buf": [], "start_line": line})
+            advance(1)
+            continue
+        if ch == "/" and _regex_allowed_before(source, i):
+            advance(1)
+            in_class = False
+            while i < n:
+                c = source[i]
+                if c == "\\" and i + 1 < n:
+                    advance(2)
+                    continue
+                if c == "[":
+                    in_class = True
+                elif c == "]":
+                    in_class = False
+                elif c == "/" and not in_class:
+                    advance(1)
+                    break
+                elif c == "\n":
+                    break
+                advance(1)
+            while i < n and source[i].isalpha():
+                advance(1)
+            continue
+        if frame["kind"] == "INTERP":
+            if ch == "{":
+                frame["depth"] += 1
+                advance(1)
+                continue
+            if ch == "}":
+                if frame["depth"] > 0:
+                    frame["depth"] -= 1
+                    advance(1)
+                    continue
+                stack.pop()
+                advance(1)
+                continue
+        advance(1)
+
+
+def test_app_js_has_no_raw_cjk_literal_outside_the_catalog():
+    """Every CJK-containing string literal or template-literal text chunk in
+    app.js must be translatable under en/ja: it must be a key already
+    present in the catalog, which is how it reaches a locale -- whether via
+    a direct `tr("...")` call, via a helper that calls `tr()` on the
+    argument internally (`notice`, `badge`, `designedEmpty`, `act`,
+    `showDetail`), or via a local variable/object-lookup that is later
+    passed to one of those.
+
+    Catalog membership, not "is this a tr() call syntactically", is what
+    this test checks, because a string can be a direct argument of tr() and
+    still render as raw Chinese under en/ja if nobody added it to the
+    catalog -- that is exactly the bug this test caught in `busy()`, which
+    called `tr("处理中…")` for a key the catalog did not have (the catalog
+    had "处理中" via the `processing` status key, but not the ellipsis
+    variant actually used here).
+
+    A tiny, reasoned set of exceptions covers text that structurally never
+    reaches the rendered page.
+    """
+    source = APP_JS.read_text(encoding="utf-8")
+    catalog_keys = set(_catalogs()["zh-CN"])
+    cjk = re.compile(r"[一-鿿]")
+    console_call = re.compile(r"console\.(?:log|warn|error|info|debug)\s*\($")
+
+    # A few lines hold a `state.locale === "en" ? ... : state.locale === "ja"
+    # ? ... : ...` ternary whose template-literal branches are hand-written
+    # per locale (updateTodayLabel's "today" label, the evidence-count
+    # sentences in renderBriefing). There is deliberately no catalog lookup
+    # for these chunks: the correct language is selected by the `? :` itself.
+    # They are recognised by that pattern on the same source line, not by
+    # line number, so an edit elsewhere in the file cannot break this test.
+    inline_locale_branch_lines = {
+        number for number, line in enumerate(source.splitlines(), 1)
+        if 'state.locale === "en" ?' in line and 'state.locale === "ja" ?' in line
+    }
+    assert 1 <= len(inline_locale_branch_lines) <= 6, inline_locale_branch_lines
+
+    # Literals that never reach the rendered page. Empty at the moment:
+    # payload template defaults (proposalPayloadTemplates) are rendered through
+    # tr() at serialisation time, so they are ordinary catalog keys.
+    allowlisted_literals = {}
+
+    violations = []
+    for kind, text, line, preceding in _iter_js_string_tokens(source):
+        if not cjk.search(text):
+            continue  # not Chinese text -- comments, English, punctuation, etc.
+        if kind == "template" and line in inline_locale_branch_lines:
+            continue
+        if kind == "string" and console_call.search(preceding):
+            continue  # developer diagnostic text; never rendered on the page
+        if text in allowlisted_literals:
+            continue
+        if text in catalog_keys:
+            continue
+        violations.append((line, kind, text))
+
+    assert not violations, "raw or uncataloged CJK literal(s) in app.js:\n" + "\n".join(
+        f"  line {line} ({kind}): {text!r}" for line, kind, text in violations
+    )
