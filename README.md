@@ -198,12 +198,14 @@ python3 -m pip install "ecommerce-ai-skills[mcp] @ git+https://github.com/kangis
 {
   "mcpServers": {
     "opc-ecommerce": {
-      "command": "python3",
-      "args": ["/path/to/ecommerce-ai-skills/integration/mcp-server.py", "--dist", "/path/to/ecommerce-ai-skills/dist"]
+      "command": "opc-ecommerce",
+      "args": ["mcp"]
     }
   }
 }
 ```
+
+> `opc-ecommerce` is the command the pip install created; the knowledge package ships inside it, so no clone is needed. If Claude Desktop cannot find the command, put the absolute path from `which opc-ecommerce` in `command`. Working from a clone instead: `"command": "python3", "args": ["/path/to/ecommerce-ai-skills/integration/mcp-server.py", "--dist", "/path/to/ecommerce-ai-skills/dist"]`.
 
 After install:
 

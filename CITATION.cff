@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this knowledge base, its ontology, or its prompt library in research or a product write-up, cite it as below."
+type: software
+title: "Cross-Border E-Commerce AI Skills: a trilingual knowledge base, domain ontology, and agent runtime"
+abstract: "69 chapters in Chinese, English and Japanese on AI for cross-border e-commerce operations; a domain ontology of 100 entities, 322 platform constraints, 78 relations and 8 processes across 15 platforms; 878 prompts that declare their data requirements; 9 agent skills served over MCP; and an operations runtime with human approval on every write. Factual claims are dated and verified in CI."
+authors:
+  - name: "kangise and contributors"
+repository-code: "https://github.com/kangise/ecommerce-ai-skills"
+url: "https://kangise.github.io/ecommerce-ai-skills/"
+license: CC0-1.0
+version: 1.3.0
+date-released: "2026-08-26"
+keywords:
+  - e-commerce
+  - cross-border e-commerce
+  - knowledge base
+  - domain ontology
+  - prompt library
+  - model context protocol
+  - agent skills
+  - Amazon
+  - Shopify
+  - TikTok Shop

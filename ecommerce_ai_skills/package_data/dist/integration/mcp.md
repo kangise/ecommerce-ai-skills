@@ -18,12 +18,14 @@ python3 -m pip install "ecommerce-ai-skills[mcp] @ git+https://github.com/kangis
 {
   "mcpServers": {
     "opc-ecommerce": {
-      "command": "python3",
-      "args": ["/path/to/ecommerce-ai-skills/integration/mcp-server.py", "--dist", "/path/to/ecommerce-ai-skills/dist"]
+      "command": "opc-ecommerce",
+      "args": ["mcp"]
     }
   }
 }
 ```
+
+> `opc-ecommerce` is the console script the pip install created; the knowledge package (`dist/`) ships inside the wheel, so no clone is needed and `--dist` is optional. If the MCP client cannot find the command, use the absolute path from `which opc-ecommerce`. From a clone: `"command": "python3", "args": ["/path/to/ecommerce-ai-skills/integration/mcp-server.py", "--dist", "/path/to/ecommerce-ai-skills/dist"]`.
 
 The dedicated server exposes:
 
@@ -44,8 +46,8 @@ appear alongside the knowledge ones:
 {
   "mcpServers": {
     "opc-ecommerce": {
-      "command": "python3",
-      "args": ["/path/to/ecommerce-ai-skills/integration/mcp-server.py", "--dist", "/path/to/ecommerce-ai-skills/dist"],
+      "command": "opc-ecommerce",
+      "args": ["mcp"],
       "env": {
         "OPC_RUNTIME_URL": "http://127.0.0.1:8788",
         "OPC_RUNTIME_API_KEY": "eai_..."

@@ -180,12 +180,14 @@ python3 -m pip install "ecommerce-ai-skills[mcp] @ git+https://github.com/kangis
 {
   "mcpServers": {
     "opc-ecommerce": {
-      "command": "python3",
-      "args": ["/path/to/ecommerce-ai-skills/integration/mcp-server.py", "--dist", "/path/to/ecommerce-ai-skills/dist"]
+      "command": "opc-ecommerce",
+      "args": ["mcp"]
     }
   }
 }
 ```
+
+> `opc-ecommerce` は pip インストール時に作成されるコマンドで、知識パッケージは同梱されているためリポジトリの clone は不要です。Claude Desktop がコマンドを見つけられない場合は、`which opc-ecommerce` の出力（絶対パス）を `command` に指定してください。clone から使う場合：`"command": "python3", "args": ["/path/to/ecommerce-ai-skills/integration/mcp-server.py", "--dist", "/path/to/ecommerce-ai-skills/dist"]`。
 
 インストール後:
 
