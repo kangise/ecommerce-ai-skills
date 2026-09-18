@@ -6,7 +6,7 @@
 
 **すべての数字は CI で検証済み · すべてのプロンプトに幻覚防止のガードレール · すべての章に「効かないとき」を明記**
 
-🇯🇵 日本語&nbsp;·&nbsp;[🇨🇳 中文](README_ZH.md)&nbsp;·&nbsp;[🇺🇸 English](README.md)&nbsp;&nbsp;|&nbsp;&nbsp;📖 [オンラインで読む](https://kangise.github.io/ecommerce-ai-skills/)&nbsp;&nbsp;|&nbsp;&nbsp;📦 [agent にインストール](dist/)
+🇯🇵 日本語&nbsp;·&nbsp;[🇨🇳 中文](README_ZH.md)&nbsp;·&nbsp;[🇺🇸 English](README.md)&nbsp;&nbsp;|&nbsp;&nbsp;📖 [オンラインで読む](https://kangise.github.io/ecommerce-ai-skills/ja/)&nbsp;&nbsp;|&nbsp;&nbsp;📦 [agent にインストール](dist/)
 
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![CI](https://github.com/kangise/ecommerce-ai-skills/actions/workflows/pages.yml/badge.svg)](https://github.com/kangise/ecommerce-ai-skills/actions/workflows/pages.yml)
@@ -43,7 +43,7 @@ opc-ecommerce demo-seed --db ./demo.sqlite && opc-ecommerce demo --db ./demo.sql
 
 | 使い方 | 何か | 入口 |
 |---|---|---|
-| **本として読む** | 69 章、選品から成長まで、中/英/日 3 言語で完訳 | [オンラインサイト](https://kangise.github.io/ecommerce-ai-skills/) |
+| **本として読む** | 69 章、選品から成長まで、中/英/日 3 言語で完訳 | [オンラインサイト](https://kangise.github.io/ecommerce-ai-skills/ja/) |
 | **agent にインストール** | 知識 + 領域モデル + ガード付き能力。MCP 一行の設定で Claude / Cursor に接続 | [`dist/`](dist/) |
 | **そのまま動かす** | Commerce Agent OS — 実店舗データに接続し、複数 agent が検証し、人が承認する運用ランタイム | `opc-ecommerce demo` |
 

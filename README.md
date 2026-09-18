@@ -6,7 +6,7 @@
 
 **Every number CI-verified · Every prompt carries anti-hallucination guardrails · Every chapter states when the method breaks**
 
-🇺🇸 English&nbsp;·&nbsp;[🇨🇳 中文](README_ZH.md)&nbsp;·&nbsp;[🇯🇵 日本語](README_JA.md)&nbsp;&nbsp;|&nbsp;&nbsp;📖 [Read Online](https://kangise.github.io/ecommerce-ai-skills/)&nbsp;&nbsp;|&nbsp;&nbsp;📦 [Install for Agent](dist/)
+🇺🇸 English&nbsp;·&nbsp;[🇨🇳 中文](README_ZH.md)&nbsp;·&nbsp;[🇯🇵 日本語](README_JA.md)&nbsp;&nbsp;|&nbsp;&nbsp;📖 [Read Online](https://kangise.github.io/ecommerce-ai-skills/en/)&nbsp;&nbsp;|&nbsp;&nbsp;📦 [Install for Agent](dist/)
 
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![CI](https://github.com/kangise/ecommerce-ai-skills/actions/workflows/pages.yml/badge.svg)](https://github.com/kangise/ecommerce-ai-skills/actions/workflows/pages.yml)
@@ -42,7 +42,7 @@ An AI operations knowledge base for cross-border e-commerce. **One source, three
 
 | Use | What it is | Entry |
 |---|---|---|
-| **Read it** | 69 chapters, sourcing to growth, complete in zh/en/ja | [Online site](https://kangise.github.io/ecommerce-ai-skills/) |
+| **Read it** | 69 chapters, sourcing to growth, complete in zh/en/ja | [Online site](https://kangise.github.io/ecommerce-ai-skills/en/) |
 | **Install it for your agent** | Knowledge + domain model + guarded capabilities, one MCP config line to Claude / Cursor | [`dist/`](dist/) |
 | **Run it** | Commerce Agent OS — an operations runtime on real store data, with multi-agent review and human approval | `opc-ecommerce demo` |
 
