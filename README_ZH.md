@@ -4,7 +4,7 @@
 
 ### 人可以读，agent 可以装，运营可以跑。
 
-**每个数字都经 CI 核验 · 每个 Prompt 都带反幻觉护栏 · 每章都写明什么时候不管用**
+**每个数字都注明来源、日期，或标明是估算 · 每个 Prompt 都以自检收尾 · 每篇指南都写明适用边界 —— 均由 CI 检查**
 
 🇨🇳 中文&nbsp;·&nbsp;[🇺🇸 English](README.md)&nbsp;·&nbsp;[🇯🇵 日本語](README_JA.md)&nbsp;&nbsp;|&nbsp;&nbsp;📖 [在线阅读](https://kangise.github.io/ecommerce-ai-skills/)&nbsp;&nbsp;|&nbsp;&nbsp;📦 [给 agent 装](dist/)&nbsp;&nbsp;|&nbsp;&nbsp;🖥️ [跑起来](#跑起来--commerce-agent-os)
 

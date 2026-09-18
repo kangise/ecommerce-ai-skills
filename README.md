@@ -4,7 +4,7 @@
 
 ### Read it as a book. Install it as agent capability. Run it as operations.
 
-**Every number CI-verified · Every prompt carries anti-hallucination guardrails · Every chapter states when the method breaks**
+**Every figure sourced, dated or marked as an estimate · Every prompt ends with a self-check · Every guide states where it stops working — all checked in CI**
 
 🇺🇸 English&nbsp;·&nbsp;[🇨🇳 中文](README_ZH.md)&nbsp;·&nbsp;[🇯🇵 日本語](README_JA.md)&nbsp;&nbsp;|&nbsp;&nbsp;📖 [Read Online](https://kangise.github.io/ecommerce-ai-skills/en/)&nbsp;&nbsp;|&nbsp;&nbsp;📦 [Install for Agent](dist/)
 

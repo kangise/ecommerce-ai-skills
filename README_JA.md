@@ -4,7 +4,7 @@
 
 ### 人が読める。agent にインストールできる。運用として動かせる。
 
-**すべての数字は CI で検証済み · すべてのプロンプトに幻覚防止のガードレール · すべての章に「効かないとき」を明記**
+**すべての数値に出典・日付、または推定である旨を明記 · すべてのプロンプトはセルフチェックで締めくくる · すべてのガイドに適用範囲の限界を記載 —— いずれも CI で検査**
 
 🇯🇵 日本語&nbsp;·&nbsp;[🇨🇳 中文](README_ZH.md)&nbsp;·&nbsp;[🇺🇸 English](README.md)&nbsp;&nbsp;|&nbsp;&nbsp;📖 [オンラインで読む](https://kangise.github.io/ecommerce-ai-skills/ja/)&nbsp;&nbsp;|&nbsp;&nbsp;📦 [agent にインストール](dist/)
 

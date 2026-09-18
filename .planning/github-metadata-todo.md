@@ -18,7 +18,7 @@
 建议改成：
 
 ```
-Cross-border e-commerce AI knowledge base, read by people and installed by agents: 69 trilingual guides, 878 prompts, a 100-entity / 322-constraint ontology, and 9 skills as a Claude Code plugin or over MCP. Factual claims are dated and CI-verified. CC0.
+Cross-border e-commerce AI knowledge base, read by people and installed by agents: 69 trilingual guides, 878 prompts, a 100-entity / 322-constraint ontology, and 9 skills as a Claude Code plugin or over MCP. Figures are sourced and dated, checked in CI. CC0.
 ```
 
 ## Social Preview —— 文件已备好，待上传
