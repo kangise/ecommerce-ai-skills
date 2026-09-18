@@ -24,6 +24,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
   cliff for dated facts) and `scripts/watch_sources.py` with
   `maintenance/source-watch.yaml` (commit-SHA watch on the SP-API models,
   openai-python and MCP python-sdk repositories; state file is tracked).
+- `watch_sources.py` can track the newest release tag matching a pattern
+  (`tag_pattern`) instead of the default-branch tip. The MCP SDK entry now
+  follows `v1.*`: upstream `main` has been the 2.x line since 2026-07, so
+  watching it reported drift the `mcp<2` pin cannot install and hid the 1.x
+  releases it does pick up.
 - `verify_content.py --refresh-links`: re-probes every cached URL.
   `--probe-links` only ever probed new ones, so cached 200s could rot
   unnoticed; the first full refresh found six dead links. `weekly-health`
@@ -78,6 +83,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
   contrast and dark-mode variants. Existing APIs, tenant/RBAC checks, actions,
   persisted Demo state and SSE behavior remain unchanged.
 
+### Fixed
+- `OpenAIResponsesProvider` tolerates a completed response whose `output` is
+  JSON null (it raised a bare `TypeError` instead of `ExternalServiceError`)
+  and ignores message items in a commentary `phase`, whose text would have
+  been concatenated in front of the final-answer JSON. Both shapes come from
+  the upstream SDK's own fixes (openai-python #3325, #3861); the wire format
+  the runtime speaks is unchanged.
 
 ## [1.3.0] - 2026-08-26
 

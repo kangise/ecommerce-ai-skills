@@ -151,3 +151,58 @@ def test_rate_limit_names_the_fix(monkeypatch) -> None:
 
     _, error = module.probe({"id": "x", "kind": "github", "repo": "a/b"}, "ua")
     assert "GITHUB_TOKEN" in error
+
+
+def test_tag_pattern_tracks_the_newest_matching_release(monkeypatch) -> None:
+    """The MCP SDK's main is the 2.x line; our pin installs from 1.x.
+
+    Watching the default branch reported drift we cannot install and hid the
+    v1.* releases we do pick up. With `tag_pattern`, the fingerprint is the
+    newest tag matching the pattern, ordered numerically (v1.30.0 > v1.9.1),
+    never a 2.x tag.
+    """
+    module = load_module()
+    calls = []
+
+    def fake_request(url, user_agent, accept):
+        calls.append(url)
+        if url.endswith("/tags?per_page=100"):
+            return json.dumps([
+                {"name": "v2.2.0", "commit": {"sha": "2" * 40}},
+                {"name": "v1.9.1", "commit": {"sha": "9" * 40}},
+                {"name": "v1.30.0", "commit": {"sha": "a" * 40}},
+                {"name": "v1.29.1", "commit": {"sha": "b" * 40}},
+            ]).encode()
+        if url.endswith("/commits/" + "a" * 40):
+            return json.dumps({"commit": {"committer": {"date": "2026-09-07T00:00:00Z"}}}).encode()
+        raise AssertionError(f"unexpected request {url}")
+
+    monkeypatch.setattr(module, "_request", fake_request)
+    fingerprint, error = module.probe(
+        {"id": "x", "kind": "github", "repo": "modelcontextprotocol/python-sdk", "tag_pattern": r"^v1\."},
+        "ua")
+    assert error is None
+    assert fingerprint["tag"] == "v1.30.0"
+    assert fingerprint["revision"] == "a" * 40
+    assert fingerprint["at"] == "2026-09-07T00:00:00Z"
+    assert fingerprint["url"].endswith("/releases/tag/v1.30.0")
+    assert not any("commits?per_page=1" in url for url in calls)
+
+
+def test_tag_pattern_with_no_match_is_an_error_not_unchanged(monkeypatch) -> None:
+    module = load_module()
+    monkeypatch.setattr(module, "_request",
+                        lambda url, ua, accept: json.dumps([{"name": "v2.0.0", "commit": {"sha": "2" * 40}}]).encode())
+    fingerprint, error = module.probe(
+        {"id": "x", "kind": "github", "repo": "o/r", "tag_pattern": r"^v1\."}, "ua")
+    assert fingerprint is None
+    assert "no tag matches" in error
+
+
+def test_watchlist_mcp_entry_tracks_the_1x_release_line() -> None:
+    """Guards the watchlist itself: if someone drops the pattern, the watcher
+    silently goes back to reporting 2.x commits our pin cannot install."""
+    module = load_module()
+    sources = {s["id"]: s for s in module.load_watchlist()["sources"]}
+    assert sources["mcp-python-sdk"].get("tag_pattern") == r"^v1\."
+

@@ -29,6 +29,7 @@ from __future__ import annotations
 import argparse
 import datetime
 import json
+import re
 import os
 import sys
 import urllib.error
@@ -69,10 +70,38 @@ def _request(url: str, user_agent: str, accept: str) -> bytes:
         return resp.read()
 
 
+def _version_key(tag: str) -> tuple:
+    """Order tags by their numeric parts: v1.30.0 > v1.9.1 > v1.9.0."""
+    return tuple(int(n) for n in re.findall(r"\d+", tag))
+
+
 def probe(source: dict, user_agent: str) -> tuple[dict | None, str | None]:
     """Return (fingerprint, error). A fingerprint is whatever identifies 'current'."""
     kind = source.get("kind")
     try:
+        if kind == "github" and source.get("tag_pattern"):
+            # Track the newest release tag matching a pattern instead of the
+            # default-branch tip. The MCP SDK's main is the 2.x line while our
+            # pin installs from 1.x; watching main reported drift we cannot
+            # install and hid the releases we actually pick up.
+            repo = source["repo"]
+            pattern = re.compile(source["tag_pattern"])
+            tags = json.loads(_request(f"https://api.github.com/repos/{repo}/tags?per_page=100",
+                                       user_agent, "application/vnd.github+json"))
+            matching = [t for t in tags if isinstance(t, dict) and pattern.search(t.get("name", ""))]
+            if not matching:
+                return None, f"{repo}: no tag matches {source['tag_pattern']!r} in the newest 100"
+            newest = max(matching, key=lambda t: _version_key(t["name"]))
+            sha = newest["commit"]["sha"]
+            commit = json.loads(_request(f"https://api.github.com/repos/{repo}/commits/{sha}",
+                                         user_agent, "application/vnd.github+json"))
+            return {
+                "revision": sha,
+                "tag": newest["name"],
+                "at": commit["commit"]["committer"]["date"],
+                "url": f"https://github.com/{repo}/releases/tag/{newest['name']}",
+            }, None
+
         if kind == "github":
             repo = source["repo"]
             url = f"https://api.github.com/repos/{repo}/commits?per_page=1"
@@ -184,8 +213,12 @@ def main() -> int:
 
         for source, previous, current in changed:
             print()
-            print(f"  {source['id']} moved "
-                  f"{(previous.get('revision') or '?')[:10]} -> {current['revision'][:10]}")
+            if current.get("tag"):
+                print(f"  {source['id']} moved "
+                      f"{previous.get('tag') or (previous.get('revision') or '?')[:10]} -> {current['tag']}")
+            else:
+                print(f"  {source['id']} moved "
+                      f"{(previous.get('revision') or '?')[:10]} -> {current['revision'][:10]}")
             print(f"    {current['url']}")
             why = " ".join((source.get("why") or "").split())
             if why:

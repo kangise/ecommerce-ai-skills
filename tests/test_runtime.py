@@ -1517,3 +1517,59 @@ def test_action_lease_expiry_and_explicit_retry(tmp_path: Path) -> None:
     db.transition_action(tenant, action["id"], "executing", "failed", error="temporary")
     retried = service.retry(op, action["id"], "r3")
     assert retried["status"] == "approved"
+
+
+def _openai_provider_with_body(body: dict):
+    """A provider whose transport returns one canned Responses-API body."""
+    class Response:
+        status = 200
+
+        def __enter__(self): return self
+        def __exit__(self, *args): return False
+        def read(self): return json.dumps(body).encode()
+
+    return OpenAIResponsesProvider(
+        environ={"OPENAI_API_KEY": "real-key", "EAI_OPENAI_MODEL": "configured-model"},
+        transport=lambda request, timeout: Response(),
+    )
+
+
+def _complete(provider):
+    return provider.complete(
+        agent_name="evidence_analyst",
+        instructions="Inspect evidence.",
+        payload={"evidence": [{"source_id": "source-1"}]},
+        output_schema=SPECIALIST_SCHEMA,
+        safety_identifier="eai_safe_identifier",
+    )
+
+
+def test_openai_completed_response_with_null_output_is_a_clean_error() -> None:
+    """A completed response can carry `output: null` (openai-python#3325).
+
+    `dict.get("output", [])` only substitutes when the key is absent, so this
+    used to surface as a TypeError instead of an ExternalServiceError.
+    """
+    from ecommerce_ai_skills.runtime.agents import ExternalServiceError
+
+    provider = _openai_provider_with_body({"status": "completed", "output": None})
+    with pytest.raises(ExternalServiceError, match="did not contain output_text"):
+        _complete(provider)
+
+
+def test_openai_commentary_phase_is_not_parsed_as_the_answer() -> None:
+    """Only the final-answer message holds the structured result
+    (openai-python#3861); commentary text concatenated in front of it would
+    make the JSON unparseable."""
+    structured = {"platform": "cross_platform", "summary": "ok", "findings": [], "data_gaps": []}
+    provider = _openai_provider_with_body({
+        "status": "completed",
+        "output": [
+            {"type": "message", "phase": "commentary",
+             "content": [{"type": "output_text", "text": "Thinking about the evidence first."}]},
+            {"type": "message", "phase": "final_answer",
+             "content": [{"type": "output_text", "text": json.dumps(structured)}]},
+        ],
+    })
+    assert _complete(provider) == structured
+

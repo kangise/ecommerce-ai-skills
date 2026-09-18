@@ -640,11 +640,18 @@ class OpenAIResponsesProvider:
         if result.get("status") != "completed":
             raise ExternalServiceError(f"OpenAI response status was {result.get('status', 'unknown')}")
         text_parts = []
-        for item in result.get("output", []):
-            if item.get("type") != "message":
+        # `output` can be JSON null on a completed response (openai-python#3325),
+        # and a message item may carry a "phase" — only the final answer holds
+        # the structured result; commentary phases would corrupt the JSON
+        # (openai-python#3861).
+        for item in result.get("output") or []:
+            if not isinstance(item, dict) or item.get("type") != "message":
                 continue
-            for part in item.get("content", []):
-                if part.get("type") == "output_text" and isinstance(part.get("text"), str):
+            phase = item.get("phase")
+            if phase not in (None, "final_answer"):
+                continue
+            for part in item.get("content") or []:
+                if isinstance(part, dict) and part.get("type") == "output_text" and isinstance(part.get("text"), str):
                     text_parts.append(part["text"])
         if not text_parts:
             raise ExternalServiceError("OpenAI response did not contain output_text")

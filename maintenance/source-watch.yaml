@@ -49,9 +49,13 @@ sources:
   - id: mcp-python-sdk
     kind: github
     repo: modelcontextprotocol/python-sdk
+    tag_pattern: '^v1\.'
     why: >
-      The MCP server pins mcp>=1.28,<2. The SDK moves faster than that pin, so a
-      change is the early warning that the ceiling needs revisiting.
+      The MCP server pins mcp>=1.28,<2. Upstream main has been the 2.x line
+      since 2026-07 and the low-level Server decorators we use are gone there,
+      so the default-branch tip is noise for this pin; the newest v1.* release
+      tag is what pip actually installs. Lifting the ceiling means rewriting
+      integration/mcp-server.py against the 2.x on_* constructor API.
     affects:
       constraint_prefixes: []
       code: [integration/mcp-server.py]
