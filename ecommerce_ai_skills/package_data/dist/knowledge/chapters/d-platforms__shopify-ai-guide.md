@@ -82,7 +82,7 @@ Amazon 广告只有站内 PPC，Shopify 的广告渠道包括 Facebook、Google�
 - 自动化预算分配（AI 实时调整各渠道预算）
 - 创意素材批量生成（一个产品生成 20+ 广告变体）
 
-Content rephrased for compliance with licensing restrictions. Sources: [Shopify AI Ecommerce Guide](https://www.shopify.com/sg/blog/ai-ecommerce), [Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)
+来源：[Shopify AI Ecommerce Guide](https://www.shopify.com/sg/blog/ai-ecommerce)、[Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)
 
 ---
 
@@ -302,7 +302,7 @@ AI 搜索引擎优化（GEO）的关键：
 - 自然语言产品描述（AI 能理解和引用的格式）
 - 品牌权威性（外部引用、Review、媒体报道）
 
-Content rephrased for compliance with licensing restrictions. Source: [Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)
+来源：[Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)
 
 **维度 7：A/B 测试自动化**
 
@@ -588,7 +588,7 @@ Email 3（+14天）：最后机会 + 调查问卷
 | Shopify Email | 免费起 | 基础 AI 模板 | 刚起步的店铺 |
 | Mailchimp | $13-350 | AI 内容优化、受众分群 | 多渠道营销 |
 
-Content rephrased for compliance with licensing restrictions. Sources: [Omnisend Shopify AI Tools](https://www.omnisend.com/blog/shopify-ai-tools/), [Shopify AI Ecommerce](https://www.shopify.com/sg/blog/ai-ecommerce)
+来源：[Omnisend Shopify AI Tools](https://www.omnisend.com/blog/shopify-ai-tools/)、[Shopify AI Ecommerce](https://www.shopify.com/sg/blog/ai-ecommerce)
 
 ---
 
@@ -942,7 +942,7 @@ Top 5 流量来源：
 | 转化 | Privy / OptiMonk | $15-50 | AI 弹窗、个性化推荐 |
 | 分析 | Triple Whale / Lifetimely | $50-150 | AI 归因、LTV 预测 |
 
-Content rephrased for compliance with licensing restrictions. Sources: [Omnisend Shopify AI](https://www.omnisend.com/blog/shopify-ai-tools/), [Growth Miner Shopify AI](https://thegrowthminer.com/best-ai-tools-for-shopify-stores-2026/), [Madgicx Shopify Ads](https://www.madgicx.com/blog/ai-driven-advertising-for-shopify-stores)
+来源：[Omnisend Shopify AI](https://www.omnisend.com/blog/shopify-ai-tools/)、[Growth Miner Shopify AI](https://thegrowthminer.com/best-ai-tools-for-shopify-stores-2026/)、[Madgicx Shopify Ads](https://www.madgicx.com/blog/ai-driven-advertising-for-shopify-stores)
 
 ## 10. 完成标志
 
@@ -1249,7 +1249,7 @@ Shopify 博客是长期 SEO 流量的核心。AI 可以帮你系统化地生产�
 | 品牌权威性 | 外部引用、媒体报道、专家背书 | AI 生成 PR 稿件和外链策略 |
 | 多格式内容 | 文字 + 图片 + 视频 + 表格 | AI 建议每个产品页的最佳内容组合 |
 
-Content rephrased for compliance with licensing restrictions. Source: [Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)
+来源：[Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)
 
 
 ---
@@ -1659,8 +1659,6 @@ GA4 数据（过去 30 天）：
 | Best AI Tools for Shopify 2026 | Growth Miner | AI 工具选型和 ROI 分析 | [thegrowthminer.com](https://thegrowthminer.com/best-ai-tools-for-shopify-stores-2026/) |
 | AI Ecommerce Guide | Shopify | AI 在电商中的 7 大应用场景 | [shopify.com/blog/ai-ecommerce](https://www.shopify.com/sg/blog/ai-ecommerce) |
 
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
-
 ### 18.3 推荐书籍
 
 | 书名 | 作者 | 为什么推荐 |
@@ -1856,7 +1854,7 @@ Sidekick Pulse 会主动告诉你:
 - Pulse 自动监控异常，相当于一个 24/7 的数据分析师
 - 建议是可操作的（不只是告诉你问题，还告诉你怎么修）
 
-Content rephrased for compliance with licensing restrictions. Sources: [Shopify Winter '26 Edition](https://www.shopify.com/news/winter-26-edition-merchant), [Echidna Shopify Editions Guide](https://echidna.co/blog/shopify-editions-winter-2026-guide/)
+来源：[Shopify Winter '26 Edition](https://www.shopify.com/news/winter-26-edition-merchant)、[Echidna Shopify Editions Guide](https://echidna.co/blog/shopify-editions-winter-2026-guide/)
 
 
 ### 21.2 Agentic Storefronts 与 UCP 协议: 在 AI 平台内直接卖货
@@ -1883,7 +1881,7 @@ Shopify 已经处理了超过 $1.4 万亿的全球商务数据，这个规模让
 3. 品牌权威性 -- 外部引用、Review 数量和质量、媒体报道
 4. 产品数据的新鲜度 -- 价格、库存、描述是否及时更新
 
-Content rephrased for compliance with licensing restrictions. Sources: [Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization), [Shopify Agentic-Ready Product Data](https://www.shopify.com/enterprise/blog/agentic-ready-product-data), [SixthShop 312% Growth Case Study](https://menafn.com/1110780399/Sixthshop-Releases-Flagship-Case-Study-Showing-312-Percent-Growth-In-AI-Shopping-Visibility)
+来源：[Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)、[Shopify Agentic-Ready Product Data](https://www.shopify.com/enterprise/blog/agentic-ready-product-data)、[SixthShop 312% Growth Case Study](https://menafn.com/1110780399/Sixthshop-Releases-Flagship-Case-Study-Showing-312-Percent-Growth-In-AI-Shopping-Visibility)
 
 
 ### 21.3 GEO 优化实操: 让 AI 推荐你的产品
@@ -2033,7 +2031,7 @@ AI 推荐产品时会考虑品牌的"可信度"。以下信号会提升 AI 推�
 - Perplexity 流量来源域名包含 `perplexity.ai`
 - Google AI Overview 流量在 Google Search Console 中可以看到
 
-Content rephrased for compliance with licensing restrictions. Sources: [Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization), [Shopify Agentic-Ready Product Data](https://www.shopify.com/enterprise/blog/agentic-ready-product-data)
+来源：[Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)、[Shopify Agentic-Ready Product Data](https://www.shopify.com/enterprise/blog/agentic-ready-product-data)
 
 
 ### 21.4 Shopify Audiences: AI 驱动的广告受众工具

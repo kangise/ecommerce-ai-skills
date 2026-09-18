@@ -128,7 +128,7 @@ IPI Score ≈ f(Sell-through Rate, Excess Inventory %, Stranded Inventory %, In-
 - **Stranded Inventory** は 0 でなければならない — 最も修正しやすい
 - **In-stock Rate** — 高い在庫率を保つが、過剰備蓄はしない
 
-Content rephrased for compliance with licensing restrictions. Sources: [goaura.com IPI score guide](https://goaura.com/blog/improving-your-amazon-ipi-score), [goaura.com inventory management](https://goaura.com/blog/amazon-inventory-management)
+出典：[goaura.com IPI score guide](https://goaura.com/blog/improving-your-amazon-ipi-score)、[goaura.com inventory management](https://goaura.com/blog/amazon-inventory-management)
 
 ### 1.3 在庫管理における AI の役割
 
@@ -179,7 +179,7 @@ AI が苦手なこと:
 - 自作の Python スクリプトでカスタム分析(Path B 参照)
 - SKU 数 100+ や多サイト運営向け
 
-Content rephrased for compliance with licensing restrictions. Sources: [goaura.com RestockPro review](https://goaura.com/blog/restockpro), [selectedfirms.co AI inventory management](https://selectedfirms.co/blog/ai-in-ecommerce-inventory-management)
+出典：[goaura.com RestockPro review](https://goaura.com/blog/restockpro)、[selectedfirms.co AI inventory management](https://selectedfirms.co/blog/ai-in-ecommerce-inventory-management)
 
 ### 2.2 無料ツールの組み合わせ
 
@@ -815,7 +815,7 @@ Stranded Inventory の詳細:
 </セルフチェック>
 ```
 
-Content rephrased for compliance with licensing restrictions. Sources: [goaura.com IPI score improvement](https://goaura.com/blog/improving-your-amazon-ipi-score), [impakter.com FBA AI forecasting](https://impakter.com/the-2026-playbook-fba-prep-services-ai-forecasting-and-greener-3pl-operations/)
+出典：[goaura.com IPI score improvement](https://goaura.com/blog/improving-your-amazon-ipi-score)、[impakter.com FBA AI forecasting](https://impakter.com/the-2026-playbook-fba-prep-services-ai-forecasting-and-greener-3pl-operations/)
 
 ---
 
@@ -1040,7 +1040,7 @@ forecast = model.predict(future)
 
 > **Prophet の核心的な強み**: 季節性、トレンド変化、祝日効果を自動処理し、手動でパラメータ設定する必要がない。1 年以上の履歴データがある商品では、Prophet の予測精度は通常、人の判断を上回る。詳細な実装は [Path B: 技術](../b-developers/) の関連モジュール参照。
 
-Content rephrased for compliance with licensing restrictions. Source: [Facebook Prophet documentation](https://facebook.github.io/prophet/)
+出典：[Facebook Prophet documentation](https://facebook.github.io/prophet/)
 
 ### 6.2 マルチチャネル在庫同期(Amazon + Shopify + 独立サイト)
 
@@ -1184,7 +1184,7 @@ Shopify: 日 [X] 件、利益率 [X]%、自社発送
 
 > **前段物流の核心原則**: 通常補充は海運でコストを抑え、緊急補充は空運で欠品を回避。海運出荷ごとに 10-20% の空運予算を予備として確保。
 ---
-Content rephrased for compliance with licensing restrictions. Source: [impakter.com FBA prep and 3PL operations](https://impakter.com/the-2026-playbook-fba-prep-services-ai-forecasting-and-greener-3pl-operations/)
+出典：[impakter.com FBA prep and 3PL operations](https://impakter.com/the-2026-playbook-fba-prep-services-ai-forecasting-and-greener-3pl-operations/)
 
 ---
 
@@ -1219,8 +1219,6 @@ Content rephrased for compliance with licensing restrictions. Source: [impakter.
 | [FBA Prep Services, AI Forecasting and Greener 3PL](https://impakter.com/the-2026-playbook-fba-prep-services-ai-forecasting-and-greener-3pl-operations/) | Impakter | 2026 年 FBA 運営トレンド、AI 予測とグリーン物流を含む |
 | [How to Use AI to Grow Your Amazon Sales](https://us.entrepreneur.com/growing-a-business/how-to-use-ai-to-grow-your-amazon-sales-rankings-and/499421) | Entrepreneur | Amazon 運営での AI の実戦応用、在庫最適化と販売予測を含む |
 | [Prophet Documentation](https://facebook.github.io/prophet/) | Meta | Facebook Prophet 公式ドキュメント、時系列予測の最良の入門リソース |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 7.4 コミュニティとフォーラム
 

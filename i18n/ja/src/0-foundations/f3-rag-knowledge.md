@@ -199,7 +199,7 @@ Bluetooth イヤホン
 - 本番環境: Pinecone(運用レス)か Qdrant(セルフホスト)
 - PostgreSQL がすでにある: pgvector(追加インフラ不要)
 
-Content rephrased for compliance with licensing restrictions. Sources: [Vector Databases 2026 Guide](https://iterathon.tech/blog/vector-databases-ai-applications-guide), [Embeddings and Vector Databases Guide](https://tutorialq.com/ai/machine-learning/embeddings-and-vector-databases)
+出典：[Vector Databases 2026 Guide](https://iterathon.tech/blog/vector-databases-ai-applications-guide)、[Embeddings and Vector Databases Guide](https://tutorialq.com/ai/machine-learning/embeddings-and-vector-databases)
 
 ### 3.3 ベクトルデータベースのワークフロー
 
@@ -490,7 +490,7 @@ Step 4: 最適化と運用(継続)
 複雑なエンタープライズ用途に
 ```
 
-Content rephrased for compliance with licensing restrictions. Sources: [RAG Architecture Guide 2026](https://ztabs.co/blog/rag-architecture-guide), [RAG Systems Production Guide 2026](https://iterathon.tech/blog/rag-systems-production-guide-2025)
+出典：[RAG Architecture Guide 2026](https://ztabs.co/blog/rag-architecture-guide)、[RAG Systems Production Guide 2026](https://iterathon.tech/blog/rag-systems-production-guide-2025)
 
 ---
 

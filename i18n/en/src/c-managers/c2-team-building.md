@@ -54,7 +54,7 @@ According to a PwC survey, 67% of employees feel they are not ready to use AI te
 | **Detached from the business** | Training content is "the principles and history of AI," unrelated to daily work | Adults' motivation to learn comes from "solving a current problem," not "learning new knowledge" |
 | **One-size-fits-all** | Operations, advertising, and customer service use the same training content | The AI use cases for different roles are completely different; generic training is useless for everyone |
 
-Content rephrased for compliance with licensing restrictions. Source: [PwC Global AI Study](https://www.pwc.com/gx/en/issues/data-and-analytics/publications/artificial-intelligence-study.html)
+Source: [PwC Global AI Study](https://www.pwc.com/gx/en/issues/data-and-analytics/publications/artificial-intelligence-study.html)
 
 ### 1.2 An Effective AI Training Framework: The 70-20-10 Rule
 
@@ -106,8 +106,6 @@ Method: process optimization + ROI measurement + continuous iteration
 Output: at least 3 workflows officially incorporate AI assistance
 Success criterion: the team AI maturity score improves by 1.0+ points
 ```
-
-Content rephrased for compliance with licensing restrictions.
 
 ---
 
@@ -980,8 +978,6 @@ Monthly AI usage report
 | How to Successfully Upskill Talent for AI | TechNative | Layered strategy for AI skill building | [technative.io](https://technative.io/how-to-successfully-upskill-talent-for-ai-integration-in-2025/) |
 | Best Practices for AI Training Across Departments | Auzmor | Best practices for cross-department AI training | [auzmor.com](https://auzmor.com/blog/best-practices-for-implementing-ai-training) |
 | AI Sales Training & Upskilling | CX Today | ROI analysis of AI training for sales teams | [cxtoday.com](https://www.cxtoday.com/marketing-sales-technology/ai-sales-training-upskilling/) |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 9.3 Recommended Books
 

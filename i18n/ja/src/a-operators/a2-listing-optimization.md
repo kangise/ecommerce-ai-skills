@@ -107,7 +107,7 @@ Rufus は消費者向けの AI アシスタントで、ユーザーは自然言�
 
 > **2026 年の核心的な洞察**: Listing 最適化は「キーワードゲーム」から「意図マッチ + AI 可読性」へ変わりました。AI に Listing を書かせる価値は「速く書ける」だけでなく、「COSMO に理解され、Rufus に引用され、生身の人間を購入に説得できる」ものを書くことにあります。
 
-Content rephrased for compliance with licensing restrictions. Sources: [ZonGuru COSMO Guide](https://www.zonguru.com/blog/what-is-amazon-cosmo), [ZonGuru Amazon SEO 2026](https://www.zonguru.com/blog/amazon-seo-guide), [MyAmazonGuy COSMO+Rufus](https://myamazonguy.com/seo/amazon-seo-in-the-age-of-ai), [BareGold A10 Playbook](https://baregold.ca/resources/amazon-a10-algorithm-in-2026-the-listing-optimization-playbo)
+出典：[ZonGuru COSMO Guide](https://www.zonguru.com/blog/what-is-amazon-cosmo)、[ZonGuru Amazon SEO 2026](https://www.zonguru.com/blog/amazon-seo-guide)、[MyAmazonGuy COSMO+Rufus](https://myamazonguy.com/seo/amazon-seo-in-the-age-of-ai)、[BareGold A10 Playbook](https://baregold.ca/resources/amazon-a10-algorithm-in-2026-the-listing-optimization-playbo)
 
 ### 1.2 Listing の構成要素
 
@@ -184,7 +184,7 @@ AI が苦手なこと:
 
 > **重要な洞察**: Listing ツールの中核価値はキーワードデータであって AI 生成能力ではない。Helium 10 の AI 生成 Listing が ChatGPT より必ず良いわけではないが、どのキーワードが高検索量・低競争かを教えてくれる — ChatGPT にはできない。最良の組み合わせ: Helium 10 でキーワードリサーチ、ChatGPT/Claude でコピー生成。
 
-Content rephrased for compliance with licensing restrictions. Sources: [amazonfba.org listing tools](https://amazonfba.org/blog/tool-comparisons/best-amazon-listing-optimization-tools), [voc.ai listing tools](https://www.voc.ai/blog/best-amazon-listing-optimization-tools)
+出典：[amazonfba.org listing tools](https://amazonfba.org/blog/tool-comparisons/best-amazon-listing-optimization-tools)、[voc.ai listing tools](https://www.voc.ai/blog/best-amazon-listing-optimization-tools)
 
 ### 2.2 無料ツールの組み合わせ
 
@@ -1604,7 +1604,7 @@ Rufus が私の商品情報をより引用しやすいよう、Listing の最適
 
 > **Rufus 最適化の核心の考え方**: 「キーワード最適化」から「質問回答の最適化」へ転換。あなたの Listing はキーワードの入れ物ではなく、この商品に関するすべての質問に答えられる「商品ナレッジベース」。
 
-Content rephrased for compliance with licensing restrictions. Source: [azariangrowthagency.com Rufus playbook](https://azariangrowthagency.com/amazon-ads-ai-shopping-assistants-playbook/)
+出典：[azariangrowthagency.com Rufus playbook](https://azariangrowthagency.com/amazon-ads-ai-shopping-assistants-playbook/)
 
 ### 7.2 生成エンジン最適化(GEO/AIO)
 
@@ -1655,7 +1655,7 @@ AI 検索エンジン(Google SGE、Perplexity、ChatGPT)が私の商品をより
 
 > **GEO の核心の考え方**: 従来の SEO は「検索エンジンにあなたを見つけさせる」、GEO は「AI エンジンにあなたを推薦させる」。違いは AI エンジンがキーワードマッチだけでなく、意味を理解し、権威性を評価し、ユーザーレビューを引用すること。あなたの商品情報は「AI フレンドリー」である必要がある。
 
-Content rephrased for compliance with licensing restrictions. Source: [bebolddigital.com GEO for Amazon](https://www.bebolddigital.com/blog/generative-engine-optimization-for-amazon)
+出典：[bebolddigital.com GEO for Amazon](https://www.bebolddigital.com/blog/generative-engine-optimization-for-amazon)
 
 ### 7.3 Listing ローカライズの文化差(US vs DE vs JP)
 
@@ -1749,8 +1749,6 @@ Content rephrased for compliance with licensing restrictions. Source: [bebolddig
 | [ChatGPT for Amazon Sellers](https://revenuegeeks.com/guides/chatgpt-for-amazon-seller) | RevenueGeeks | Amazon 運営での ChatGPT の総合活用ガイド |
 | [Generative Engine Optimization for Amazon](https://www.bebolddigital.com/blog/generative-engine-optimization-for-amazon) | BeBold Digital | GEO が Amazon Listing 戦略にどう影響するか |
 | [Amazon Rufus AI Shopping Assistant Playbook](https://azariangrowthagency.com/amazon-ads-ai-shopping-assistants-playbook/) | Azarian Growth Agency | Rufus 最適化の実践ガイド |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 8.4 コミュニティとフォーラム
 

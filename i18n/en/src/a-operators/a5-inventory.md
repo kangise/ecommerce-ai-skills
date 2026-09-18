@@ -128,7 +128,7 @@ IPI Score ≈ f(Sell-through Rate, Excess Inventory %, Stranded Inventory %, In-
 - **Stranded Inventory** must be 0 — this is the easiest to fix
 - **In-stock Rate** — keep a high in-stock rate, but don't over-stock
 
-Content rephrased for compliance with licensing restrictions. Sources: [goaura.com IPI score guide](https://goaura.com/blog/improving-your-amazon-ipi-score), [goaura.com inventory management](https://goaura.com/blog/amazon-inventory-management)
+Sources: [goaura.com IPI score guide](https://goaura.com/blog/improving-your-amazon-ipi-score), [goaura.com inventory management](https://goaura.com/blog/amazon-inventory-management)
 
 ### 1.3 AI's role in inventory management
 
@@ -179,7 +179,7 @@ What AI is weak at:
 - Custom Python scripts for tailored analysis (see Path B)
 - Good for 100+ SKUs or multi-marketplace operations
 
-Content rephrased for compliance with licensing restrictions. Sources: [goaura.com RestockPro review](https://goaura.com/blog/restockpro), [selectedfirms.co AI inventory management](https://selectedfirms.co/blog/ai-in-ecommerce-inventory-management)
+Sources: [goaura.com RestockPro review](https://goaura.com/blog/restockpro), [selectedfirms.co AI inventory management](https://selectedfirms.co/blog/ai-in-ecommerce-inventory-management)
 
 ### 2.2 Free tool stack
 
@@ -824,7 +824,7 @@ Check and report each item before delivery:
 </self_check>
 ```
 
-Content rephrased for compliance with licensing restrictions. Sources: [goaura.com IPI score improvement](https://goaura.com/blog/improving-your-amazon-ipi-score), [impakter.com FBA AI forecasting](https://impakter.com/the-2026-playbook-fba-prep-services-ai-forecasting-and-greener-3pl-operations/)
+Sources: [goaura.com IPI score improvement](https://goaura.com/blog/improving-your-amazon-ipi-score), [impakter.com FBA AI forecasting](https://impakter.com/the-2026-playbook-fba-prep-services-ai-forecasting-and-greener-3pl-operations/)
 
 ---
 
@@ -1049,7 +1049,7 @@ forecast = model.predict(future)
 
 > **Prophet's core strength**: it auto-handles seasonality, trend changes, and holiday effects, without manual parameter tuning. For products with 1+ years of history, Prophet's forecast accuracy usually beats human judgment. For detailed implementation, see the relevant modules in [Path B: Developers](../b-developers/).
 
-Content rephrased for compliance with licensing restrictions. Source: [Facebook Prophet documentation](https://facebook.github.io/prophet/)
+Source: [Facebook Prophet documentation](https://facebook.github.io/prophet/)
 
 ### 6.2 Multi-Channel Inventory Sync (Amazon + Shopify + own site)
 
@@ -1193,7 +1193,7 @@ Check and report each item before delivery:
 
 > **The core principle of first-leg logistics**: ocean for routine restocks to control cost, air for emergencies to avoid stockouts. Reserve a 10–20% air-freight budget as contingency for each ocean shipment.
 ---
-Content rephrased for compliance with licensing restrictions. Source: [impakter.com FBA prep and 3PL operations](https://impakter.com/the-2026-playbook-fba-prep-services-ai-forecasting-and-greener-3pl-operations/)
+Source: [impakter.com FBA prep and 3PL operations](https://impakter.com/the-2026-playbook-fba-prep-services-ai-forecasting-and-greener-3pl-operations/)
 
 ---
 
@@ -1228,8 +1228,6 @@ Content rephrased for compliance with licensing restrictions. Source: [impakter.
 | [FBA Prep Services, AI Forecasting and Greener 3PL](https://impakter.com/the-2026-playbook-fba-prep-services-ai-forecasting-and-greener-3pl-operations/) | Impakter | 2026 FBA operations trends, incl. AI forecasting and green logistics |
 | [How to Use AI to Grow Your Amazon Sales](https://us.entrepreneur.com/growing-a-business/how-to-use-ai-to-grow-your-amazon-sales-rankings-and/499421) | Entrepreneur | hands-on AI applications in Amazon operations, incl. inventory optimization and sales forecasting |
 | [Prophet Documentation](https://facebook.github.io/prophet/) | Meta | Facebook Prophet official docs, the best intro to time-series forecasting |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 7.4 Communities & forums
 

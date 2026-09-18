@@ -32,8 +32,6 @@
 
 MCP (Model Context Protocol) is an open standard developed by Anthropic, defining how AI models connect to external tools and data ([Badger Blue](https://badger.blue/blogs/ecommerce-unpacked/model-context-protocol-mcp-ecommerce)).
 
-Content rephrased for compliance with licensing restrictions.
-
 ```
 MCP architecture:
 
@@ -63,8 +61,6 @@ One MCP Server can be used by all MCP-supporting AI clients
 ### 1.3 The 2026 MCP-ecosystem status
 
 > **Real data**: Amazon officially released the Ads MCP Server open beta on February 2, 2026 ([Canopy Management](https://canopymanagement.com/amazon-ads-mcp-server-ai/)). Google also open-sourced its own MCP implementation. Production-grade MCP Servers already process over $45 million in ad spend monthly, covering 10,000+ businesses ([HyperFX](https://www.hyperfx.ai/blog/meta-ads-mcp-guide-ai-advertising-agents)). 74% of SMBs are actively testing or deploying AI ad tools ([Amazon Ads / Opinium research](https://advertising.amazon.com/en-us/library/news/smb-ai-research)).
-
-Content rephrased for compliance with licensing restrictions.
 
 ---
 
@@ -139,12 +135,10 @@ The Amazon Ads MCP Server provides complete ad-management capabilities. Per Mark
 | Profile | list_profiles | get ad accounts | "List all available ad profiles" |
 | | get_regions | get region info | "Show the available marketplace regions" |
 
-Content rephrased for compliance with licensing restrictions. Source: [GitHub](https://github.com/MarketplaceAdPros/amazon-ads-mcp-server).
+Source: [GitHub](https://github.com/MarketplaceAdPros/amazon-ads-mcp-server).
 
 > **Real case: Amazon Ads MCP officially released 2026.2**
 > On February 2, 2026, Amazon announced the Ads MCP Server open beta. Sellers with API credentials can, via tools like Claude, ChatGPT, or Gemini, create campaigns, optimize bids, pull reports, and expand across marketplaces with simple commands ([ClearAds Agency](https://clearadsagency.com/what-is-amazons-mcp-server-and-how-does-it-change-advertising-for-sellers/)).
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 3.3 Five major MCP ad-automation strategies
 
@@ -231,8 +225,6 @@ Claude: [aggregate all data] → generate a complete report
 
 > **Real data**: AI-driven PPC automation saves 10-15 hours of manual tuning per week ([Helium 10](https://www.helium10.com/blog/blog-how-ai-powered-amazon-ppc-saves-10-plus-hours-weekly-and-boosts-performance/)). In an official Amazon Ads case study, STEADY JAPAN improved total ACOS by 25% within the first month of adopting automated bidding, while maintaining sales levels ([Amazon Ads case study](https://advertising.amazon.com/en-us/library/case-studies/flywheel-steady-japan-lowers-acos/)) — one seller's result, not a general range.
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 3.4 Hands-on: manage Amazon ads via a Claude conversation
 
 ```
@@ -261,8 +253,6 @@ Claude: [aggregate] → generate a Markdown report
 
 > **Worked example**: Stormy.ai used a hypothetical mid-sized brand to show 5 strategies for managing Amazon ads with Claude MCP, lowering ACOS and saving 30 days of work per year ([Stormy.ai](https://web.archive.org/web/20260307090318/https://stormy.ai/blog/automating-amazon-ads-claude-mcp)).
 
-Content rephrased for compliance with licensing restrictions.
-
 ---
 
 ## 4. Shopify MCP Integration
@@ -287,12 +277,8 @@ Shopify's MCP ecosystem is already very mature in 2026, spanning official and co
 | shopify-mcp-server | Ajackus | Claude Desktop integration | [LobeHub](https://lobehub.com/mcp/ajackus-shopify-mcp-server) |
 | shopify-storefront-mcp | QuentinCody | unofficial Storefront API implementation | [Hexmos](https://hexmos.com/freedevtools/mcp/other-tools-and-integrations/QuentinCody--shopify-storefront-mcp-server/) |
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Real case: Shopify MCP becomes Agentic Commerce infrastructure**
 > Shopify's MCP ecosystem is described as "the technical connective tissue of Agentic Commerce" — it lets LLMs (like ChatGPT, Perplexity, or a custom Agent) "ask" your store about products, inventory, and customer preferences in a language both machines and platforms understand ([WeArePresta](https://wearepresta.com/shopify-mcp-server-the-standardized-interface-for-agentic-commerce-2026/)). Shopify's official Storefront MCP Server helps customers browse and buy products via AI agents ([Shopify Dev](https://www.shopify.dev/docs/apps/build/storefront-mcp/servers/storefront)).
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 Shopify MCP architecture:
@@ -945,8 +931,6 @@ class BudgetSafetyValve:
 ### 8.1 Meta Ads MCP
 
 > **Real data**: production-grade MCP Servers already process over $45 million in ad spend monthly, covering 10,000+ businesses. Google also open-sourced its own MCP implementation ([HyperFX](https://www.hyperfx.ai/blog/meta-ads-mcp-guide-ai-advertising-agents)).
-
-Content rephrased for compliance with licensing restrictions.
 
 | Platform MCP | Status | Core capability |
 |--------------|--------|-----------------|

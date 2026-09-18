@@ -210,8 +210,6 @@ CBT 跨境直邮
 > **真实案例：Mercado Libre 被称为"拉美的 Amazon"但远不止于此**
 > 截至 2026 年 2 月，Mercado Libre 已经牢固确立了自己作为拉美不可或缺的数字基础设施的地位。"拉美的 Amazon"这个比喻越来越无法涵盖其生态系统的全部范围它同时是支付平台（Mercado Pago）、物流网络（Mercado Envios）、信贷服务（Mercado Credito）和广告平台（[Financial Content](https://www.financialcontent.com/article/finterra-2026-2-27-the-latin-american-flywheel-a-2026-deep-dive-research-feature-on-mercadolibre-meli)）。
 
-Content rephrased for compliance with licensing restrictions.
-
 基于 Mercado Libre Q4 2025 财报（Morningstar，原文已下线，2026-08 复核）：
 
 | 指标 | Q4 2025 数据 | YoY 变化 |
@@ -232,7 +230,7 @@ Content rephrased for compliance with licensing restrictions.
 
 > **对卖家的启示**：Mercado Libre 正在大力投资免费配送和物流基础设施。使用 Mercado Envios Full 的卖家将获得最大的流量红利。拉美电商渗透率仅 12-15%（vs 美国 27%、中国 35%+），增长空间巨大。
 
-Content rephrased for compliance with licensing restrictions. Sources: Morningstar（原文已下线，2026-08 复核）, [Finimize](https://finimize.com/content/meli-asset-snapshot).
+来源：Morningstar（原文已下线，2026-08 复核）, [Finimize](https://finimize.com/content/meli-asset-snapshot).
 
 ### 4.3 拉美市场特有挑战
 
@@ -261,7 +259,7 @@ Mercado Libre Global Selling（[global-selling.mercadolibre.com](https://global-
 | 每秒订单 | 29 |
 | GMV | $25.5B（过去 12 个月平均） |
 
-Content rephrased for compliance with licensing restrictions. Source: [Mercado Libre Global Selling](https://global-selling.mercadolibre.com/landing/about).
+来源：[Mercado Libre Global Selling](https://global-selling.mercadolibre.com/landing/about).
 
 ### 5.2 Global Selling 支持的市场
 
@@ -299,7 +297,7 @@ Global Selling 物流流程：
 退货按平台政策处理
 ```
 
-Content rephrased for compliance with licensing restrictions. Source: [Mercado Libre Learning Center](https://global-selling.mercadolibre.com/learning-center/news/how-to-ship-your-products-to-latin-america).
+来源：[Mercado Libre Learning Center](https://global-selling.mercadolibre.com/learning-center/news/how-to-ship-your-products-to-latin-america).
 
 ### 5.4 拉美市场选品 AI 策略
 

@@ -57,8 +57,6 @@ AliExpress 的定位这几年变化很大，费用结构和物流方案直接决
 
 AliExpress 目前对以下国家/地区的卖家开放入驻：中国大陆、俄罗斯、西班牙、意大利、土耳其、法国、巴西等（[Wise](https://wise.com/us/blog/sell-on-aliexpress)）。入驻需要提供营业执照、法人身份证、税务信息等。
 
-Content rephrased for compliance with licensing restrictions.
-
 | 入驻类型 | 说明 | 适合 |
 |----------|------|------|
 | 普通卖家 | 自主运营，自行定价和发货 | 有运营能力的卖家 |
@@ -79,13 +77,9 @@ AliExpress 佣金按品类不同，一般在 5%-9% 之间（[WorldOfCalculator](
 
 > **注意**：AliExpress 不收月租费（与 Amazon 不同），但 AliExpress Choice 模式下平台会从定价中抽取更高比例。
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 2.3 AliExpress 供应商筛选标准
 
 根据行业最佳实践（[Alibaba Insights](https://www.alibaba.com/product-insights/dropshipping-hacks-you-need-to-know-in-2026-top-20-best-selling-aliexpress-items-revealed.html)），成功卖家关注三大支柱：供应链韧性、微利基权威、售后体验工程。筛选供应商时优先选择评分 ≥4.8、近 90 天订单 ≥2000、有视频验证仓库的供应商。
-
-Content rephrased for compliance with licensing restrictions.
 
 ## 3. AI 应用场景
 
@@ -177,8 +171,6 @@ AliExpress 覆盖全球，多语言是核心需求。AliExpress 在南欧市场�
 > **真实案例：TikTok Haul 驱动 AliExpress 增长**
 > 2026 年 AliExpress 再次成为热门话题，主要因为 TikTok 开箱视频（hauls）、YouTube Shorts 和美国转卖者在 Etsy/Amazon/Depop 上翻卖 AliExpress 商品的趋势（Ad-Hoc News，原文已下线，2026-08 复核）。但同时美国海关规则、州税和运费正在收紧，卖家需要更加注意合规。
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 2.5 AliExpress vs Temu 竞争策略
 
 ```
@@ -214,8 +206,6 @@ Temu 上同品类竞品价格比我低 [X]%。
 | ChatGPT/Claude | 多语言 Listing 生成 | $20/月 |
 | AliDropship | Dropshipping 自动化 | 一次性 $89 |
 | CJDropshipping | 供应链+代发 | 免费注册 |
-
-Content rephrased for compliance with licensing restrictions.
 
 ## 4. AliExpress 物流方案详解
 
@@ -311,8 +301,6 @@ AliExpress 在南欧市场（西班牙、法国、葡萄牙）排名前列（[Ma
 ### 5.3 AliExpress 信任度挑战
 
 根据 2026 年全球电商诚信指数（[Alibaba Insights](https://www.alibaba.com/product-insights/best-aliexpress-alternatives-in-2026-top-platforms-for-global-online-shopping.html)），AliExpress 在"产品真实性信心"方面得分 62/100，落后于 Temu（79）、Shein（76）和 Amazon Global（84）。这意味着卖家需要额外努力建立信任：
-
-Content rephrased for compliance with licensing restrictions.
 
 | 信任建设策略 | 说明 | 效果 |
 |-------------|------|------|

@@ -209,8 +209,6 @@ CBT 越境直送
 > **実事例: Mercado Libre は「中南米の Amazon」と呼ばれるがそれをはるかに超える**
 > 2026 年 2 月時点で、Mercado Libre は中南米に不可欠なデジタルインフラとしての地位を固く確立した。「中南米の Amazon」という比喩はますますその生態系の全範囲を捉えきれなくなっている — それは同時に決済プラットフォーム(Mercado Pago)、物流ネットワーク(Mercado Envios)、信用サービス(Mercado Credito)、広告プラットフォームである([Financial Content](https://www.financialcontent.com/article/finterra-2026-2-27-the-latin-american-flywheel-a-2026-deep-dive-research-feature-on-mercadolibre-meli))。
 
-Content rephrased for compliance with licensing restrictions.
-
 Mercado Libre の Q4 2025 決算レポート(Morningstar、原文はオフライン、2026-08 再確認)に基づく:
 
 | 指標 | Q4 2025 データ | YoY 変化 |
@@ -231,7 +229,7 @@ Mercado Libre の Q4 2025 決算レポート(Morningstar、原文はオフライ
 
 > **セラーへの示唆**: Mercado Libre は無料配送と物流インフラに大きく投資している。Mercado Envios Full を使うセラーが最大のトラフィック紅利を得る。中南米の EC 浸透率はわずか 12-15%(vs 米国 27%、中国 35%+)、成長余地が巨大。
 
-Content rephrased for compliance with licensing restrictions. Sources: Morningstar(原文はオフライン、2026-08 再確認), [Finimize](https://finimize.com/content/meli-asset-snapshot).
+出典：Morningstar(原文はオフライン、2026-08 再確認)、[Finimize](https://finimize.com/content/meli-asset-snapshot).
 
 ### 4.3 中南米市場特有の課題
 
@@ -260,7 +258,7 @@ Mercado Libre Global Selling([global-selling.mercadolibre.com](https://global-se
 | 秒あたり注文 | 29 |
 | GMV | $25.5B(過去 12 か月平均) |
 
-Content rephrased for compliance with licensing restrictions. Source: [Mercado Libre Global Selling](https://global-selling.mercadolibre.com/landing/about).
+出典：[Mercado Libre Global Selling](https://global-selling.mercadolibre.com/landing/about).
 
 ### 5.2 Global Selling が対応する市場
 
@@ -298,7 +296,7 @@ USD で受金、買い手は現地通貨で支払う
 返品はプラットフォーム政策に従って処理
 ```
 
-Content rephrased for compliance with licensing restrictions. Source: [Mercado Libre Learning Center](https://global-selling.mercadolibre.com/learning-center/news/how-to-ship-your-products-to-latin-america).
+出典：[Mercado Libre Learning Center](https://global-selling.mercadolibre.com/learning-center/news/how-to-ship-your-products-to-latin-america).
 
 ### 5.4 中南米市場選品 AI 戦略
 

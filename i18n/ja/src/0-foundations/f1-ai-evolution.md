@@ -112,7 +112,7 @@ LLM はテキストを「文字」や「単語」ではなく **トークン** �
 
 GPT-3(2020)から GPT-4(2023)への飛躍がこれほど大きかったのはそのためです。アルゴリズムの本質的な変化ではなく、規模の量的変化が質的変化を引き起こした。この現象は**創発的能力(Emergent Abilities)**と呼ばれます: 小さいモデルには全くできないことが、大きいモデルには突然できるようになる。
 
-Content rephrased for compliance with licensing restrictions. Source: [Emergent Abilities of Large Language Models](https://arxiv.org/abs/2206.07682)
+出典：[Emergent Abilities of Large Language Models](https://arxiv.org/abs/2206.07682)
 
 
 ### 1.5 幻覚問題: AI はなぜ「デタラメを言う」のか
@@ -188,7 +188,7 @@ MCP プロトコルの標準化: AI が外部ツールへ接続する統一イ�
 私たちは今ここにいる ← ちょうど良いタイミングで来ましたね
 ```
 
-Content rephrased for compliance with licensing restrictions. Sources: [Attention Is All You Need (2017)](https://arxiv.org/abs/1706.03762), [Emergent Abilities of LLMs](https://arxiv.org/abs/2206.07682)
+出典：[Attention Is All You Need (2017)](https://arxiv.org/abs/1706.03762)、[Emergent Abilities of LLMs](https://arxiv.org/abs/2206.07682)
 
 ### 2.2 各段階を越境EC のアナロジーで
 
@@ -585,7 +585,7 @@ API(サードパーティサービスの呼び出し)
 | ブラウザ MCP | Web ページ | AI が競合情報を自動収集 |
 | Amazon SP-API MCP | Amazon セラーセントラル | AI が注文・在庫・広告データを直接取得 |
 
-Content rephrased for compliance with licensing restrictions. Sources: [Anthropic MCP Documentation](https://modelcontextprotocol.io/), [MCP Guide 2026](https://www.taskade.com/blog/mcp-your-ai-agents-superpower-for-real-world-context-and-automation)
+出典：[Anthropic MCP Documentation](https://modelcontextprotocol.io/)、[MCP Guide 2026](https://www.taskade.com/blog/mcp-your-ai-agents-superpower-for-real-world-context-and-automation)
 
 ---
 

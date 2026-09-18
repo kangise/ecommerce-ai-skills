@@ -82,7 +82,7 @@ Amazon advertising is only on-site PPC; Shopify's ad channels include Facebook, 
 - Automated budget allocation (AI adjusts each channel's budget in real time)
 - Batch creative-material generation (one product generates 20+ ad variants)
 
-Content rephrased for compliance with licensing restrictions. Sources: [Shopify AI Ecommerce Guide](https://www.shopify.com/sg/blog/ai-ecommerce), [Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)
+Sources: [Shopify AI Ecommerce Guide](https://www.shopify.com/sg/blog/ai-ecommerce), [Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)
 
 ---
 
@@ -302,7 +302,7 @@ The keys to AI search-engine optimization (GEO):
 - Natural-language product descriptions (a format AI can understand and cite)
 - Brand authority (external citations, reviews, media coverage)
 
-Content rephrased for compliance with licensing restrictions. Source: [Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)
+Source: [Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)
 
 **Dimension 7: A/B testing automation**
 
@@ -587,7 +587,7 @@ Before delivering, verify each item and report the result:
 | Shopify Email | From free | Basic AI templates | Just-starting stores |
 | Mailchimp | $13-350 | AI content optimization, audience segmentation | Multi-channel marketing |
 
-Content rephrased for compliance with licensing restrictions. Sources: [Omnisend Shopify AI Tools](https://www.omnisend.com/blog/shopify-ai-tools/), [Shopify AI Ecommerce](https://www.shopify.com/sg/blog/ai-ecommerce)
+Sources: [Omnisend Shopify AI Tools](https://www.omnisend.com/blog/shopify-ai-tools/), [Shopify AI Ecommerce](https://www.shopify.com/sg/blog/ai-ecommerce)
 
 ---
 
@@ -946,7 +946,7 @@ Before delivering, verify each item and report the result:
 | Conversion | Privy / OptiMonk | $15-50 | AI popups, personalized recommendations |
 | Analytics | Triple Whale / Lifetimely | $50-150 | AI attribution, LTV prediction |
 
-Content rephrased for compliance with licensing restrictions. Sources: [Omnisend Shopify AI](https://www.omnisend.com/blog/shopify-ai-tools/), [Growth Miner Shopify AI](https://thegrowthminer.com/best-ai-tools-for-shopify-stores-2026/), [Madgicx Shopify Ads](https://www.madgicx.com/blog/ai-driven-advertising-for-shopify-stores)
+Sources: [Omnisend Shopify AI](https://www.omnisend.com/blog/shopify-ai-tools/), [Growth Miner Shopify AI](https://thegrowthminer.com/best-ai-tools-for-shopify-stores-2026/), [Madgicx Shopify Ads](https://www.madgicx.com/blog/ai-driven-advertising-for-shopify-stores)
 
 ## 10. Completion Checklist
 
@@ -1253,7 +1253,7 @@ In 2026, more and more users discover products through AI search engines (ChatGP
 | Brand authority | External citations, media coverage, expert endorsements | AI generates PR pieces and a backlink strategy |
 | Multi-format content | Text + images + video + tables | AI suggests the best content combination for each product page |
 
-Content rephrased for compliance with licensing restrictions. Source: [Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)
+Source: [Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)
 
 
 ---
@@ -1663,8 +1663,6 @@ Before delivering, verify each item and report the result:
 | Best AI Tools for Shopify 2026 | Growth Miner | AI tool selection and ROI analysis | [thegrowthminer.com](https://thegrowthminer.com/best-ai-tools-for-shopify-stores-2026/) |
 | AI Ecommerce Guide | Shopify | The 7 major AI application scenarios in e-commerce | [shopify.com/blog/ai-ecommerce](https://www.shopify.com/sg/blog/ai-ecommerce) |
 
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
-
 ### 18.3 Recommended Books
 
 | Title | Author | Why recommended |
@@ -1862,7 +1860,7 @@ Why this is especially valuable for cross-border sellers:
 - Pulse automatically monitors anomalies, equivalent to a 24/7 data analyst
 - Suggestions are actionable (not just telling you the problem, but also telling you how to fix it)
 
-Content rephrased for compliance with licensing restrictions. Sources: [Shopify Winter '26 Edition](https://www.shopify.com/news/winter-26-edition-merchant), [Echidna Shopify Editions Guide](https://echidna.co/blog/shopify-editions-winter-2026-guide/)
+Sources: [Shopify Winter '26 Edition](https://www.shopify.com/news/winter-26-edition-merchant), [Echidna Shopify Editions Guide](https://echidna.co/blog/shopify-editions-winter-2026-guide/)
 
 
 ### 21.2 Agentic Storefronts and the UCP Protocol: Selling Directly Within AI Platforms
@@ -1889,7 +1887,7 @@ According to Shopify's official GEO Playbook and SixthShop's case study (312% AI
 3. Brand authority — external citations, review count and quality, media coverage
 4. The freshness of product data — whether price, inventory, and description are updated promptly
 
-Content rephrased for compliance with licensing restrictions. Sources: [Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization), [Shopify Agentic-Ready Product Data](https://www.shopify.com/enterprise/blog/agentic-ready-product-data), [SixthShop 312% Growth Case Study](https://menafn.com/1110780399/Sixthshop-Releases-Flagship-Case-Study-Showing-312-Percent-Growth-In-AI-Shopping-Visibility)
+Sources: [Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization), [Shopify Agentic-Ready Product Data](https://www.shopify.com/enterprise/blog/agentic-ready-product-data), [SixthShop 312% Growth Case Study](https://menafn.com/1110780399/Sixthshop-Releases-Flagship-Case-Study-Showing-312-Percent-Growth-In-AI-Shopping-Visibility)
 
 
 ### 21.3 GEO Optimization in Practice: Getting AI to Recommend Your Product
@@ -2039,7 +2037,7 @@ Set up AI-channel tracking in GA4:
 - Perplexity traffic's source domain contains `perplexity.ai`
 - Google AI Overview traffic can be seen in Google Search Console
 
-Content rephrased for compliance with licensing restrictions. Sources: [Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization), [Shopify Agentic-Ready Product Data](https://www.shopify.com/enterprise/blog/agentic-ready-product-data)
+Sources: [Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization), [Shopify Agentic-Ready Product Data](https://www.shopify.com/enterprise/blog/agentic-ready-product-data)
 
 
 ### 21.4 Shopify Audiences: An AI-Driven Ad-Audience Tool

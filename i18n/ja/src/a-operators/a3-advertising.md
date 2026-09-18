@@ -189,7 +189,7 @@ AI が苦手なこと:
 
 > **重要な洞察**: 広告ツールの中核価値は自動実行であって戦略立案ではない。ツールは自動で入札を調整し除外語を追加できるが、「どのキーワードに予算を集中すべきか」という戦略の問いはあなた(または AI 分析)が決める必要がある。最良の組み合わせ: Adtomic/Perpetua で自動実行、ChatGPT/Claude で戦略分析。
 
-Content rephrased for compliance with licensing restrictions. Sources: [deepbi.com AI PPC](https://www.deepbi.com/blog/13/), [aijourn.com PPC optimization](https://aijourn.com/amazon-ppc-optimization-tool/), [algofy.com AI tools 2026](https://www.algofy.com/post/best-ai-tools-for-amazon-sellers-in-2026)
+出典：[deepbi.com AI PPC](https://www.deepbi.com/blog/13/)、[aijourn.com PPC optimization](https://aijourn.com/amazon-ppc-optimization-tool/)、[algofy.com AI tools 2026](https://www.algofy.com/post/best-ai-tools-for-amazon-sellers-in-2026)
 
 ### 2.2 無料ツールの組み合わせ
 
@@ -1367,7 +1367,7 @@ MCP(Model Context Protocol)は AI モデルが外部ツールとやり取りす�
 - Amazon Advertising API の更新に注目
 - ChatGPT/Claude で広告分析を試し、AI 補助の広告管理の経験を蓄積
 
-Content rephrased for compliance with licensing restrictions. Source: [futurumgroup.com Amazon Ads MCP Server](https://futurumgroup.com/insights/amazon-ads-mcp-server-debuts-streamlining-ai-managed-campaign-execution/)
+出典：[futurumgroup.com Amazon Ads MCP Server](https://futurumgroup.com/insights/amazon-ads-mcp-server-debuts-streamlining-ai-managed-campaign-execution/)
 
 ### 6.2 広告とオーガニック順位のフライホイール効果
 
@@ -1488,7 +1488,7 @@ Markdown レポートを 4 セクションで出力し、4 つの質問に対応
 </セルフチェック>
 ```
 
-Content rephrased for compliance with licensing restrictions. Source: [deliveredsocial.com Amazon advertising beyond sponsored products](https://deliveredsocial.com/amazon-advertising-beyond-sponsored-products-dsp-video-and-external-traffic/)
+出典：[deliveredsocial.com Amazon advertising beyond sponsored products](https://deliveredsocial.com/amazon-advertising-beyond-sponsored-products-dsp-video-and-external-traffic/)
 
 ---
 
@@ -1522,8 +1522,6 @@ Content rephrased for compliance with licensing restrictions. Source: [delivered
 | [Amazon Ads MCP Server](https://futurumgroup.com/insights/amazon-ads-mcp-server-debuts-streamlining-ai-managed-campaign-execution/) | Futurum Group | Amazon 公式 AI 広告インターフェースの深掘りと業界への影響 |
 | [Amazon Advertising Strategies](https://goaura.com/blog/amazon-advertising-strategies) | GoAura | Amazon 広告戦略の総合ガイド、SP/SB/SD/DSP のベストプラクティス含む |
 | [Beyond Sponsored Products: DSP, Video & External Traffic](https://deliveredsocial.com/amazon-advertising-beyond-sponsored-products-dsp-video-and-external-traffic/) | Delivered Social | SP を超える上級戦略、DSP とサイト外トラフィックを含む |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 7.4 コミュニティとフォーラム
 

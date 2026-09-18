@@ -117,7 +117,7 @@ classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
 - **EU REACH/RoHS**：REACH 法规要求对化学物质进行注册、评估和授权。RoHS 指令限制电子电气设备中的有害物质（铅、汞、镉等）。两者都是强制要求。
 - **JP 化審法**：日本的化学物质审查法对新化学物质有严格的审查和注册要求。
 
-Content rephrased for compliance with licensing restrictions. Sources: [CE marking - Wikipedia](https://en.wikipedia.org/wiki/CE_marking)
+来源：[CE marking - Wikipedia](https://en.wikipedia.org/wiki/CE_marking)
 
 ### 1.3 AI 在合规中的角色定位
 
@@ -1129,7 +1129,7 @@ Amazon 要求卖家确保其使用的所有第三方工具和 AI Agent 符合以
 3. **谨慎使用自动化操作**：AI Agent 的自动定价、自动回复等功能需要确保不违反 Amazon 政策
 4. **保留操作记录**：记录 AI Agent 的操作日志，以备 Amazon 审查
 
-Content rephrased for compliance with licensing restrictions. Sources: [ppc.land Amazon AI agent rules](https://ppc.land/amazons-new-ai-agent-rules-shake-up-sellers-before-march-4-deadline/), [ecommercebytes.com BSA compliance](https://www.ecommercebytes.com/2026/02/18/amazon-sellers-have-2-weeks-to-ensure-compliance-of-tools-they-use/)
+来源：[ppc.land Amazon AI agent rules](https://ppc.land/amazons-new-ai-agent-rules-shake-up-sellers-before-march-4-deadline/)、[ecommercebytes.com BSA compliance](https://www.ecommercebytes.com/2026/02/18/amazon-sellers-have-2-weeks-to-ensure-compliance-of-tools-they-use/)
 
 **AI 辅助 BSA 合规检查：**
 
@@ -1356,8 +1356,6 @@ GPSR 于 2024 年 12 月 13 日生效，替代了旧的通用产品安全指令�
 | [Comply with U.S. and Foreign Regulations](https://www.trade.gov/comply-us-and-foreign-regulations) | International Trade Administration | 与发达国家贸易时的关键合规规则概述 |
 | [CPSC Recalls Database](https://www.cpsc.gov/Recalls) | CPSC | 美国消费品召回数据库，了解哪些产品被召回及原因 |
 | [EU Safety Gate (RAPEX)](https://ec.europa.eu/safety-gate-alerts/screen/webReport) | European Commission | 欧盟产品安全快速预警系统，查看被通报的危险产品 |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 8.4 社区与论坛
 

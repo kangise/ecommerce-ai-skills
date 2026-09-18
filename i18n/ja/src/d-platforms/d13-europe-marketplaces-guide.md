@@ -49,8 +49,6 @@
 
 Otto はドイツ第二のオンライン小売業者で、1220 万超のアクティブ買い手、日均 250 万回の訪問、平均で毎秒 35 件の注文を持つ([Shoppingfeed](https://blog.shoppingfeed.com/en-us/otto-marketplace-what-brands-need-to-know-about-germanys-second-largest-platform))。プラットフォームは厳選セラーモデルを採用し、高級ブランドイメージと製品品質基準を維持するため、厳格に審査された約 5000+ のセラーのみを受け入れる([Unimall](https://unimall.ai/guides/sell-on-otto))。
 
-Content rephrased for compliance with licensing restrictions.
-
 | 次元 | Otto | Amazon.de |
 |------|------|-----------|
 | セラー数 | ~5,000+(厳選) | 数十万 |
@@ -80,8 +78,6 @@ Otto Market の公式要件([otto.market](https://www.otto.market/en/faq/faq.htm
 | VerpackG | ドイツ包装法の登録 | 強制 |
 | WEEE | 電子廃棄物リサイクル登録 | 電子製品に強制 |
 
-Content rephrased for compliance with licensing restrictions.
-
 > **越境セラー注意**: 中国セラーは現在 Otto に直接出店できず、ドイツ/オランダ法人実体か代運営業者が必要。これが Otto と Amazon の最大の違い — 障壁がより高いが競争がより小さい。
 
 ### 2.3 Otto 手数料と費用
@@ -100,12 +96,8 @@ Content rephrased for compliance with licensing restrictions.
 >
 > だが Otto も課題に直面している: 費用の上昇とセラーとの争議が一部のセラーの離脱を招いた([EcommerceNews EU](https://ecommercenews.eu/ottos-marketplace-is-losing-sellers-and-is-in-crisis/))。これは Otto への出店が天秤にかける必要があることを意味する: 競争は小さめだがプラットフォーム政策変化のリスクがある。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **実事例: Otto が Adobe Analytics でカスタマージャーニーを最適化**
 > Otto は成功した自営モデルをプラットフォームモデルへ転換しており、会社が「1995 年にオンライン取引を開始して以来最も重大な変革」と呼ぶもの。Otto は Adobe Customer Journey Analytics を使ってクロスチャネルの顧客体験を最適化し、小売パートナーがプラットフォームでより良く販売できるよう手伝う([Adobe Case Study](https://business.adobe.com/customer-success-stories/otto-e-commerce-case-study.html))。
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 あなたは Otto Marketplace 運営の専門家です。
@@ -150,8 +142,6 @@ Zalando は 2025 年に力強いパフォーマンスを示した([Europawire](h
 > **出典：** 検証 2026-08 · [Zalando FY2025 公式業績](https://corporate.zalando.com/en/investor-relations/zalando-full-year-2025-results)：GMV €17.56B(+14.7%)、収入 €12.35B(+16.8%)、調整後 EBIT €590.7M(+15.6%)、アクティブ顧客 6200 万、自社株買い上限 €300M
 
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 3.2 Zalando AI イノベーション(2026 重点)
 
 Zalando は AI に巨大な投資をしており、欧州ファッション EC の AI 応用のリーダー([FT/Quirin Research](https://markets.ft.com/data/announce/detail?dockey=600-202603131203DGAP____ORIGRE___rc_24956-1)):
@@ -166,19 +156,13 @@ Zalando は AI に巨大な投資をしており、欧州ファッション EC �
 
 > **重要な洞察**: Zalando は「欧州で最も野心的な AI ラボの 1 つ」である Qutwoと提携しており([Zalando FY2025 公式業績](https://corporate.zalando.com/en/investor-relations/zalando-full-year-2025-results))、AI アシスタントの「購入可能性」(shoppability)をプラットフォームに統合している。これは Zalando で販売するブランドが、AI システムが正しく理解し推薦できるよう製品データの構造化と完全性を確保する必要があることを意味する。
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 3.3 出店要件
 
 > **実事例: Zalando AI 推薦がカート追加率を 13% 向上**
 > Zalando の AI 推薦システムは既に定量化可能な効果を生んでいる: AI 推薦がユーザーのカート追加商品数を 13% 増やし、同時に返品率が 8% 低下した(より良いサイズ提案のおかげ)(Ad-Hoc News、原文はオフライン、2026-08 再確認)。これは Zalando で販売するブランドは、製品データが完全なほど(サイズ、材質、シルエット)AI に推薦される確率が高く、返品率も低いことを意味する。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **実事例: Zalando AI コンテンツ生産が 0 から 90% へ**
 > Zalando は 1 年で AI 生成のマーケティングコンテンツをほぼゼロから 90% に高め、マーケティング活動の制作時間を 6 週から数日に短縮し、作成コンテンツ数を 70% 増やした([FT/Quirin Research](https://markets.ft.com/data/announce/detail?dockey=600-202603131203DGAP____ORIGRE___rc_24956-1))。これはファッション EC のコンテンツ生産における AI の巨大なポテンシャルを示している。
-
-Content rephrased for compliance with licensing restrictions.
 
 - ブランドは Zalando の品質基準を満たす必要
 - Zalando Partner Program 経由で申請する必要

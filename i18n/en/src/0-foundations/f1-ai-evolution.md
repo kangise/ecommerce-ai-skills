@@ -112,7 +112,7 @@ The answer is **scale**. With enough training data (trillions of tokens) and eno
 
 That's why the leap from GPT-3 (2020) to GPT-4 (2023) was so large — not a fundamentally new algorithm, but quantity turning into quality. The phenomenon is called **emergent abilities**: things small models simply cannot do, large models suddenly can.
 
-Content rephrased for compliance with licensing restrictions. Source: [Emergent Abilities of Large Language Models](https://arxiv.org/abs/2206.07682)
+Source: [Emergent Abilities of Large Language Models](https://arxiv.org/abs/2206.07682)
 
 
 ### 1.5 Hallucination: why AI "makes things up"
@@ -188,7 +188,7 @@ E-commerce uses: automated ops monitoring, smart restocking, multi-platform mana
 We are here ← you arrived at the right time
 ```
 
-Content rephrased for compliance with licensing restrictions. Sources: [Attention Is All You Need (2017)](https://arxiv.org/abs/1706.03762), [Emergent Abilities of LLMs](https://arxiv.org/abs/2206.07682)
+Sources: [Attention Is All You Need (2017)](https://arxiv.org/abs/1706.03762), [Emergent Abilities of LLMs](https://arxiv.org/abs/2206.07682)
 
 ### 2.2 Each stage, in e-commerce terms
 
@@ -607,7 +607,7 @@ Anything else you want to connect
 | Browser MCP | web pages | AI collects competitor information automatically |
 | Amazon SP-API MCP | Seller Central | AI pulls orders, inventory, and ad data directly |
 
-Content rephrased for compliance with licensing restrictions. Sources: [Anthropic MCP Documentation](https://modelcontextprotocol.io/), [MCP Guide 2026](https://www.taskade.com/blog/mcp-your-ai-agents-superpower-for-real-world-context-and-automation)
+Sources: [Anthropic MCP Documentation](https://modelcontextprotocol.io/), [MCP Guide 2026](https://www.taskade.com/blog/mcp-your-ai-agents-superpower-for-real-world-context-and-automation)
 
 ---
 

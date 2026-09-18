@@ -443,7 +443,7 @@ Check and report each item before delivery:
 
 Shoppable Reels (Reels with product tags) is the highest-converting content form for Instagram e-commerce in 2026:
 
-**Data support**: Reels with product tags have a 30% higher engagement rate than ordinary Reels ([lueurexterne.com](https://blog.lueurexterne.com/en/blog/social-commerce-in-2026-how-to-sell-on-instagram-tiktok-pinterest)). Content rephrased for compliance with licensing restrictions.
+**Data support**: Reels with product tags have a 30% higher engagement rate than ordinary Reels ([lueurexterne.com](https://blog.lueurexterne.com/en/blog/social-commerce-in-2026-how-to-sell-on-instagram-tiktok-pinterest)).
 
 **Shoppable Reels optimization checklist:**
 

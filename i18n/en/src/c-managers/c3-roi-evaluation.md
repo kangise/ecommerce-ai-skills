@@ -57,7 +57,7 @@ Three common mistakes in cross-border e-commerce teams' AI ROI evaluations:
 | **Only counting time saved** | "AI saves us 100 hours a month" | Time saved doesn't equal value created. If the saved time isn't spent on something more valuable, the ROI is zero |
 | **No baseline set** | "Efficiency improved after using AI" | Without "before AI" baseline data, you can't quantify the improvement or rule out the influence of other factors |
 
-Content rephrased for compliance with licensing restrictions. Sources: [S&P Global AI Report](https://www.spglobal.com/), [MIT AI Research](https://mitsloan.mit.edu/)
+Sources: [S&P Global AI Report](https://www.spglobal.com/), [MIT AI Research](https://mitsloan.mit.edu/)
 
 ### 1.2 The Complete AI ROI Formula
 
@@ -239,7 +239,7 @@ Optimistic ROI = [calculation result]
 If ROI is still > 0 in the pessimistic scenario, the investment is robust.
 ```
 
-Content rephrased for compliance with licensing restrictions. Sources: [Workmate AI ROI Frameworks](https://www.workmate.com/blog/measuring-roi-for-ai-initiatives-frameworks-and-examples), [Technijian AI ROI Calculator](https://technijian.com/ai/how-to-calculate-roi-on-ai-projects-a-framework-for-enterprise-leaders-in-2026/)
+Sources: [Workmate AI ROI Frameworks](https://www.workmate.com/blog/measuring-roi-for-ai-initiatives-frameworks-and-examples), [Technijian AI ROI Calculator](https://technijian.com/ai/how-to-calculate-roi-on-ai-projects-a-framework-for-enterprise-leaders-in-2026/)
 
 ---
 
@@ -271,8 +271,6 @@ Based on industry data and real cases, the following are ROI benchmarks for comm
 | Entrepreneur 2026 | AI advertising and personalization can boost ROAS by 20-30% | [entrepreneur.com](https://www.entrepreneur.com/growing-a-business/how-to-use-ai-to-grow-your-amazon-sales-rankings-and/499421) |
 | Workmate 2026 | A typical AI project pays back within 12-24 months, achieving 10-30% cost savings or a 2-5x revenue increase | [workmate.com](https://www.workmate.com/blog/measuring-roi-for-ai-initiatives-frameworks-and-examples) |
 | Accenor 2025 | Enterprises typically underestimate total AI cost by 40-60%, leading to unrealistic ROI expectations | [accenor.com](https://www.accenor.com/blog/The-Complete-ROI-Framework-for-AI-Implementation-From-Cost-Analysis-to-Measurable-Outcomes.html) |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 3.3 ROI Comparison Across Team Sizes
 
@@ -1146,8 +1144,6 @@ The sources of the compounding effect:
 | AI ROI Framework for Enterprise Leaders | Technijian | Five-dimension AI value framework (cost reduction, productivity, revenue, risk, strategy) | [technijian.com](https://technijian.com/ai/how-to-calculate-roi-on-ai-projects-a-framework-for-enterprise-leaders-in-2026/) |
 | AI ROI Measurement Framework | Larridin | The methodology from "feels useful" to "proven useful" | [larridin.com](https://larridin.com/blog/ai-roi-measurement) |
 | How to Calculate ROI on AI | AI Magazine | Why 49% of organizations struggle to quantify AI value, and the solution | [aimegazine.com](https://aimegazine.com/ai-roi-measurement-how-to-calculate-return-on/) |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 11.2 Cross-Border E-Commerce AI Application ROI
 

@@ -230,17 +230,11 @@ def render_advertising_tab(df_ads: pd.DataFrame):
 > **真实案例：AWS 电商流量异常检测架构**
 > AWS 官方博客展示了如何自动化电商流量模式的异常检测。早期发现网站页面访问和订单完成等指标的微小异常，帮助组织采取纠正措施，减少对业务 KPI 的负面影响（[AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/automating-anomaly-detection-in-ecommerce-traffic-patterns/)）。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **真实案例：Streamlit BI Dashboard 整合 GA4 + 电商数据**
 > Squadbase 展示了一个综合性的 Streamlit BI Dashboard，整合了 Google Analytics 4（GA4）分析和电商智能两个关键业务领域，提供网站流量、用户行为和转化模式的深度分析（[Squadbase](https://www.squadbase.dev/blog/showcase-streamlit-bi-dashboard-with-google-analytics-and-e-commerce)）。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **真实案例：Amazon SP-API Python 数据获取**
 > Andrew Kushnerov 的系列教程展示了如何用 Python 从 Amazon SP-API 获取订单数据和库存/价格数据。关键洞察：订单在创建后会持续更新（状态变化、金额变化），要构建高质量分析需要追踪订单的完整生命周期（[Medium - Orders](https://andrewkushnerov.medium.com/amazon-sp-api-get-orders-with-python-7b7e913d87ea)，[Medium - Inventory](https://andrewkushnerov.medium.com/amazon-sp-api-get-inventory-and-prices-with-python-3226b980bd79)）。
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 5.1 Amazon SP-API 数据获取
 
@@ -359,8 +353,6 @@ def merge_platforms(amazon_df, shopify_df, walmart_df=None):
 | 利润 | 净利率 | 净利润/收入 | 15-30% | <10% |
 | 客户 | 退货率 | 退货/订单 | 5-15% | >20% |
 | 客户 | Review 评分 | 平均星级 | 4.0-4.5 | <3.8 |
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 6.2 异常检测（多种方法）
 

@@ -169,8 +169,6 @@ Coupang の Q4 2025 決算レポート([MarketBeat](https://www.marketbeat.com/i
 
 > **注意**: Coupang は 2025 年に重大なデータ漏洩事件を経験(3300 万アカウントが影響)、Q4 利益が 97% 低下した。会社は影響を受けたユーザーに約 $12 億のクーポンを発行する。これは短期的にプラットフォーム信頼度に影響するかもしれないが、長期的には Coupang の韓国での市場地位は今も堅固。
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 4.3 Coupang 広告システム
 
 | 広告タイプ | 説明 | 課金 | 最低入札 |
@@ -227,19 +225,13 @@ Coupang はスケーラブルな国際拡張エンジンを構築しており、
 
 Coupang Global Selling 公式プラットフォーム([globalsellers.coupang.com](https://globalsellers.coupang.com/))が国際セラーに出店チャネルを提供する。
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 5.2 出店パス詳解
 
 > **実事例: 京都ブランド SOU・SOU が Coupang 経由で韓国に参入**
 > 日本京都の伝統繊維ブランド SOU・SOU は Coupang Global Selling 経由で韓国市場に成功裏に参入した。SOU・SOU は日本の伝統柄と現代デザインの融合で知られ、Coupang 加入後に急速に韓国消費者に愛されるブランドになり、伝統に根ざしたスタイルが国境を越えられることを証明した([Coupang Global Sellers](https://globalsellers.coupang.com/en/newsroom/sou%E3%83%BBsou-bringing-kyotos-colorful-seasons-to-korea/))。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **実事例: MITSUYA、自動車輸出から日本消費財の越境へ**
 > 日本の会社 MITSUYA CO., LTD. は当初、日本の自動車と部品を輸出する会社だった。顧客ニーズの変化に伴い、会社は日本消費財の国際販売に拡張し、2007 年に本格的な海外直購サービスを開始した。Coupang プラットフォームを通じて、MITSUYA は日本の職人精神の製品を韓国市場にもたらした([Coupang Global Sellers](https://globalsellers.coupang.com/en/meet-a-seller/delivering-japanese-craftsmanship-to-korea-with-heart/))。
-
-Content rephrased for compliance with licensing restrictions.
 
 | パス | 説明 | 障壁 | 費用 | 向く |
 |------|------|------|------|------|
@@ -264,8 +256,6 @@ Coupang と業界資料([SellToKorea](https://selltokorea.com/faq/))によると
 ### 5.4 Rocket Growth 深度解析
 
 Rocket Growth は Coupang が越境セラー向けに設計した 3PL サービス([Kontactic](https://web.archive.org/web/20260412055042/https://www.kontactic.com/blog/how-to-sell-on-coupang-foreign-brand))。Rocket Growth で履行される製品は Rocket Delivery タグを得て、これが転換率と検索可視性を著しく高める。
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 Rocket Growth ワークフロー:
@@ -306,8 +296,6 @@ Coupang は 2025-2026 年にいくつかの重要な戦略方向がある:
 | Rocket WOW 会員 | 1400 万会員([AInvest](https://www.ainvest.com/news/coupang-global-scalability-assessing-tam-tech-moat-growth-investors-2601/)) | 高価値ユーザー層 |
 
 > **出典：** 検証 2026-08 · Coupang 取締役会は 2025 年 5 月に最大 $10 億の自社株買いを承認。2025 年中に 880 万株・$2.43 億を取得（[Coupang IR](https://ir.aboutcoupang.com/news-events/news/news-details/2025/Coupang-Announces-Results-for-First-Quarter-2025/default.aspx)）
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 5.6 韓国市場マーケティングチャネル
 

@@ -443,7 +443,7 @@ Amazon Listing 信息：
 
 Shoppable Reels（带产品标签的 Reels）是 2026 年 Instagram 电商转化率最高的内容形态：
 
-**数据支撑**：带产品标签的 Reels 互动率比普通 Reels 高 30%（[lueurexterne.com](https://blog.lueurexterne.com/en/blog/social-commerce-in-2026-how-to-sell-on-instagram-tiktok-pinterest)）。Content rephrased for compliance with licensing restrictions.
+**数据支撑**：带产品标签的 Reels 互动率比普通 Reels 高 30%（[lueurexterne.com](https://blog.lueurexterne.com/en/blog/social-commerce-in-2026-how-to-sell-on-instagram-tiktok-pinterest)）。
 
 **Shoppable Reels 优化清单：**
 

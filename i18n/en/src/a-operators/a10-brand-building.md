@@ -68,8 +68,6 @@ In 2026, DTC brands face new challenges and opportunities ([Criteo](https://www.
 | First-party data | third-party cookies die | brands need to build their own data assets |
 | Operational excellence | the "growth above all" era ends | brands need to balance efficiency and growth |
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Related**: [A9 SEO/GEO](a9-seo-geo.md) — AI-search optimization (GEO) is a key part of 2026 brand building.
 
 ---
@@ -79,12 +77,8 @@ Content rephrased for compliance with licensing restrictions.
 > **Real case: Revelyst lifts brand operations across departments with AI**
 > Outdoor-gear company Revelyst (owner of helmet brand Bell, outdoor-gear CamelBak, action-sports brand Fox) shared its AI brand-building experience at eTail Palm Springs. From early on, the company had teams across departments participate in AI-tool testing, removing fear and ensuring everyone reached consensus. Revelyst has scaled internal AI testing and tools across departments ([Modern Retail](https://www.modernretail.co/technology/brands-at-etail-palm-springs-share-lessons-on-the-messy-middle-of-building-ai-tools/)).
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Real case: AI ad optimization lifts ROAS 20–30%**
 > Per Entrepreneur, AI advertising and personalization tools can lift ROAS (return on ad spend) 20% to 30%. Predictive tools help sellers prevent stockouts and spot trends first, and unified cross-channel data improves marketing intelligence ([Entrepreneur](https://www.entrepreneur.com/growing-a-business/how-to-use-ai-to-grow-your-amazon-sales-rankings-and/499421)).
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 2.1 Brand-story framework
 

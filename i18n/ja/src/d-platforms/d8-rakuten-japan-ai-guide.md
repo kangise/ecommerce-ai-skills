@@ -109,8 +109,6 @@ R-Mail メールを生成してください:
 > **実事例: Rakuten × YouTube Shopping 日本初ローンチ**
 > 2026 年 2 月 20 日、Google と Rakuten は日本で YouTube Shopping サービスを開始すると発表した。ユーザーは YouTube 動画を視聴中にボタンを押すと、画面に製品名と価格が表示され、その後 Rakuten EC プラットフォームに移動して詳細を見られる([Japan Today](https://japantoday.com/category/tech/google-rakuten-to-provide-new-shopping-service-in-japan-on-youtube))。これは日本初の YouTube Shopping と提携した EC プラットフォームで、クリエイターは Rakuten 製品を宣伝して手数料を稼げる。
 
-Content rephrased for compliance with licensing restrictions.
-
 | 活動 | 頻度 | 特徴 | セラー戦略 |
 |------|------|------|------------|
 | Super Sale | 四半期ごと | 全サイト大型セール、トラフィック最大 | 4 週間前に在庫と活動ページを準備 |
@@ -133,8 +131,6 @@ Content rephrased for compliance with licensing restrictions.
 | シームレスな移動 | ユーザーは動画を見続けながら Rakuten 製品ページへ移動できる |
 | クリエイター手数料 | YouTube クリエイターが Rakuten 製品を宣伝して手数料を稼ぐ |
 | アフィリエイト計画 | YouTube Shopping Affiliate Programme に基づく |
-
-Content rephrased for compliance with licensing restrictions.
 
 **セラーへの影響**:
 - YouTube インフルエンサー協働が Rakuten の新しいトラフィック入口になる
@@ -203,8 +199,6 @@ YouTube Shopping 戦略を策定してください:
 ### 2.6 Rakuten 初期設定費
 
 業界資料([NextLevel Global](https://nextlevel.global/blog/2025/10/22/japan-ecommerce-marketplace-comparison/))によると、Rakuten 出店には初期設定費 ¥60,000 が必要で、加えて月次購読費 ¥19,500-¥100,000(プランによる)。
-
-Content rephrased for compliance with licensing restrictions.
 
 | 費用項目 | 金額 | 説明 |
 |----------|------|------|

@@ -38,12 +38,8 @@
 > **Real case: in 2026, e-commerce shifts from "growth above all" to "profit first"**
 > Per Mixpanel's analysis of 423.1 billion events and 4.7 billion devices, in 2026 e-commerce is shifting from "growth at any cost" to "habit-driven commerce" ([Mixpanel](https://mixpanel.com/blog/ecommerce-benchmarks-2026/)). ChannelEngine's 2026 predictions also note: "Expansion itself is no longer a strategy; operational excellence is. The 2026 winners aren't the fastest movers but the most disciplined operators." ([ChannelEngine](https://www.channelengine.com/en/blog/ecommerce-predictions))
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Real case: Netcore Agentic Commerce report**
 > Per Netcore's "Agentic Commerce Shift Report 2026," the brands outperforming their peers aren't those that added more AI copilots or raised media budgets, but those that rebuilt their execution systems around profit accountability ([AdGully](https://www.adgully.com/post/12649/the-end-of-campaign-led-growth-why-ecommerce-leaders-are-rebuilding-around-ai-agents)).
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 1.1 Common financial blind spots
 
@@ -281,8 +277,6 @@ Analyze:
 
 In 2026, e-commerce financial analysis is shifting from "after-the-fact reporting" to "real-time decision intelligence" ([ProfitPeak](https://profitpeak.io/au/blog/ecommerce-in-2026-the-shift-from-reporting-to-decision-intelligence)). AI connects ad spend, margin, inventory status, and customer value in real time.
 
-Content rephrased for compliance with licensing restrictions.
-
 | Tool | Function | Price | Best for |
 |------|----------|-------|----------|
 | Iris Finance | AI financial analyst, real-time P&L, cash-flow forecasting ([Iris](https://www.irisfinance.co/agenticsolution/fp-a-cfo)) | paid | consumer brands |
@@ -292,7 +286,7 @@ Content rephrased for compliance with licensing restrictions.
 | Shopify Analytics | built-in financial reports | included in Shopify subscription | Shopify sellers |
 | ChatGPT/Claude | general financial-analysis assistance | $20/mo | all sellers |
 
-Content rephrased for compliance with licensing restrictions. Source: [TopWebsiteBuilders](https://topwebsitebuilders.org/blog/ecommerce-profit-reporting-tools/).
+Source: [TopWebsiteBuilders](https://topwebsitebuilders.org/blog/ecommerce-profit-reporting-tools/).
 
 ### 4.4 Core e-commerce financial metrics
 
@@ -308,8 +302,6 @@ Per e-commerce finance best practices ([BlueCopa](https://bluecopa.com/blog/e-co
 | CAC | total acquisition cost/new customers | varies by category | cost to acquire one new customer |
 | LTV | avg order value × purchase frequency × customer lifespan | >3× CAC | customer lifetime value |
 | LTV:CAC ratio | LTV/CAC | >3:1 | customer value vs acquisition cost |
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 You are an e-commerce financial-metrics analysis expert.
@@ -396,8 +388,6 @@ Forecast the next 6 months of cash flow:
 ### 5.3 AI revenue forecasting
 
 AI revenue forecasting is increasingly important in e-commerce ([SelectedFirms](https://selectedfirms.co/blog/ai-revenue-forecasting-ecommerce-business)). Traditional forecasting relies on historical data and human judgment; AI forecasting can integrate more variables:
-
-Content rephrased for compliance with licensing restrictions.
 
 | Forecast dimension | Traditional method | AI method |
 |--------------------|--------------------|-----------|

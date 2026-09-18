@@ -443,7 +443,7 @@ Instagram Catalog 形式に変換してください:
 
 Shoppable Reels(製品タグ付き Reels)は 2026 年 Instagram EC で転換率が最も高いコンテンツ形態:
 
-**データ裏付け**: 製品タグ付き Reels は普通の Reels よりインタラクション率が 30% 高い([lueurexterne.com](https://blog.lueurexterne.com/en/blog/social-commerce-in-2026-how-to-sell-on-instagram-tiktok-pinterest))。Content rephrased for compliance with licensing restrictions.
+**データ裏付け**: 製品タグ付き Reels は普通の Reels よりインタラクション率が 30% 高い([lueurexterne.com](https://blog.lueurexterne.com/en/blog/social-commerce-in-2026-how-to-sell-on-instagram-tiktok-pinterest))。
 
 **Shoppable Reels 最適化チェックリスト:**
 

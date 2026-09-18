@@ -57,8 +57,6 @@ After this module you'll be able to:
 
 AliExpress currently opens onboarding to sellers in the following countries/regions: mainland China, Russia, Spain, Italy, Turkey, France, Brazil, etc. ([Wise](https://wise.com/us/blog/sell-on-aliexpress)). Onboarding requires providing a business license, legal-representative ID, tax information, etc.
 
-Content rephrased for compliance with licensing restrictions.
-
 | Onboarding type | Description | Best for |
 |-----------------|-------------|----------|
 | Regular seller | Self-operate, price and ship yourself | Sellers with operational capability |
@@ -79,13 +77,9 @@ AliExpress commission varies by category, generally between 5%-9% ([WorldOfCalcu
 
 > **Note**: AliExpress doesn't charge a monthly rent (unlike Amazon), but under the AliExpress Choice model the platform takes a higher proportion from the pricing.
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 2.3 AliExpress Supplier-Screening Criteria
 
 According to industry best practices ([Alibaba Insights](https://www.alibaba.com/product-insights/dropshipping-hacks-you-need-to-know-in-2026-top-20-best-selling-aliexpress-items-revealed.html)), successful sellers focus on three pillars: supply-chain resilience, micro-niche authority, and after-sales experience engineering. When screening suppliers, prioritize those with a rating ≥4.8, ≥2000 orders in the last 90 days, and a video-verified warehouse.
-
-Content rephrased for compliance with licensing restrictions.
 
 ## 3. AI Application Scenarios
 
@@ -175,8 +169,6 @@ Based on external reports (ad-hoc-news.de — original offline, rechecked 2026-0
 > **Real case: TikTok Hauls drive AliExpress growth**
 > In 2026 AliExpress became a hot topic again, mainly because of TikTok unboxing videos (hauls), YouTube Shorts, and the trend of US resellers reselling AliExpress goods on Etsy/Amazon/Depop (Ad-Hoc News — original offline, rechecked 2026-08). But at the same time, US customs rules, state taxes, and shipping fees are tightening, and sellers need to pay more attention to compliance.
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 2.5 AliExpress vs Temu Competitive Strategy
 
 ```
@@ -211,8 +203,6 @@ Please analyze:
 | ChatGPT/Claude | Multilingual Listing generation | $20/month |
 | AliDropship | Dropshipping automation | One-time $89 |
 | CJDropshipping | Supply chain + drop-shipping | Free registration |
-
-Content rephrased for compliance with licensing restrictions.
 
 ## 4. AliExpress Logistics Options Explained
 
@@ -307,8 +297,6 @@ Please create a Southern Europe market-entry strategy:
 ### 5.3 The AliExpress Trust Challenge
 
 According to the 2026 Global E-Commerce Integrity Index ([Alibaba Insights](https://www.alibaba.com/product-insights/best-aliexpress-alternatives-in-2026-top-platforms-for-global-online-shopping.html)), AliExpress scores 62/100 on "product-authenticity confidence," behind Temu (79), Shein (76), and Amazon Global (84). This means sellers need extra effort to build trust:
-
-Content rephrased for compliance with licensing restrictions.
 
 | Trust-building strategy | Description | Effect |
 |-------------------------|-------------|--------|

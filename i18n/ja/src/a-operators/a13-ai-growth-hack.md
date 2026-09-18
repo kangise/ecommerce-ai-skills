@@ -75,11 +75,7 @@ AI リピート ← AI カスタマーサービス ← AI ブランド
 
 > **実データ**: Pattern Group の 2026 年 1 月の上級ビジネスリーダー 1000 名への調査によると、EC ブランドの 3 分の 1 が既に AI 買い物エージェントを展開し、76% が AI 駆動の検索とチャットコマースで顧客獲得コストを下げたと報告している([SalesSmartly](https://www.salesmartly.com/en/blog/docs/ai-chatbot-ecommerce-2026-platforms-comparison))。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **実データ**: AI 由来の流入の転換率はソーシャルメディアより 7-8 倍、他のデジタルチャネルより 2 倍高い([Nekuda/Substack](https://nekuda.substack.com/p/whats-your-2026-agentic-commerce))。McKinsey は Agentic Commerce が 2030 年までに世界で 3-5 兆ドルの取引を駆動すると予測([Opascope](https://opascope.com/insights/ai-shopping-assistant-guide-2026-agentic-commerce-protocols/))。
-
-Content rephrased for compliance with licensing restrictions.
 
 ---
 
@@ -254,8 +250,6 @@ AI が翌月の戦略調整を提案
 ```
 
 > **実データ**: AI 広告とパーソナライゼーションツールは ROAS を 20-30% 向上できる([Entrepreneur](https://www.entrepreneur.com/growing-a-business/how-to-use-ai-to-grow-your-amazon-sales-rankings-and/499421))。AI スマートレコメンドは 26% 高い注文額を駆動し、現在 EC 総収入の 31% に貢献している([Netguru](https://www.netguru.com/blog/ecommerce-digital-transformation))。
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 4.2 GEO + SEO デュアルエンジン流入戦略
 
@@ -470,12 +464,8 @@ Layer 1: 製品の障壁
 > **実事例: Claude Code が Google Ads の展開を自動化**
 > Stormy.ai は Claude Code(ターミナル AI エージェント)で EC Google Ads Campaign の展開を自動化する方法を示した。Claude Code は単なるチャットボットでなく、グロースマーケティングの技術スタックの AI エンジニアとして機能する([Stormy.ai](https://stormy.ai/blog/ecommerce-ppc-automation-claude-code))。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **実事例: Claude MCP が Amazon 広告を管理**
 > Model Context Protocol(MCP)を通じて、ブランドは自律エージェントを展開し、Amazon 広告をリアルタイムで考え、行動し、最適化している。これはもはや「広告を管理する」でなく「対話式 Campaign 管理」(Stormy.ai、原文はオフライン、2026-08 再確認)。
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 7.2 毎日の AI 運営ワークフロー
 
@@ -625,8 +615,6 @@ AI 画像生成
 | AI が顧客獲得コストを低減 | 76% のブランドが報告 | [SalesSmartly](https://www.salesmartly.com/en/blog/docs/ai-chatbot-ecommerce-2026-platforms-comparison) |
 | Agentic Commerce 2030 予測 | 3-5 兆ドル | [Opascope/McKinsey](https://opascope.com/insights/ai-shopping-assistant-guide-2026-agentic-commerce-protocols/) |
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 9.2 Netcore の Agentic Commerce 6 大転換
 
 Netcore『Agentic Commerce Shift Report 2026』([Storyboard18](https://www.storyboard18.com/digital/agentic-commerce-is-becoming-the-new-operating-system-for-e-commerce-report-reveals-90936.htm))によると、先進的な EC チームは 6 大実行転換を軸に成長を再構築している:
@@ -639,8 +627,6 @@ Netcore『Agentic Commerce Shift Report 2026』([Storyboard18](https://www.story
 | 利益への説明責任 | 収入志向 | 利益志向 |
 | データアーキテクチャ | 分散したデータサイロ | 統一されたリアルタイムデータ層 |
 | 組織構造 | チャネルごとにチーム | 成長目標ごとにチーム |
-
-Content rephrased for compliance with licensing restrictions.
 
 ---
 

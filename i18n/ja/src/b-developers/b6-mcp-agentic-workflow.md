@@ -32,8 +32,6 @@
 
 MCP(Model Context Protocol)は Anthropic が開発したオープン標準で、AI モデルが外部ツールとデータにどう接続するかを定義する([Badger Blue](https://badger.blue/blogs/ecommerce-unpacked/model-context-protocol-mcp-ecommerce))。
 
-Content rephrased for compliance with licensing restrictions.
-
 ```
 MCP アーキテクチャ:
 
@@ -63,8 +61,6 @@ MCP は AI の汎用インターフェース
 ### 1.3 2026 年の MCP エコシステムの現状
 
 > **実データ**: Amazon は 2026 年 2 月 2 日に Ads MCP Server のオープンベータを正式発表した([Canopy Management](https://canopymanagement.com/amazon-ads-mcp-server-ai/))。Google も自身の MCP 実装をオープンソース化した。本番級の MCP Server は既に月 $4500 万超の広告支出を処理し、10,000+ 企業をカバーしている([HyperFX](https://www.hyperfx.ai/blog/meta-ads-mcp-guide-ai-advertising-agents))。中小企業の 74% が既に AI 広告ツールを積極的にテストまたは配備している([Amazon Ads による Opinium 調査](https://advertising.amazon.com/en-us/library/news/smb-ai-research))。
-
-Content rephrased for compliance with licensing restrictions.
 
 ---
 
@@ -139,12 +135,10 @@ Amazon Ads MCP Server は完全な広告管理能力を提供する。Marketplac
 | Profile | list_profiles | 広告アカウントを取得 | 「すべての利用可能な広告 Profile を列挙」 |
 | | get_regions | 地域情報を取得 | 「利用可能な市場地域を表示」 |
 
-Content rephrased for compliance with licensing restrictions. Source: [GitHub](https://github.com/MarketplaceAdPros/amazon-ads-mcp-server).
+出典：[GitHub](https://github.com/MarketplaceAdPros/amazon-ads-mcp-server).
 
 > **実事例: Amazon Ads MCP 2026.2 正式発表**
 > 2026 年 2 月 2 日、Amazon は Ads MCP Server のオープンベータを発表した。API 認証情報を持つセラーは Claude、ChatGPT、Gemini などのツールで、簡単なコマンドで Campaign を作成、入札を最適化、レポートを取得、市場横断で拡張できる([ClearAds Agency](https://clearadsagency.com/what-is-amazons-mcp-server-and-how-does-it-change-advertising-for-sellers/))。
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 3.3 5 大 MCP 広告自動化戦略
 
@@ -231,8 +225,6 @@ Claude: [すべてのデータを集約] → 完全なレポートを生成
 
 > **実データ**: AI 駆動の PPC 自動化は毎週 10〜15 時間の手動調整を削減できる([Helium 10](https://www.helium10.com/blog/blog-how-ai-powered-amazon-ppc-saves-10-plus-hours-weekly-and-boosts-performance/))。Amazon Ads の公式事例では、STEADY JAPAN が自動入札の導入から 1 か月以内に売上を維持したまま総 ACOS を 25% 改善した([Amazon Ads 事例研究](https://advertising.amazon.com/en-us/library/case-studies/flywheel-steady-japan-lowers-acos/))——1 社の結果であり、一般的な幅ではない。
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 3.4 実戦: Claude の対話で Amazon 広告を管理
 
 ```
@@ -261,8 +253,6 @@ Claude: [集約] → Markdown レポートを生成
 
 > **試算例**: Stormy.ai は仮想の中堅ブランドを用いて Claude MCP で Amazon 広告を管理する 5 つの戦略を示し、ACOS を下げ年 30 日の作業時間を節約できるとした([Stormy.ai](https://web.archive.org/web/20260307090318/https://stormy.ai/blog/automating-amazon-ads-claude-mcp))。
 
-Content rephrased for compliance with licensing restrictions.
-
 ---
 
 ## 4. Shopify MCP 統合
@@ -287,12 +277,8 @@ Shopify の MCP エコシステムは 2026 年に既に非常に成熟し、公�
 | shopify-mcp-server | Ajackus | Claude Desktop 統合 | [LobeHub](https://lobehub.com/mcp/ajackus-shopify-mcp-server) |
 | shopify-storefront-mcp | QuentinCody | Storefront API の非公式実装 | [Hexmos](https://hexmos.com/freedevtools/mcp/other-tools-and-integrations/QuentinCody--shopify-storefront-mcp-server/) |
 
-Content rephrased for compliance with licensing restrictions.
-
 > **実事例: Shopify MCP が Agentic Commerce のインフラに**
 > Shopify の MCP エコシステムは「Agentic Commerce の技術的な結合組織」と描写される LLM(ChatGPT、Perplexity、カスタム Agent など)が、機械もプラットフォームも理解できる言語であなたの店舗に製品、在庫、顧客の好みについて「尋ねる」ことを可能にする([WeArePresta](https://wearepresta.com/shopify-mcp-server-the-standardized-interface-for-agentic-commerce-2026/))。Shopify 公式 Storefront MCP Server は顧客が AI エージェントで商品を閲覧・購入するのを助ける([Shopify Dev](https://www.shopify.dev/docs/apps/build/storefront-mcp/servers/storefront))。
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 Shopify MCP アーキテクチャ:
@@ -945,8 +931,6 @@ class BudgetSafetyValve:
 ### 8.1 Meta Ads MCP
 
 > **実データ**: 本番級の MCP Server は既に月 $4500 万超の広告支出を処理し、10,000+ 企業をカバーしている。Google も自身の MCP 実装をオープンソース化した([HyperFX](https://www.hyperfx.ai/blog/meta-ads-mcp-guide-ai-advertising-agents))。
-
-Content rephrased for compliance with licensing restrictions.
 
 | プラットフォーム MCP | 状態 | 核心能力 |
 |----------------------|------|----------|

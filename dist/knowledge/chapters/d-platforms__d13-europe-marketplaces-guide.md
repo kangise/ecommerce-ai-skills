@@ -49,8 +49,6 @@
 
 Otto 是德国第二大在线零售商，拥有超过 1220 万活跃买家，日均 250 万次访问，平均每秒 35 笔订单（[Shoppingfeed](https://blog.shoppingfeed.com/en-us/otto-marketplace-what-brands-need-to-know-about-germanys-second-largest-platform)）。平台采用精选卖家模式，仅接受约 5000+ 经过严格审核的卖家，以维护其高端品牌形象和产品质量标准（[Unimall](https://unimall.ai/guides/sell-on-otto)）。
 
-Content rephrased for compliance with licensing restrictions.
-
 | 维度 | Otto | Amazon.de |
 |------|------|-----------|
 | 卖家数量 | ~5,000+（精选） | 数十万 |
@@ -80,8 +78,6 @@ Content rephrased for compliance with licensing restrictions.
 | VerpackG | 德国包装法注册 | 强制 |
 | WEEE | 电子废弃物回收注册 | 电子产品强制 |
 
-Content rephrased for compliance with licensing restrictions.
-
 > **跨境卖家注意**：中国卖家目前无法直接入驻 Otto，需要通过德国/荷兰法人实体或代运营商。这是 Otto 与 Amazon 最大的区别门槛更高但竞争更小。
 
 ### 2.3 Otto 佣金与费用
@@ -100,12 +96,8 @@ Content rephrased for compliance with licensing restrictions.
 >
 > 但 Otto 也面临挑战：费用上涨和与卖家的争议导致部分卖家流失（[EcommerceNews EU](https://ecommercenews.eu/ottos-marketplace-is-losing-sellers-and-is-in-crisis/)）。这意味着入驻 Otto 需要权衡：竞争较小但平台政策变化风险存在。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **真实案例：Otto 使用 Adobe Analytics 优化客户旅程**
 > Otto 正在将其成功的自营模式转型为平台模式，被公司称为"自 1995 年开始在线交易以来最重大的变革"。Otto 使用 Adobe Customer Journey Analytics 来优化跨渠道客户体验，帮助零售合作伙伴更好地在平台上销售（[Adobe Case Study](https://business.adobe.com/customer-success-stories/otto-e-commerce-case-study.html)）。
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 你是一个 Otto Marketplace 运营专家。
@@ -150,8 +142,6 @@ Zalando 2025 年表现强劲（[Europawire](https://news.europawire.eu/zalando-r
 > **来源：** 核验 2026-08 · [Zalando FY2025 官方业绩](https://corporate.zalando.com/en/investor-relations/zalando-full-year-2025-results)：GMV €17.56B（+14.7%）、收入 €12.35B（+16.8%）、调整后 EBIT €590.7M（+15.6%）、活跃客户 6200 万、回购上限 €300M
 
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 3.2 Zalando AI 创新（2026 重点）
 
 Zalando 在 AI 方面投入巨大，是欧洲时尚电商 AI 应用的领导者（[FT/Quirin Research](https://markets.ft.com/data/announce/detail?dockey=600-202603131203DGAP____ORIGRE___rc_24956-1)）：
@@ -166,19 +156,13 @@ Zalando 在 AI 方面投入巨大，是欧洲时尚电商 AI 应用的领导者�
 
 > **关键洞察**：Zalando 正在与Qutwo（"欧洲最有雄心的 AI 实验室之一"）合作（[Zalando FY2025 官方业绩](https://corporate.zalando.com/en/investor-relations/zalando-full-year-2025-results)），并将 AI 助手的"可购物性"（shoppability）集成到平台中。这意味着在 Zalando 上销售的品牌需要确保产品数据的结构化和完整性，以便被 AI 系统正确理解和推荐。
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 3.3 入驻要求
 
 > **真实案例：Zalando AI 推荐提升 13% 加购率**
 > Zalando 的 AI 推荐系统已经产生了可量化的效果：AI 推荐使用户加购商品数量增加 13%，同时退货率下降 8%（得益于更好的尺码建议）（Ad-Hoc News，原文已下线，2026-08 复核）。这意味着在 Zalando 上销售的品牌，产品数据越完整（尺码、材质、版型），被 AI 推荐的概率越高，退货率也越低。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **真实案例：Zalando AI 内容生产从 0 到 90%**
 > Zalando 在一年内将 AI 生成的营销内容从接近零提升到 90%，营销活动制作时间从 6 周缩短到几天，创建的内容数量增加了 70%（[FT/Quirin Research](https://markets.ft.com/data/announce/detail?dockey=600-202603131203DGAP____ORIGRE___rc_24956-1)）。这展示了 AI 在时尚电商内容生产中的巨大潜力。
-
-Content rephrased for compliance with licensing restrictions.
 
 - 品牌必须符合 Zalando 品质标准
 - 需要通过 Zalando Partner Program 申请

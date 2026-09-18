@@ -82,7 +82,7 @@ Amazon 広告はサイト内 PPC のみだが、Shopify の広告チャネルは
 - 自動化予算配分(AI が各チャネルの予算をリアルタイム調整)
 - クリエイティブ素材のバッチ生成(1 製品で 20+ の広告バリエーション生成)
 
-Content rephrased for compliance with licensing restrictions. Sources: [Shopify AI Ecommerce Guide](https://www.shopify.com/sg/blog/ai-ecommerce), [Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)
+出典：[Shopify AI Ecommerce Guide](https://www.shopify.com/sg/blog/ai-ecommerce)、[Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)
 
 ---
 
@@ -302,7 +302,7 @@ AI 検索エンジン最適化(GEO)の鍵:
 - 自然言語の製品説明(AI が理解し引用できる形式)
 - ブランドの権威性(外部引用、Review、メディア報道)
 
-Content rephrased for compliance with licensing restrictions. Source: [Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)
+出典：[Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)
 
 **次元 7: A/B テスト自動化**
 
@@ -581,7 +581,7 @@ Email 3(+14 日): 最後のチャンス + アンケート
 | Shopify Email | 無料〜 | 基礎 AI テンプレート | 始めたばかりの店舗 |
 | Mailchimp | $13-350 | AI コンテンツ最適化、オーディエンスセグメント | マルチチャネルマーケティング |
 
-Content rephrased for compliance with licensing restrictions. Sources: [Omnisend Shopify AI Tools](https://www.omnisend.com/blog/shopify-ai-tools/), [Shopify AI Ecommerce](https://www.shopify.com/sg/blog/ai-ecommerce)
+出典：[Omnisend Shopify AI Tools](https://www.omnisend.com/blog/shopify-ai-tools/)、[Shopify AI Ecommerce](https://www.shopify.com/sg/blog/ai-ecommerce)
 
 ---
 
@@ -934,7 +934,7 @@ Top 5 トラフィック源:
 | 転換 | Privy / OptiMonk | $15-50 | AI ポップアップ、パーソナライズ推薦 |
 | 分析 | Triple Whale / Lifetimely | $50-150 | AI 帰属、LTV 予測 |
 
-Content rephrased for compliance with licensing restrictions. Sources: [Omnisend Shopify AI](https://www.omnisend.com/blog/shopify-ai-tools/), [Growth Miner Shopify AI](https://thegrowthminer.com/best-ai-tools-for-shopify-stores-2026/), [Madgicx Shopify Ads](https://www.madgicx.com/blog/ai-driven-advertising-for-shopify-stores)
+出典：[Omnisend Shopify AI](https://www.omnisend.com/blog/shopify-ai-tools/)、[Growth Miner Shopify AI](https://thegrowthminer.com/best-ai-tools-for-shopify-stores-2026/)、[Madgicx Shopify Ads](https://www.madgicx.com/blog/ai-driven-advertising-for-shopify-stores)
 
 ## 10. 完了チェック
 
@@ -1241,7 +1241,7 @@ Shopify ブログは長期 SEO トラフィックの核心。AI はブログコ�
 | ブランド権威性 | 外部引用、メディア報道、専門家の裏付け | AI が PR 原稿と外部リンク戦略を生成 |
 | マルチ形式コンテンツ | 文字 + 画像 + 動画 + 表 | AI が各製品ページの最適なコンテンツ組み合わせを提案 |
 
-Content rephrased for compliance with licensing restrictions. Source: [Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)
+出典：[Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)
 
 
 ---
@@ -1651,8 +1651,6 @@ GA4 データ(過去 30 日):
 | Best AI Tools for Shopify 2026 | Growth Miner | AI ツール選定と ROI 分析 | [thegrowthminer.com](https://thegrowthminer.com/best-ai-tools-for-shopify-stores-2026/) |
 | AI Ecommerce Guide | Shopify | EC における AI の 7 大応用シーン | [shopify.com/blog/ai-ecommerce](https://www.shopify.com/sg/blog/ai-ecommerce) |
 
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
-
 ### 18.3 推奨書籍
 
 | 書名 | 著者 | なぜ推奨するか |
@@ -1843,7 +1841,7 @@ Sidekick Pulse が能動的に教えてくれる:
 - Pulse は異常を自動監視、24/7 のデータアナリストに相当
 - 提案は実行可能(問題を教えるだけでなく、どう修正するかも教える)
 
-Content rephrased for compliance with licensing restrictions. Sources: [Shopify Winter '26 Edition](https://www.shopify.com/news/winter-26-edition-merchant), [Echidna Shopify Editions Guide](https://echidna.co/blog/shopify-editions-winter-2026-guide/)
+出典：[Shopify Winter '26 Edition](https://www.shopify.com/news/winter-26-edition-merchant)、[Echidna Shopify Editions Guide](https://echidna.co/blog/shopify-editions-winter-2026-guide/)
 
 
 ### 21.2 Agentic Storefronts と UCP プロトコル: AI プラットフォーム内で直接販売
@@ -1870,7 +1868,7 @@ Shopify 公式の GEO Playbook と SixthShop のケーススタディ(312% の A
 3. ブランドの権威性 -- 外部引用、Review 数と品質、メディア報道
 4. 製品データの新鮮さ -- 価格、在庫、説明がタイムリーに更新されているか
 
-Content rephrased for compliance with licensing restrictions. Sources: [Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization), [Shopify Agentic-Ready Product Data](https://www.shopify.com/enterprise/blog/agentic-ready-product-data), [SixthShop 312% Growth Case Study](https://menafn.com/1110780399/Sixthshop-Releases-Flagship-Case-Study-Showing-312-Percent-Growth-In-AI-Shopping-Visibility)
+出典：[Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)、[Shopify Agentic-Ready Product Data](https://www.shopify.com/enterprise/blog/agentic-ready-product-data)、[SixthShop 312% Growth Case Study](https://menafn.com/1110780399/Sixthshop-Releases-Flagship-Case-Study-Showing-312-Percent-Growth-In-AI-Shopping-Visibility)
 
 
 ### 21.3 GEO 最適化実操: AI にあなたの製品を推薦させる
@@ -2020,7 +2018,7 @@ GA4 で AI チャネル追跡を設定:
 - Perplexity トラフィックのソースドメインに `perplexity.ai` を含む
 - Google AI Overview トラフィックは Google Search Console で見られる
 
-Content rephrased for compliance with licensing restrictions. Sources: [Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization), [Shopify Agentic-Ready Product Data](https://www.shopify.com/enterprise/blog/agentic-ready-product-data)
+出典：[Shopify GEO Playbook](https://www.shopify.com/enterprise/blog/generative-engine-optimization)、[Shopify Agentic-Ready Product Data](https://www.shopify.com/enterprise/blog/agentic-ready-product-data)
 
 
 ### 21.4 Shopify Audiences: AI 駆動の広告オーディエンスツール

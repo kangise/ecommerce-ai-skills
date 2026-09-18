@@ -87,8 +87,6 @@ Video (very few brands upload video, those that do get extra exposure)
 Product-description detail
 ```
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 2.2 Faire Account-Settings Optimization (High-Leverage Actions)
 
 The following setting adjustments widen the range of retailer filters you show up in:
@@ -199,8 +197,6 @@ Repurchase ROAS (subsequent repurchases of first-order customers, 0% commission)
 Blended ROAS (the combined return of first order + repurchase)
 Goal: first-order ROAS > 3x, blended ROAS > 5x
 ```
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 2.5 Wholesale-Pricing In-Depth Strategy
 
@@ -316,8 +312,6 @@ Please design a retailer-relationship management plan:
 > **Real case: Faire's business strategy**
 > Faire's core strategy is "start extremely narrow, then expand with data." The platform builds a sourcing layer rather than a sales layer, and embedded finance (Net 60 payment terms) is the glue rather than the product itself ([Faster Than Normal](https://fasterthannormal.co/businesses/faire)). This means the key to success on Faire is understanding retailers' sourcing psychology, not consumers' purchasing psychology.
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 3.1 AI Application Scenarios on Faire
 
 | Scenario | AI application | Tool |
@@ -389,8 +383,6 @@ Present every comparison as a Markdown table — one row per item, one column pe
 ```
 
 > **Real data**: In 2026, Marketplace success will depend on unified operations, strengthened product data, adopting automation, and choosing platforms strategically rather than opportunistically ([ChannelEngine](https://www.channelengine.com/en/blog/marketplace-strategy-tips-webinar)).
-
-Content rephrased for compliance with licensing restrictions.
 
 ## 4. Common Traps
 

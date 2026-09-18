@@ -107,7 +107,7 @@ Rufus 是面向消费者的 AI 助手，用户可以用自然语言提问（如"
 
 > **2026 年的核心洞察**：Listing 优化已经从"关键词游戏"变成"意图匹配 + AI 可读性"。AI 帮你写 Listing 的价值不只是"写得快"，而是"写得既能被 COSMO 理解，又能被 Rufus 引用，还能说服真人购买"。
 
-Content rephrased for compliance with licensing restrictions. Sources: [ZonGuru COSMO Guide](https://www.zonguru.com/blog/what-is-amazon-cosmo), [ZonGuru Amazon SEO 2026](https://www.zonguru.com/blog/amazon-seo-guide), [MyAmazonGuy COSMO+Rufus](https://myamazonguy.com/seo/amazon-seo-in-the-age-of-ai), [BareGold A10 Playbook](https://baregold.ca/resources/amazon-a10-algorithm-in-2026-the-listing-optimization-playbo)
+来源：[ZonGuru COSMO Guide](https://www.zonguru.com/blog/what-is-amazon-cosmo)、[ZonGuru Amazon SEO 2026](https://www.zonguru.com/blog/amazon-seo-guide)、[MyAmazonGuy COSMO+Rufus](https://myamazonguy.com/seo/amazon-seo-in-the-age-of-ai)、[BareGold A10 Playbook](https://baregold.ca/resources/amazon-a10-algorithm-in-2026-the-listing-optimization-playbo)
 
 ### 1.2 Listing 的组成部分
 
@@ -184,7 +184,7 @@ AI 不擅长的：
 
 > **关键洞察**：Listing 工具的核心价值是关键词数据，不是 AI 生成能力。Helium 10 的 AI 生成的 Listing 质量不一定比 ChatGPT 好，但它能告诉你哪些关键词搜索量高、竞争度低 这是 ChatGPT 做不到的。最佳组合：用 Helium 10 做关键词研究，用 ChatGPT/Claude 做文案生成。
 
-Content rephrased for compliance with licensing restrictions. Sources: [amazonfba.org listing tools](https://amazonfba.org/blog/tool-comparisons/best-amazon-listing-optimization-tools), [voc.ai listing tools](https://www.voc.ai/blog/best-amazon-listing-optimization-tools)
+来源：[amazonfba.org listing tools](https://amazonfba.org/blog/tool-comparisons/best-amazon-listing-optimization-tools)、[voc.ai listing tools](https://www.voc.ai/blog/best-amazon-listing-optimization-tools)
 
 ### 2.2 免费工具组合
 
@@ -1643,7 +1643,7 @@ Amazon Rufus AI 购物助手会用自然语言回答用户的购物问题。
 
 > **Rufus 优化的核心思路**：从"关键词优化"转向"问题回答优化"。你的 Listing 不只是一个关键词容器，而是一个"产品知识库"，能回答用户关于这个产品的所有问题。
 
-Content rephrased for compliance with licensing restrictions. Source: [azariangrowthagency.com Rufus playbook](https://azariangrowthagency.com/amazon-ads-ai-shopping-assistants-playbook/)
+来源：[azariangrowthagency.com Rufus playbook](https://azariangrowthagency.com/amazon-ads-ai-shopping-assistants-playbook/)
 
 ### 7.2 生成式搜索优化（GEO/AIO）
 
@@ -1701,7 +1701,7 @@ GEO（Generative Engine Optimization）或 AIO（AI Optimization）是 2025-2026
 
 > **GEO 的核心思路**：传统 SEO 是"让搜索引擎找到你"，GEO 是"让 AI 引擎推荐你"。区别在于 AI 引擎不只匹配关键词，还理解语义、评估权威性、引用用户评价。你的产品信息需要"对 AI 友好"。
 
-Content rephrased for compliance with licensing restrictions. Source: [bebolddigital.com GEO for Amazon](https://www.bebolddigital.com/blog/generative-engine-optimization-for-amazon)
+来源：[bebolddigital.com GEO for Amazon](https://www.bebolddigital.com/blog/generative-engine-optimization-for-amazon)
 
 ### 7.3 Listing 本地化的文化差异（US vs DE vs JP）
 
@@ -1806,8 +1806,6 @@ Content rephrased for compliance with licensing restrictions. Source: [bebolddig
 | [ChatGPT for Amazon Sellers](https://revenuegeeks.com/guides/chatgpt-for-amazon-seller) | RevenueGeeks | ChatGPT 在 Amazon 运营中的全面应用指南 |
 | [Generative Engine Optimization for Amazon](https://www.bebolddigital.com/blog/generative-engine-optimization-for-amazon) | BeBold Digital | GEO 如何影响 Amazon Listing 策略 |
 | [Amazon Rufus AI Shopping Assistant Playbook](https://azariangrowthagency.com/amazon-ads-ai-shopping-assistants-playbook/) | Azarian Growth Agency | Rufus 优化的实操指南 |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 8.4 社区与论坛
 

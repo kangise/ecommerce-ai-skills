@@ -1529,8 +1529,6 @@ def quality_check(df: pd.DataFrame) -> dict:
 | Rob Mulla | pandas + data science | focused on pandas tips, efficient short-video learning |
 | ArjanCodes | Python engineering practice | code architecture, design patterns, for writing better pipelines |
 
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
-
 ### 8.3 Recommended GitHub repos
 
 | Repo | Stars | Use |

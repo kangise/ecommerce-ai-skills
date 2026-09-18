@@ -49,8 +49,6 @@ After this module you'll be able to:
 
 Otto is Germany's second-largest online retailer, with over 12.2 million active buyers, 2.5 million average daily visits, and an average of 35 orders per second ([Shoppingfeed](https://blog.shoppingfeed.com/en-us/otto-marketplace-what-brands-need-to-know-about-germanys-second-largest-platform)). The platform uses a curated-seller model, accepting only about 5,000+ strictly vetted sellers to maintain its premium brand image and product-quality standards ([Unimall](https://unimall.ai/guides/sell-on-otto)).
 
-Content rephrased for compliance with licensing restrictions.
-
 | Dimension | Otto | Amazon.de |
 |-----------|------|-----------|
 | Number of sellers | ~5,000+ (curated) | Hundreds of thousands |
@@ -80,8 +78,6 @@ According to Otto Market's official requirements ([otto.market](https://www.otto
 | VerpackG | German Packaging Act registration | Mandatory |
 | WEEE | Electronic-waste recycling registration | Mandatory for electronics |
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Cross-border seller note**: Chinese sellers currently can't directly onboard Otto and need a German/Dutch legal entity or an agency. This is Otto's biggest difference from Amazon — a higher barrier but less competition.
 
 ### 2.3 Otto Commission and Fees
@@ -100,12 +96,8 @@ Content rephrased for compliance with licensing restrictions.
 >
 > But Otto also faces challenges: rising fees and disputes with sellers have caused some sellers to leave ([EcommerceNews EU](https://ecommercenews.eu/ottos-marketplace-is-losing-sellers-and-is-in-crisis/)). This means onboarding Otto requires weighing: less competition but a risk of platform-policy changes.
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Real case: Otto uses Adobe Analytics to optimize the customer journey**
 > Otto is transforming its successful first-party model into a platform model, which the company calls "the most significant change since it started trading online in 1995." Otto uses Adobe Customer Journey Analytics to optimize the cross-channel customer experience, helping retail partners sell better on the platform ([Adobe Case Study](https://business.adobe.com/customer-success-stories/otto-e-commerce-case-study.html)).
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 You are an Otto Marketplace operations expert.
@@ -150,8 +142,6 @@ Zalando performed strongly in 2025 ([Europawire](https://news.europawire.eu/zala
 > **Sources:** verified 2026-08 · [Zalando FY2025 official results](https://corporate.zalando.com/en/investor-relations/zalando-full-year-2025-results): GMV €17.56B (+14.7%), revenue €12.35B (+16.8%), adjusted EBIT €590.7M (+15.6%), 62 million active customers, buyback up to €300M
 
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 3.2 Zalando AI Innovation (2026 Focus)
 
 Zalando invests heavily in AI and is the leader in AI application in European fashion e-commerce ([FT/Quirin Research](https://markets.ft.com/data/announce/detail?dockey=600-202603131203DGAP____ORIGRE___rc_24956-1)):
@@ -166,19 +156,13 @@ Zalando invests heavily in AI and is the leader in AI application in European fa
 
 > **Key insight**: Zalando is partnering with Qutwo, "one of Europe's most ambitious AI labs", ([Zalando FY2025 official results](https://corporate.zalando.com/en/investor-relations/zalando-full-year-2025-results)), and integrating the "shoppability" of AI assistants into the platform. This means brands selling on Zalando need to ensure the structuring and completeness of product data so AI systems can correctly understand and recommend it.
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 3.3 Onboarding Requirements
 
 > **Real case: Zalando AI recommendations boost add-to-cart rate by 13%**
 > Zalando's AI recommendation system has already produced quantifiable results: AI recommendations increased the number of items users add to cart by 13%, while the return rate dropped 8% (thanks to better size suggestions) (Ad-Hoc News — original offline, rechecked 2026-08). This means for brands selling on Zalando, the more complete the product data (size, material, fit), the higher the probability of AI recommendation and the lower the return rate.
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Real case: Zalando AI content production from 0 to 90%**
 > Zalando increased AI-generated marketing content from near zero to 90% within a year, shortened marketing-campaign production time from 6 weeks to a few days, and increased the amount of content created by 70% ([FT/Quirin Research](https://markets.ft.com/data/announce/detail?dockey=600-202603131203DGAP____ORIGRE___rc_24956-1)). This demonstrates AI's huge potential in fashion e-commerce content production.
-
-Content rephrased for compliance with licensing restrictions.
 
 - Brands must meet Zalando's quality standards
 - Need to apply through the Zalando Partner Program

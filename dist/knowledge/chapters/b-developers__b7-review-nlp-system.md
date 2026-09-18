@@ -114,12 +114,8 @@ pip3 install openai anthropic
 
 > **真实资源**：多个教程展示了如何用 Python 抓取 Amazon Review 数据，包括使用 BeautifulSoup、Scrapy 和专业 API 服务（[ScrapingBee](https://www.scrapingbee.com/blog/how-to-scrape-amazon-reviews/)，[Oxylabs](https://oxylabs.io/blog/how-to-scrape-amazon-reviews)）。抓取的数据通常包含评分、标题、正文、日期、验证购买状态和有用投票数。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **真实案例：跨产品 Review 分析**
 > 学术研究展示了使用上下文主题建模（Contextual Topic Modeling）和关联规则挖掘对耳机品类的 Amazon Review 进行跨产品分析，发现不同产品之间共享的用户关注点和差异化特征（[MDPI](https://www.mdpi.com/0718-1876/19/4/170)）。
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 3.2 Review 数据结构
 
@@ -261,8 +257,6 @@ df['bert_score'] = [s['score'] for s in sentiments]
 
 > **真实案例**：学术研究表明，基于 BERT 的情感分析在 Amazon Review 数据集上可以达到 90%+ 的准确率，显著优于传统机器学习方法（[MDPI](https://www.mdpi.com/1999-5903/18/3/138)）。BERTopic 结合 Amazon Review 数据可以自动发现产品的核心话题和用户关注点（[Amalytix](https://www.amalytix.com/en/blog/analyze-reviews-bertopic/)）。
 
-Content rephrased for compliance with licensing restrictions.
-
 ---
 
 ## 5. BERTopic 主题建模
@@ -343,8 +337,6 @@ fig.show()
 
 > **真实案例：Amalytix 的 Amazon Review BERTopic 分析**
 > Amalytix 展示了如何用 BERTopic 分析 Amazon Review，自动发现产品的核心话题。BERTopic 使用基于 BERT 的方法和修改后的 TF-IDF 分析，能够从非结构化的 Review 文本中提取有意义的主题聚类（[Amalytix](https://www.amalytix.com/en/blog/analyze-reviews-bertopic/)）。
-
-Content rephrased for compliance with licensing restrictions.
 
 ```python
 # 高级技巧 1：按品类分组的主题分析

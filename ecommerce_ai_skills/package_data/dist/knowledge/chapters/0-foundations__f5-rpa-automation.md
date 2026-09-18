@@ -542,8 +542,6 @@ Temperature：0.5
 - 浏览器自动化（Defy/Bardeen）操作 Seller Central 可能违规
 - 建议：优先使用 SP-API，避免直接模拟浏览器操作 Seller Central
 
-Content rephrased for compliance with licensing restrictions.
-
 ---
 
 ### 7.6 10 个电商自动化工作流的详细实现方案

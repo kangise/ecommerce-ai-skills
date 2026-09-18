@@ -116,7 +116,7 @@ Below is a compliance-requirement comparison of cross-border e-commerce's four m
 - **EU REACH/RoHS**: REACH requires registration, evaluation, and authorization of chemicals. RoHS restricts hazardous substances (lead, mercury, cadmium, etc.) in electrical and electronic equipment. Both are mandatory.
 - **JP Chemical Substances Control Act**: Japan's law imposes strict review and registration requirements on new chemical substances.
 
-Content rephrased for compliance with licensing restrictions. Sources: [CE marking - Wikipedia](https://en.wikipedia.org/wiki/CE_marking)
+Sources: [CE marking - Wikipedia](https://en.wikipedia.org/wiki/CE_marking)
 
 ### 1.3 AI's role in compliance
 
@@ -1130,7 +1130,7 @@ Amazon requires sellers to ensure all third-party tools and AI Agents they use m
 3. **Use automated actions carefully**: an AI Agent's auto-pricing, auto-reply, and similar features must not violate Amazon policy
 4. **Keep operation records**: log the AI Agent's operations in case of an Amazon review
 
-Content rephrased for compliance with licensing restrictions. Sources: [ppc.land Amazon AI agent rules](https://ppc.land/amazons-new-ai-agent-rules-shake-up-sellers-before-march-4-deadline/), [ecommercebytes.com BSA compliance](https://www.ecommercebytes.com/2026/02/18/amazon-sellers-have-2-weeks-to-ensure-compliance-of-tools-they-use/)
+Sources: [ppc.land Amazon AI agent rules](https://ppc.land/amazons-new-ai-agent-rules-shake-up-sellers-before-march-4-deadline/), [ecommercebytes.com BSA compliance](https://www.ecommercebytes.com/2026/02/18/amazon-sellers-have-2-weeks-to-ensure-compliance-of-tools-they-use/)
 
 **AI-assisted BSA compliance check:**
 
@@ -1358,8 +1358,6 @@ Verify each of these before delivering and report the result:
 | [Comply with U.S. and Foreign Regulations](https://www.trade.gov/comply-us-and-foreign-regulations) | International Trade Administration | overview of key compliance rules when trading with developed countries |
 | [CPSC Recalls Database](https://www.cpsc.gov/Recalls) | CPSC | US consumer-product recall database, understand which products are recalled and why |
 | [EU Safety Gate (RAPEX)](https://ec.europa.eu/safety-gate-alerts/screen/webReport) | European Commission | EU rapid product-safety alert system, view reported dangerous products |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 8.4 Communities & forums
 

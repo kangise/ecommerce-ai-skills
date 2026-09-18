@@ -542,8 +542,6 @@ Node 6: Slack notification
 - Browser automation (Defy/Bardeen) on Seller Central may violate the rules
 - Advice: prefer SP-API; avoid directly simulating browser actions on Seller Central
 
-Content rephrased for compliance with licensing restrictions.
-
 ---
 
 ### 7.6 Detailed Plans for the 10 Automation Workflows

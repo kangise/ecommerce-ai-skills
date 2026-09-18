@@ -858,7 +858,7 @@ In mid-2025, Andrej Karpathy (formerly OpenAI) framed it memorably: the LLM is l
 
 Prompt engineering is evolving into **context engineering** — not just writing one good prompt, but architecting the entire information input.
 
-Content rephrased for compliance with licensing restrictions. Source: [Context Engineering Guide 2026](https://open.substack.com/pub/theaicorner1/p/context-engineering-guide-2026)
+Source: [Context Engineering Guide 2026](https://open.substack.com/pub/theaicorner1/p/context-engineering-guide-2026)
 
 ```
 Prompt engineering (2023–2024):
@@ -921,7 +921,7 @@ error handling: if input data is insufficient, ask rather than guess
 }
 ```
 
-Content rephrased for compliance with licensing restrictions. Source: [Prompt Engineering Best Practices 2026](https://promptbuilder.cc/blog/prompt-engineering-best-practices-2026)
+Source: [Prompt Engineering Best Practices 2026](https://promptbuilder.cc/blog/prompt-engineering-best-practices-2026)
 
 ---
 

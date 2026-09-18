@@ -230,17 +230,11 @@ def render_advertising_tab(df_ads: pd.DataFrame):
 > **実事例: AWS EC トラフィック異常検知アーキテクチャ**
 > AWS 公式ブログが EC トラフィックパターンの異常検知を自動化する方法を示した。ウェブサイトのページ訪問や注文完了などの指標の微小な異常を早期発見し、組織が是正措置を取るのを助け、業務 KPI への負の影響を減らす([AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/automating-anomaly-detection-in-ecommerce-traffic-patterns/))。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **実事例: Streamlit BI ダッシュボードが GA4 + EC データを統合**
 > Squadbase は Google Analytics 4(GA4)分析と EC インテリジェンスの 2 つの重要な業務領域を統合した総合的な Streamlit BI ダッシュボードを示し、ウェブサイトのトラフィック、ユーザー行動、転換パターンの深掘り分析を提供した([Squadbase](https://www.squadbase.dev/blog/showcase-streamlit-bi-dashboard-with-google-analytics-and-e-commerce))。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **実事例: Amazon SP-API Python データ取得**
 > Andrew Kushnerov のチュートリアルシリーズが、Python で Amazon SP-API から注文データと在庫/価格データを取得する方法を示した。重要な洞察: 注文は作成後も継続的に更新される(ステータス変化、金額変化)、高品質な分析を構築するには注文の完全なライフサイクルを追跡する必要がある([Medium - Orders](https://andrewkushnerov.medium.com/amazon-sp-api-get-orders-with-python-7b7e913d87ea)、[Medium - Inventory](https://andrewkushnerov.medium.com/amazon-sp-api-get-inventory-and-prices-with-python-3226b980bd79))。
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 5.1 Amazon SP-API データ取得
 
@@ -359,8 +353,6 @@ def merge_platforms(amazon_df, shopify_df, walmart_df=None):
 | 利益 | 純利率 | 純利益/収入 | 15-30% | <10% |
 | 顧客 | 返品率 | 返品/注文 | 5-15% | >20% |
 | 顧客 | Review 評価 | 平均星評価 | 4.0-4.5 | <3.8 |
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 6.2 異常検知(複数の方法)
 

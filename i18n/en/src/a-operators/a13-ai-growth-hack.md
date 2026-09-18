@@ -75,11 +75,7 @@ Key: each link's AI output is the next link's input
 
 > **Real data**: per Pattern Group's January 2026 survey of 1,000 senior business leaders, one-third of e-commerce brands have deployed AI shopping agents, and 76% report lower customer-acquisition costs through AI-driven search and chat commerce ([SalesSmartly](https://www.salesmartly.com/en/blog/docs/ai-chatbot-ecommerce-2026-platforms-comparison)).
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Real data**: AI-sourced traffic converts 7–8× higher than social media and 2× higher than other digital channels ([Nekuda/Substack](https://nekuda.substack.com/p/whats-your-2026-agentic-commerce)). McKinsey predicts Agentic Commerce will drive $3–5 trillion in global transactions by 2030 ([Opascope](https://opascope.com/insights/ai-shopping-assistant-guide-2026-agentic-commerce-protocols/)).
-
-Content rephrased for compliance with licensing restrictions.
 
 ---
 
@@ -254,8 +250,6 @@ AI suggests next month's strategy adjustment
 ```
 
 > **Real data**: AI advertising and personalization tools can lift ROAS 20–30% ([Entrepreneur](https://www.entrepreneur.com/growing-a-business/how-to-use-ai-to-grow-your-amazon-sales-rankings-and/499421)). AI smart recommendations drive 26% higher order value and now contribute 31% of total e-commerce revenue ([Netguru](https://www.netguru.com/blog/ecommerce-digital-transformation)).
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 4.2 GEO + SEO dual-engine traffic strategy
 
@@ -471,12 +465,8 @@ In 2026, AI-agent shopping is reshaping e-commerce. Your brand needs to be ready
 > **Real case: Claude Code automates Google Ads deployment**
 > Stormy.ai showed how to use Claude Code (a terminal AI agent) to automate the deployment of e-commerce Google Ads campaigns. Claude Code isn't just a chatbot — it acts as an AI engineer in the growth-marketing tech stack ([Stormy.ai](https://stormy.ai/blog/ecommerce-ppc-automation-claude-code)).
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Real case: Claude MCP manages Amazon ads**
 > Through the Model Context Protocol (MCP), brands are deploying autonomous agents to think, act, and optimize Amazon ads in real time. This is no longer "managing ads" but "conversational campaign management" (Stormy.ai — original offline, rechecked 2026-08).
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 7.2 Daily AI operations workflow
 
@@ -626,8 +616,6 @@ Covers: product research → listing → ads → CS → content → data analysi
 | AI lowering customer-acquisition cost | 76% of brands report | [SalesSmartly](https://www.salesmartly.com/en/blog/docs/ai-chatbot-ecommerce-2026-platforms-comparison) |
 | Agentic Commerce 2030 projection | $3–5T | [Opascope/McKinsey](https://opascope.com/insights/ai-shopping-assistant-guide-2026-agentic-commerce-protocols/) |
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 9.2 Netcore's six Agentic Commerce shifts
 
 Per Netcore's "Agentic Commerce Shift Report 2026" ([Storyboard18](https://www.storyboard18.com/digital/agentic-commerce-is-becoming-the-new-operating-system-for-e-commerce-report-reveals-90936.htm)), leading e-commerce teams are rebuilding growth around six execution shifts:
@@ -640,8 +628,6 @@ Per Netcore's "Agentic Commerce Shift Report 2026" ([Storyboard18](https://www.s
 | Profit accountability | revenue-oriented | profit-oriented |
 | Data architecture | scattered data silos | a unified real-time data layer |
 | Org structure | teams by channel | teams by growth goal |
-
-Content rephrased for compliance with licensing restrictions.
 
 ---
 

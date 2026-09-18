@@ -34,8 +34,6 @@
 
 > **The 2026 AI market**: ChatGPT's market share fell from 87% to ~68%, Google Gemini rose from 5% to 18%, Claude took 29% of the enterprise market, and Perplexity built a loyal base in research and analysis ([AI Business Weekly](https://aibusinessweekly.net/p/ai-chatbots-comparison-guide)). 2026 is no longer a two-model race but an ecosystem of at least four strong contenders — the right choice depends on your specific use case.
 
-Content rephrased for compliance with licensing restrictions.
-
 ---
 
 ## 1. The 2026 E-Commerce AI Tool Landscape

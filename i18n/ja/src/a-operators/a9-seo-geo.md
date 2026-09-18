@@ -205,8 +205,6 @@ Agent 化した後、上で貼り付けを求めているデータはここか�
 
 > **出典：** 検証 2026-08 · 小紅書公式資料：MAU 約 3 億、月間検索浸透率 70%（[新浪財経の報道](https://finance.sina.com.cn/tech/2025-04-10/doc-inesschw5906564.shtml)）
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 4.3 GEO の 5 大支柱(EC 版)
 
 2026 年の GEO 実践ガイド(TheCommerceShop(原文はオフライン、2026-08 再確認)、[Prefixbox](https://www.prefixbox.com/blog/guide-to-generative-engine-optimization/))によると、EC の GEO 最適化には 5 大支柱がある:
@@ -218,8 +216,6 @@ Content rephrased for compliance with licensing restrictions.
 | 意図駆動 | コンテンツはユーザーの購入意図に答える必要 | "best X for Y" 系コンテンツ、使用シーンの説明 |
 | 購入可能性 | AI の答えは直接購入に導ける必要 | 製品ページに在庫あり、価格が正確、ディープリンクが有効 |
 | 権威シグナル | AI は権威ある情報源を信頼 | 第三者レビュー、メディア報道、専門認証 |
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 4.4 Agentic Commerce(AI 代理の買い物)
 
@@ -235,8 +231,6 @@ Content rephrased for compliance with licensing restrictions.
 | Reddit | AI 買い物検索カルーセル | テスト中 |
 
 > Shopify と Google は UCP(Universal Commerce Protocol)を共同開発した、AI 買い物のオープン標準([Shopify Enterprise](https://www.shopify.com/enterprise/blog/generative-engine-optimization))。Shopify ブランドは ChatGPT、Copilot、Gemini などの AI チャネル内で直接販売できる最初の存在。
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 あなたは Agentic Commerce 戦略の専門家です。
@@ -307,8 +301,6 @@ Content rephrased for compliance with licensing restrictions.
 | Otterly.ai | AI 検索順位追跡 | 有料 |
 | ChatGPT/Perplexity | AI 推薦を手動でテスト | 無料/$20/月 |
 | Google Search Console | AI Overviews データ | 無料 |
-
-Content rephrased for compliance with licensing restrictions.
 
 ---
 

@@ -199,7 +199,7 @@ Vector databases are purpose-built to store and retrieve vectors — finding the
 - Production: Pinecone (no ops) or Qdrant (self-hosted)
 - Already on PostgreSQL: pgvector (no extra infrastructure)
 
-Content rephrased for compliance with licensing restrictions. Sources: [Vector Databases 2026 Guide](https://iterathon.tech/blog/vector-databases-ai-applications-guide), [Embeddings and Vector Databases Guide](https://tutorialq.com/ai/machine-learning/embeddings-and-vector-databases)
+Sources: [Vector Databases 2026 Guide](https://iterathon.tech/blog/vector-databases-ai-applications-guide), [Embeddings and Vector Databases Guide](https://tutorialq.com/ai/machine-learning/embeddings-and-vector-databases)
 
 ### 3.3 How a vector database is used
 
@@ -488,7 +488,7 @@ Fusion: merge multi-source results
 For complex enterprise applications
 ```
 
-Content rephrased for compliance with licensing restrictions. Sources: [RAG Architecture Guide 2026](https://ztabs.co/blog/rag-architecture-guide), [RAG Systems Production Guide 2026](https://iterathon.tech/blog/rag-systems-production-guide-2025)
+Sources: [RAG Architecture Guide 2026](https://ztabs.co/blog/rag-architecture-guide), [RAG Systems Production Guide 2026](https://iterathon.tech/blog/rag-systems-production-guide-2025)
 
 ---
 

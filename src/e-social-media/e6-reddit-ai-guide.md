@@ -60,7 +60,7 @@ Reddit 是最反感营销的平台之一，也因此是信任度最高的一个�
 | 社区驱动 | 从社区讨论中提取推荐产品 |
 | DPA 合作伙伴 | 产品目录来自 Dynamic Product Ads 合作伙伴 |
 
-Content rephrased for compliance with licensing restrictions. Sources: [TechCrunch](https://techcrunch.com/2026/02/19/reddit-is-testing-a-new-ai-search-feature-for-shopping/), [mpost.io](https://mpost.io/new-ai-powered-shopping-feature-marks-reddits-first-major-step-toward-community-driven-commerce-integration/).
+来源：[TechCrunch](https://techcrunch.com/2026/02/19/reddit-is-testing-a-new-ai-search-feature-for-shopping/)、[mpost.io](https://mpost.io/new-ai-powered-shopping-feature-marks-reddits-first-major-step-toward-community-driven-commerce-integration/).
 
 > **对卖家的影响**：Reddit 正在从"讨论平台"转变为"购物发现平台"。搜索 "best wireless earbuds under $100" 这样的查询，现在可以直接生成包含价格和购买链接的产品轮播（[ChatAI](https://www.chatai.com/posts/reddit-rolls-out-ai-product-carousels-entering-the-commerce-search-race)）。这意味着：
 > - 在 Reddit 上有正面讨论的产品更可能被 AI 购物功能推荐
@@ -83,8 +83,6 @@ Content rephrased for compliance with licensing restrictions. Sources: [TechCrun
 
 > **真实案例：Reddit 成为 AI 搜索引擎的重要数据源**
 > Reddit 是 Google 和 AI 系统认可的"真实用户对话"平台。Level Agency 指出："Reddit 是互联网上最受信任的信息环境之一，Google 和 AI 系统知道真实的人在这里进行关于真实产品的真实对话。Subreddit 由社区治理，而非品牌。"（[Level Agency](https://www.level.agency/perspectives/reddit-marketing-strategy/)）这意味着 Reddit 上的品牌讨论直接影响 AI 搜索引擎是否推荐你的产品。
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 2.1 核心原则：提供价值，不推销
 

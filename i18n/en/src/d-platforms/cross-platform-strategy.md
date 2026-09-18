@@ -49,7 +49,7 @@ According to 2025-2026 industry data:
 - Among brands using AI to optimize inventory allocation, 89% of top brands have adopted machine learning
 - AI-driven cross-channel brands go to market 4x faster
 
-Content rephrased for compliance with licensing restrictions. Sources: [eStoreFactory Multi-Channel 2026](https://www.estorefactory.com/blog/multi-channel-ecommerce-strategy-2026/), [Webgility Future of Ecommerce](https://www.webgility.com/blog/future-of-ecommerce)
+Sources: [eStoreFactory Multi-Channel 2026](https://www.estorefactory.com/blog/multi-channel-ecommerce-strategy-2026/), [Webgility Future of Ecommerce](https://www.webgility.com/blog/future-of-ecommerce)
 
 
 ---
@@ -993,7 +993,7 @@ The value of unified customer service:
 - One customer-service person can manage three platforms (instead of one per platform)
 - The customer's history on any platform is visible
 
-Content rephrased for compliance with licensing restrictions. Source: [eDesk Manage Amazon TikTok One Inbox](https://www.edesk.com/blog/manage-amazon-tiktok-shop-one-inbox/)
+Source: [eDesk Manage Amazon TikTok One Inbox](https://www.edesk.com/blog/manage-amazon-tiktok-shop-one-inbox/)
 
 ---
 

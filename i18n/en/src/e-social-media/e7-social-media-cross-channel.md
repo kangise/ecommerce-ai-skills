@@ -35,17 +35,11 @@ After this module you'll be able to:
 
 > The global social-commerce market is projected to reach $2.9 trillion in 2026 ([Social Champ](https://www.socialchamp.com/blog/ecommerce-social-media-strategy/)). A reliable social-media attribution setup can boost ROI visibility by up to 89% ([Social Rails](https://socialrails.com/blog/social-media-attribution-modeling)). Cross-channel isn't about doing something different on each platform — it's about using one set of core content to generate maximum value across multiple platforms.
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Real case: UGC cross-channel distribution priority**
 > RaveCapture's 2026 e-commerce Review/UGC report notes that the best distribution order for spreading social proof across channels is: PDP (product page) → email marketing → paid social → organic social. Start with PDP + lifecycle marketing first, then expand to social channels ([RaveCapture](https://ravecapture.com/playbooks/state-of-ecommerce-reviews-ugc-2026/chapter-9/)).
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Real case: the key challenge of cross-channel attribution**
 > Triple Whale notes that last-click attribution gives 100% of the credit to the last interaction before purchase, systematically undervaluing content marketing, brand awareness, and early touchpoints. Cross-channel attribution requires analyzing customer interactions across multiple marketing channels to determine each touchpoint's contribution to conversion ([Triple Whale](https://www.triplewhale.com/blog/cross-channel-attribution)).
-
-Content rephrased for compliance with licensing restrictions.
 
 ## 1. One Piece of Content, Multi-Platform Adaptation
 

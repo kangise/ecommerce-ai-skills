@@ -169,8 +169,6 @@ Based on Coupang's Q4 2025 earnings report ([MarketBeat](https://www.marketbeat.
 
 > **Note**: Coupang experienced a major data breach in 2025 (33 million accounts affected), causing Q4 profit to drop 97%. The company will issue about $1.2 billion in vouchers to affected users. This may affect platform trust in the short term, but in the long run Coupang's market position in Korea remains solid.
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 4.3 Coupang Ad System
 
 | Ad type | Description | Billing | Minimum bid |
@@ -228,19 +226,13 @@ Coupang is building a scalable international-expansion engine, with its new expo
 
 The Coupang Global Selling official platform ([globalsellers.coupang.com](https://globalsellers.coupang.com/)) provides an onboarding channel for international sellers.
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 5.2 Onboarding Paths Explained
 
 > **Real case: The Kyoto brand SOU・SOU enters Korea through Coupang**
 > The traditional Kyoto textile brand SOU・SOU successfully entered the Korean market through Coupang Global Selling. SOU・SOU is known for fusing traditional Japanese patterns with modern design, and after joining Coupang it quickly became a brand Korean consumers love, proving that a style rooted in tradition can cross borders ([Coupang Global Sellers](https://globalsellers.coupang.com/en/newsroom/sou%E3%83%BBsou-bringing-kyotos-colorful-seasons-to-korea/)).
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Real case: MITSUYA, from car exports to Japanese consumer goods cross-border**
 > The Japanese company MITSUYA CO., LTD. was originally a company exporting Japanese cars and parts. As customer needs changed, the company expanded into international sales of Japanese consumer goods, launching a full overseas direct-purchase service in 2007. Through the Coupang platform, MITSUYA brought products embodying Japanese craftsmanship to the Korean market ([Coupang Global Sellers](https://globalsellers.coupang.com/en/meet-a-seller/delivering-japanese-craftsmanship-to-korea-with-heart/)).
-
-Content rephrased for compliance with licensing restrictions.
 
 | Path | Description | Barrier | Fees | Best for |
 |------|-------------|---------|------|----------|
@@ -265,8 +257,6 @@ According to Coupang and industry material ([SellToKorea](https://selltokorea.co
 ### 5.4 Rocket Growth In-Depth Analysis
 
 Rocket Growth is a 3PL service Coupang designed for cross-border sellers ([Kontactic](https://web.archive.org/web/20260412055042/https://www.kontactic.com/blog/how-to-sell-on-coupang-foreign-brand)). Products fulfilled through Rocket Growth get the Rocket Delivery tag, which significantly boosts the conversion rate and search visibility.
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 Rocket Growth workflow:
@@ -307,8 +297,6 @@ Coupang has several important strategic directions in 2025-2026:
 | Rocket WOW membership | 14 million members ([AInvest](https://www.ainvest.com/news/coupang-global-scalability-assessing-tam-tech-moat-growth-investors-2601/)) | High-value user base |
 
 > **Sources:** verified 2026-08 · Coupang's board authorized up to $1B in buybacks in May 2025; 8.8M shares were repurchased during 2025 for $243M ([Coupang IR](https://ir.aboutcoupang.com/news-events/news/news-details/2025/Coupang-Announces-Results-for-First-Quarter-2025/default.aspx))
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 5.6 Korean Market Marketing Channels
 

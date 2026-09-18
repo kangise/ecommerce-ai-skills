@@ -64,17 +64,11 @@
 > **Real case: $290 billion in conversational-commerce spending**
 > In 2025, global consumer spending through conversational-commerce channels reached $290 billion, up sharply from just $41 billion in 2021. Shoppers who interact with AI have a conversion rate of 12.3%, nearly 4x the 3.1% of those who don't ([Neuwark](https://neuwark.com/blog/conversational-commerce-2026-ai-replacing-shopping-cart)).
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Real case: Kicks Kenya recovers abandoned carts with WhatsApp**
 > Kenyan sneaker brand Kicks Kenya used the Chpter platform to convert website cart abandonments into WhatsApp real-time chat checkout, successfully turning abandoned website carts into actual orders ([TechTrends Kenya](https://techtrendske.co.ke/2026/03/11/africa-whatsapp-commerce/)). This demonstrates WhatsApp's core position in emerging-market e-commerce.
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Real case: AI chat tool achieves 38-46% chat conversion rate**
 > An e-commerce seller used an AI-driven WhatsApp/Instagram chat tool (ZipChat) and after 6 months achieved a 38-46% chat conversion rate, $8,900 monthly revenue, working only 22-26 hours per week ([Beehiiv Review](https://md-alberunis-newsletter.beehiiv.com/p/zipchat-ai-ai-powered-sales-chat-for-whatsapp-instagram-email-more-my-appsumo-review)).
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 2.1 E-Commerce Chatbot Workflow Design
 
@@ -182,8 +176,6 @@ Before delivering, verify each item and report the result:
 
 On January 15, 2026, WhatsApp banned general AI bots (like directly connecting ChatGPT), removing third-party AI chatbot integrations including OpenAI ChatGPT ([WindowsNews](https://windowsnews.ai/article/whatsapp-bans-general-ai-bots-business-api-policy-shift-migration-guide.397847)).
 
-Content rephrased for compliance with licensing restrictions.
-
 Compliant practices:
 - Use an official WhatsApp Business API partner (BSP)
 - The bot must clearly identify itself as an auto-reply
@@ -204,8 +196,6 @@ The WhatsApp Business API has message-tier limits ([Latenode](https://www.lateno
 | Tier 3 | 100,000 | Sustained good record |
 | Unlimited | Unlimited | Long-term high-quality record |
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 3.4 Choosing a WhatsApp Business API Partner (BSP)
 
 | BSP | Features | Price | Best for |
@@ -217,8 +207,6 @@ Content rephrased for compliance with licensing restrictions.
 | Qualimero | AI sales consultant, deep Shopify integration ([Qualimero](https://qualimero.com/en/blog/shopify-whatsapp)) | Paid | AI-driven sales |
 | Respond.io | Multi-channel messaging platform | From $79/month | Multi-channel management |
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 3.5 WhatsApp Message Open-Rate Data
 
 WhatsApp messages far outperform traditional marketing channels ([Qualimero](https://qualimero.com/en/blog/whatsapp-business-account-create)):
@@ -229,8 +217,6 @@ WhatsApp messages far outperform traditional marketing channels ([Qualimero](htt
 | Email | 20-25% | 2-5% | 3.1% |
 | SMS | 95% | 10-15% | 5-8% |
 | Push notification | 5-15% | 1-3% | 1-2% |
-
-Content rephrased for compliance with licensing restrictions.
 
 ---
 
@@ -431,8 +417,6 @@ Set up "featured" products (up to 10)
 ### WhatsApp AI Sales Consultant Mode (2026 Trend)
 
 In 2026, WhatsApp marketing is shifting from "passive customer service" to a "proactive AI sales consultant" ([Qualimero](https://web.archive.org/web/20260122204219/https://qualimero.com/en/blog/whatsapp-bot-api-guide-ai-sales-service-2025)). The AI sales consultant doesn't just answer questions — it proactively recommends products, guides purchases, and boosts conversion.
-
-Content rephrased for compliance with licensing restrictions.
 
 | Mode | Traditional customer-service bot | AI sales consultant |
 |------|----------------------------------|---------------------|

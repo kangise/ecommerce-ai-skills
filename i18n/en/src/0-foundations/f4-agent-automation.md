@@ -224,7 +224,7 @@ e.g., a filesystem server, database server, email server
 | **Resources** | data the AI can read | file contents, database records, API responses |
 | **Prompts** | predefined interaction templates | standardized analysis flows, report templates |
 
-Content rephrased for compliance with licensing restrictions. Sources: [MCP Protocol Documentation](https://modelcontextprotocol.io/), [MCP Guide 2026](https://robomotion.io/blog/mcp-explained-why-model-context-protocol-matters-in-2026)
+Sources: [MCP Protocol Documentation](https://modelcontextprotocol.io/), [MCP Guide 2026](https://robomotion.io/blog/mcp-explained-why-model-context-protocol-matters-in-2026)
 
 ### 3.2 How MCP works
 
@@ -291,7 +291,7 @@ Multiple agents collaborate on a complex task
 
 **MCP + A2A = a complete agent infrastructure**
 
-Content rephrased for compliance with licensing restrictions. Source: [MCP vs A2A Guide](https://learndevrel.com/blog/mcp-vs-a2a)
+Source: [MCP vs A2A Guide](https://learndevrel.com/blog/mcp-vs-a2a)
 
 ---
 

@@ -199,7 +199,7 @@ Embedding 的方式是把每个产品放在一个"语义空间"里：
 - 生产环境：Pinecone（免运维）或 Qdrant（自托管）
 - 已有 PostgreSQL：pgvector（不需要额外基础设施）
 
-Content rephrased for compliance with licensing restrictions. Sources: [Vector Databases 2026 Guide](https://iterathon.tech/blog/vector-databases-ai-applications-guide), [Embeddings and Vector Databases Guide](https://tutorialq.com/ai/machine-learning/embeddings-and-vector-databases)
+来源：[Vector Databases 2026 Guide](https://iterathon.tech/blog/vector-databases-ai-applications-guide)、[Embeddings and Vector Databases Guide](https://tutorialq.com/ai/machine-learning/embeddings-and-vector-databases)
 
 ### 3.3 向量数据库的工作流程
 
@@ -488,7 +488,7 @@ Step 4：优化和部署（持续）
 适合复杂的企业级应用
 ```
 
-Content rephrased for compliance with licensing restrictions. Sources: [RAG Architecture Guide 2026](https://ztabs.co/blog/rag-architecture-guide), [RAG Systems Production Guide 2026](https://iterathon.tech/blog/rag-systems-production-guide-2025)
+来源：[RAG Architecture Guide 2026](https://ztabs.co/blog/rag-architecture-guide)、[RAG Systems Production Guide 2026](https://iterathon.tech/blog/rag-systems-production-guide-2025)
 
 ---
 

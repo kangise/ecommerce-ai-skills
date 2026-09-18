@@ -128,7 +128,7 @@ IPI Score ≈ f(Sell-through Rate, Excess Inventory %, Stranded Inventory %, In-
 - **Stranded Inventory** 必须为 0，这是最容易修复的
 - **In-stock Rate** 保持高库存率，但不要过度备货
 
-Content rephrased for compliance with licensing restrictions. Sources: [goaura.com IPI score guide](https://goaura.com/blog/improving-your-amazon-ipi-score), [goaura.com inventory management](https://goaura.com/blog/amazon-inventory-management)
+来源：[goaura.com IPI score guide](https://goaura.com/blog/improving-your-amazon-ipi-score)、[goaura.com inventory management](https://goaura.com/blog/amazon-inventory-management)
 
 ### 1.3 AI 在库存管理中的角色定位
 
@@ -179,7 +179,7 @@ AI 不擅长的：
 - 自建 Python 脚本做定制化分析（参考 Path B）
 - 适合 SKU 数量 100+ 或多站点运营的卖家
 
-Content rephrased for compliance with licensing restrictions. Sources: [goaura.com RestockPro review](https://goaura.com/blog/restockpro), [selectedfirms.co AI inventory management](https://selectedfirms.co/blog/ai-in-ecommerce-inventory-management)
+来源：[goaura.com RestockPro review](https://goaura.com/blog/restockpro)、[selectedfirms.co AI inventory management](https://selectedfirms.co/blog/ai-in-ecommerce-inventory-management)
 
 ### 2.2 免费工具组合
 
@@ -823,7 +823,7 @@ Stranded Inventory 详情：
 </自检>
 ```
 
-Content rephrased for compliance with licensing restrictions. Sources: [goaura.com IPI score improvement](https://goaura.com/blog/improving-your-amazon-ipi-score), [impakter.com FBA AI forecasting](https://impakter.com/the-2026-playbook-fba-prep-services-ai-forecasting-and-greener-3pl-operations/)
+来源：[goaura.com IPI score improvement](https://goaura.com/blog/improving-your-amazon-ipi-score)、[impakter.com FBA AI forecasting](https://impakter.com/the-2026-playbook-fba-prep-services-ai-forecasting-and-greener-3pl-operations/)
 
 ---
 
@@ -1048,7 +1048,7 @@ forecast = model.predict(future)
 
 > **Prophet 的核心优势**：它自动处理季节性、趋势变化和节假日效应，不需要你手动设定参数。对于有 1 年以上历史数据的产品，Prophet 的预测准确度通常优于人工判断。详细实现参考 [Path B: 技术人](../b-developers/) 的相关模块。
 
-Content rephrased for compliance with licensing restrictions. Source: [Facebook Prophet documentation](https://facebook.github.io/prophet/)
+来源：[Facebook Prophet documentation](https://facebook.github.io/prophet/)
 
 ### 6.2 多渠道库存同步（Amazon + Shopify + 独立站）
 
@@ -1192,7 +1192,7 @@ Shopify：日均 [X] 单，利润率 [X]%，自发货
 
 > **头程物流的核心原则**：常规补货用海运控制成本，紧急补货用空运保证不断货。建议每次海运发货时，预留 10-20% 的空运预算作为应急。
 ---
-Content rephrased for compliance with licensing restrictions. Source: [impakter.com FBA prep and 3PL operations](https://impakter.com/the-2026-playbook-fba-prep-services-ai-forecasting-and-greener-3pl-operations/)
+来源：[impakter.com FBA prep and 3PL operations](https://impakter.com/the-2026-playbook-fba-prep-services-ai-forecasting-and-greener-3pl-operations/)
 
 ---
 
@@ -1227,8 +1227,6 @@ Content rephrased for compliance with licensing restrictions. Source: [impakter.
 | [FBA Prep Services, AI Forecasting and Greener 3PL](https://impakter.com/the-2026-playbook-fba-prep-services-ai-forecasting-and-greener-3pl-operations/) | Impakter | 2026 年 FBA 运营趋势，含 AI 预测和绿色物流 |
 | [How to Use AI to Grow Your Amazon Sales](https://us.entrepreneur.com/growing-a-business/how-to-use-ai-to-grow-your-amazon-sales-rankings-and/499421) | Entrepreneur | AI 在 Amazon 运营中的实战应用，含库存优化和销量预测 |
 | [Prophet Documentation](https://facebook.github.io/prophet/) | Meta | Facebook Prophet 官方文档，时间序列预测的最佳入门资源 |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 7.4 社区与论坛
 

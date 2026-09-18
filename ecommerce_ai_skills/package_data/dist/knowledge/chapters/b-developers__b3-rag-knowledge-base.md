@@ -1219,8 +1219,6 @@ def build_rag_agent(
 | [Ollama](https://github.com/ollama/ollama) | 105k+ | 本地 LLM 运行 |
 | [RAGAS](https://github.com/explodinggradients/ragas) | 7k+ | RAG 评估框架 |
 
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
-
 ## 9. 完成标志
 
 - [ ] 用 LlamaIndex 10 行代码搭建一个最简 RAG，能回答产品文档中的问题

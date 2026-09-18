@@ -1282,8 +1282,6 @@ Check each item before delivery and report the results:
 | [7 Best Amazon Product Research Tools 2026](https://www.voc.ai/blog/best-amazon-product-research-tools) | VOC.AI | 2026 tool comparison with AI-feature reviews |
 | [Helium 10 vs Jungle Scout 2026](https://amazonfba.org/blog/tool-comparisons/helium-10-vs-jungle-scout) | AmazonFBA.org | the most detailed tool comparison, incl. multi-marketplace support |
 
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
-
 ### 7.4 Communities & forums
 
 | Community | Platform | Notes |

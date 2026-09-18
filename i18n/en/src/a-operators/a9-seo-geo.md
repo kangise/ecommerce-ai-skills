@@ -203,8 +203,6 @@ Per industry research ([Onely](https://www.onely.com/blog/geo-for-ecommerce-how-
 | 50+ customer reviews | AI recommendation probability +2.5× | review quantity and quality directly affect AI recommendation |
 | Competitor-comparison content | AI citation rate +45–70% | in shopping scenarios, comparison content is cited the most |
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 4.3 The five pillars of GEO (e-commerce edition)
 
 Per the 2026 GEO practice guides (TheCommerceShop (original offline, rechecked 2026-08), [Prefixbox](https://www.prefixbox.com/blog/guide-to-generative-engine-optimization/)), e-commerce GEO has five pillars:
@@ -216,8 +214,6 @@ Per the 2026 GEO practice guides (TheCommerceShop (original offline, rechecked 2
 | Intent-driven | content must answer the user's purchase intent | "best X for Y" content, use-case descriptions |
 | Shoppability | AI answers must lead directly to purchase | product pages in stock, accurate prices, working deep links |
 | Authority signals | AI trusts authoritative sources | third-party reviews, media coverage, professional certification |
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 4.4 Agentic Commerce (AI-agent shopping)
 
@@ -233,8 +229,6 @@ The most important GEO trend of 2026 is Agentic Commerce — AI agents completin
 | Reddit | AI shopping-search carousel | in testing |
 
 > Shopify and Google co-developed UCP (Universal Commerce Protocol), the open standard for AI shopping ([Shopify Enterprise](https://www.shopify.com/enterprise/blog/generative-engine-optimization)). Shopify brands are the first able to sell directly inside AI channels like ChatGPT, Copilot, and Gemini.
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 You are an Agentic Commerce strategy expert.
@@ -305,8 +299,6 @@ Run a monthly GEO audit:
 | Otterly.ai | AI-search rank tracking | paid |
 | ChatGPT/Perplexity | manually test AI recommendation | free/$20/mo |
 | Google Search Console | AI Overviews data | free |
-
-Content rephrased for compliance with licensing restrictions.
 
 ---
 

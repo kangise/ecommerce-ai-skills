@@ -107,7 +107,7 @@ Rufus is a consumer-facing AI assistant users can ask in natural language (e.g.,
 
 > **The 2026 core insight**: listing optimization has shifted from "a keyword game" to "intent matching + AI readability." The value of AI helping write your listing isn't just "writing fast" but "writing something COSMO understands, Rufus can cite, and a real person is persuaded to buy."
 
-Content rephrased for compliance with licensing restrictions. Sources: [ZonGuru COSMO Guide](https://www.zonguru.com/blog/what-is-amazon-cosmo), [ZonGuru Amazon SEO 2026](https://www.zonguru.com/blog/amazon-seo-guide), [MyAmazonGuy COSMO+Rufus](https://myamazonguy.com/seo/amazon-seo-in-the-age-of-ai), [BareGold A10 Playbook](https://baregold.ca/resources/amazon-a10-algorithm-in-2026-the-listing-optimization-playbo)
+Sources: [ZonGuru COSMO Guide](https://www.zonguru.com/blog/what-is-amazon-cosmo), [ZonGuru Amazon SEO 2026](https://www.zonguru.com/blog/amazon-seo-guide), [MyAmazonGuy COSMO+Rufus](https://myamazonguy.com/seo/amazon-seo-in-the-age-of-ai), [BareGold A10 Playbook](https://baregold.ca/resources/amazon-a10-algorithm-in-2026-the-listing-optimization-playbo)
 
 ### 1.2 Parts of a listing
 
@@ -184,7 +184,7 @@ What AI is weak at:
 
 > **Key insight**: the core value of listing tools is keyword data, not AI generation. Helium 10's AI-generated listing isn't necessarily better than ChatGPT's, but it tells you which keywords are high-volume and low-competition — which ChatGPT can't. Best combo: research keywords with Helium 10, generate copy with ChatGPT/Claude.
 
-Content rephrased for compliance with licensing restrictions. Sources: [amazonfba.org listing tools](https://amazonfba.org/blog/tool-comparisons/best-amazon-listing-optimization-tools), [voc.ai listing tools](https://www.voc.ai/blog/best-amazon-listing-optimization-tools)
+Sources: [amazonfba.org listing tools](https://amazonfba.org/blog/tool-comparisons/best-amazon-listing-optimization-tools), [voc.ai listing tools](https://www.voc.ai/blog/best-amazon-listing-optimization-tools)
 
 ### 2.2 Free tool stack
 
@@ -1617,7 +1617,7 @@ Check each item before delivery and report the results:
 
 > **The core idea of Rufus optimization**: shift from "keyword optimization" to "question-answering optimization." Your listing isn't just a keyword container but a "product knowledge base" answering all questions about the product.
 
-Content rephrased for compliance with licensing restrictions. Source: [azariangrowthagency.com Rufus playbook](https://azariangrowthagency.com/amazon-ads-ai-shopping-assistants-playbook/)
+Source: [azariangrowthagency.com Rufus playbook](https://azariangrowthagency.com/amazon-ads-ai-shopping-assistants-playbook/)
 
 ### 7.2 Generative Engine Optimization (GEO/AIO)
 
@@ -1672,7 +1672,7 @@ Check each item before delivery and report the results:
 
 > **The core idea of GEO**: traditional SEO is "get search engines to find you"; GEO is "get AI engines to recommend you." The difference is AI engines don't just match keywords — they understand semantics, assess authority, and cite user reviews. Your product info must be "AI-friendly."
 
-Content rephrased for compliance with licensing restrictions. Source: [bebolddigital.com GEO for Amazon](https://www.bebolddigital.com/blog/generative-engine-optimization-for-amazon)
+Source: [bebolddigital.com GEO for Amazon](https://www.bebolddigital.com/blog/generative-engine-optimization-for-amazon)
 
 ### 7.3 Cultural Differences in Listing Localization (US vs DE vs JP)
 
@@ -1775,8 +1775,6 @@ Check each item before delivery and report the results:
 | [ChatGPT for Amazon Sellers](https://revenuegeeks.com/guides/chatgpt-for-amazon-seller) | RevenueGeeks | a comprehensive guide to ChatGPT in Amazon operations |
 | [Generative Engine Optimization for Amazon](https://www.bebolddigital.com/blog/generative-engine-optimization-for-amazon) | BeBold Digital | how GEO affects Amazon listing strategy |
 | [Amazon Rufus AI Shopping Assistant Playbook](https://azariangrowthagency.com/amazon-ads-ai-shopping-assistants-playbook/) | Azarian Growth Agency | a hands-on Rufus-optimization guide |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 8.4 Communities & forums
 

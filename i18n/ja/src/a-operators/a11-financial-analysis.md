@@ -38,12 +38,8 @@
 > **実事例: 2026 年、EC は「成長至上」から「利益優先」へ転換**
 > Mixpanel の 4231 億イベントと 47 億デバイスの分析によると、2026 年の EC は「何を犠牲にしても成長」から「習慣駆動のコマース」へ転換している([Mixpanel](https://mixpanel.com/blog/ecommerce-benchmarks-2026/))。ChannelEngine の 2026 年予測も指摘する:「拡張それ自体はもはや戦略ではなく、運営の卓越性こそが戦略。2026 年の勝者は最も速く動く者でなく、最も規律ある運営者だ。」([ChannelEngine](https://www.channelengine.com/en/blog/ecommerce-predictions))
 
-Content rephrased for compliance with licensing restrictions.
-
 > **実事例: Netcore Agentic Commerce レポート**
 > Netcore が発表した『Agentic Commerce Shift Report 2026』によると、同業を上回るブランドは、より多くの AI コパイロットを追加したりメディア予算を増やしたりしたブランドではなく、利益への説明責任を軸に実行体系を再構築したブランドだ([AdGully](https://www.adgully.com/post/12649/the-end-of-campaign-led-growth-why-ecommerce-leaders-are-rebuilding-around-ai-agents))。
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 1.1 よくある財務の盲点
 
@@ -281,8 +277,6 @@ PPC 費用
 
 2026 年の EC 財務分析は「事後レポート」から「リアルタイムの意思決定インテリジェンス」へ転換している([ProfitPeak](https://profitpeak.io/au/blog/ecommerce-in-2026-the-shift-from-reporting-to-decision-intelligence))。AI は広告費用、利益率、在庫状況、顧客価値をリアルタイムで接続する。
 
-Content rephrased for compliance with licensing restrictions.
-
 | ツール | 機能 | 価格 | 向く |
 |--------|------|------|------|
 | Iris Finance | AI 財務アナリスト、リアルタイム P&L、キャッシュフロー予測([Iris](https://www.irisfinance.co/agenticsolution/fp-a-cfo)) | 有料 | 消費財ブランド |
@@ -292,7 +286,7 @@ Content rephrased for compliance with licensing restrictions.
 | Shopify Analytics | 内蔵の財務レポート | Shopify サブスクに含む | Shopify セラー |
 | ChatGPT/Claude | 汎用財務分析補助 | $20/月 | すべてのセラー |
 
-Content rephrased for compliance with licensing restrictions. Source: [TopWebsiteBuilders](https://topwebsitebuilders.org/blog/ecommerce-profit-reporting-tools/).
+出典：[TopWebsiteBuilders](https://topwebsitebuilders.org/blog/ecommerce-profit-reporting-tools/).
 
 ### 4.4 EC 核心財務指標
 
@@ -308,8 +302,6 @@ EC 財務のベストプラクティス([BlueCopa](https://bluecopa.com/blog/e-c
 | CAC | 総獲得コスト/新規顧客数 | カテゴリによる | 新規顧客 1 人を獲得するコスト |
 | LTV | 平均注文額×購入頻度×顧客寿命 | >3x CAC | 顧客生涯価値 |
 | LTV:CAC 比率 | LTV/CAC | >3:1 | 顧客価値 vs 獲得コスト |
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 あなたは EC 財務指標分析の専門家です。
@@ -396,8 +388,6 @@ Day 104-134: Amazon 入金(14 日サイクル)
 ### 5.3 AI 収入予測
 
 AI 収入予測は EC でますます重要になっている([SelectedFirms](https://selectedfirms.co/blog/ai-revenue-forecasting-ecommerce-business))。従来の予測は履歴データと人の判断に依存するが、AI 予測はより多くの変数を統合できる:
-
-Content rephrased for compliance with licensing restrictions.
 
 | 予測次元 | 従来の方法 | AI の方法 |
 |----------|------------|-----------|

@@ -210,8 +210,6 @@ Not recommended (except in the testing phase)
 > **Real case: Mercado Libre is called "the Amazon of Latin America" but is far more than that**
 > As of February 2026, Mercado Libre has firmly established its position as indispensable digital infrastructure for Latin America. The "Amazon of Latin America" metaphor increasingly fails to capture the full scope of its ecosystem — it is simultaneously a payment platform (Mercado Pago), logistics network (Mercado Envios), credit service (Mercado Credito), and ad platform ([Financial Content](https://www.financialcontent.com/article/finterra-2026-2-27-the-latin-american-flywheel-a-2026-deep-dive-research-feature-on-mercadolibre-meli)).
 
-Content rephrased for compliance with licensing restrictions.
-
 Based on Mercado Libre's Q4 2025 earnings report (Morningstar — original offline, rechecked 2026-08):
 
 | Metric | Q4 2025 data | YoY change |
@@ -232,7 +230,7 @@ Key strategic investment directions:
 
 > **Implication for sellers**: Mercado Libre is heavily investing in free shipping and logistics infrastructure. Sellers using Mercado Envios Full will get the biggest traffic dividend. Latin American e-commerce penetration is only 12-15% (vs US 27%, China 35%+), leaving huge growth room.
 
-Content rephrased for compliance with licensing restrictions. Sources: Morningstar (original offline, rechecked 2026-08), [Finimize](https://finimize.com/content/meli-asset-snapshot).
+Sources: Morningstar (original offline, rechecked 2026-08), [Finimize](https://finimize.com/content/meli-asset-snapshot).
 
 ### 4.3 Latin America Market-Specific Challenges
 
@@ -261,7 +259,7 @@ Mercado Libre Global Selling ([global-selling.mercadolibre.com](https://global-s
 | Orders per second | 29 |
 | GMV | $25.5B (past 12-month average) |
 
-Content rephrased for compliance with licensing restrictions. Source: [Mercado Libre Global Selling](https://global-selling.mercadolibre.com/landing/about).
+Source: [Mercado Libre Global Selling](https://global-selling.mercadolibre.com/landing/about).
 
 ### 5.2 Markets Supported by Global Selling
 
@@ -299,7 +297,7 @@ Receive payment in USD, the buyer pays in local currency
 Returns handled per platform policy
 ```
 
-Content rephrased for compliance with licensing restrictions. Source: [Mercado Libre Learning Center](https://global-selling.mercadolibre.com/learning-center/news/how-to-ship-your-products-to-latin-america).
+Source: [Mercado Libre Learning Center](https://global-selling.mercadolibre.com/learning-center/news/how-to-ship-your-products-to-latin-america).
 
 ### 5.4 Latin America Market Product-Selection AI Strategy
 

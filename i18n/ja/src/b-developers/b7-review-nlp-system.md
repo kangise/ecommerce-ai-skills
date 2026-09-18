@@ -114,12 +114,8 @@ pip3 install openai anthropic
 
 > **実リソース**: 複数のチュートリアルが Python で Amazon Review データをスクレイピングする方法を示している、BeautifulSoup、Scrapy、専門 API サービスの使用を含む([ScrapingBee](https://www.scrapingbee.com/blog/how-to-scrape-amazon-reviews/)、[Oxylabs](https://oxylabs.io/blog/how-to-scrape-amazon-reviews))。スクレイピングしたデータには通常、評価、タイトル、本文、日付、検証購入ステータス、有用投票数が含まれる。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **実事例: 製品横断の Review 分析**
 > 学術研究が、文脈的主題モデリング(Contextual Topic Modeling)と関連ルールマイニングを使ってヘッドホンカテゴリの Amazon Review を製品横断で分析し、異なる製品間で共有されるユーザーの関心事と差別化的特徴を発見する方法を示した([MDPI](https://www.mdpi.com/0718-1876/19/4/170))。
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 3.2 Review データ構造
 
@@ -261,8 +257,6 @@ df['bert_score'] = [s['score'] for s in sentiments]
 
 > **実事例**: 学術研究によると、BERT ベースの感情分析は Amazon Review データセットで 90%+ の精度に達し、従来の機械学習手法を大きく上回る([MDPI](https://www.mdpi.com/1999-5903/18/3/138))。BERTopic を Amazon Review データと組み合わせると製品の核心話題とユーザーの関心事を自動発見できる([Amalytix](https://www.amalytix.com/en/blog/analyze-reviews-bertopic/))。
 
-Content rephrased for compliance with licensing restrictions.
-
 ---
 
 ## 5. BERTopic 主題モデリング
@@ -343,8 +337,6 @@ fig.show()
 
 > **実事例: Amalytix の Amazon Review BERTopic 分析**
 > Amalytix は BERTopic で Amazon Review を分析し、製品の核心話題を自動発見する方法を示した。BERTopic は BERT ベースの手法と修正 TF-IDF 分析を使い、非構造化の Review テキストから意味ある主題クラスタを抽出できる([Amalytix](https://www.amalytix.com/en/blog/analyze-reviews-bertopic/))。
-
-Content rephrased for compliance with licensing restrictions.
 
 ```python
 # 高度テクニック 1: カテゴリ別にグループ化した主題分析

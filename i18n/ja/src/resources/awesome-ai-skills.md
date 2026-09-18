@@ -63,8 +63,6 @@ AI Skills(スキルファイル)は AI アシスタントへの永続的な指�
 
 Sources: [VirtusLab](https://virtuslab.com/blog/ai/how-to-write-rules-for-ai/), [MTechZilla](https://www.mtechzilla.com/blogs/how-to-develop-skill-md-production-guide-engineering-teams), [freeCodeCamp](https://www.freecodecamp.org/news/how-to-guide-ai-with-rules-and-tests/), [tedivm](https://blog.tedivm.com/guides/2026/03/beyond-the-vibes-coding-assistants-and-agents/).
 
-Content rephrased for compliance with licensing restrictions.
-
 ---
 
 ## Kiro Skills & Steering Files
@@ -108,8 +106,6 @@ Cursor Rules は AI コード生成のカスタムルールを定義します([P
 ## Claude Code SKILL.md
 
 SKILL.md は Claude Code、Roo Code、OpenAI Codex、Cursor などの AI コーディング Agent 向けの構造化指示ファイルです。一度書けば Agent が自動で読み込み適用します([MTechZilla](https://www.mtechzilla.com/blogs/how-to-develop-skill-md-production-guide-engineering-teams))。
-
-Content rephrased for compliance with licensing restrictions.
 
 ### SKILL.md の構造
 

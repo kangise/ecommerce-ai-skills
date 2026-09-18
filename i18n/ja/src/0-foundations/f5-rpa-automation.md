@@ -542,8 +542,6 @@ Temperature: 0.5
 - ブラウザ自動化(Defy/Bardeen)で Seller Central を操作すると違反の可能性
 - 推奨: SP-API を優先し、Seller Central のブラウザ操作の直接模倣は避ける
 
-Content rephrased for compliance with licensing restrictions.
-
 ---
 
 ### 7.6 10 個の EC 自動化ワークフローの詳細実装案

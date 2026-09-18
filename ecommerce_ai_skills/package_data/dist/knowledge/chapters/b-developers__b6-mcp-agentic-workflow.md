@@ -32,8 +32,6 @@
 
 MCP（Model Context Protocol）是 Anthropic 开发的开放标准，定义了 AI 模型如何连接外部工具和数据（[Badger Blue](https://badger.blue/blogs/ecommerce-unpacked/model-context-protocol-mcp-ecommerce)）。
 
-Content rephrased for compliance with licensing restrictions.
-
 ```
 MCP 架构：
 
@@ -63,8 +61,6 @@ MCP 是 AI 的通用接口
 ### 1.3 2026 年 MCP 生态现状
 
 > **真实数据**：Amazon 于 2026 年 2 月 2 日正式发布 Ads MCP Server 开放测试版（[Canopy Management](https://canopymanagement.com/amazon-ads-mcp-server-ai/)）。Google 也开源了自己的 MCP 实现。已有生产级 MCP Server 每月处理超过 $4500 万的广告支出，覆盖 10,000+ 企业（[HyperFX](https://www.hyperfx.ai/blog/meta-ads-mcp-guide-ai-advertising-agents)）。74% 的中小企业已在使用或积极测试 AI 广告工具（[Amazon Ads 委托 Opinium 的调研](https://advertising.amazon.com/en-us/library/news/smb-ai-research)）。
-
-Content rephrased for compliance with licensing restrictions.
 
 ---
 
@@ -139,12 +135,10 @@ Amazon Ads MCP Server 提供了完整的广告管理能力。根据 MarketplaceA
 | Profile | list_profiles | 获取广告账户 | "列出所有可用的广告 Profile" |
 | | get_regions | 获取区域信息 | "显示可用的市场区域" |
 
-Content rephrased for compliance with licensing restrictions. Source: [GitHub](https://github.com/MarketplaceAdPros/amazon-ads-mcp-server).
+来源：[GitHub](https://github.com/MarketplaceAdPros/amazon-ads-mcp-server).
 
 > **真实案例：Amazon Ads MCP 2026.2 正式发布**
 > 2026 年 2 月 2 日，Amazon 宣布 Ads MCP Server 开放测试版。拥有 API 凭证的卖家可以通过 Claude、ChatGPT 或 Gemini 等工具，用简单的命令创建 Campaign、优化出价、拉取报告、跨市场扩展（[ClearAds Agency](https://clearadsagency.com/what-is-amazons-mcp-server-and-how-does-it-change-advertising-for-sellers/)）。
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 3.3 5 大 MCP 广告自动化策略
 
@@ -231,8 +225,6 @@ Claude: [汇总所有数据] → 生成完整报告
 
 > **真实数据**：AI 驱动的 PPC 自动化每周可节省 10-15 小时手工调优时间（[Helium 10](https://www.helium10.com/blog/blog-how-ai-powered-amazon-ppc-saves-10-plus-hours-weekly-and-boosts-performance/)）。Amazon Ads 官方案例中，STEADY JAPAN 采用自动竞价后一个月内总 ACOS 改善 25%，同时保持销售水平（[Amazon Ads 案例研究](https://advertising.amazon.com/en-us/library/case-studies/flywheel-steady-japan-lowers-acos/)）——这是单个卖家的结果，不是普遍幅度。
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 3.4 实战：用 Claude 对话管理 Amazon 广告
 
 ```
@@ -261,8 +253,6 @@ Claude: [汇总] → 生成 Markdown 报告
 
 > **示例测算**：Stormy.ai 用一个假设的中型品牌演示了使用 Claude MCP 管理 Amazon 广告的 5 个策略，可以降低 ACOS 并每年节省 30 天工作时间（[Stormy.ai](https://web.archive.org/web/20260307090318/https://stormy.ai/blog/automating-amazon-ads-claude-mcp)）。
 
-Content rephrased for compliance with licensing restrictions.
-
 ---
 
 ## 4. Shopify MCP 集成
@@ -287,12 +277,8 @@ Shopify 的 MCP 生态在 2026 年已经非常成熟，包含官方和社区两�
 | shopify-mcp-server | Ajackus | Claude Desktop 集成 | [LobeHub](https://lobehub.com/mcp/ajackus-shopify-mcp-server) |
 | shopify-storefront-mcp | QuentinCody | Storefront API 非官方实现 | [Hexmos](https://hexmos.com/freedevtools/mcp/other-tools-and-integrations/QuentinCody--shopify-storefront-mcp-server/) |
 
-Content rephrased for compliance with licensing restrictions.
-
 > **真实案例：Shopify MCP 成为 Agentic Commerce 的基础设施**
 > Shopify 的 MCP 生态被描述为"Agentic Commerce 的技术连接组织"它允许 LLM（如 ChatGPT、Perplexity 或自定义 Agent）以机器和平台都能理解的语言"询问"你的店铺关于产品、库存和客户偏好的问题（[WeArePresta](https://wearepresta.com/shopify-mcp-server-the-standardized-interface-for-agentic-commerce-2026/)）。Shopify 官方 Storefront MCP Server 帮助客户通过 AI 代理浏览和购买商品（[Shopify Dev](https://www.shopify.dev/docs/apps/build/storefront-mcp/servers/storefront)）。
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 Shopify MCP 架构：
@@ -945,8 +931,6 @@ class BudgetSafetyValve:
 ### 8.1 Meta Ads MCP
 
 > **真实数据**：已有生产级 MCP Server 每月处理超过 $4500 万的广告支出，覆盖 10,000+ 企业。Google 也开源了自己的 MCP 实现（[HyperFX](https://www.hyperfx.ai/blog/meta-ads-mcp-guide-ai-advertising-agents)）。
-
-Content rephrased for compliance with licensing restrictions.
 
 | 平台 MCP | 状态 | 核心能力 |
 |----------|------|---------|

@@ -49,7 +49,7 @@
 - 使用 AI 优化库存分配的品牌中，89% 的头部品牌已采用机器学习
 - AI 驱动的跨渠道品牌上市速度快 4 倍
 
-Content rephrased for compliance with licensing restrictions. Sources: [eStoreFactory Multi-Channel 2026](https://www.estorefactory.com/blog/multi-channel-ecommerce-strategy-2026/), [Webgility Future of Ecommerce](https://www.webgility.com/blog/future-of-ecommerce)
+来源：[eStoreFactory Multi-Channel 2026](https://www.estorefactory.com/blog/multi-channel-ecommerce-strategy-2026/)、[Webgility Future of Ecommerce](https://www.webgility.com/blog/future-of-ecommerce)
 
 
 ---
@@ -991,7 +991,7 @@ TikTok 运营（1-2 人）-- 视频 + 达人 + 直播
 - 一个客服可以管理三个平台（而不是每个平台一个人）
 - 客户在任何平台的历史记录都能看到
 
-Content rephrased for compliance with licensing restrictions. Source: [eDesk Manage Amazon TikTok One Inbox](https://www.edesk.com/blog/manage-amazon-tiktok-shop-one-inbox/)
+来源：[eDesk Manage Amazon TikTok One Inbox](https://www.edesk.com/blog/manage-amazon-tiktok-shop-one-inbox/)
 
 ---
 

@@ -135,8 +135,6 @@ Agent 化した後、上で貼り付けを求めているデータはここか�
 | OmniPatent AI | AI 特許研究と自動化、先行技術検索 | 有料 |
 | MorpheusMark | AI ブランド保護、200+ プラットフォームを監視([MorpheusMark](https://morpheusmark.com/)) | 有料 |
 
-Content rephrased for compliance with licensing restrictions.
-
 > **注意**: AI は特許検索と初歩分析を補助できるが、特許弁護士の専門的な意見を代替できない。高リスク製品では、必ず専門弁護士に相談してください。
 
 ### 2.3 TRO(仮差止命令)リスクの防止
@@ -341,18 +339,12 @@ Agent 化した後、上で貼り付けを求めているデータはここか�
 > **実事例: Project Zero に 10,000+ のブランドが参加済み**
 > Amazon Project Zero には Arduino、BMW、LifeProof、OtterBox、Salvatore Ferragamo、Veet など 10,000 を超えるブランドが参加している([MediaDale](http://www.mediadale.com/news/articleView.html?idxno=56862))。Project Zero の 3 大コンポーネント — 自動保護(毎日 50 億+ Listing をスキャン)、ブランド自己サービス除去ツール、製品シリアライゼーション — が共に Amazon 最強のブランド保護体系を構成する。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **実事例: Amazon CCU が 70 万+ の偽アカウントを阻止**
 > Amazon 反偽造犯罪部門(CCU)は 2020 年 6 月に設立され、2023 年に悪質業者による偽セラーアカウント作成の試みを 70 万回以上阻止した([Retail TouchPoints](https://www.retailtouchpoints.com/features/how-amazons-anti-counterfeit-unit-keeps-fake-products-off-its-site/141899/))。2024 年、Amazon は世界で 1500 万点を超える偽造品を識別、押収、処分した。
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 5.1 Amazon ブランド保護ツールマトリクス
 
 Amazon は 2024 年に世界で 1500 万点を超える偽造品を識別、押収、処分した([Amazon Trustworthy Shopping](https://trustworthyshopping.aboutamazon.com/resources))。
-
-Content rephrased for compliance with licensing restrictions.
 
 | ツール | 機能 | 要件 | AI 能力 |
 |--------|------|------|---------|
@@ -363,8 +355,6 @@ Content rephrased for compliance with licensing restrictions.
 | Counterfeit Crimes Unit | 偽造品への刑事的取り締まり | 深刻な侵害事案 | |
 | Brand Registry AI データベース | AI ブランド資産の識別 | Brand Registry | 自動マッチング |
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 5.2 Amazon 2026 ブランド保護の新変化
 
 2026 年 3 月から、Amazon は製品の混載(Commingling)を終了し、すべての製品に独立したバーコードの使用を求める([WindowsNews](https://windowsnews.ai/article/amazon-ends-commingling-in-2026-new-barcode-rules-impact-windows-software-hardware-sellers.398059))。これはブランド保護に重大な影響がある:
@@ -374,8 +364,6 @@ Content rephrased for compliance with licensing restrictions.
 | 混載の終了 | 異なるセラーの同じ製品が混合保管されなくなる | 偽造品が正規品に混入するリスクを低減 |
 | 独立バーコード | 各セラーの製品に独立した識別が必須 | 追跡可能性の向上 |
 | FNSKU 要件 | すべての FBA 製品に FNSKU の貼付が必須 | 操作コストは増えるがブランド保護は向上 |
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 5.3 マルチプラットフォーム IP 保護戦略
 

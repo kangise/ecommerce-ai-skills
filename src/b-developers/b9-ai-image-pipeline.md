@@ -113,17 +113,11 @@ python3 main.py
 > **真实案例：ComfyUI 产品图工作流实战**
 > MyAIForce 展示了一个完整的 ComfyUI 产品图工作流：输入一张护肤品图片和描述性 Prompt，工作流自动将产品无缝融入新背景，调整光照和阴影以匹配新环境，确保自然和谐的外观。工作流包含 7 个步骤：上传图片→设置背景→基础调整→产品定位→重新打光→重绘→恢复细节（[MyAIForce](https://myaiforce.com/comfyui-product-photography/)）。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **真实案例：Midjourney + ComfyUI 组合工作流**
 > 另一个高级工作流将 Midjourney 和 ComfyUI 结合：先用 Midjourney 生成高质量的场景背景，再用 ComfyUI 的 ControlNet 和 IP-Adapter 将产品精确放置到场景中，同时调整光照和阴影以保留产品文字等关键细节（[MyAIForce](https://myaiforce.com/product-photography-comfyui-midjourney/)）。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **真实案例：ComfyUI 背景替换 V4 工作流**
 > 最新的 V4 背景替换工作流使用 SDXL checkpoints，仅需 10 个采样步骤和约 6GB VRAM 即可完成基础任务。使用 Flux 模型可以获得更高质量的效果，但需要更多 VRAM（[MyAIForce](https://myaiforce.com/flux-replace-background-v4/)）。
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 ComfyUI 电商产品图完整工作流（7 步）：
@@ -168,8 +162,6 @@ Step 7: 恢复细节和颜色
 ### 3.3 电商场景 Prompt 模板（40+ 测试过的模板）
 
 > **真实资源**：Apatero 整理了 40+ 经过测试的 AI 产品图 Prompt 模板，覆盖白底、场景、平铺、信息图等所有电商场景（[Apatero](https://www.apatero.com/blog/best-prompts-product-photography-ai-generation-2025)）。
-
-Content rephrased for compliance with licensing restrictions.
 
 > **本章 Python 脚本的依赖**（与上面 ComfyUI 自己的 requirements.txt 是两回事）：`pip install openai requests pillow rembg`
 

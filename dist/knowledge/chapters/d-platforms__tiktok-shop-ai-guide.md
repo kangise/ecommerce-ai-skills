@@ -74,7 +74,7 @@ TikTok 算法不看你有多少粉丝，看你的内容质量。AI 帮你：
 - 快速测试不同内容角度（哪个 hook 最有效）
 - 追踪趋势并快速跟进（热门音乐/话题/格式）
 
-Content rephrased for compliance with licensing restrictions. Sources: [TikTok Shop Automation 2026](https://iterathon.tech/blog/tiktok-shop-instagram-shopping-automation-2026), [Influencer Marketing Hub](https://influencermarketinghub.com/tiktok-influencer-marketing-platforms/)
+来源：[TikTok Shop Automation 2026](https://iterathon.tech/blog/tiktok-shop-instagram-shopping-automation-2026)、[Influencer Marketing Hub](https://influencermarketinghub.com/tiktok-influencer-marketing-platforms/)
 
 
 ---
@@ -217,7 +217,7 @@ Step 4：发布与优化（每天 15 分钟）
 
 > **关键指标**：TikTok 算法最看重的是完播率（>40% 算好）和互动率（>5% 算好）。AI 帮你快速测试不同 Hook，找到完播率最高的开头。
 
-Content rephrased for compliance with licensing restrictions. Sources: [EComposer AI TikTok Generators](https://ecomposer.io/blogs/tool-software/ai-tiktok-video-generators), [Benly TikTok Ads Tools](https://benly.ai/learn/ai-marketing/best-tiktok-ads-tools-2026)
+来源：[EComposer AI TikTok Generators](https://ecomposer.io/blogs/tool-software/ai-tiktok-video-generators)、[Benly TikTok Ads Tools](https://benly.ai/learn/ai-marketing/best-tiktok-ads-tools-2026)
 
 
 ---
@@ -633,7 +633,7 @@ GMV Max 效果好坏取决于 3 个你能控制的变量:
 - SPS < 3.5 的店铺广告效果会显著下降
 - 提升 SPS: 快速发货、快速客服响应、低退货率
 
-Content rephrased for compliance with licensing restrictions. Source: [Benly TikTok Ads Tools 2026](https://benly.ai/learn/ai-marketing/best-tiktok-ads-tools-2026)
+来源：[Benly TikTok Ads Tools 2026](https://benly.ai/learn/ai-marketing/best-tiktok-ads-tools-2026)
 
 ---
 
@@ -835,7 +835,7 @@ Content rephrased for compliance with licensing restrictions. Source: [Benly Tik
 | 广告优化 | TikTok Ads Manager | GMV Max 自动化 | 按广告花费 |
 | 数据分析 | Kalodata / FastMoss | TikTok Shop 数据分析 | $30-$100 |
 
-Content rephrased for compliance with licensing restrictions. Sources: [KOL Sprite](https://kolsprite.com/blog/tiktok-creator-collaboration-ai-automation-data-2025), [EComposer](https://ecomposer.io/blogs/tool-software/ai-tiktok-video-generators)
+来源：[KOL Sprite](https://kolsprite.com/blog/tiktok-creator-collaboration-ai-automation-data-2025)、[EComposer](https://ecomposer.io/blogs/tool-software/ai-tiktok-video-generators)
 
 ---
 
@@ -960,7 +960,7 @@ TikTok Shop 是 2024-2026 年增长最快的电商渠道:
 | 美国 GMV | ~$9B | ~$15B | $23B+ |
 | 美国日活买家 | 5M+ | 12M+ | 20M+（预估） |
 
-Content rephrased for compliance with licensing restrictions. Sources: [Momentum Asia TikTok Shop US 2025](https://momentum.asia/insights/detail/tiktok-shop-in-the-us-2025), [CalculateCreator TikTok Shop Expansion](https://calculatecreator.com/blog/tiktok-shop-expansion-2026/)
+来源：[Momentum Asia TikTok Shop US 2025](https://momentum.asia/insights/detail/tiktok-shop-in-the-us-2025)、[CalculateCreator TikTok Shop Expansion](https://calculatecreator.com/blog/tiktok-shop-expansion-2026/)
 
 ### 14.2 GMV Max 强制化: 2025 年 9 月起的重大变化
 
@@ -993,7 +993,7 @@ GMV Max 优化策略:
 - 核心竞争力: 内容生产能力 + 产品竞争力
 ```
 
-Content rephrased for compliance with licensing restrictions. Source: [TheKeyword GMV Max Mandatory](https://thekeyword.webflow.io/news/tiktok-makes-gmv-max-tool-mandatory-for-tiktok-shop-ads)
+来源：[TheKeyword GMV Max Mandatory](https://thekeyword.webflow.io/news/tiktok-makes-gmv-max-tool-mandatory-for-tiktok-shop-ads)
 
 ### 14.3 SPS（Shop Performance Score）对运营的影响
 
@@ -1999,4 +1999,4 @@ AI 工具 ROI = (节省时间 x 时薪 + 增加收入) / 工具月费
 - AI 工具月成本: $100（ChatGPT + CapCut Pro + Kalodata）
 - AI 节省时间: 每周约 15 小时
 
-Content rephrased for compliance with licensing restrictions. Sources: [Forbes Social Commerce](https://www.forbes.com/sites/catherineerdly/2025/07/14/ai-is-fueling-a-100-billion-boom-in-social-commerce/), [Iterathon TikTok Automation](https://iterathon.tech/blog/tiktok-shop-instagram-shopping-automation-2026)
+来源：[Forbes Social Commerce](https://www.forbes.com/sites/catherineerdly/2025/07/14/ai-is-fueling-a-100-billion-boom-in-social-commerce/)、[Iterathon TikTok Automation](https://iterathon.tech/blog/tiktok-shop-instagram-shopping-automation-2026)

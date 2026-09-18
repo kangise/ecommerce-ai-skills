@@ -57,7 +57,7 @@ classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
 | **只算时间节省** | "AI 帮我们每月省了 100 小时" | 时间节省不等于价值创造。省下的时间如果没有用在更有价值的事上，ROI 就是零 |
 | **不设基线** | "用了 AI 之后效率提高了" | 没有"AI 前"的基线数据，无法量化提升幅度，也无法排除其他因素的影响 |
 
-Content rephrased for compliance with licensing restrictions. Sources: [S&P Global AI Report](https://www.spglobal.com/), [MIT AI Research](https://mitsloan.mit.edu/)
+来源：[S&P Global AI Report](https://www.spglobal.com/)、[MIT AI Research](https://mitsloan.mit.edu/)
 
 ### 1.2 AI ROI 的完整公式
 
@@ -239,7 +239,7 @@ NPV = Σ (年度净收益_t / (1 + r)^t) - 初始投资
 如果悲观情景下 ROI 仍然 > 0，说明这个投资是稳健的。
 ```
 
-Content rephrased for compliance with licensing restrictions. Sources: [Workmate AI ROI Frameworks](https://www.workmate.com/blog/measuring-roi-for-ai-initiatives-frameworks-and-examples), [Technijian AI ROI Calculator](https://technijian.com/ai/how-to-calculate-roi-on-ai-projects-a-framework-for-enterprise-leaders-in-2026/)
+来源：[Workmate AI ROI Frameworks](https://www.workmate.com/blog/measuring-roi-for-ai-initiatives-frameworks-and-examples)、[Technijian AI ROI Calculator](https://technijian.com/ai/how-to-calculate-roi-on-ai-projects-a-framework-for-enterprise-leaders-in-2026/)
 
 ---
 
@@ -271,8 +271,6 @@ Content rephrased for compliance with licensing restrictions. Sources: [Workmate
 | Entrepreneur 2026 | AI 广告和个性化可将 ROAS 提升 20-30% | [entrepreneur.com](https://www.entrepreneur.com/growing-a-business/how-to-use-ai-to-grow-your-amazon-sales-rankings-and/499421) |
 | Workmate 2026 | 典型 AI 项目在 12-24 个月内回本，可实现 10-30% 成本节省或 2-5 倍营收提升 | [workmate.com](https://www.workmate.com/blog/measuring-roi-for-ai-initiatives-frameworks-and-examples) |
 | Accenor 2025 | 企业通常低估 AI 总成本 40-60%，导致 ROI 预期不切实际 | [accenor.com](https://www.accenor.com/blog/The-Complete-ROI-Framework-for-AI-Implementation-From-Cost-Analysis-to-Measurable-Outcomes.html) |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 3.3 不同团队规模的 ROI 对比
 
@@ -1142,8 +1140,6 @@ AI 的 ROI 不是线性增长，而是复利增长：
 | AI ROI Framework for Enterprise Leaders | Technijian | 五维度 AI 价值框架（成本降低、生产力、营收、风险、战略） | [technijian.com](https://technijian.com/ai/how-to-calculate-roi-on-ai-projects-a-framework-for-enterprise-leaders-in-2026/) |
 | AI ROI Measurement Framework | Larridin | 从"感觉有用"到"证明有用"的方法论 | [larridin.com](https://larridin.com/blog/ai-roi-measurement) |
 | How to Calculate ROI on AI | AI Magazine | 49% 的组织难以量化 AI 价值的原因和解决方案 | [aimegazine.com](https://aimegazine.com/ai-roi-measurement-how-to-calculate-return-on/) |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 11.2 跨境电商 AI 应用 ROI
 

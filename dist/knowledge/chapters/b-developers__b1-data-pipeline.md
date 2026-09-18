@@ -1529,8 +1529,6 @@ def quality_check(df: pd.DataFrame) -> dict:
 | Rob Mulla | pandas + 数据科学 | 专注 pandas 技巧，短视频高效学习 |
 | ArjanCodes | Python 工程实践 | 代码架构、设计模式，适合写出更好的 pipeline |
 
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
-
 ### 8.3 推荐 GitHub 仓库
 
 | 仓库 | Star | 用途 |

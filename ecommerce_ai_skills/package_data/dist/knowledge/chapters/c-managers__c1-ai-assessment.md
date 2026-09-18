@@ -89,7 +89,7 @@ classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
 | **一步到位** | 直接跳到系统化阶段 → 浪费 | 严格按三个阶段走 |
 | **忽略数据安全** | 把敏感数据直接粘贴到 ChatGPT | 制定 AI 使用规范 |
 
-Content rephrased for compliance with licensing restrictions. Source: [McKinsey Global Survey on AI](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
+来源：[McKinsey Global Survey on AI](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
 
 
 ---
@@ -456,8 +456,6 @@ Content rephrased for compliance with licensing restrictions. Source: [McKinsey 
 | 《The AI-First Company》 | Ash Fontana | 如何让 AI 成为核心竞争力 |
 | 《Prediction Machines》 | Ajay Agrawal 等 | 用经济学框架理解 AI 价值 |
 | 《Co-Intelligence》 | Ethan Mollick | 如何与 AI 协作而非被替代 |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ## 9. 完成标志
 

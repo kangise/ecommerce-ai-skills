@@ -24,8 +24,6 @@
 
 > **核心理念**: 2026 年の競合インテリジェンスは、もはや競合の価格と Listing を監視するだけではない。AI 検索可視度(あなたの製品が ChatGPT/Perplexity に推薦されるか)が新たな競争次元になった。競合インテリジェンスツール市場は 2032 年までに $11.2 億に達し、年成長率 12.4% と予測される([Trendos](https://www.trendos.io/blog/ecommerce-competitive-intelligence-tools-2026))。
 
-Content rephrased for compliance with licensing restrictions.
-
 ---
 
 > **関連リソース**: [競合分析リソース集](../resources/competitive-analysis.md) ツール一覧とそのまま使える分析フレーム。
@@ -47,11 +45,7 @@ Content rephrased for compliance with licensing restrictions.
 
 > **業界の見方**: マーケターはもはや誰が Google キーワードで 1 位かだけに頼れず、今や生成検索での「答えのシェア」、アプリストアの動向、AI 駆動エージェントでのブランド可視度を監視しなければならない([SimilarWeb](https://aisearch.similarweb.com/blog/best-competitor-analysis-tools/))。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **実データ**: セラーは 68% の取引で競合に直面する。しかし平均的な営業チームが自らの競争準備度を自己評価するとわずか 3.8/10。Crayon の競合インテリジェンスレポートは、このギャップが組織に年間 $200 万から $1000 万の勝てる取引を失わせていると推定する([Autobound](https://www.autobound.ai/blog/ai-competitor-analysis-tools-for-sales-teams))。
-
-Content rephrased for compliance with licensing restrictions.
 
 ---
 
@@ -139,8 +133,6 @@ AI の推薦の根拠は何か?(評価?価格?機能?)
 
 > **実事例**: VOC.AI は「私の技術スタックの中のインテリジェンスエンジン」と評される。ワードクラウドだけを出す他のツールと異なり、VOC.AI は意味アナリストとして機能し、製品開発フェーズで特に有用である([VOC.AI](https://www.voc.ai/blog/best-amazon-competitor-analysis-tools))。
 
-Content rephrased for compliance with licensing restrictions.
-
 ---
 
 ## 4. AI 検索可視度モニタリング
@@ -148,8 +140,6 @@ Content rephrased for compliance with licensing restrictions.
 ### 4.1 Agentic Commerce 競争準備度評価
 
 > **実データ**: Gartner は 2028 年までに AI Agent が B2B 調達の 90%、年間 $15 兆超の支出を処理すると予測する([OroInc](https://oroinc.com/b2b-ecommerce/blog/agentic-ai-in-commerce/))。73% の消費者が今や買い物に AI を使っている([DataDome](https://datadome.co/agent-trust-management/agentic-commerce-readiness-checklist/))。
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 あなたは Agentic Commerce 戦略コンサルタントです。

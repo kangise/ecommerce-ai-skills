@@ -134,8 +134,6 @@
 | OmniPatent AI | AI 专利研究和自动化，先行技术搜索 | 付费 |
 | MorpheusMark | AI 品牌保护，监控 200+ 平台（[MorpheusMark](https://morpheusmark.com/)） | 付费 |
 
-Content rephrased for compliance with licensing restrictions.
-
 > **注意**：AI 可以辅助专利检索和初步分析，但不能替代专利律师的专业意见。涉及高风险产品，务必咨询专业律师。
 
 ### 2.3 TRO（临时限制令）风险防范
@@ -338,18 +336,12 @@ TRO 是跨境卖家面临的最严重 IP 风险之一。美国法院可以在不
 > **真实案例：Project Zero 已有 10,000+ 品牌加入**
 > Amazon Project Zero 已有超过 10,000 个品牌加入，包括 Arduino、BMW、LifeProof、OtterBox、Salvatore Ferragamo 和 Veet 等（[MediaDale](http://www.mediadale.com/news/articleView.html?idxno=56862)）。Project Zero 的三大组件自动保护（每天扫描 50 亿+ Listing）、品牌自助移除工具、产品序列化共同构成了 Amazon 最强大的品牌保护体系。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **真实案例：Amazon CCU 阻止 70 万+ 假冒账号**
 > Amazon 反假冒犯罪部门（CCU）成立于 2020 年 6 月，2023 年阻止了超过 70 万次不良行为者创建虚假卖家账号的尝试（[Retail TouchPoints](https://www.retailtouchpoints.com/features/how-amazons-anti-counterfeit-unit-keeps-fake-products-off-its-site/141899/)）。2024 年，Amazon 在全球识别、扣押并处置了超过 1500 万件假冒产品。
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 5.1 Amazon 品牌保护工具矩阵
 
 Amazon 在 2024 年识别、扣押并处置了全球超过 1500 万件假冒产品（[Amazon Trustworthy Shopping](https://trustworthyshopping.aboutamazon.com/resources)）。
-
-Content rephrased for compliance with licensing restrictions.
 
 | 工具 | 功能 | 要求 | AI 能力 |
 |------|------|------|---------|
@@ -360,8 +352,6 @@ Content rephrased for compliance with licensing restrictions.
 | Counterfeit Crimes Unit | 刑事打击假货 | 严重侵权案件 | |
 | Brand Registry AI 数据库 | AI 品牌资产识别 | Brand Registry | 自动匹配 |
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 5.2 Amazon 2026 品牌保护新变化
 
 2026 年 3 月起，Amazon 终止产品混仓（Commingling），要求所有产品使用独立条形码（[WindowsNews](https://windowsnews.ai/article/amazon-ends-commingling-in-2026-new-barcode-rules-impact-windows-software-hardware-sellers.398059)）。这对品牌保护有重大影响：
@@ -371,8 +361,6 @@ Content rephrased for compliance with licensing restrictions.
 | 终止混仓 | 不同卖家的同一产品不再混合存储 | 减少假货混入正品的风险 |
 | 独立条形码 | 每个卖家的产品必须有独立标识 | 可追溯性提升 |
 | FNSKU 要求 | 所有 FBA 产品必须贴 FNSKU | 增加操作成本但提升品牌保护 |
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 5.3 多平台 IP 保护策略
 

@@ -1219,8 +1219,6 @@ def build_rag_agent(
 | [Ollama](https://github.com/ollama/ollama) | 105k+ | local LLM running |
 | [RAGAS](https://github.com/explodinggradients/ragas) | 7k+ | RAG-evaluation framework |
 
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
-
 ## 9. Completion Checklist
 
 - [ ] Built a minimal RAG in 10 lines with LlamaIndex, answering questions from product docs

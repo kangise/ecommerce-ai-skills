@@ -1352,8 +1352,6 @@ python3 run_forecast.py --data data/daily_sales.csv --asin B0XXXXX --stock 500 -
 | [Darts](https://github.com/unit8co/darts) | 8k+ | 時系列ツールボックス |
 | [OR-Tools](https://github.com/google/or-tools) | 11k+ | 数理最適化 |
 
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
-
 ## 8. 完了チェック
 
 <!-- claims: benchmark -->

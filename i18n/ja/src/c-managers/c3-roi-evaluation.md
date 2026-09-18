@@ -57,7 +57,7 @@ S&P Global のデータによると、2025 年には 42% の企業が大半の A
 | **時間節約だけ計算** | 「AI は毎月 100 時間節約してくれる」 | 時間節約は価値創造とイコールではない。節約した時間をより価値のあることに使わなければ、ROI はゼロ |
 | **ベースラインを設定しない** | 「AI を使った後、効率が上がった」 | 「AI 前」のベースラインデータがなく、向上幅を定量化できず、他の要因の影響も排除できない |
 
-Content rephrased for compliance with licensing restrictions. Sources: [S&P Global AI Report](https://www.spglobal.com/), [MIT AI Research](https://mitsloan.mit.edu/)
+出典：[S&P Global AI Report](https://www.spglobal.com/)、[MIT AI Research](https://mitsloan.mit.edu/)
 
 ### 1.2 AI ROI の完全な公式
 
@@ -239,7 +239,7 @@ NPV = Σ (年間純収益_t / (1 + r)^t) - 初期投資
 悲観シナリオでも ROI がまだ > 0 なら、この投資は堅実であることを示す。
 ```
 
-Content rephrased for compliance with licensing restrictions. Sources: [Workmate AI ROI Frameworks](https://www.workmate.com/blog/measuring-roi-for-ai-initiatives-frameworks-and-examples), [Technijian AI ROI Calculator](https://technijian.com/ai/how-to-calculate-roi-on-ai-projects-a-framework-for-enterprise-leaders-in-2026/)
+出典：[Workmate AI ROI Frameworks](https://www.workmate.com/blog/measuring-roi-for-ai-initiatives-frameworks-and-examples)、[Technijian AI ROI Calculator](https://technijian.com/ai/how-to-calculate-roi-on-ai-projects-a-framework-for-enterprise-leaders-in-2026/)
 
 ---
 
@@ -271,8 +271,6 @@ Content rephrased for compliance with licensing restrictions. Sources: [Workmate
 | Entrepreneur 2026 | AI 広告とパーソナライゼーションは ROAS を 20-30% 向上できる | [entrepreneur.com](https://www.entrepreneur.com/growing-a-business/how-to-use-ai-to-grow-your-amazon-sales-rankings-and/499421) |
 | Workmate 2026 | 典型的な AI プロジェクトは 12-24 か月で回収、10-30% のコスト節約または 2-5 倍の売上向上を実現できる | [workmate.com](https://www.workmate.com/blog/measuring-roi-for-ai-initiatives-frameworks-and-examples) |
 | Accenor 2025 | 企業は通常 AI 総コストを 40-60% 過小評価し、非現実的な ROI 期待を招く | [accenor.com](https://www.accenor.com/blog/The-Complete-ROI-Framework-for-AI-Implementation-From-Cost-Analysis-to-Measurable-Outcomes.html) |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 3.3 異なるチーム規模の ROI 対比
 
@@ -1139,8 +1137,6 @@ AI の ROI は線形成長ではなく、複利成長する:
 | AI ROI Framework for Enterprise Leaders | Technijian | 5 次元 AI 価値フレームワーク(コスト削減、生産性、売上、リスク、戦略) | [technijian.com](https://technijian.com/ai/how-to-calculate-roi-on-ai-projects-a-framework-for-enterprise-leaders-in-2026/) |
 | AI ROI Measurement Framework | Larridin | 「役立つ気がする」から「役立つと証明する」への方法論 | [larridin.com](https://larridin.com/blog/ai-roi-measurement) |
 | How to Calculate ROI on AI | AI Magazine | 49% の組織が AI 価値の定量化に苦労する原因と解決策 | [aimegazine.com](https://aimegazine.com/ai-roi-measurement-how-to-calculate-return-on/) |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 11.2 越境 EC AI 応用 ROI
 

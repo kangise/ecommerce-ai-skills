@@ -169,8 +169,6 @@ Coupang 的核心竞争力是 Rocket Delivery（[Coupang Q4 2025 Earnings](https
 
 > **注意**：Coupang 在 2025 年经历了重大数据泄露事件（3300 万账户受影响），导致 Q4 利润下降 97%。公司将发放约 $12 亿的代金券给受影响用户。这可能短期影响平台信任度，但长期来看 Coupang 在韩国的市场地位仍然稳固。
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 4.3 Coupang 广告系统
 
 | 广告类型 | 说明 | 计费 | 最低竞价 |
@@ -227,19 +225,13 @@ Coupang 正在构建一个可扩展的国际扩展引擎，其新的出口平台
 
 Coupang Global Selling 官方平台（[globalsellers.coupang.com](https://globalsellers.coupang.com/)）为国际卖家提供入驻通道。
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 5.2 入驻路径详解
 
 > **真实案例：SOU・SOU京都品牌通过 Coupang 进入韩国**
 > 日本京都的传统纺织品牌 SOU・SOU 通过 Coupang Global Selling 成功进入韩国市场。SOU・SOU 以日本传统图案和现代设计的融合著称，加入 Coupang 后迅速成为韩国消费者喜爱的品牌，证明了植根于传统的风格可以跨越国界（[Coupang Global Sellers](https://globalsellers.coupang.com/en/newsroom/sou%E3%83%BBsou-bringing-kyotos-colorful-seasons-to-korea/)）。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **真实案例：MITSUYA从汽车出口到日本消费品跨境**
 > 日本公司 MITSUYA CO., LTD. 最初是一家出口日本汽车和零部件的公司。随着客户需求的变化，公司扩展到日本消费品的国际销售，2007 年启动了全面的海外直购服务。通过 Coupang 平台，MITSUYA 将日本工匠精神的产品带到了韩国市场（[Coupang Global Sellers](https://globalsellers.coupang.com/en/meet-a-seller/delivering-japanese-craftsmanship-to-korea-with-heart/)）。
-
-Content rephrased for compliance with licensing restrictions.
 
 | 路径 | 说明 | 门槛 | 费用 | 适合 |
 |------|------|------|------|------|
@@ -264,8 +256,6 @@ Content rephrased for compliance with licensing restrictions.
 ### 5.4 Rocket Growth 深度解析
 
 Rocket Growth 是 Coupang 为跨境卖家设计的 3PL 服务（[Kontactic](https://web.archive.org/web/20260412055042/https://www.kontactic.com/blog/how-to-sell-on-coupang-foreign-brand)）。通过 Rocket Growth 履约的产品会获得 Rocket Delivery 标签，这会显著提升转化率和搜索可见度。
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 Rocket Growth 工作流程：
@@ -306,8 +296,6 @@ Coupang 在 2025-2026 年有几个重要战略方向：
 | Rocket WOW 会员 | 1400 万会员（[AInvest](https://www.ainvest.com/news/coupang-global-scalability-assessing-tam-tech-moat-growth-investors-2601/)） | 高价值用户群体 |
 
 > **来源：** 核验 2026-08 · Coupang 董事会 2025 年 5 月授权最多 $10 亿股票回购，2025 年内回购 880 万股、金额 $2.43 亿（[Coupang IR](https://ir.aboutcoupang.com/news-events/news/news-details/2025/Coupang-Announces-Results-for-First-Quarter-2025/default.aspx)）
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 5.6 韩国市场营销渠道
 

@@ -1219,8 +1219,6 @@ def build_rag_agent(
 | [Ollama](https://github.com/ollama/ollama) | 105k+ | ローカル LLM 実行 |
 | [RAGAS](https://github.com/explodinggradients/ragas) | 7k+ | RAG 評価フレームワーク |
 
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
-
 ## 9. 完了チェック
 
 - [ ] LlamaIndex で 10 行のコードで最小 RAG を構築、製品文書の質問に答えられる

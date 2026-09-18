@@ -112,7 +112,7 @@ LLM 不是按"字"或"词"处理文本的，而是按 **token** 处理。
 
 这就是为什么 GPT-3（2020）到 GPT-4（2023）的飞跃如此巨大 不是算法有本质变化，而是规模的量变引发了质变。这个现象被称为 **涌现能力（Emergent Abilities）**：小模型完全做不到的事，大模型突然就能做了。
 
-Content rephrased for compliance with licensing restrictions. Source: [Emergent Abilities of Large Language Models](https://arxiv.org/abs/2206.07682)
+来源：[Emergent Abilities of Large Language Models](https://arxiv.org/abs/2206.07682)
 
 
 ### 1.5 幻觉问题：为什么 AI 会"胡说八道"
@@ -188,7 +188,7 @@ MCP 协议标准化：AI 连接外部工具的统一接口
 我们正在这里 ← 你来得正好
 ```
 
-Content rephrased for compliance with licensing restrictions. Sources: [Attention Is All You Need (2017)](https://arxiv.org/abs/1706.03762), [Emergent Abilities of LLMs](https://arxiv.org/abs/2206.07682)
+来源：[Attention Is All You Need (2017)](https://arxiv.org/abs/1706.03762)、[Emergent Abilities of LLMs](https://arxiv.org/abs/2206.07682)
 
 ### 2.2 用跨境电商类比理解每个阶段
 
@@ -579,7 +579,7 @@ API（调用第三方服务）
 | 浏览器 MCP | 网页 | AI 自动采集竞品信息 |
 | Amazon SP-API MCP | Amazon 卖家后台 | AI 直接获取订单、库存、广告数据 |
 
-Content rephrased for compliance with licensing restrictions. Sources: [Anthropic MCP Documentation](https://modelcontextprotocol.io/), [MCP Guide 2026](https://www.taskade.com/blog/mcp-your-ai-agents-superpower-for-real-world-context-and-automation)
+来源：[Anthropic MCP Documentation](https://modelcontextprotocol.io/)、[MCP Guide 2026](https://www.taskade.com/blog/mcp-your-ai-agents-superpower-for-real-world-context-and-automation)
 
 ---
 

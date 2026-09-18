@@ -24,8 +24,6 @@
 
 > **核心理念**：2026 年的竞争情报不再只是监控竞品价格和 Listing。AI 搜索可见度（你的产品是否被 ChatGPT/Perplexity 推荐）已经成为新的竞争维度。竞争情报工具市场预计到 2032 年达到 $11.2 亿，年增长率 12.4%（[Trendos](https://www.trendos.io/blog/ecommerce-competitive-intelligence-tools-2026)）。
 
-Content rephrased for compliance with licensing restrictions.
-
 ---
 
 > **相关资源**: [竞品分析资源库](../resources/competitive-analysis.md) 工具清单与可直接套用的分析框架。
@@ -47,11 +45,7 @@ Content rephrased for compliance with licensing restrictions.
 
 > **行业观点**：营销人员不能再仅仅依赖谁在 Google 关键词排名第一，现在必须监控生成式搜索中的"答案份额"、应用商店动态和 AI 驱动代理中的品牌可见度（[SimilarWeb](https://aisearch.similarweb.com/blog/best-competitor-analysis-tools/)）。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **真实数据**：卖家在 68% 的交易中面临竞争对手。然而平均销售团队对其竞争准备度的自评仅为 3.8/10Crayon 的竞争情报报告估计这一差距每年让组织损失 $200 万到 $1000 万的可赢交易（[Autobound](https://www.autobound.ai/blog/ai-competitor-analysis-tools-for-sales-teams)）。
-
-Content rephrased for compliance with licensing restrictions.
 
 ---
 
@@ -139,8 +133,6 @@ AI 推荐的依据是什么？（评价？价格？功能？）
 
 > **真实案例**：VOC.AI 被描述为"我的技术栈中的情报引擎"。与其他只给出词云的工具不同，VOC.AI 充当语义分析师，在产品开发阶段特别有用（[VOC.AI](https://www.voc.ai/blog/best-amazon-competitor-analysis-tools)）。
 
-Content rephrased for compliance with licensing restrictions.
-
 ---
 
 ## 4. AI 搜索可见度监控
@@ -148,8 +140,6 @@ Content rephrased for compliance with licensing restrictions.
 ### 4.1 Agentic Commerce 竞争准备度评估
 
 > **真实数据**：Gartner 预测到 2028 年，AI Agent 将处理 90% 的 B2B 采购超过 $15 万亿的年度支出（[OroInc](https://oroinc.com/b2b-ecommerce/blog/agentic-ai-in-commerce/)）。73% 的消费者现在使用 AI 进行购物（[DataDome](https://datadome.co/agent-trust-management/agentic-commerce-readiness-checklist/)）。
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 你是一个 Agentic Commerce 战略顾问。

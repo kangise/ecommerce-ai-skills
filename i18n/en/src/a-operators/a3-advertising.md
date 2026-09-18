@@ -189,7 +189,7 @@ What AI is weak at:
 
 > **Key insight**: the core value of ad tools is automated execution, not strategy. Tools auto-adjust bids and add negatives, but "which keywords to concentrate budget on" is a strategy question you (or AI analysis) must decide. Best combo: automate execution with Adtomic/Perpetua, do strategy analysis with ChatGPT/Claude.
 
-Content rephrased for compliance with licensing restrictions. Sources: [deepbi.com AI PPC](https://www.deepbi.com/blog/13/), [aijourn.com PPC optimization](https://aijourn.com/amazon-ppc-optimization-tool/), [algofy.com AI tools 2026](https://www.algofy.com/post/best-ai-tools-for-amazon-sellers-in-2026)
+Sources: [deepbi.com AI PPC](https://www.deepbi.com/blog/13/), [aijourn.com PPC optimization](https://aijourn.com/amazon-ppc-optimization-tool/), [algofy.com AI tools 2026](https://www.algofy.com/post/best-ai-tools-for-amazon-sellers-in-2026)
 
 ### 2.2 Free tool stack
 
@@ -1422,7 +1422,7 @@ MCP (Model Context Protocol) is a standard protocol for AI models to interact wi
 - Watch for Amazon Advertising API updates
 - Try ad analysis with ChatGPT/Claude to accumulate AI-assisted ad-management experience
 
-Content rephrased for compliance with licensing restrictions. Source: [futurumgroup.com Amazon Ads MCP Server](https://futurumgroup.com/insights/amazon-ads-mcp-server-debuts-streamlining-ai-managed-campaign-execution/)
+Source: [futurumgroup.com Amazon Ads MCP Server](https://futurumgroup.com/insights/amazon-ads-mcp-server-debuts-streamlining-ai-managed-campaign-execution/)
 
 ### 6.2 The Ad-Organic-Rank Flywheel
 
@@ -1545,7 +1545,7 @@ Output a Markdown report with four sections matching the four questions:
 </self_check>
 ```
 
-Content rephrased for compliance with licensing restrictions. Source: [deliveredsocial.com Amazon advertising beyond sponsored products](https://deliveredsocial.com/amazon-advertising-beyond-sponsored-products-dsp-video-and-external-traffic/)
+Source: [deliveredsocial.com Amazon advertising beyond sponsored products](https://deliveredsocial.com/amazon-advertising-beyond-sponsored-products-dsp-video-and-external-traffic/)
 
 ---
 
@@ -1579,8 +1579,6 @@ Content rephrased for compliance with licensing restrictions. Source: [delivered
 | [Amazon Ads MCP Server](https://futurumgroup.com/insights/amazon-ads-mcp-server-debuts-streamlining-ai-managed-campaign-execution/) | Futurum Group | deep analysis of Amazon's official AI ad interface and its industry impact |
 | [Amazon Advertising Strategies](https://goaura.com/blog/amazon-advertising-strategies) | GoAura | comprehensive Amazon ad-strategy guide, incl. SP/SB/SD/DSP best practices |
 | [Beyond Sponsored Products: DSP, Video & External Traffic](https://deliveredsocial.com/amazon-advertising-beyond-sponsored-products-dsp-video-and-external-traffic/) | Delivered Social | advanced strategy beyond SP, incl. DSP and off-site traffic |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 7.4 Communities & forums
 

@@ -31,8 +31,6 @@
 
 > **Real data**: AI hallucinations caused $67.4 billion in losses to the e-commerce industry in 2024 ([Alhena AI/Nova Spivack](https://alhena.ai/blog/accuracy-imperative-hallucination-free-ai-ecommerce/)). 69% of enterprise leaders see AI data privacy as the top implementation barrier, up from 42% regulatory concern a year earlier ([AnyReach](https://blog.anyreach.ai/how-enterprise-ai-security-ensures-data-protection-and-compliance)).
 
-Content rephrased for compliance with licensing restrictions.
-
 | Risk category | Specific risk | Impact | Probability |
 |---------------|---------------|--------|-------------|
 | AI hallucination | AI generates wrong product info/return policy/price | Customer complaints, legal disputes | High |
@@ -45,8 +43,6 @@ Content rephrased for compliance with licensing restrictions.
 ### 1.2 The 2026 AI Regulatory Environment
 
 > **Real data**: 2026 is the inaugural year of AI regulatory enforcement. The EU AI Act enters its full-application phase, Colorado's AI regulation takes effect, and global regulators expect to see a documented governance program, not merely a policy ([SecurePrivacy](https://secureprivacy.ai/blog/ai-risk-compliance-2026)). The gray area where enterprises deployed AI systems under minimal regulation for years has ended ([Kiteworks](https://www.kiteworks.com/cybersecurity-risk-management/ai-regulation-2026-business-compliance-guide/)).
-
-Content rephrased for compliance with licensing restrictions.
 
 | Regulation | Region | Effective time | Impact on e-commerce |
 |------------|--------|----------------|----------------------|
@@ -214,8 +210,6 @@ AI labeling: Does it need to be labeled "AI-generated" (required by some platfor
 ### 5.1 The New Risks of Agentic AI
 
 > **Real data**: Agentic AI security covers protecting autonomous AI systems that make decisions and take actions under minimal human supervision, requiring you to address new types of threats such as prompt injection, data poisoning, and cascading hallucinations ([AnyReach](https://blog.anyreach.ai/enterprise-ai-security-a-comprehensive-guide-to-data-protection-and-compliance-in-2025/)).
-
-Content rephrased for compliance with licensing restrictions.
 
 | Risk | Description | Prevention |
 |------|-------------|------------|

@@ -54,7 +54,7 @@ PwC の調査によると、67% の従業員が自分は AI 技術を使う準�
 | **業務から乖離** | トレーニング内容が「AI の原理と歴史」で、日常業務と無関係 | 成人の学習動機は「今の問題を解決する」ことから来る、「新知識を知る」ことではない |
 | **一律対応** | 運営、広告、CS が同じトレーニング内容を使う | 職種ごとの AI 利用シナリオは完全に異なり、汎用トレーニングは誰にも役立たない |
 
-Content rephrased for compliance with licensing restrictions. Source: [PwC Global AI Study](https://www.pwc.com/gx/en/issues/data-and-analytics/publications/artificial-intelligence-study.html)
+出典：[PwC Global AI Study](https://www.pwc.com/gx/en/issues/data-and-analytics/publications/artificial-intelligence-study.html)
 
 ### 1.2 有効な AI トレーニングフレームワーク: 70-20-10 の法則
 
@@ -106,8 +106,6 @@ AI Champion が毎日 15 分かけてチームの質問に答える
 産出: 最低 3 つの業務フローが正式に AI 補助を組み込む
 成功基準: チーム AI 成熟度スコアが 1.0+ 点向上
 ```
-
-Content rephrased for compliance with licensing restrictions.
 
 ---
 
@@ -972,8 +970,6 @@ Layer 3: 部門横断協働(Champion グループ)
 | How to Successfully Upskill Talent for AI | TechNative | AI スキル構築の階層別戦略 | [technative.io](https://technative.io/how-to-successfully-upskill-talent-for-ai-integration-in-2025/) |
 | Best Practices for AI Training Across Departments | Auzmor | 部門横断 AI トレーニングのベストプラクティス | [auzmor.com](https://auzmor.com/blog/best-practices-for-implementing-ai-training) |
 | AI Sales Training & Upskilling | CX Today | 販売チーム AI トレーニングの ROI 分析 | [cxtoday.com](https://www.cxtoday.com/marketing-sales-technology/ai-sales-training-upskilling/) |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 9.3 推奨書籍
 

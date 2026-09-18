@@ -855,7 +855,7 @@ Agent 模式下，同一个编造的数字**会被直接拿去执行**：调整�
 
 这意味着 Prompt Engineering 正在演进为 **Context Engineering** 不只是写好一个 Prompt，而是设计整个信息输入的架构。
 
-Content rephrased for compliance with licensing restrictions. Source: [Context Engineering Guide 2026](https://open.substack.com/pub/theaicorner1/p/context-engineering-guide-2026)
+来源：[Context Engineering Guide 2026](https://open.substack.com/pub/theaicorner1/p/context-engineering-guide-2026)
 
 ```
 Prompt Engineering（2023-2024）：
@@ -918,7 +918,7 @@ Layer 4 对话历史（自动管理）：
 }
 ```
 
-Content rephrased for compliance with licensing restrictions. Source: [Prompt Engineering Best Practices 2026](https://promptbuilder.cc/blog/prompt-engineering-best-practices-2026)
+来源：[Prompt Engineering Best Practices 2026](https://promptbuilder.cc/blog/prompt-engineering-best-practices-2026)
 
 ---
 

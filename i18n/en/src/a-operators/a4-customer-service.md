@@ -153,7 +153,7 @@ What AI is weak at:
 - AI suggests replies; a human reviews before sending
 - Good for multi-platform sellers or those with a CS team
 
-Content rephrased for compliance with licensing restrictions. Sources: [eDesk AI customer service](https://www.edesk.com/blog/ai-tools-ticket-history-ecommerce-support-replies-2026/), [InfiniteFBA feedback tools](https://infinitefba.com/amazon-feedback-software-tools/)
+Sources: [eDesk AI customer service](https://www.edesk.com/blog/ai-tools-ticket-history-ecommerce-support-replies-2026/), [InfiniteFBA feedback tools](https://infinitefba.com/amazon-feedback-software-tools/)
 
 ### 2.2 Free tool stack
 
@@ -571,7 +571,7 @@ Check each of the following before delivering and report the results:
 </self_check>
 ```
 
-Content rephrased for compliance with licensing restrictions. Source: [eStorefactory account suspension guide](https://www.estorefactory.com/blog/amazon-account-suspension-guide-2026/)
+Source: [eStorefactory account suspension guide](https://www.estorefactory.com/blog/amazon-account-suspension-guide-2026/)
 
 ---
 
@@ -748,7 +748,7 @@ Check each of the following before delivering and report the results:
 </self_check>
 ```
 
-Content rephrased for compliance with licensing restrictions. Source: [SellerApp responding to negative reviews](https://sellerapp.com/blog/how-to-respond-to-negative-reviews)
+Source: [SellerApp responding to negative reviews](https://sellerapp.com/blog/how-to-respond-to-negative-reviews)
 
 ---
 
@@ -1131,7 +1131,7 @@ Record: keep execution records of all improvements (may be needed for the next a
 
 > **The core principle of account appeals**: the first appeal has the highest success rate. Don't rush to submit an incomplete appeal; spending 2–3 days on a polished Plan of Action beats hastily submitting 3 times.
 
-Content rephrased for compliance with licensing restrictions. Source: [eStorefactory account suspension guide](https://www.estorefactory.com/blog/amazon-account-suspension-guide-2026/)
+Source: [eStorefactory account suspension guide](https://www.estorefactory.com/blog/amazon-account-suspension-guide-2026/)
 
 ### 4.4 Multilingual CS Template-Library Build SOP
 
@@ -1185,7 +1185,7 @@ Update: add new templates, refine existing wording
 | **Over-focusing on removing negatives** | spending huge time trying to remove negatives instead of fixing root causes | only policy-violating negatives are worth reporting. Focus energy on product improvement and earning more positives. |
 | **Not leveraging positives** | keywords and selling points in positives never make it into the Listing | analyze positives with AI (Prompt 3.1 Variant C), extract the selling points customers value most, update the Listing. |
 
-Content rephrased for compliance with licensing restrictions. Source: [TraceFuse feedback removal](https://tracefuse.ai/blog/amazon-feedback-removal-request-template/)
+Source: [TraceFuse feedback removal](https://tracefuse.ai/blog/amazon-feedback-removal-request-template/)
 
 ### 5.3 Account-related traps
 
@@ -1399,8 +1399,6 @@ Customer expectations and communication styles differ greatly by market. Underst
 | [How to Respond to Negative Reviews](https://sellerapp.com/blog/how-to-respond-to-negative-reviews) | SellerApp | negative-review reply strategy, incl. templates by negative type and cautions |
 | [Amazon Feedback Software Tools](https://infinitefba.com/amazon-feedback-software-tools/) | InfiniteFBA | comparison of feedback-management tools, incl. price and features |
 | [Amazon Feedback Removal Request Template](https://tracefuse.ai/blog/amazon-feedback-removal-request-template/) | TraceFuse | feedback-removal request template and flow, incl. which feedback can be removed |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 7.4 Communities & forums
 

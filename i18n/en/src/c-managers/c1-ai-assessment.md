@@ -89,7 +89,7 @@ A team AI capability assessment report and priority ranking plan. When done, you
 | **All at once** | Jumping straight to the systematization phase → waste | Strictly follow the three phases |
 | **Ignoring data security** | Pasting sensitive data directly into ChatGPT | Establish AI usage guidelines |
 
-Content rephrased for compliance with licensing restrictions. Source: [McKinsey Global Survey on AI](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
+Source: [McKinsey Global Survey on AI](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
 
 
 ---
@@ -458,8 +458,6 @@ After 12 months: AI maturity 2.5→3.8, prompt library of 80+ templates, 3 autom
 | *The AI-First Company* | Ash Fontana | How to make AI a core competitive advantage |
 | *Prediction Machines* | Ajay Agrawal et al. | Understand AI value through an economics framework |
 | *Co-Intelligence* | Ethan Mollick | How to collaborate with AI rather than be replaced |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ## 9. Completion Checklist
 

@@ -60,7 +60,7 @@ In February 2026, Reddit began testing an AI-driven shopping-search feature ([Te
 | Community-driven | Recommended products are extracted from community discussions |
 | DPA partners | The product catalog comes from Dynamic Product Ads partners |
 
-Content rephrased for compliance with licensing restrictions. Sources: [TechCrunch](https://techcrunch.com/2026/02/19/reddit-is-testing-a-new-ai-search-feature-for-shopping/), [mpost.io](https://mpost.io/new-ai-powered-shopping-feature-marks-reddits-first-major-step-toward-community-driven-commerce-integration/).
+Sources: [TechCrunch](https://techcrunch.com/2026/02/19/reddit-is-testing-a-new-ai-search-feature-for-shopping/), [mpost.io](https://mpost.io/new-ai-powered-shopping-feature-marks-reddits-first-major-step-toward-community-driven-commerce-integration/).
 
 > **Impact on sellers**: Reddit is shifting from a "discussion platform" to a "shopping-discovery platform." A query like "best wireless earbuds under $100" can now directly generate a product carousel with prices and purchase links ([ChatAI](https://www.chatai.com/posts/reddit-rolls-out-ai-product-carousels-entering-the-commerce-search-race)). This means:
 > - Products with positive discussion on Reddit are more likely to be recommended by the AI shopping feature
@@ -83,8 +83,6 @@ Content rephrased for compliance with licensing restrictions. Sources: [TechCrun
 
 > **Real case: Reddit becomes an important data source for AI search engines**
 > Reddit is a platform for "authentic user conversations" recognized by Google and AI systems. Level Agency notes: "Reddit is one of the most trusted information environments on the internet, and Google and AI systems know that real people are having real conversations about real products here. Subreddits are governed by the community, not by brands." ([Level Agency](https://www.level.agency/perspectives/reddit-marketing-strategy/)) This means brand discussions on Reddit directly affect whether AI search engines recommend your product.
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 2.1 Core Principle: Provide Value, Don't Sell
 

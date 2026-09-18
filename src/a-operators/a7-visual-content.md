@@ -32,8 +32,6 @@
 
 > **核心理念**：2026 年，AI 产品图片可以降低 80% 的摄影成本，生活方式图片的转化率比纯白底图高 22-30%（[Entrepreneur](https://apac.entrepreneur.com/news-and-trends/how-smart-entrepreneurs-are-cutting-product-photography/501040)）。AI 视频生成市场 2025 年为 $7.168 亿，预计以约 19% 的复合年增长率增长（[Fortune Business Insights](https://www.fortunebusinessinsights.com/ai-video-generator-market-110060)）。不会用 AI 做视觉内容的卖家，正在失去竞争力。
 
-Content rephrased for compliance with licensing restrictions.
-
 ---
 
 ## 1. 为什么 AI 视觉内容是 2026 年的必修课

@@ -74,7 +74,7 @@ The TikTok algorithm doesn't look at how many followers you have, it looks at yo
 - Quickly test different content angles (which hook is most effective)
 - Track trends and quickly follow up (trending music/topics/formats)
 
-Content rephrased for compliance with licensing restrictions. Sources: [TikTok Shop Automation 2026](https://iterathon.tech/blog/tiktok-shop-instagram-shopping-automation-2026), [Influencer Marketing Hub](https://influencermarketinghub.com/tiktok-influencer-marketing-platforms/)
+Sources: [TikTok Shop Automation 2026](https://iterathon.tech/blog/tiktok-shop-instagram-shopping-automation-2026), [Influencer Marketing Hub](https://influencermarketinghub.com/tiktok-influencer-marketing-platforms/)
 
 
 ---
@@ -216,7 +216,7 @@ Output: 3-5 videos published steadily each day
 
 > **Key metrics**: What the TikTok algorithm values most is the completion rate (>40% is good) and engagement rate (>5% is good). AI helps you quickly test different Hooks to find the opening with the highest completion rate.
 
-Content rephrased for compliance with licensing restrictions. Sources: [EComposer AI TikTok Generators](https://ecomposer.io/blogs/tool-software/ai-tiktok-video-generators), [Benly TikTok Ads Tools](https://benly.ai/learn/ai-marketing/best-tiktok-ads-tools-2026)
+Sources: [EComposer AI TikTok Generators](https://ecomposer.io/blogs/tool-software/ai-tiktok-video-generators), [Benly TikTok Ads Tools](https://benly.ai/learn/ai-marketing/best-tiktok-ads-tools-2026)
 
 
 ---
@@ -632,7 +632,7 @@ Variable 3 -- store SPS score
 - Stores with SPS < 3.5 see significantly reduced ad performance
 - Improve SPS: fast shipping, fast customer-service response, low return rate
 
-Content rephrased for compliance with licensing restrictions. Source: [Benly TikTok Ads Tools 2026](https://benly.ai/learn/ai-marketing/best-tiktok-ads-tools-2026)
+Source: [Benly TikTok Ads Tools 2026](https://benly.ai/learn/ai-marketing/best-tiktok-ads-tools-2026)
 
 ---
 
@@ -834,7 +834,7 @@ Verify each of these before delivering and report the result:
 | Ad optimization | TikTok Ads Manager | GMV Max automation | Based on ad spend |
 | Data analysis | Kalodata / FastMoss | TikTok Shop data analysis | $30-$100 |
 
-Content rephrased for compliance with licensing restrictions. Sources: [KOL Sprite](https://kolsprite.com/blog/tiktok-creator-collaboration-ai-automation-data-2025), [EComposer](https://ecomposer.io/blogs/tool-software/ai-tiktok-video-generators)
+Sources: [KOL Sprite](https://kolsprite.com/blog/tiktok-creator-collaboration-ai-automation-data-2025), [EComposer](https://ecomposer.io/blogs/tool-software/ai-tiktok-video-generators)
 
 ---
 
@@ -959,7 +959,7 @@ TikTok Shop is the fastest-growing e-commerce channel of 2024-2026:
 | US GMV | ~$9B | ~$15B | $23B+ |
 | US daily active buyers | 5M+ | 12M+ | 20M+ (estimated) |
 
-Content rephrased for compliance with licensing restrictions. Sources: [Momentum Asia TikTok Shop US 2025](https://momentum.asia/insights/detail/tiktok-shop-in-the-us-2025), [CalculateCreator TikTok Shop Expansion](https://calculatecreator.com/blog/tiktok-shop-expansion-2026/)
+Sources: [Momentum Asia TikTok Shop US 2025](https://momentum.asia/insights/detail/tiktok-shop-in-the-us-2025), [CalculateCreator TikTok Shop Expansion](https://calculatecreator.com/blog/tiktok-shop-expansion-2026/)
 
 ### 14.2 GMV Max Made Mandatory: The Major Change from September 2025
 
@@ -992,7 +992,7 @@ New strategy (GMV Max era):
 - Core competency: content-production ability + product competitiveness
 ```
 
-Content rephrased for compliance with licensing restrictions. Source: [TheKeyword GMV Max Mandatory](https://thekeyword.webflow.io/news/tiktok-makes-gmv-max-tool-mandatory-for-tiktok-shop-ads)
+Source: [TheKeyword GMV Max Mandatory](https://thekeyword.webflow.io/news/tiktok-makes-gmv-max-tool-mandatory-for-tiktok-shop-ads)
 
 ### 14.3 The Impact of SPS (Shop Performance Score) on Operations
 
@@ -1999,4 +1999,4 @@ Key data:
 - AI tool monthly cost: $100 (ChatGPT + CapCut Pro + Kalodata)
 - AI time saved: about 15 hours per week
 
-Content rephrased for compliance with licensing restrictions. Sources: [Forbes Social Commerce](https://www.forbes.com/sites/catherineerdly/2025/07/14/ai-is-fueling-a-100-billion-boom-in-social-commerce/), [Iterathon TikTok Automation](https://iterathon.tech/blog/tiktok-shop-instagram-shopping-automation-2026)
+Sources: [Forbes Social Commerce](https://www.forbes.com/sites/catherineerdly/2025/07/14/ai-is-fueling-a-100-billion-boom-in-social-commerce/), [Iterathon TikTok Automation](https://iterathon.tech/blog/tiktok-shop-instagram-shopping-automation-2026)

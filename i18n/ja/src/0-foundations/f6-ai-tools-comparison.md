@@ -34,8 +34,6 @@
 
 > **2026 年の AI 市場**: ChatGPT の市場シェアは 87% から約 68% に低下、Google Gemini は 5% から 18% に上昇、Claude は企業市場の 29% を占め、Perplexity はリサーチと分析の領域で忠実なユーザー層を築きました([AI Business Weekly](https://aibusinessweekly.net/p/ai-chatbots-comparison-guide))。2026 年はもはや 2 モデルの競争ではなく、少なくとも 4 つの強力な競合のエコシステムであり、正しい選択はあなたの具体的なユースケースによります。
 
-Content rephrased for compliance with licensing restrictions.
-
 ---
 
 ## 1. 2026 年の EC AI ツール全景

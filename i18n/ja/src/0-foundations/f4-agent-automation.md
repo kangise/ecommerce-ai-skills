@@ -224,7 +224,7 @@ MCP Server(サーバー)
 | **Resources(リソース)** | AI が読み取れるデータ | ファイル内容、DB レコード、API レスポンス |
 | **Prompts(プロンプトテンプレート)** | 事前定義の対話テンプレート | 標準化された分析フロー、レポートテンプレート |
 
-Content rephrased for compliance with licensing restrictions. Sources: [MCP Protocol Documentation](https://modelcontextprotocol.io/), [MCP Guide 2026](https://robomotion.io/blog/mcp-explained-why-model-context-protocol-matters-in-2026)
+出典：[MCP Protocol Documentation](https://modelcontextprotocol.io/)、[MCP Guide 2026](https://robomotion.io/blog/mcp-explained-why-model-context-protocol-matters-in-2026)
 
 ### 3.2 MCP のワークフロー
 
@@ -291,7 +291,7 @@ Listing Agent が結果を広告 Agent に渡す
 
 **MCP + A2A = 完全な Agent インフラ**
 
-Content rephrased for compliance with licensing restrictions. Source: [MCP vs A2A Guide](https://learndevrel.com/blog/mcp-vs-a2a)
+出典：[MCP vs A2A Guide](https://learndevrel.com/blog/mcp-vs-a2a)
 
 ---
 

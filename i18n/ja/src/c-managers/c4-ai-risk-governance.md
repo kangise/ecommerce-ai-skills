@@ -31,8 +31,6 @@
 
 > **実データ**: AI ハルシネーションは 2024 年に EC 業界に $674 億の損失をもたらした([Alhena AI/Nova Spivack](https://alhena.ai/blog/accuracy-imperative-hallucination-free-ai-ecommerce/))。69% の企業リーダーが AI データプライバシーを最優先の実装障壁と見なし、1 年前の 42% の規制懸念から上昇した([AnyReach](https://blog.anyreach.ai/how-enterprise-ai-security-ensures-data-protection-and-compliance))。
 
-Content rephrased for compliance with licensing restrictions.
-
 | リスクカテゴリ | 具体的なリスク | 影響 | 発生確率 |
 |----------------|----------------|------|----------|
 | AI ハルシネーション | AI が誤った製品情報/返品ポリシー/価格を生成 | 顧客クレーム、法的紛争 | 高 |
@@ -45,8 +43,6 @@ Content rephrased for compliance with licensing restrictions.
 ### 1.2 2026 年 AI 規制環境
 
 > **実データ**: 2026 年は AI 規制執行の元年。EU AI Act が全面適用フェーズに入り、コロラド州の AI 規制が発効し、世界の規制当局は単なるポリシーではなく、文書化されたガバナンスプログラムを見ることを期待している([SecurePrivacy](https://secureprivacy.ai/blog/ai-risk-compliance-2026))。企業が最小限の規制の下で AI システムを何年も展開してきたグレーゾーンは終わった([Kiteworks](https://www.kiteworks.com/cybersecurity-risk-management/ai-regulation-2026-business-compliance-guide/))。
-
-Content rephrased for compliance with licensing restrictions.
 
 | 法規 | 地域 | 発効時期 | EC への影響 |
 |------|------|----------|-------------|
@@ -214,8 +210,6 @@ AI 表示: 「AI 生成」の表示が必要か(一部のプラットフォー�
 ### 5.1 Agentic AI の新しいリスク
 
 > **実データ**: Agentic AI セキュリティは、最小限の人的監督の下で意思決定と行動を行う自律 AI システムの保護をカバーし、Prompt インジェクション、データポイズニング、カスケードハルシネーションなどの新型の脅威に対処する必要がある([AnyReach](https://blog.anyreach.ai/enterprise-ai-security-a-comprehensive-guide-to-data-protection-and-compliance-in-2025/))。
-
-Content rephrased for compliance with licensing restrictions.
 
 | リスク | 説明 | 防止 |
 |--------|------|------|

@@ -57,8 +57,6 @@ AliExpress の位置づけはこの数年で大きく変わった。費用構造
 
 AliExpress は現在、以下の国/地域のセラーに出店を開放している: 中国大陸、ロシア、スペイン、イタリア、トルコ、フランス、ブラジルなど([Wise](https://wise.com/us/blog/sell-on-aliexpress))。出店には営業許可証、法人身分証、税務情報などの提供が必要。
 
-Content rephrased for compliance with licensing restrictions.
-
 | 出店タイプ | 説明 | 向く |
 |------------|------|------|
 | 普通セラー | 自主運営、自ら価格設定と発送 | 運営能力のあるセラー |
@@ -79,13 +77,9 @@ AliExpress の手数料は品目により異なり、一般に 5%-9% の間([Wor
 
 > **注意**: AliExpress は月額を取らない(Amazon と異なる)、だが AliExpress Choice モデルではプラットフォームが価格からより高い割合を抜く。
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 2.3 AliExpress サプライヤー選定基準
 
 業界のベストプラクティス([Alibaba Insights](https://www.alibaba.com/product-insights/dropshipping-hacks-you-need-to-know-in-2026-top-20-best-selling-aliexpress-items-revealed.html))によると、成功セラーは 3 大支柱に注目する: サプライチェーンの強靭性、マイクロニッチの権威、アフター体験のエンジニアリング。サプライヤーを選ぶ際は評価 ≥4.8、直近 90 日の注文 ≥2000、動画検証済み倉庫のあるサプライヤーを優先。
-
-Content rephrased for compliance with licensing restrictions.
 
 ## 3. AI 応用シーン
 
@@ -173,8 +167,6 @@ AliExpress の特殊性に注意:
 > **実事例: TikTok Haul が AliExpress の成長を駆動**
 > 2026 年、AliExpress は再びホットな話題になった、主に TikTok 開封動画(hauls)、YouTube Shorts、米国転売者が Etsy/Amazon/Depop で AliExpress 商品を転売するトレンドのため(Ad-Hoc News、原文はオフライン、2026-08 再確認)。だが同時に米国税関ルール、州税、送料が厳格化しており、セラーはコンプライアンスにより注意が必要。
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 2.5 AliExpress vs Temu 競争戦略
 
 ```
@@ -210,8 +202,6 @@ Temu 上の同品目競合価格は私より [X]% 低い。
 | ChatGPT/Claude | 多言語 Listing 生成 | $20/月 |
 | AliDropship | Dropshipping 自動化 | 一度きり $89 |
 | CJDropshipping | サプライチェーン+代行発送 | 無料登録 |
-
-Content rephrased for compliance with licensing restrictions.
 
 ## 4. AliExpress 物流方案詳解
 
@@ -306,8 +296,6 @@ AliExpress は南欧市場(スペイン、フランス、ポルトガル)でト�
 ### 5.3 AliExpress の信頼度の課題
 
 2026 年グローバル EC 誠実度指数([Alibaba Insights](https://www.alibaba.com/product-insights/best-aliexpress-alternatives-in-2026-top-platforms-for-global-online-shopping.html))によると、AliExpress は「製品真正性への信頼」で 62/100 のスコアで、Temu(79)、Shein(76)、Amazon Global(84)に遅れている。これはセラーが信頼構築に追加の努力が必要なことを意味する:
-
-Content rephrased for compliance with licensing restrictions.
 
 | 信頼構築戦略 | 説明 | 効果 |
 |--------------|------|------|

@@ -857,7 +857,7 @@ Amazon US のコンシューマーエレクトロニクスに精通していま�
 
 つまりプロンプトエンジニアリングは **Context Engineering** へ進化しつつあります — 良いプロンプトを 1 本書くだけでなく、情報入力のアーキテクチャ全体を設計することです。
 
-Content rephrased for compliance with licensing restrictions. Source: [Context Engineering Guide 2026](https://open.substack.com/pub/theaicorner1/p/context-engineering-guide-2026)
+出典：[Context Engineering Guide 2026](https://open.substack.com/pub/theaicorner1/p/context-engineering-guide-2026)
 
 ```
 Prompt Engineering(2023〜2024):
@@ -920,7 +920,7 @@ Layer 4 — 対話履歴(自動管理):
 }
 ```
 
-Content rephrased for compliance with licensing restrictions. Source: [Prompt Engineering Best Practices 2026](https://promptbuilder.cc/blog/prompt-engineering-best-practices-2026)
+出典：[Prompt Engineering Best Practices 2026](https://promptbuilder.cc/blog/prompt-engineering-best-practices-2026)
 
 ---
 

@@ -109,8 +109,6 @@ Note:
 > **Real case: Rakuten × YouTube Shopping Japan launch**
 > On February 20, 2026, Google and Rakuten announced the launch of the YouTube Shopping service in Japan. While watching a YouTube video, users can press a button to show the product name and price on the screen, then jump to the Rakuten e-commerce platform for details ([Japan Today](https://japantoday.com/category/tech/google-rakuten-to-provide-new-shopping-service-in-japan-on-youtube)). This is Japan's first e-commerce platform to partner with YouTube Shopping, and creators can earn commissions by promoting Rakuten products.
 
-Content rephrased for compliance with licensing restrictions.
-
 | Event | Frequency | Characteristics | Seller strategy |
 |-------|-----------|-----------------|-----------------|
 | Super Sale | Quarterly | Site-wide big sale, the most traffic | Prepare inventory and event pages 4 weeks in advance |
@@ -133,8 +131,6 @@ According to multiple reports ([Japan Today](https://japantoday.com/category/tec
 | Seamless jump | Users can navigate to the Rakuten product page while continuing to watch the video |
 | Creator commission | YouTube creators earn commissions by promoting Rakuten products |
 | Affiliate program | Based on the YouTube Shopping Affiliate Programme |
-
-Content rephrased for compliance with licensing restrictions.
 
 **Impact on sellers**:
 - YouTube creator collaboration becomes a new traffic entry point for Rakuten
@@ -203,8 +199,6 @@ Output the requested 4 items one by one with numbers (① ② ③ …), using th
 ### 2.6 Rakuten Initial Setup Fee
 
 According to industry material ([NextLevel Global](https://nextlevel.global/blog/2025/10/22/japan-ecommerce-marketplace-comparison/)), Rakuten onboarding requires an initial setup fee of ¥60,000, plus a monthly subscription fee of ¥19,500-¥100,000 (depending on the plan).
-
-Content rephrased for compliance with licensing restrictions.
 
 | Fee item | Amount | Description |
 |----------|--------|-------------|

@@ -8,7 +8,7 @@
 
 ---
 
-> GMV ~$80B（2025，+6% YoY），1.34 亿活跃买家，收入 $11.5B（+13% YoY）。成熟平台，增长放缓，但在特定品类（收藏品、二手、汽配、翻新品）仍有独特优势。Recommerce（二手/翻新）占 GMV 40%+。广告收入 $2B（+22% YoY），eBay 正在大力投入 AI 工具（Magical Listing、AI Item Specifics、AI 定价建议）。数据来源：[eBay Q4 2025 Earnings](https://investors.ebayinc.com/investor-news/press-release-details/2026/eBay-Inc--Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx)。Content rephrased for compliance with licensing restrictions.
+> GMV ~$80B（2025，+6% YoY），1.34 亿活跃买家，收入 $11.5B（+13% YoY）。成熟平台，增长放缓，但在特定品类（收藏品、二手、汽配、翻新品）仍有独特优势。Recommerce（二手/翻新）占 GMV 40%+。广告收入 $2B（+22% YoY），eBay 正在大力投入 AI 工具（Magical Listing、AI Item Specifics、AI 定价建议）。数据来源：[eBay Q4 2025 Earnings](https://investors.ebayinc.com/investor-news/press-release-details/2026/eBay-Inc--Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx)。
 
 ## 章节导航
 
@@ -52,8 +52,6 @@ eBay 的存量买家和长尾品类结构，和 Amazon 是两套完全不同的�
 > **真实案例：eBay CEO 建议新卖家创建全新账号体验 AI**
 > eBay 在 2026 年 Q4 财报电话会上，CEO Jamie Iannone 宣布了新一代 Magical Listing。eBay 高管甚至建议新卖家创建全新账号来体验完整的 AI Listing 流程（[eCommerce Bytes](https://www.ecommercebytes.com/C/blog/blog.pl?/comments/2026/3/1773172578.html)）。这不是在旧代码上加 AI，而是从零用 AI 重建 Listing 流程手机摄像头充当 AI 代理，指导卖家拍摄特定产品的最佳照片，后台 AI 自动生成标题、品类和 Item Specifics（[Value Added Resource](https://www.valueaddedresource.net/ebay-ai-magical-listing-revisited/)）。
 
-Content rephrased for compliance with licensing restrictions.
-
 eBay 在 2026 年推出了新一代 AI Listing 工具Magical Listing：
 
 - 从图片自动生成完整 Listing（标题+描述+Item Specifics+品类分类）
@@ -62,8 +60,6 @@ eBay 在 2026 年推出了新一代 AI Listing 工具Magical Listing：
 - eBay 高管建议新卖家创建全新账号来体验完整的 AI Listing 流程（[eCommerce Bytes](https://www.ecommercebytes.com/C/blog/blog.pl?/comments/2026/3/1773172578.html)）
 
 > **注意**：eBay 明确表示卖家仍然对 Listing 内容的准确性负责，即使是 AI 生成的内容也需要人工检查。AI 建议的 Item Specifics 可能不准确，发布前必须验证。
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 2.2 二手/翻新品 AI 描述生成（eBay 独有场景）
 
@@ -169,8 +165,6 @@ eBay 的广告系统在 2026 年有重大变化：
 
 此外，eBay 正在准备推出视频广告和商品对比功能（[Value Added Resource](https://www.valueaddedresource.net/ebay-marketing-update-video-ads-item-compare/)），这可能预示着更多 AI 驱动的买家辅助工具。
 
-Content rephrased for compliance with licensing restrictions.
-
 ```
 你是一个 eBay Promoted Listings 优化专家。
 
@@ -258,8 +252,6 @@ Content rephrased for compliance with licensing restrictions.
 - 移动端体验大幅改善（欧洲大部分竞价来自手机）
 - AI 定价建议：基于历史成交数据建议起拍价和 Buy It Now 价格
 
-Content rephrased for compliance with licensing restrictions.
-
 | 拍卖策略 | 适合品类 | AI 辅助 |
 |----------|----------|---------|
 | 1 美元起拍 | 热门收藏品、有大量关注者 | AI 分析历史数据判断是否适合低起拍 |
@@ -271,8 +263,6 @@ Content rephrased for compliance with licensing restrictions.
 ### 2.8 eBay Promoted Listings 预算超支问题
 
 2026 年卖家报告 Promoted Listings 的 PPC 选项（Priority Ads 和 Promoted Stores）存在日预算超支问题，有时超支达 2 倍（[Value Added Resource](https://www.valueaddedresource.net/ebay-promoted-stores-priority-ads-overspending-daily-budgets/)）。这是因为 eBay 在 2024 年引入了"动态目标日预算"机制。
-
-Content rephrased for compliance with licensing restrictions.
 
 应对策略：
 - 设置保守的日预算（预期花费的 50-70%）
@@ -365,8 +355,6 @@ eBay 上 Recommerce（二手/翻新）占 GMV 40%+，这是 eBay 最独特的市
 
 > **真实案例：欧洲 Recommerce 市场达 €120B**
 > 根据 Cross-Border Commerce Europe 的数据，欧洲 Recommerce 市场预计 2025 年达到 €1200 亿，其中 75% 的二手商品交易已超越服装品类，覆盖电子产品、家具和汽车等（[UK Entrepreneur](https://uk.entrepreneur.com/technology/refurbished-tech-gains-traction-on-temu-as-recommerce/495821)）。eBay 在 Q4 2025 财报中强调了 C2C 市场和 Recommerce 的强劲增长（Bitget，原文已下线，2026-08 复核）。
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 你是一个 eBay Recommerce 策略专家。

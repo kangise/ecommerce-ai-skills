@@ -202,8 +202,6 @@ A+ Content：COSMO 读取理解产品，含使用场景，图片 Alt Text 含关
 | 50+ 客户评价 | AI 推荐概率提升 2.5 倍 | 评价数量和质量直接影响 AI 推荐 |
 | 竞品对比内容 | AI 引用率提升 45-70% | 购物场景下对比内容被引用最多 |
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 4.3 GEO 五大支柱（电商版）
 
 根据 2026 年 GEO 实践指南（TheCommerceShop（原文已下线，2026-08 复核），[Prefixbox](https://www.prefixbox.com/blog/guide-to-generative-engine-optimization/)），电商 GEO 优化有五大支柱：
@@ -215,8 +213,6 @@ Content rephrased for compliance with licensing restrictions.
 | 意图驱动 | 内容需要回答用户的购买意图 | "best X for Y" 类内容、使用场景描述 |
 | 可购物性 | AI 答案需要能直接导向购买 | 产品页面有库存、价格准确、深链接可用 |
 | 权威信号 | AI 信任有权威性的来源 | 第三方评测、媒体报道、专业认证 |
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 4.4 Agentic Commerce（AI 代理购物）
 
@@ -232,8 +228,6 @@ Content rephrased for compliance with licensing restrictions.
 | Reddit | AI 购物搜索轮播 | 测试中 |
 
 > Shopify 与 Google 共同开发了 UCP（Universal Commerce Protocol），AI 购物的开放标准（[Shopify Enterprise](https://www.shopify.com/enterprise/blog/generative-engine-optimization)）。Shopify 品牌最先能在 ChatGPT、Copilot、Gemini 等 AI 渠道内直接销售。
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 你是一个 Agentic Commerce 策略专家。
@@ -304,8 +298,6 @@ Content rephrased for compliance with licensing restrictions.
 | Otterly.ai | AI 搜索排名追踪 | 付费 |
 | ChatGPT/Perplexity | 手动测试 AI 推荐 | 免费/$20/月 |
 | Google Search Console | AI Overviews 数据 | 免费 |
-
-Content rephrased for compliance with licensing restrictions.
 
 ---
 

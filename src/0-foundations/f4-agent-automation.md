@@ -224,7 +224,7 @@ MCP Server（服务器）
 | **Resources（资源）** | AI 可以读取的数据 | 文件内容、数据库记录、API 响应 |
 | **Prompts（提示模板）** | 预定义的交互模板 | 标准化的分析流程、报告模板 |
 
-Content rephrased for compliance with licensing restrictions. Sources: [MCP Protocol Documentation](https://modelcontextprotocol.io/), [MCP Guide 2026](https://robomotion.io/blog/mcp-explained-why-model-context-protocol-matters-in-2026)
+来源：[MCP Protocol Documentation](https://modelcontextprotocol.io/)、[MCP Guide 2026](https://robomotion.io/blog/mcp-explained-why-model-context-protocol-matters-in-2026)
 
 ### 3.2 MCP 的工作流程
 
@@ -291,7 +291,7 @@ Listing Agent 把结果传给广告 Agent
 
 **MCP + A2A = 完整的 Agent 基础设施**
 
-Content rephrased for compliance with licensing restrictions. Source: [MCP vs A2A Guide](https://learndevrel.com/blog/mcp-vs-a2a)
+来源：[MCP vs A2A Guide](https://learndevrel.com/blog/mcp-vs-a2a)
 
 ---
 

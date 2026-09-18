@@ -230,17 +230,11 @@ def render_advertising_tab(df_ads: pd.DataFrame):
 > **Real case: AWS e-commerce traffic anomaly-detection architecture**
 > AWS's official blog shows how to automate anomaly detection of e-commerce traffic patterns. Early detection of small anomalies in metrics like website page visits and order completions helps organizations take corrective action, reducing the negative impact on business KPIs ([AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/automating-anomaly-detection-in-ecommerce-traffic-patterns/)).
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Real case: Streamlit BI dashboard integrating GA4 + e-commerce data**
 > Squadbase showed a comprehensive Streamlit BI dashboard integrating two key business domains — Google Analytics 4 (GA4) analytics and e-commerce intelligence — providing deep analysis of website traffic, user behavior, and conversion patterns ([Squadbase](https://www.squadbase.dev/blog/showcase-streamlit-bi-dashboard-with-google-analytics-and-e-commerce)).
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Real case: Amazon SP-API Python data fetching**
 > Andrew Kushnerov's tutorial series shows how to fetch order data and inventory/price data from the Amazon SP-API with Python. Key insight: orders keep updating after creation (status changes, amount changes), so building high-quality analysis requires tracking the order's full lifecycle ([Medium - Orders](https://andrewkushnerov.medium.com/amazon-sp-api-get-orders-with-python-7b7e913d87ea), [Medium - Inventory](https://andrewkushnerov.medium.com/amazon-sp-api-get-inventory-and-prices-with-python-3226b980bd79)).
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 5.1 Amazon SP-API data fetching
 
@@ -359,8 +353,6 @@ Per industry best practices ([ThoughtSpot](https://www.thoughtspot.com/data-tren
 | Profit | Net margin | net profit/revenue | 15–30% | <10% |
 | Customer | Return rate | returns/orders | 5–15% | >20% |
 | Customer | Review rating | average stars | 4.0–4.5 | <3.8 |
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 6.2 Anomaly detection (multiple methods)
 

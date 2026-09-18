@@ -54,7 +54,7 @@ classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
 | **脱离业务** | 培训内容是"AI 的原理和历史"，和日常工作无关 | 成年人学习的动力来自"解决当前的问题"，不是"了解新知识" |
 | **一刀切** | 运营、广告、客服用同一套培训内容 | 不同岗位的 AI 使用场景完全不同，通用培训对谁都没用 |
 
-Content rephrased for compliance with licensing restrictions. Source: [PwC Global AI Study](https://www.pwc.com/gx/en/issues/data-and-analytics/publications/artificial-intelligence-study.html)
+来源：[PwC Global AI Study](https://www.pwc.com/gx/en/issues/data-and-analytics/publications/artificial-intelligence-study.html)
 
 ### 1.2 有效的 AI 培训框架：70-20-10 法则
 
@@ -106,8 +106,6 @@ AI Champion 每天花 15 分钟回答团队问题
 产出：至少 3 个工作流程正式纳入 AI 辅助
 成功标准：团队 AI 成熟度评分提升 1.0+ 分
 ```
-
-Content rephrased for compliance with licensing restrictions.
 
 ---
 
@@ -978,8 +976,6 @@ Layer 3：跨部门协作（Champion 小组）
 | How to Successfully Upskill Talent for AI | TechNative | AI 技能建设的分层策略 | [technative.io](https://technative.io/how-to-successfully-upskill-talent-for-ai-integration-in-2025/) |
 | Best Practices for AI Training Across Departments | Auzmor | 跨部门 AI 培训的最佳实践 | [auzmor.com](https://auzmor.com/blog/best-practices-for-implementing-ai-training) |
 | AI Sales Training & Upskilling | CX Today | 销售团队 AI 培训的 ROI 分析 | [cxtoday.com](https://www.cxtoday.com/marketing-sales-technology/ai-sales-training-upskilling/) |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 9.3 推荐书籍
 

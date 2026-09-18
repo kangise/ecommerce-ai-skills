@@ -87,8 +87,6 @@ Collections(コレクション): Faire は 20 個のコレクションを許す�
 製品説明の詳細度
 ```
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 2.2 Faire アカウント設定最適化(高レバレッジ操作)
 
 以下の設定調整は、小売店のフィルタに引っかかる範囲を広げる:
@@ -199,8 +197,6 @@ ROAS < 2x なら、コンテンツを修正してから予算を加える
 ブレンド ROAS(初回+リピートの総合回収)
 目標: 初回 ROAS > 3x、ブレンド ROAS > 5x
 ```
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 2.5 卸売価格深度戦略
 
@@ -315,8 +311,6 @@ Faire のビジネスモデルの核心: 新規客 15% 手数料、リピート�
 > **実事例: Faire のビジネス戦略**
 > Faire の核心戦略は「極度に狭く始め、データで拡張する」こと。プラットフォームが構築するのは調達層(sourcing layer)であって販売層ではなく、組み込み金融(Net 60 支払い条件)が接着剤であって製品そのものではない([Faster Than Normal](https://fasterthannormal.co/businesses/faire))。これは Faire での成功の鍵が消費者の購買心理でなく小売店の調達心理を理解することを意味する。
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 3.1 Faire 上の AI 応用シーン
 
 | シーン | AI 応用 | ツール |
@@ -388,8 +382,6 @@ Agent 化した後、上で貼り付けを求めているデータはここか�
 ```
 
 > **実データ**: 2026 年、Marketplace の成功は統一運営、製品データの強化、自動化の採用、そして機会主義的でなく戦略的にプラットフォームを選ぶことにかかっている([ChannelEngine](https://www.channelengine.com/en/blog/marketplace-strategy-tips-webinar))。
-
-Content rephrased for compliance with licensing restrictions.
 
 ## 4. よくある罠
 

@@ -32,8 +32,6 @@
 
 > **Core idea**: in 2026, AI product images can cut 80% of photography cost, and lifestyle images convert 22–30% higher than plain white-background images ([Entrepreneur](https://apac.entrepreneur.com/news-and-trends/how-smart-entrepreneurs-are-cutting-product-photography/501040)). The the AI video-generation market was $716.8M in 2025 and is projected to grow at about a 19% CAGR ([Fortune Business Insights](https://www.fortunebusinessinsights.com/ai-video-generator-market-110060)). Sellers who can't do AI visual content are losing competitiveness.
 
-Content rephrased for compliance with licensing restrictions.
-
 ---
 
 ## 1. Why AI Visual Content Is a 2026 Must

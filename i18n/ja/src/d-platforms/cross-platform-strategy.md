@@ -49,7 +49,7 @@ Amazon x Shopify x TikTok Shop の協働運営体系。完了後、以下を手�
 - AI で在庫配分を最適化するブランドのうち、89% のトップブランドが機械学習を採用済み
 - AI 駆動のクロスチャネルブランドは市場投入速度が 4 倍速い
 
-Content rephrased for compliance with licensing restrictions. Sources: [eStoreFactory Multi-Channel 2026](https://www.estorefactory.com/blog/multi-channel-ecommerce-strategy-2026/), [Webgility Future of Ecommerce](https://www.webgility.com/blog/future-of-ecommerce)
+出典：[eStoreFactory Multi-Channel 2026](https://www.estorefactory.com/blog/multi-channel-ecommerce-strategy-2026/)、[Webgility Future of Ecommerce](https://www.webgility.com/blog/future-of-ecommerce)
 
 
 ---
@@ -991,7 +991,7 @@ CS(1 人) -- 3 プラットフォーム CS(eDesk で一元管理)
 - 1 人の CS が 3 プラットフォームを管理できる(各プラットフォームに 1 人ではなく)
 - 顧客のどのプラットフォームでの履歴も見られる
 
-Content rephrased for compliance with licensing restrictions. Source: [eDesk Manage Amazon TikTok One Inbox](https://www.edesk.com/blog/manage-amazon-tiktok-shop-one-inbox/)
+出典：[eDesk Manage Amazon TikTok One Inbox](https://www.edesk.com/blog/manage-amazon-tiktok-shop-one-inbox/)
 
 ---
 

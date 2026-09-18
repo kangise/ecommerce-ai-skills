@@ -8,7 +8,7 @@
 
 ---
 
-> GMV ~$80B (2025, +6% YoY), 134 million active buyers, revenue $11.5B (+13% YoY). A mature platform with slowing growth, but still with unique advantages in specific categories (collectibles, used, auto parts, refurbished). Recommerce (used/refurbished) accounts for 40%+ of GMV. Ad revenue $2B (+22% YoY); eBay is heavily investing in AI tools (Magical Listing, AI Item Specifics, AI pricing suggestions). Data source: [eBay Q4 2025 Earnings](https://investors.ebayinc.com/investor-news/press-release-details/2026/eBay-Inc--Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx). Content rephrased for compliance with licensing restrictions.
+> GMV ~$80B (2025, +6% YoY), 134 million active buyers, revenue $11.5B (+13% YoY). A mature platform with slowing growth, but still with unique advantages in specific categories (collectibles, used, auto parts, refurbished). Recommerce (used/refurbished) accounts for 40%+ of GMV. Ad revenue $2B (+22% YoY); eBay is heavily investing in AI tools (Magical Listing, AI Item Specifics, AI pricing suggestions). Data source: [eBay Q4 2025 Earnings](https://investors.ebayinc.com/investor-news/press-release-details/2026/eBay-Inc--Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx).
 
 ## Chapter Navigation
 
@@ -52,8 +52,6 @@ After this module you'll be able to:
 > **Real case: eBay CEO suggests new sellers create a brand-new account to experience the AI**
 > On the 2026 Q4 earnings call, eBay CEO Jamie Iannone announced the next-generation Magical Listing. eBay executives even suggested new sellers create a brand-new account to experience the full AI Listing flow ([eCommerce Bytes](https://www.ecommercebytes.com/C/blog/blog.pl?/comments/2026/3/1773172578.html)). This isn't adding AI on top of old code, but rebuilding the Listing flow from scratch with AI — the phone camera acts as an AI agent, guiding the seller to take the best photos of a specific product, and backend AI automatically generates the title, category, and Item Specifics ([Value Added Resource](https://www.valueaddedresource.net/ebay-ai-magical-listing-revisited/)).
 
-Content rephrased for compliance with licensing restrictions.
-
 eBay launched the next-generation AI Listing tool in 2026 — Magical Listing:
 
 - Automatically generate a complete Listing from images (title + description + Item Specifics + category classification)
@@ -62,8 +60,6 @@ eBay launched the next-generation AI Listing tool in 2026 — Magical Listing:
 - eBay executives suggest new sellers create a brand-new account to experience the full AI Listing flow ([eCommerce Bytes](https://www.ecommercebytes.com/C/blog/blog.pl?/comments/2026/3/1773172578.html))
 
 > **Note**: eBay clearly states that sellers are still responsible for the accuracy of Listing content, and even AI-generated content needs human review. The AI-suggested Item Specifics may be inaccurate and must be verified before publishing.
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 2.2 Used/Refurbished AI Description Generation (eBay-Unique Scenario)
 
@@ -169,8 +165,6 @@ From January 13, 2026, eBay implemented a new ad-attribution model in the US and
 
 Additionally, eBay is preparing to launch video ads and an item-compare feature ([Value Added Resource](https://www.valueaddedresource.net/ebay-marketing-update-video-ads-item-compare/)), which may foreshadow more AI-driven buyer-assistance tools.
 
-Content rephrased for compliance with licensing restrictions.
-
 ```
 You are an eBay Promoted Listings optimization expert.
 
@@ -259,8 +253,6 @@ In 2026 eBay is re-strengthening the auction feature (Ad-Hoc News — original o
 - Greatly improved mobile experience (most European bids come from phones)
 - AI pricing suggestion: suggests a starting price and Buy It Now price based on historical sale data
 
-Content rephrased for compliance with licensing restrictions.
-
 | Auction strategy | Suitable categories | AI assistance |
 |------------------|---------------------|---------------|
 | $1 starting bid | Popular collectibles, with many watchers | AI analyzes historical data to judge whether a low start is suitable |
@@ -272,8 +264,6 @@ Content rephrased for compliance with licensing restrictions.
 ### 2.8 eBay Promoted Listings Budget-Overspending Issue
 
 In 2026, sellers report that the PPC options of Promoted Listings (Priority Ads and Promoted Stores) have a daily-budget overspending issue, sometimes overspending by 2x ([Value Added Resource](https://www.valueaddedresource.net/ebay-promoted-stores-priority-ads-overspending-daily-budgets/)). This is because eBay introduced a "dynamic target daily budget" mechanism in 2024.
-
-Content rephrased for compliance with licensing restrictions.
 
 Coping strategy:
 - Set a conservative daily budget (50-70% of the expected spend)
@@ -363,8 +353,6 @@ Recommerce (used/refurbished) on eBay accounts for 40%+ of GMV, this is eBay's m
 
 > **Real case: The European Recommerce market reaches €120B**
 > According to Cross-Border Commerce Europe data, the European Recommerce market is expected to reach €120 billion in 2025, of which 75% of used-goods transactions have moved beyond the apparel category, covering electronics, furniture, cars, and more ([UK Entrepreneur](https://uk.entrepreneur.com/technology/refurbished-tech-gains-traction-on-temu-as-recommerce/495821)). In its Q4 2025 earnings report, eBay emphasized the strong growth of the C2C market and Recommerce (Bitget — original offline, rechecked 2026-08).
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 You are an eBay Recommerce strategy expert.

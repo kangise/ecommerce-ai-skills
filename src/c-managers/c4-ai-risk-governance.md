@@ -31,8 +31,6 @@
 
 > **真实数据**：AI 幻觉在 2024 年给电商行业造成了 $674 亿的损失（[Alhena AI/Nova Spivack](https://alhena.ai/blog/accuracy-imperative-hallucination-free-ai-ecommerce/)）。69% 的企业领导者将 AI 数据隐私视为首要实施障碍，高于一年前的 42% 监管担忧（[AnyReach](https://blog.anyreach.ai/how-enterprise-ai-security-ensures-data-protection-and-compliance)）。
 
-Content rephrased for compliance with licensing restrictions.
-
 | 风险类别 | 具体风险 | 影响 | 发生概率 |
 |----------|---------|------|---------|
 | AI 幻觉 | AI 生成错误的产品信息/退货政策/价格 | 客户投诉、法律纠纷 | 高 |
@@ -45,8 +43,6 @@ Content rephrased for compliance with licensing restrictions.
 ### 1.2 2026 年 AI 监管环境
 
 > **真实数据**：2026 年是 AI 监管执法元年。EU AI Act 进入全面适用阶段，科罗拉多州 AI 法规生效，全球监管机构期望看到有文档记录的治理计划，而不仅仅是政策（[SecurePrivacy](https://secureprivacy.ai/blog/ai-risk-compliance-2026)）。多年来企业在最小监管下部署 AI 系统的灰色地带已经结束（[Kiteworks](https://www.kiteworks.com/cybersecurity-risk-management/ai-regulation-2026-business-compliance-guide/)）。
-
-Content rephrased for compliance with licensing restrictions.
 
 | 法规 | 地区 | 生效时间 | 对电商的影响 |
 |------|------|---------|-------------|
@@ -214,8 +210,6 @@ AI 标识：是否需要标注"AI 生成"（部分平台/法规要求）？
 ### 5.1 Agentic AI 的新风险
 
 > **真实数据**：Agentic AI 安全涵盖保护自主 AI 系统的安全，这些系统在最小人工监督下做出决策和采取行动，需要应对 Prompt 注入、数据投毒和级联幻觉等新型威胁（[AnyReach](https://blog.anyreach.ai/enterprise-ai-security-a-comprehensive-guide-to-data-protection-and-compliance-in-2025/)）。
-
-Content rephrased for compliance with licensing restrictions.
 
 | 风险 | 说明 | 防范 |
 |------|------|------|

@@ -153,7 +153,7 @@ AI 不擅长的：
 - AI 自动建议回复，人工审核后发送
 - 适合多平台卖家或有客服团队的卖家
 
-Content rephrased for compliance with licensing restrictions. Sources: [eDesk AI customer service](https://www.edesk.com/blog/ai-tools-ticket-history-ecommerce-support-replies-2026/), [InfiniteFBA feedback tools](https://infinitefba.com/amazon-feedback-software-tools/)
+来源：[eDesk AI customer service](https://www.edesk.com/blog/ai-tools-ticket-history-ecommerce-support-replies-2026/)、[InfiniteFBA feedback tools](https://infinitefba.com/amazon-feedback-software-tools/)
 
 ### 2.2 免费工具组合
 
@@ -566,7 +566,7 @@ Content rephrased for compliance with licensing restrictions. Sources: [eDesk AI
 </自检>
 ```
 
-Content rephrased for compliance with licensing restrictions. Source: [eStorefactory account suspension guide](https://www.estorefactory.com/blog/amazon-account-suspension-guide-2026/)
+来源：[eStorefactory account suspension guide](https://www.estorefactory.com/blog/amazon-account-suspension-guide-2026/)
 
 ---
 
@@ -742,7 +742,7 @@ Content rephrased for compliance with licensing restrictions. Source: [eStorefac
 </自检>
 ```
 
-Content rephrased for compliance with licensing restrictions. Source: [SellerApp responding to negative reviews](https://sellerapp.com/blog/how-to-respond-to-negative-reviews)
+来源：[SellerApp responding to negative reviews](https://sellerapp.com/blog/how-to-respond-to-negative-reviews)
 
 ---
 
@@ -1121,7 +1121,7 @@ Day 4-14: 等待和跟进
 
 > **账号申诉的核心原则**：第一次申诉的成功率最高。不要急着提交一个不完整的申诉，花 2-3 天准备一个完善的 Plan of Action 比匆忙提交 3 次效果好得多。
 
-Content rephrased for compliance with licensing restrictions. Source: [eStorefactory account suspension guide](https://www.estorefactory.com/blog/amazon-account-suspension-guide-2026/)
+来源：[eStorefactory account suspension guide](https://www.estorefactory.com/blog/amazon-account-suspension-guide-2026/)
 
 ### 4.4 多语言客服模板库建设 SOP
 
@@ -1175,7 +1175,7 @@ AI: 用 AI 分析本月客户消息，发现新的常见问题
 | **过度关注删除差评** | 花大量时间尝试删除差评，而不是解决根本问题 | 只有违反 Amazon 政策的差评才值得举报删除。把精力放在产品改进和获取更多好评上。 |
 | **不利用好评** | 好评中的关键词和卖点没有被用到 Listing 中 | 用 AI 分析好评（Prompt 3.1 变体 C），提取客户最认可的卖点，更新到 Listing。 |
 
-Content rephrased for compliance with licensing restrictions. Source: [TraceFuse feedback removal](https://tracefuse.ai/blog/amazon-feedback-removal-request-template/)
+来源：[TraceFuse feedback removal](https://tracefuse.ai/blog/amazon-feedback-removal-request-template/)
 
 ### 5.3 账号相关陷阱
 
@@ -1387,8 +1387,6 @@ Content rephrased for compliance with licensing restrictions. Source: [TraceFuse
 | [How to Respond to Negative Reviews](https://sellerapp.com/blog/how-to-respond-to-negative-reviews) | SellerApp | 差评回复策略，含不同类型差评的回复模板和注意事项 |
 | [Amazon Feedback Software Tools](https://infinitefba.com/amazon-feedback-software-tools/) | InfiniteFBA | Feedback 管理工具对比评测，含价格和功能对比 |
 | [Amazon Feedback Removal Request Template](https://tracefuse.ai/blog/amazon-feedback-removal-request-template/) | TraceFuse | Feedback 删除请求模板和流程，含哪些 Feedback 可以申请删除 |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 7.4 社区与论坛
 

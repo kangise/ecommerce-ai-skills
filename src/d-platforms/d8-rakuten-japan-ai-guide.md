@@ -109,8 +109,6 @@ Amazon 禁止卖家直接联系买家，但 Rakuten 鼓励：
 > **真实案例：Rakuten × YouTube Shopping 日本首发**
 > 2026 年 2 月 20 日，Google 和 Rakuten 宣布在日本推出 YouTube Shopping 服务。用户在观看 YouTube 视频时可以按下按钮，屏幕上显示产品名称和价格，然后跳转到 Rakuten 电商平台查看详情（[Japan Today](https://japantoday.com/category/tech/google-rakuten-to-provide-new-shopping-service-in-japan-on-youtube)）。这是日本首个与 YouTube Shopping 合作的电商平台，创作者可以通过推广 Rakuten 产品赚取佣金。
 
-Content rephrased for compliance with licensing restrictions.
-
 | 活动 | 频率 | 特点 | 卖家策略 |
 |------|------|------|----------|
 | Super Sale | 每季度 | 全站大促，流量最大 | 提前 4 周准备库存和活动页面 |
@@ -133,8 +131,6 @@ Content rephrased for compliance with licensing restrictions.
 | 无缝跳转 | 用户可以在继续观看视频的同时导航到 Rakuten 产品页面 |
 | 创作者佣金 | YouTube 创作者通过推广 Rakuten 产品赚取佣金 |
 | 联盟计划 | 基于 YouTube Shopping Affiliate Programme |
-
-Content rephrased for compliance with licensing restrictions.
 
 **对卖家的影响**：
 - YouTube 达人合作成为 Rakuten 的新流量入口
@@ -202,8 +198,6 @@ Content rephrased for compliance with licensing restrictions.
 ### 2.6 Rakuten 初始设置费
 
 根据行业资料（[NextLevel Global](https://nextlevel.global/blog/2025/10/22/japan-ecommerce-marketplace-comparison/)），Rakuten 入驻需要支付初始设置费 ¥60,000，加上月度订阅费 ¥19,500-¥100,000（取决于计划）。
-
-Content rephrased for compliance with licensing restrictions.
 
 | 费用项 | 金额 | 说明 |
 |--------|------|------|

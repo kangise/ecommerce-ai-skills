@@ -113,17 +113,11 @@ python3 main.py
 > **Real case: ComfyUI product photography workflow in practice**
 > MyAIForce demonstrated a complete ComfyUI product image workflow: input a skincare product image and a descriptive prompt, and the workflow automatically blends the product seamlessly into a new background, adjusting lighting and shadows to match the new environment for a natural, harmonious look. The workflow has 7 steps: upload image → set background → basic adjustment → product positioning → relighting → inpainting → detail restoration ([MyAIForce](https://myaiforce.com/comfyui-product-photography/)).
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Real case: Midjourney + ComfyUI combined workflow**
 > Another advanced workflow combines Midjourney and ComfyUI: first use Midjourney to generate a high-quality scene background, then use ComfyUI's ControlNet and IP-Adapter to precisely place the product into the scene while adjusting lighting and shadows to preserve key details such as product text ([MyAIForce](https://myaiforce.com/product-photography-comfyui-midjourney/)).
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Real case: ComfyUI background replacement V4 workflow**
 > The latest V4 background-replacement workflow uses SDXL checkpoints, requiring only 10 sampling steps and about 6GB VRAM for basic tasks. Using Flux models yields higher-quality results but requires more VRAM ([MyAIForce](https://myaiforce.com/flux-replace-background-v4/)).
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 Complete ComfyUI e-commerce product image workflow (7 steps):
@@ -168,8 +162,6 @@ Save as PNG/JPEG
 ### 3.3 E-commerce Scene Prompt Templates (40+ tested templates)
 
 > **Real resource**: Apatero compiled 40+ tested AI product image prompt templates covering all e-commerce scenarios — white background, scene, flat lay, infographic, and more ([Apatero](https://www.apatero.com/blog/best-prompts-product-photography-ai-generation-2025)).
-
-Content rephrased for compliance with licensing restrictions.
 
 > **What this chapter's Python scripts need** (separate from ComfyUI's own requirements.txt above): `pip install openai requests pillow rembg`
 

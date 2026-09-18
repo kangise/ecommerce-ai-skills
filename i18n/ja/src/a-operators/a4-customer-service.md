@@ -153,7 +153,7 @@ AI が苦手なこと:
 - AI が返信を自動提案、人が審査後に送信
 - 複数プラットフォームのセラーや CS チームのあるセラー向け
 
-Content rephrased for compliance with licensing restrictions. Sources: [eDesk AI customer service](https://www.edesk.com/blog/ai-tools-ticket-history-ecommerce-support-replies-2026/), [InfiniteFBA feedback tools](https://infinitefba.com/amazon-feedback-software-tools/)
+出典：[eDesk AI customer service](https://www.edesk.com/blog/ai-tools-ticket-history-ecommerce-support-replies-2026/)、[InfiniteFBA feedback tools](https://infinitefba.com/amazon-feedback-software-tools/)
 
 ### 2.2 無料ツールの組み合わせ
 
@@ -547,7 +547,7 @@ Agent 化した後、上で貼り付けを求めているデータはここか�
 </セルフチェック>
 ```
 
-Content rephrased for compliance with licensing restrictions. Source: [eStorefactory account suspension guide](https://www.estorefactory.com/blog/amazon-account-suspension-guide-2026/)
+出典：[eStorefactory account suspension guide](https://www.estorefactory.com/blog/amazon-account-suspension-guide-2026/)
 
 ---
 
@@ -724,7 +724,7 @@ Agent 化した後、上で貼り付けを求めているデータはここか�
 </セルフチェック>
 ```
 
-Content rephrased for compliance with licensing restrictions. Source: [SellerApp responding to negative reviews](https://sellerapp.com/blog/how-to-respond-to-negative-reviews)
+出典：[SellerApp responding to negative reviews](https://sellerapp.com/blog/how-to-respond-to-negative-reviews)
 
 ---
 
@@ -1094,7 +1094,7 @@ Day 4-14: 待機とフォロー
 
 > **アカウント異議申し立ての核心原則**: 初回の申し立ての成功率が最高。不完全な申し立てを急いで提出せず、2-3 日かけて完璧な Plan of Action を準備するほうが、急いで 3 回提出するよりずっと効果的。
 
-Content rephrased for compliance with licensing restrictions. Source: [eStorefactory account suspension guide](https://www.estorefactory.com/blog/amazon-account-suspension-guide-2026/)
+出典：[eStorefactory account suspension guide](https://www.estorefactory.com/blog/amazon-account-suspension-guide-2026/)
 
 ### 4.4 多言語 CS テンプレートライブラリ構築 SOP
 
@@ -1148,7 +1148,7 @@ AI: AI で今月の顧客メッセージを分析、新しい一般的な問題�
 | **低評価削除に過度に注力** | 低評価削除に大量の時間を使い、根本問題を解決しない | Amazon ポリシー違反の低評価だけが報告削除の価値あり。エネルギーを商品改良とより多くの高評価獲得に。 |
 | **高評価を活用しない** | 高評価のキーワードと訴求点が Listing に使われない | AI で高評価を分析(プロンプト 3.1 バリエーション C)、顧客が最も評価する訴求点を抽出、Listing を更新。 |
 
-Content rephrased for compliance with licensing restrictions. Source: [TraceFuse feedback removal](https://tracefuse.ai/blog/amazon-feedback-removal-request-template/)
+出典：[TraceFuse feedback removal](https://tracefuse.ai/blog/amazon-feedback-removal-request-template/)
 
 ### 5.3 アカウント関連の罠
 
@@ -1360,8 +1360,6 @@ Agent 化した後、上で貼り付けを求めているデータはここか�
 | [How to Respond to Negative Reviews](https://sellerapp.com/blog/how-to-respond-to-negative-reviews) | SellerApp | 低評価返信戦略、タイプ別低評価の返信テンプレートと注意点含む |
 | [Amazon Feedback Software Tools](https://infinitefba.com/amazon-feedback-software-tools/) | InfiniteFBA | Feedback 管理ツール比較評価、価格と機能比較含む |
 | [Amazon Feedback Removal Request Template](https://tracefuse.ai/blog/amazon-feedback-removal-request-template/) | TraceFuse | Feedback 削除リクエストのテンプレートとフロー、どの Feedback が削除申請可能か含む |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 7.4 コミュニティとフォーラム
 

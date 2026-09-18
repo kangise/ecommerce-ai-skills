@@ -24,8 +24,6 @@
 
 > **Core idea**: Competitive intelligence in 2026 is no longer just about monitoring competitor prices and Listings. AI search visibility (whether your product is recommended by ChatGPT/Perplexity) has become a new competitive dimension. The competitive-intelligence tool market is expected to reach $1.12 billion by 2032, with an annual growth rate of 12.4% ([Trendos](https://www.trendos.io/blog/ecommerce-competitive-intelligence-tools-2026)).
 
-Content rephrased for compliance with licensing restrictions.
-
 ---
 
 > **Related resource**: [Competitive Analysis Library](../resources/competitive-analysis.md) tool list and analysis frameworks you can apply directly.
@@ -47,11 +45,7 @@ Content rephrased for compliance with licensing restrictions.
 
 > **Industry view**: Marketers can no longer rely solely on who ranks first for a Google keyword; they must now monitor "share of answer" in generative search, app-store dynamics, and brand visibility in AI-driven agents ([SimilarWeb](https://aisearch.similarweb.com/blog/best-competitor-analysis-tools/)).
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Real data**: Sellers face competitors in 68% of deals. Yet the average sales team rates its own competitive readiness at just 3.8/10. Crayon's competitive-intelligence report estimates this gap costs organizations $2 million to $10 million in winnable deals each year ([Autobound](https://www.autobound.ai/blog/ai-competitor-analysis-tools-for-sales-teams)).
-
-Content rephrased for compliance with licensing restrictions.
 
 ---
 
@@ -139,8 +133,6 @@ Action plan
 
 > **Real case**: VOC.AI is described as "the intelligence engine in my tech stack." Unlike other tools that only give a word cloud, VOC.AI acts as a semantic analyst, especially useful during the product-development phase ([VOC.AI](https://www.voc.ai/blog/best-amazon-competitor-analysis-tools)).
 
-Content rephrased for compliance with licensing restrictions.
-
 ---
 
 ## 4. AI Search Visibility Monitoring
@@ -148,8 +140,6 @@ Content rephrased for compliance with licensing restrictions.
 ### 4.1 Agentic Commerce Competitive Readiness Assessment
 
 > **Real data**: Gartner predicts that by 2028, AI Agents will handle 90% of B2B procurement, over $15 trillion in annual spend ([OroInc](https://oroinc.com/b2b-ecommerce/blog/agentic-ai-in-commerce/)). 73% of consumers now use AI for shopping ([DataDome](https://datadome.co/agent-trust-management/agentic-commerce-readiness-checklist/)).
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 You are an Agentic Commerce strategy consultant.

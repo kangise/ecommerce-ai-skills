@@ -189,7 +189,7 @@ AI 不擅长的：
 
 > **关键洞察**：广告工具的核心价值是自动化执行，不是策略制定。工具能帮你自动调出价、自动加否定词，但"应该把预算集中在哪些关键词上"这个策略问题，还是需要你（或 AI 分析）来决定。最佳组合：用 Adtomic/Perpetua 做自动化执行，用 ChatGPT/Claude 做策略分析。
 
-Content rephrased for compliance with licensing restrictions. Sources: [deepbi.com AI PPC](https://www.deepbi.com/blog/13/), [aijourn.com PPC optimization](https://aijourn.com/amazon-ppc-optimization-tool/), [algofy.com AI tools 2026](https://www.algofy.com/post/best-ai-tools-for-amazon-sellers-in-2026)
+来源：[deepbi.com AI PPC](https://www.deepbi.com/blog/13/)、[aijourn.com PPC optimization](https://aijourn.com/amazon-ppc-optimization-tool/)、[algofy.com AI tools 2026](https://www.algofy.com/post/best-ai-tools-for-amazon-sellers-in-2026)
 
 ### 2.2 免费工具组合
 
@@ -1410,7 +1410,7 @@ MCP（Model Context Protocol）是一种让 AI 模型与外部工具交互的标
 - 关注 Amazon Advertising API 的更新
 - 尝试用 ChatGPT/Claude 做广告分析，积累 AI 辅助广告管理的经验
 
-Content rephrased for compliance with licensing restrictions. Source: [futurumgroup.com Amazon Ads MCP Server](https://futurumgroup.com/insights/amazon-ads-mcp-server-debuts-streamlining-ai-managed-campaign-execution/)
+来源：[futurumgroup.com Amazon Ads MCP Server](https://futurumgroup.com/insights/amazon-ads-mcp-server-debuts-streamlining-ai-managed-campaign-execution/)
 
 ### 6.2 广告与 Organic 排名的飞轮效应
 
@@ -1533,7 +1533,7 @@ Amazon Attribution 是免费工具，可以追踪站外流量到 Amazon 的转�
 </自检>
 ```
 
-Content rephrased for compliance with licensing restrictions. Source: [deliveredsocial.com Amazon advertising beyond sponsored products](https://deliveredsocial.com/amazon-advertising-beyond-sponsored-products-dsp-video-and-external-traffic/)
+来源：[deliveredsocial.com Amazon advertising beyond sponsored products](https://deliveredsocial.com/amazon-advertising-beyond-sponsored-products-dsp-video-and-external-traffic/)
 
 ---
 
@@ -1567,8 +1567,6 @@ Content rephrased for compliance with licensing restrictions. Source: [delivered
 | [Amazon Ads MCP Server](https://futurumgroup.com/insights/amazon-ads-mcp-server-debuts-streamlining-ai-managed-campaign-execution/) | Futurum Group | Amazon 官方 AI 广告接口的深度解读和行业影响 |
 | [Amazon Advertising Strategies](https://goaura.com/blog/amazon-advertising-strategies) | GoAura | Amazon 广告策略全面指南，含 SP/SB/SD/DSP 最佳实践 |
 | [Beyond Sponsored Products: DSP, Video & External Traffic](https://deliveredsocial.com/amazon-advertising-beyond-sponsored-products-dsp-video-and-external-traffic/) | Delivered Social | 超越 SP 广告的进阶策略，含 DSP 和站外流量 |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ### 7.4 社区与论坛
 

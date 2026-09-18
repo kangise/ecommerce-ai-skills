@@ -135,8 +135,6 @@ Present every comparison as a Markdown table — one row per item, one column pe
 | OmniPatent AI | AI patent research and automation, prior-art search | paid |
 | MorpheusMark | AI brand protection, monitors 200+ platforms ([MorpheusMark](https://morpheusmark.com/)) | paid |
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Note**: AI can assist with patent search and preliminary analysis, but can't replace a patent lawyer's professional opinion. For high-risk products, always consult a professional lawyer.
 
 ### 2.3 TRO (Temporary Restraining Order) risk prevention
@@ -329,18 +327,12 @@ Output exactly 4 numbered sections (1. 2. 3. …) matching the requested items, 
 > **Real case: Project Zero has 10,000+ brands enrolled**
 > Amazon Project Zero has over 10,000 brands enrolled, including Arduino, BMW, LifeProof, OtterBox, Salvatore Ferragamo, and Veet ([MediaDale](http://www.mediadale.com/news/articleView.html?idxno=56862)). Project Zero's three components — automated protection (scanning 5B+ Listings daily), self-service brand-removal tool, and product serialization — together form Amazon's most powerful brand-protection system.
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Real case: Amazon CCU blocks 700K+ counterfeit accounts**
 > Amazon's Counterfeit Crimes Unit (CCU), founded in June 2020, blocked over 700,000 attempts by bad actors to create fake seller accounts in 2023 ([Retail TouchPoints](https://www.retailtouchpoints.com/features/how-amazons-anti-counterfeit-unit-keeps-fake-products-off-its-site/141899/)). In 2024, Amazon identified, seized, and disposed of over 15 million counterfeit products worldwide.
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 5.1 Amazon brand-protection tool matrix
 
 Amazon identified, seized, and disposed of over 15 million counterfeit products worldwide in 2024 ([Amazon Trustworthy Shopping](https://trustworthyshopping.aboutamazon.com/resources)).
-
-Content rephrased for compliance with licensing restrictions.
 
 | Tool | Function | Requirement | AI capability |
 |------|----------|-------------|---------------|
@@ -351,8 +343,6 @@ Content rephrased for compliance with licensing restrictions.
 | Counterfeit Crimes Unit | criminal crackdown on counterfeits | serious-infringement cases | |
 | Brand Registry AI database | AI brand-asset recognition | Brand Registry | automatic matching |
 
-Content rephrased for compliance with licensing restrictions.
-
 ### 5.2 Amazon 2026 brand-protection changes
 
 From March 2026, Amazon ends product commingling, requiring all products to use independent barcodes ([WindowsNews](https://windowsnews.ai/article/amazon-ends-commingling-in-2026-new-barcode-rules-impact-windows-software-hardware-sellers.398059)). This has a major impact on brand protection:
@@ -362,8 +352,6 @@ From March 2026, Amazon ends product commingling, requiring all products to use 
 | End commingling | different sellers' same product is no longer co-stored | reduces the risk of counterfeits mixing into genuine products |
 | Independent barcodes | each seller's product must have an independent identifier | improved traceability |
 | FNSKU requirement | all FBA products must be FNSKU-labeled | higher operating cost but better brand protection |
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 5.3 Multi-platform IP-protection strategy
 

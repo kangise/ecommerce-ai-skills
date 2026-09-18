@@ -8,7 +8,7 @@
 
 ---
 
-> GMV ~$80B(2025、+6% YoY)、1.34 億のアクティブ買い手、収入 $11.5B(+13% YoY)。成熟したプラットフォームで成長は鈍化しているが、特定品目(コレクション、中古、自動車部品、リファービッシュ品)では今も独自の優位がある。Recommerce(中古/リファービッシュ)が GMV の 40%+ を占める。広告収入 $2B(+22% YoY)、eBay は AI ツール(Magical Listing、AI Item Specifics、AI 価格提案)に大きく投資している。データ源: [eBay Q4 2025 Earnings](https://investors.ebayinc.com/investor-news/press-release-details/2026/eBay-Inc--Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx)。Content rephrased for compliance with licensing restrictions.
+> GMV ~$80B(2025、+6% YoY)、1.34 億のアクティブ買い手、収入 $11.5B(+13% YoY)。成熟したプラットフォームで成長は鈍化しているが、特定品目(コレクション、中古、自動車部品、リファービッシュ品)では今も独自の優位がある。Recommerce(中古/リファービッシュ)が GMV の 40%+ を占める。広告収入 $2B(+22% YoY)、eBay は AI ツール(Magical Listing、AI Item Specifics、AI 価格提案)に大きく投資している。データ源: [eBay Q4 2025 Earnings](https://investors.ebayinc.com/investor-news/press-release-details/2026/eBay-Inc--Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx)。
 
 ## 章ナビゲーション
 
@@ -52,8 +52,6 @@ eBay の既存買い手基盤とロングテールのカテゴリ構造は、Ama
 > **実事例: eBay CEO が新規セラーに新規アカウント作成で AI 体験を提案**
 > 2026 年 Q4 決算電話会議で、eBay CEO の Jamie Iannone が次世代 Magical Listing を発表した。eBay の幹部は新規セラーに完全な AI Listing フローを体験するため新規アカウントを作ることさえ提案した([eCommerce Bytes](https://www.ecommercebytes.com/C/blog/blog.pl?/comments/2026/3/1773172578.html))。これは旧コードに AI を加えるのではなく、AI でゼロから Listing フローを再構築するもの。スマホカメラが AI エージェントとして機能し、セラーに特定製品の最良の写真の撮り方を指導し、バックエンド AI が自動でタイトル、品目、Item Specifics を生成する([Value Added Resource](https://www.valueaddedresource.net/ebay-ai-magical-listing-revisited/))。
 
-Content rephrased for compliance with licensing restrictions.
-
 eBay は 2026 年に次世代 AI Listing ツール Magical Listing を投入した:
 
 - 画像から完全な Listing を自動生成(タイトル+説明+Item Specifics+品目分類)
@@ -62,8 +60,6 @@ eBay は 2026 年に次世代 AI Listing ツール Magical Listing を投入し�
 - eBay 幹部は新規セラーに完全な AI Listing フローを体験するため新規アカウント作成を提案([eCommerce Bytes](https://www.ecommercebytes.com/C/blog/blog.pl?/comments/2026/3/1773172578.html))
 
 > **注意**: eBay はセラーが今も Listing 内容の正確性に責任を負うと明言しており、AI 生成コンテンツでも人手チェックが必要。AI が提案する Item Specifics は不正確な可能性があり、公開前に必ず検証する必要。
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 2.2 中古/リファービッシュ品 AI 説明生成(eBay 独自のシーン)
 
@@ -168,8 +164,6 @@ eBay の広告システムは 2026 年に重大な変化がある:
 
 さらに、eBay は動画広告と商品比較機能の投入を準備している([Value Added Resource](https://www.valueaddedresource.net/ebay-marketing-update-video-ads-item-compare/))、これはより多くの AI 駆動の買い手補助ツールを予兆するかもしれない。
 
-Content rephrased for compliance with licensing restrictions.
-
 ```
 あなたは eBay Promoted Listings 最適化の専門家です。
 
@@ -258,8 +252,6 @@ Agent 化した後、上で貼り付けを求めているデータはここか�
 - モバイル体験が大幅改善(欧州の大半の入札はスマホから)
 - AI 価格提案: 過去の成約データに基づき開始価と Buy It Now 価格を提案
 
-Content rephrased for compliance with licensing restrictions.
-
 | オークション戦略 | 適する品目 | AI 補助 |
 |------------------|------------|---------|
 | 1 ドル開始 | 人気コレクション、多数のウォッチャーがいる | AI が過去データを分析し低開始が適するか判断 |
@@ -271,8 +263,6 @@ Content rephrased for compliance with licensing restrictions.
 ### 2.8 eBay Promoted Listings 予算超過の問題
 
 2026 年、セラーは Promoted Listings の PPC オプション(Priority Ads と Promoted Stores)に日予算超過の問題があり、時に 2 倍超過すると報告している([Value Added Resource](https://www.valueaddedresource.net/ebay-promoted-stores-priority-ads-overspending-daily-budgets/))。これは eBay が 2024 年に「動的目標日予算」機構を導入したため。
-
-Content rephrased for compliance with licensing restrictions.
 
 対応戦略:
 - 保守的な日予算を設定(予想費用の 50-70%)
@@ -362,8 +352,6 @@ eBay 上の Recommerce(中古/リファービッシュ)は GMV の 40%+ を占�
 
 > **実事例: 欧州 Recommerce 市場が €120B に達する**
 > Cross-Border Commerce Europe のデータによると、欧州 Recommerce 市場は 2025 年に €1200 億に達すると予測され、うち中古商品取引の 75% は既にアパレル品目を超え、電子製品、家具、自動車などをカバーしている([UK Entrepreneur](https://uk.entrepreneur.com/technology/refurbished-tech-gains-traction-on-temu-as-recommerce/495821))。eBay は Q4 2025 決算レポートで C2C 市場と Recommerce の力強い成長を強調した(Bitget、原文はオフライン、2026-08 再確認)。
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 あなたは eBay Recommerce 戦略の専門家です。

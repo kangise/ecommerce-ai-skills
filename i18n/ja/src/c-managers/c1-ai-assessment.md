@@ -89,7 +89,7 @@ classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
 | **一気に完成** | いきなりシステム化フェーズへ → 無駄 | 厳密に 3 つのフェーズを踏む |
 | **データセキュリティの軽視** | 機微データを直接 ChatGPT に貼り付ける | AI 利用規範を策定 |
 
-Content rephrased for compliance with licensing restrictions. Source: [McKinsey Global Survey on AI](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
+出典：[McKinsey Global Survey on AI](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
 
 
 ---
@@ -454,8 +454,6 @@ Content rephrased for compliance with licensing restrictions. Source: [McKinsey 
 | 『The AI-First Company』 | Ash Fontana | AI を中核競争力にする方法 |
 | 『Prediction Machines』 | Ajay Agrawal 他 | 経済学のフレームワークで AI の価値を理解 |
 | 『Co-Intelligence』 | Ethan Mollick | 代替されるのではなく AI と協働する方法 |
-
-Content rephrased for compliance with licensing restrictions. Sources cited inline.
 
 ## 9. 完了チェック
 

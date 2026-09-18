@@ -63,8 +63,6 @@ AI Skills（技能文件）是给 AI 助手的持久化指令。写一次，AI �
 
 Sources: [VirtusLab](https://virtuslab.com/blog/ai/how-to-write-rules-for-ai/), [MTechZilla](https://www.mtechzilla.com/blogs/how-to-develop-skill-md-production-guide-engineering-teams), [freeCodeCamp](https://www.freecodecamp.org/news/how-to-guide-ai-with-rules-and-tests/), [tedivm](https://blog.tedivm.com/guides/2026/03/beyond-the-vibes-coding-assistants-and-agents/).
 
-Content rephrased for compliance with licensing restrictions.
-
 ---
 
 ## Kiro Skills & Steering Files
@@ -108,8 +106,6 @@ Cursor Rules 定义 AI 代码生成的自定义规则（[PatrickJS](https://gith
 ## Claude Code SKILL.md
 
 SKILL.md 是给 Claude Code、Roo Code、OpenAI Codex、Cursor 等 AI 编码 Agent 的结构化指令文件。写一次，Agent 自动读取并应用（[MTechZilla](https://www.mtechzilla.com/blogs/how-to-develop-skill-md-production-guide-engineering-teams)）。
-
-Content rephrased for compliance with licensing restrictions.
 
 ### SKILL.md 结构
 

@@ -114,12 +114,8 @@ pip3 install openai anthropic
 
 > **Real resources**: several tutorials show how to scrape Amazon Review data with Python, using BeautifulSoup, Scrapy, and professional API services ([ScrapingBee](https://www.scrapingbee.com/blog/how-to-scrape-amazon-reviews/), [Oxylabs](https://oxylabs.io/blog/how-to-scrape-amazon-reviews)). Scraped data usually includes rating, title, body, date, verified-purchase status, and helpful-vote count.
 
-Content rephrased for compliance with licensing restrictions.
-
 > **Real case: cross-product Review analysis**
 > Academic research shows using Contextual Topic Modeling and association-rule mining to do cross-product analysis of Amazon Reviews in the headphone category, discovering shared user concerns and differentiating features across products ([MDPI](https://www.mdpi.com/0718-1876/19/4/170)).
-
-Content rephrased for compliance with licensing restrictions.
 
 ### 3.2 Review data structure
 
@@ -261,8 +257,6 @@ df['bert_score'] = [s['score'] for s in sentiments]
 
 > **Real case**: academic research shows BERT-based sentiment analysis can reach 90%+ accuracy on Amazon Review datasets, significantly outperforming traditional machine-learning methods ([MDPI](https://www.mdpi.com/1999-5903/18/3/138)). BERTopic combined with Amazon Review data can auto-discover a product's core topics and user concerns ([Amalytix](https://www.amalytix.com/en/blog/analyze-reviews-bertopic/)).
 
-Content rephrased for compliance with licensing restrictions.
-
 ---
 
 ## 5. BERTopic Topic Modeling
@@ -343,8 +337,6 @@ fig.show()
 
 > **Real case: Amalytix's Amazon Review BERTopic analysis**
 > Amalytix showed how to analyze Amazon Reviews with BERTopic, auto-discovering a product's core topics. BERTopic uses a BERT-based approach and a modified TF-IDF analysis to extract meaningful topic clusters from unstructured Review text ([Amalytix](https://www.amalytix.com/en/blog/analyze-reviews-bertopic/)).
-
-Content rephrased for compliance with licensing restrictions.
 
 ```python
 # Advanced technique 1: topic analysis grouped by category

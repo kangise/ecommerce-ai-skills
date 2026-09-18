@@ -113,17 +113,11 @@ python3 main.py
 > **実事例: ComfyUI 製品画像ワークフローの実戦**
 > MyAIForce は完全な ComfyUI 製品画像ワークフローを示した。スキンケア製品の画像と説明的な Prompt を入力すると、ワークフローが自動で製品を新しい背景にシームレスに融合し、光照と影を新環境に合わせて調整し、自然で調和のとれた見た目を確保する。ワークフローは 7 ステップ: 画像アップロード→背景設定→基礎調整→製品配置→再照明→インペイント→ディテール復元([MyAIForce](https://myaiforce.com/comfyui-product-photography/))。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **実事例: Midjourney + ComfyUI 組み合わせワークフロー**
 > もう 1 つの高度なワークフローは Midjourney と ComfyUI を組み合わせる: まず Midjourney で高品質なシーン背景を生成し、次に ComfyUI の ControlNet と IP-Adapter で製品をシーンに正確に配置しつつ、光照と影を調整して製品の文字など重要なディテールを保持する([MyAIForce](https://myaiforce.com/product-photography-comfyui-midjourney/))。
 
-Content rephrased for compliance with licensing restrictions.
-
 > **実事例: ComfyUI 背景置換 V4 ワークフロー**
 > 最新の V4 背景置換ワークフローは SDXL checkpoints を使い、基礎タスクはわずか 10 サンプリングステップと約 6GB VRAM で完了できる。Flux モデルを使えばより高品質な効果が得られるが、より多くの VRAM が必要([MyAIForce](https://myaiforce.com/flux-replace-background-v4/))。
-
-Content rephrased for compliance with licensing restrictions.
 
 ```
 ComfyUI EC 製品画像の完全ワークフロー(7 ステップ):
@@ -168,8 +162,6 @@ PNG/JPEG として保存
 ### 3.3 EC シーン Prompt テンプレート(40+ のテスト済みテンプレート)
 
 > **実リソース**: Apatero は 40+ のテスト済み AI 製品画像 Prompt テンプレートを整理し、白背景、シーン、平置き、インフォグラフィックなどすべての EC シーンをカバーした([Apatero](https://www.apatero.com/blog/best-prompts-product-photography-ai-generation-2025))。
-
-Content rephrased for compliance with licensing restrictions.
 
 > **本章の Python スクリプトの依存**(上の ComfyUI 自身の requirements.txt とは別物): `pip install openai requests pillow rembg`
 
