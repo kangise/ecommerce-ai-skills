@@ -18,7 +18,7 @@
 <br>
 
 <p align="center">
-  <img src="assets/screenshots/briefing-en-dark.png" alt="Commerce Agent OS のデイリーブリーフィング：検証済みエビデンスの推移と売上チャート、人の承認待ちの 2 件の提案、それらを生成した agent を 1 画面に表示。" width="100%">
+  <img src="assets/screenshots/briefing-ja-dark.png" alt="Commerce Agent OS のデイリーブリーフィング：検証済みエビデンスの推移と売上チャート、人の承認待ちの 2 件の提案、それらを生成した agent を 1 画面に表示。" width="100%">
 </p>
 <p align="center"><sub>デモテナント上の Commerce Agent OS：検証済みエビデンス、人の承認待ちのアクション、それらを生成した agent を 1 画面で。</sub></p>
 

@@ -406,6 +406,8 @@ pre{max-height:65vh;margin:var(--space-4) 0 0;padding:var(--space-4);border:0;bo
 .connector-smoke-head strong{font-size:.8571rem}.connector-smoke-head .provider-smoke-actions{align-items:flex-end;flex-direction:column;margin:0}.connector-smoke-head .permission-reason{max-width:220px;text-align:right}
 
 @media(max-width:1320px){.topbar-meta .demo-badge,.topbar-meta .today{display:none}}
+/* English and Japanese header copy runs ~80px wider than Chinese; drop the date chip first (as the 1320px rule already does) so the platform tabs are never clipped at 1440px. */
+@media(max-width:1500px){html:lang(en) .topbar-meta .today,html:lang(ja) .topbar-meta .today{display:none}}
 
 @media(max-width:1120px){
   .app-shell{grid-template-columns:80px minmax(0,1fr)}

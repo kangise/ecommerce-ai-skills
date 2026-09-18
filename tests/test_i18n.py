@@ -23,12 +23,23 @@ def _catalogs():
 
 def test_bilingual_catalog_is_symmetric_and_nonempty():
     catalogs = _catalogs()
-    assert set(catalogs) == {"zh-CN", "en"}
-    assert set(catalogs["zh-CN"]) == set(catalogs["en"])
+    assert set(catalogs) == {"zh-CN", "en", "ja"}
+    assert set(catalogs["zh-CN"]) == set(catalogs["en"]) == set(catalogs["ja"])
     assert all(isinstance(v, str) and v.strip() for locale in catalogs.values() for v in locale.values())
     assert all("Localized interface copy" not in v for locale in catalogs.values() for v in locale.values())
     assert all(not re.search(r"[\u4e00-\u9fff]", value) for value in catalogs["en"].values())
     assert len(catalogs["zh-CN"]) == len(set(catalogs["zh-CN"]))
+    # ja must be a genuine translation, not a copy of zh-CN, for every key
+    # where the zh-CN and en source values actually differ (i.e. a key that
+    # is demonstrably translatable rather than a stable brand/product term).
+    # The locale switcher's own Japanese-language label is a deliberate
+    # exception: like a brand name, "日本語" (Japanese for "Japanese") is the autonym
+    # shown on the button regardless of the active locale, so zh-CN and ja
+    # intentionally share that exact value; only en names it in English.
+    autonym_labels = {"日本語"}
+    translatable = [k for k in catalogs["zh-CN"] if catalogs["zh-CN"][k] != catalogs["en"][k] and k not in autonym_labels]
+    copied_from_zh = [k for k in translatable if catalogs["ja"][k] == catalogs["zh-CN"][k]]
+    assert not copied_from_zh, f"ja copies zh-CN verbatim for: {copied_from_zh}"
 
 
 def test_required_status_terms_and_product_surface_are_present():
@@ -36,6 +47,7 @@ def test_required_status_terms_and_product_surface_are_present():
     required = {"connected", "disconnected", "pending", "running", "completed", "failed", "blocked", "approved", "rejected", "expired", "viewer", "operator", "admin", "owner", "需要 admin 或 owner 角色", "创建提案", "导入 Evidence"}
     assert required <= set(catalogs["zh-CN"])
     assert required <= set(catalogs["en"])
+    assert required <= set(catalogs["ja"])
     # Brand/API names are not translated; generic Evidence remains a deliberate
     # product term in the UI, so it is allowed as a phrase key.
     # Runtime is a deliberate product term; brands and credential labels remain
@@ -74,18 +86,23 @@ def test_mission_control_fixed_cjk_surface_has_english_catalog_coverage():
 def test_key_app_feedback_and_permission_copy_has_english_coverage():
     catalogs = _catalogs()
     required = {"暂无同步活动", "暂无后台任务", "暂无行动提案", "无法加载提案", "界面语言已更新。", "提案已提交审批。", "健康检查已完成。", "需要 admin 或 owner 角色"}
-    assert required <= set(catalogs["zh-CN"]) == set(catalogs["en"])
+    assert required <= set(catalogs["zh-CN"]) == set(catalogs["en"]) == set(catalogs["ja"])
     assert all(not re.search(r"[\u4e00-\u9fff]", catalogs["en"][key]) for key in required)
+    assert all(catalogs["ja"][key].strip() for key in required)
 
 
 def test_common_navigation_theme_and_recovery_terms_are_bilingual():
     catalogs = _catalogs()
     required = {"Agents", "Evidence", "Connections", "Connection Center", "Runtime", "Marketplace", "AI", "Reports", "Light", "Dark", "加载失败", "保存失败", "连接失败", "修复", "立即修复"}
     assert required <= set(catalogs["zh-CN"]) | set(catalogs["en"])
+    assert required <= set(catalogs["ja"])
     assert catalogs["zh-CN"]["Agents"] == "智能体"
     assert catalogs["zh-CN"]["Evidence"] == "证据"
     assert catalogs["zh-CN"]["Light"] == "浅色"
     assert catalogs["en"]["Light"] == "Light"
+    assert catalogs["ja"]["Agents"] == "エージェント"
+    assert catalogs["ja"]["Evidence"] == "証拠"
+    assert catalogs["ja"]["Light"] == "ライト"
     assert catalogs["zh-CN"]["Marketplace connection"] == "平台连接"
     assert catalogs["zh-CN"]["Runtime API"] == "运行时 API"
     assert catalogs["en"]["连接 Amazon SP-API、Amazon Ads 与 Shopify；保存环境变量引用，不保存密钥值。"].startswith("Connect Amazon SP-API")
@@ -115,6 +132,8 @@ def test_dom_apply_round_trips_and_tracks_dynamic_text():
       require(process.argv[1]);
       window.CommerceI18n.setLocale("en");
       if (text.nodeValue !== "Daily Briefing" || doc.title !== "Commerce Agent OS · Daily Briefing" || button.attrs["aria-label"] !== "Main navigation") process.exit(2);
+      window.CommerceI18n.setLocale("ja");
+      if (text.nodeValue !== "今日のブリーフィング" || doc.title !== "Commerce Agent OS · 今日のブリーフィング" || button.attrs["aria-label"] !== "メインナビゲーション") process.exit(5);
       window.CommerceI18n.setLocale("zh-CN");
       if (text.nodeValue !== "今日简报" || doc.title !== "Commerce Agent OS · 今日简报" || button.attrs["aria-label"] !== "主导航") process.exit(3);
       text.nodeValue = "查看今日简报";
@@ -134,6 +153,8 @@ def test_dynamic_counters_translate_without_touching_user_data():
       if (i.translate("3 checks passed", "zh-CN") !== "3 检查项通过") process.exit(3);
       if (i.translate("4 sources", "en") !== "4 Sources") process.exit(4);
       if (i.translate("customer sources", "zh-CN") !== "customer sources") process.exit(5);
+      if (i.translate("5 present", "ja") !== "5 検出済み") process.exit(6);
+      if (i.translate("2 rows", "ja") !== "2 レコード") process.exit(7);
     '''
     result = subprocess.run(["node", "-e", script, str(I18N)], capture_output=True, text=True)
     assert result.returncode == 0, result.stderr

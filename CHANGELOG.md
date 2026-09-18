@@ -7,6 +7,33 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 ## [Unreleased]
 
 ### Added
+- `AnthropicMessagesProvider`: the agent council can run on Claude
+  (`EAI_AGENT_PROVIDER=anthropic`, `ANTHROPIC_API_KEY`, `EAI_ANTHROPIC_MODEL`).
+  OpenAI stays the default; an unrecognised provider value fails at startup
+  instead of falling back, and the audit record names the provider that ran.
+- MCP runtime bridge: with `OPC_RUNTIME_URL` + `OPC_RUNTIME_API_KEY` set, the
+  MCP server exposes four read-only ops tools (`opc.ops_briefing`,
+  `opc.ops_metrics`, `opc.ops_proposals`, `opc.ops_evidence`). Approve and
+  execute are deliberately not exposed.
+- Content gate `M8`: market-size figures inside tables (GMV, MAU, share,
+  growth, currency magnitudes) must carry a source, a `verified` marker, or an
+  entry in `scripts/content-allowlist.txt`, which is a debt register, not an
+  exemption list.
+- `scripts/audit_content.py` (validity / completeness / friendliness report;
+  never gates), `scripts/fact_review.py` (review queue, slack and expiry
+  cliff for dated facts) and `scripts/watch_sources.py` with
+  `maintenance/source-watch.yaml` (commit-SHA watch on the SP-API models,
+  openai-python and MCP python-sdk repositories; state file is tracked).
+- `verify_content.py --refresh-links`: re-probes every cached URL.
+  `--probe-links` only ever probed new ones, so cached 200s could rot
+  unnoticed; the first full refresh found six dead links. `weekly-health`
+  now uses `--refresh-links`.
+- `SECURITY.md` (reporting path, scope, what the runtime does with
+  credentials) and `CITATION.cff`.
+- Japanese (`ja`) locale for the Mission Control UI: 中文 / EN / 日本語 in the
+  switcher, full key parity across the four catalogs, and the platform and
+  connector labels now follow the active locale instead of a zh/en binary
+  (Rakuten showed 乐天市场 rather than 楽天市場 under any third locale).
 - Added a tenant-owned Provider Smoke control plane for OpenAI Responses,
   Amazon SP-API, and Shopify: operator-gated live probes, viewer-readable
   persisted results, 30-second per-target cooldowns, idempotent lease-fenced
@@ -16,6 +43,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
   and never persist or display generated output or raw provider bodies.
 
 ### Changed
+- `README.md` is now the English edition (GitHub's default render); Chinese
+  moved to `README_ZH.md`, Japanese stays in `README_JA.md`. All three open
+  with the CI badge, a screenshot of the running UI and a three-command
+  quickstart, and the English/Japanese "read online" links go to `/en/` and
+  `/ja/`.
+- The documented MCP client configuration is `{"command": "opc-ecommerce",
+  "args": ["mcp"]}`: the installed package already bundles the knowledge
+  package, so no checkout path is needed. The checkout form remains as an
+  alternative.
+- Social preview card redrawn in English with current figures
+  (`assets/social-preview.png`); the unreferenced `assets/content-map.svg`
+  (still showing 56 guides and the old repository name) was removed. The three
+  site descriptions in `book.toml` / `i18n/*/book.toml` no longer say 56 guides.
+- Content corrections found during sourcing: Coupang, eBay, Walmart, Otto,
+  Zalando, Temu and Shopee figures in the platform comparison; a 10x unit
+  error in the AI-video market size; the TikTok Shop livestream GMV share
+  (14 %, not "40–60 %"); Helium 10 Adtomic renamed to Helium 10 Ads.
 - Added an explicit, refresh-persistent Light/Dark control and corrected Dark
   foreground treatment for Primary commands, Amazon/TikTok brands, Agent and
   upload glyphs, navigation icons and the account identity anchor. Hover and
@@ -27,6 +71,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
   honest semantic states, responsive task preservation, and accessible motion,
   contrast and dark-mode variants. Existing APIs, tenant/RBAC checks, actions,
   persisted Demo state and SSE behavior remain unchanged.
+
 
 ## [1.3.0] - 2026-08-26
 

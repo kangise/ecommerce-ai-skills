@@ -127,6 +127,7 @@ def test_mission_control_assets_are_real_and_javascript_compiles() -> None:
     assert "Accounts Center" not in html
     assert 'data-locale-value="zh-CN"' in html
     assert 'data-locale-value="en"' in html
+    assert 'data-locale-value="ja"' in html
     assert 'data-action="set-locale"' in html
     assert 'data-action="open-connection-settings"' in html
     for section in ("runtime", "marketplaces", "ai", "reports"):
@@ -287,8 +288,8 @@ def test_connections_i18n_actions_and_browser_secret_boundary() -> None:
     script = (WEB / "app.js").read_text(encoding="utf-8")
     i18n = (WEB / "i18n.js").read_text(encoding="utf-8")
 
-    assert 'const SUPPORTED = ["zh-CN", "en"]' in i18n
-    assert 'data-locale-value="zh-CN"' in html and 'data-locale-value="en"' in html
+    assert 'const SUPPORTED = ["zh-CN", "en", "ja"]' in i18n
+    assert 'data-locale-value="zh-CN"' in html and 'data-locale-value="en"' in html and 'data-locale-value="ja"' in html
     assert 'data-action="set-locale"' in html
     assert 'data-action="select-connection-section"' in html
     assert 'data-action="open-connection-settings"' in html

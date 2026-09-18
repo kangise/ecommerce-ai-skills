@@ -84,6 +84,9 @@ const shortDate = value => value ? new Date(value).toLocaleDateString(state.loca
 const idempotency = prefix => `${prefix}:${crypto.randomUUID()}`;
 const THEME_STORAGE_KEY = "commerce-agent-theme";
 const tr = value => i18n.translate(value, state.locale);
+// Catalog-driven platform/connector labels are keyed "zh"/"en"/"ja" (short
+// codes), while state.locale uses "zh-CN"/"en"/"ja"; this maps between them.
+const localeLabelKey = () => (state.locale === "zh-CN" ? "zh" : state.locale);
 
 function applyTranslations() {
   i18n.apply(document);
@@ -96,7 +99,7 @@ function applyTranslations() {
 
 function updateTodayLabel() {
   const today = new Date().toLocaleDateString(state.locale, {year: "numeric", month: "2-digit", day: "2-digit"});
-  $("today-label").textContent = state.locale === "en" ? `Today is ${today}` : `今天是 ${today}`;
+  $("today-label").textContent = state.locale === "en" ? `Today is ${today}` : state.locale === "ja" ? `本日：${today}` : `今天是 ${today}`;
 }
 
 function applyLocale(locale, persist = true) {
@@ -207,7 +210,7 @@ function setConnected(connected) {
 function platformName(platform = state.selectedPlatform) {
   const entry = (state.catalog?.platforms || []).find(item => item.id === platform);
   const defaults = {amazon: "Amazon", shopify: "Shopify", walmart: "Walmart", tiktok_shop: "TikTok Shop"};
-  return defaults[platform] || (state.locale === "en" ? entry?.label?.en : entry?.label?.zh) || entry?.label?.en || entry?.label?.zh || platform;
+  return defaults[platform] || entry?.label?.[localeLabelKey()] || entry?.label?.en || entry?.label?.zh || platform;
 }
 
 function updatePlatformChrome() {
@@ -445,7 +448,7 @@ function connectorCanCheck() {
 
 function connectorProviderLabel(provider) {
   const entry = (state.catalog?.connector_providers || []).find(item => item.id === provider || item.provider === provider);
-  return (state.locale === "en" ? entry?.label?.en : entry?.label?.zh) || entry?.label?.en || entry?.label?.zh || entry?.label || entry?.name || (provider === "amazon_spapi" ? "Amazon" : provider === "amazon_ads" ? "Amazon Ads" : provider === "shopify" ? "Shopify" : provider);
+  return entry?.label?.[localeLabelKey()] || entry?.label?.en || entry?.label?.zh || entry?.label || entry?.name || (provider === "amazon_spapi" ? "Amazon" : provider === "amazon_ads" ? "Amazon Ads" : provider === "shopify" ? "Shopify" : provider);
 }
 
 function marketplaceDisplayName(item) {
@@ -521,7 +524,7 @@ function connectorProviders() {
 
 function renderConnectorForm(provider = $("connector-provider").value || "amazon_spapi", connector = null) {
   const providerSelect = $("connector-provider");
-  providerSelect.innerHTML = connectorProviders().map(item => `<option value="${escapeHtml(item.id || item.provider)}">${escapeHtml((state.locale === "en" ? item.label?.en : item.label?.zh) || item.label?.en || item.label?.zh || item.label || item.name || item.id || item.provider)}</option>`).join("");
+  providerSelect.innerHTML = connectorProviders().map(item => `<option value="${escapeHtml(item.id || item.provider)}">${escapeHtml(item.label?.[localeLabelKey()] || item.label?.en || item.label?.zh || item.label || item.name || item.id || item.provider)}</option>`).join("");
   providerSelect.value = provider;
   const amazon = provider === "amazon_spapi";
   const ads = provider === "amazon_ads";
@@ -790,7 +793,7 @@ function renderCatalog() {
   const platforms = state.catalog?.platforms || [];
   const reports = state.catalog?.report_types || [];
   for (const id of ["evidence-platform", "schedule-platform"]) {
-    $(id).innerHTML = platforms.map(platform => `<option value="${escapeHtml(platform.id)}">${escapeHtml((state.locale === "en" ? platform.label?.en : platform.label?.zh) || platform.label?.en || platform.label?.zh || platform.id)}</option>`).join("");
+    $(id).innerHTML = platforms.map(platform => `<option value="${escapeHtml(platform.id)}">${escapeHtml(platform.label?.[localeLabelKey()] || platform.label?.en || platform.label?.zh || platform.id)}</option>`).join("");
     if (platforms.some(platform => platform.id === state.selectedPlatform)) $(id).value = state.selectedPlatform;
   }
   renderReportOptions("evidence-platform", "evidence-type", reports);
@@ -933,7 +936,7 @@ function renderPriorities() {
   }
   target.innerHTML = priorities.map((priority, index) => `<article class="priority-row">
     <span class="priority-rank">${escapeHtml(priority.rank || index + 1)}</span>
-    <div class="priority-copy"><strong>${escapeHtml(priority.title)}</strong><p>${escapeHtml(priority.why_now)}</p><div class="priority-meta"><span class="meta-chip">${escapeHtml(tr("影响"))}${state.locale === "en" ? ": " : "："}${escapeHtml(priority.expected_impact)}</span><span class="meta-chip">${escapeHtml(tr("Owner"))}${state.locale === "en" ? ": " : "："}${escapeHtml(agentDisplayName(priority.recommended_owner))}</span><span class="meta-chip">${state.locale === "en" ? `${priority.evidence_refs?.length || 0} ${(priority.evidence_refs?.length || 0) === 1 ? "Evidence source" : "Evidence sources"}` : `证据 ${priority.evidence_refs?.length || 0} 条`}</span></div></div>
+    <div class="priority-copy"><strong>${escapeHtml(priority.title)}</strong><p>${escapeHtml(priority.why_now)}</p><div class="priority-meta"><span class="meta-chip">${escapeHtml(tr("影响"))}${state.locale === "en" ? ": " : "："}${escapeHtml(priority.expected_impact)}</span><span class="meta-chip">${escapeHtml(tr("Owner"))}${state.locale === "en" ? ": " : "："}${escapeHtml(agentDisplayName(priority.recommended_owner))}</span><span class="meta-chip">${state.locale === "en" ? `${priority.evidence_refs?.length || 0} ${(priority.evidence_refs?.length || 0) === 1 ? "Evidence source" : "Evidence sources"}` : state.locale === "ja" ? `証拠 ${priority.evidence_refs?.length || 0} 件` : `证据 ${priority.evidence_refs?.length || 0} 条`}</span></div></div>
     <div class="priority-actions"><button data-action="view-priority" data-index="${index}" class="secondary-button">查看证据</button><span class="confidence ${escapeHtml(priority.confidence)}">${escapeHtml(tr(priority.confidence))} ${escapeHtml(tr("confidence"))}</span></div>
   </article>`).join("");
 }
@@ -1025,7 +1028,7 @@ function renderBriefing() {
   renderBriefingApprovals();
   renderAgentRoster();
   const evidence = state.briefing?.evidence;
-  $("evidence-range").textContent = evidence ? (state.locale === "en" ? `${evidence.source_count} sources · ${evidence.row_count} verified rows` : `${evidence.source_count} 个来源 · ${evidence.row_count} 行真实数据`) : tr("尚未连接");
+  $("evidence-range").textContent = evidence ? (state.locale === "en" ? `${evidence.source_count} sources · ${evidence.row_count} verified rows` : state.locale === "ja" ? `${evidence.source_count} 件のソース · ${evidence.row_count} 件の検証済み行` : `${evidence.source_count} 个来源 · ${evidence.row_count} 行真实数据`) : tr("尚未连接");
   $("evidence-freshness").textContent = evidence?.latest_observed_at ? `${tr("最新观测")} ${isoLocal(evidence.latest_observed_at)}` : tr("等待 Evidence");
   $("briefing-summary").textContent = state.briefing?.executive_summary || (evidence?.source_count ? "Evidence 已连接；完成一次 Weekly Ops 后生成有证据引用的经营结论。" : "还没有该平台的真实 Evidence；导入数据后再生成经营简报。");
 }
