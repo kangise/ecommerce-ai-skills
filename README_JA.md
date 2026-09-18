@@ -9,6 +9,7 @@
 🇯🇵 日本語&nbsp;·&nbsp;[🇨🇳 中文](README_ZH.md)&nbsp;·&nbsp;[🇺🇸 English](README.md)&nbsp;&nbsp;|&nbsp;&nbsp;📖 [オンラインで読む](https://kangise.github.io/ecommerce-ai-skills/)&nbsp;&nbsp;|&nbsp;&nbsp;📦 [agent にインストール](dist/)
 
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![CI](https://github.com/kangise/ecommerce-ai-skills/actions/workflows/pages.yml/badge.svg)](https://github.com/kangise/ecommerce-ai-skills/actions/workflows/pages.yml)
 [![Stars](https://img.shields.io/github/stars/kangise/ecommerce-ai-skills?style=social)](https://github.com/kangise/ecommerce-ai-skills)
 [![AAAI China Chapter](https://img.shields.io/badge/AAAI_China_Chapter-Initiative-blue)](https://github.com/kangise/ecommerce-ai-skills)
 
@@ -16,6 +17,20 @@
 
 <br>
 
+<p align="center">
+  <img src="assets/screenshots/briefing-en-dark.png" alt="Commerce Agent OS のデイリーブリーフィング：検証済みエビデンスの推移と売上チャート、人の承認待ちの 2 件の提案、それらを生成した agent を 1 画面に表示。" width="100%">
+</p>
+<p align="center"><sub>デモテナント上の Commerce Agent OS：検証済みエビデンス、人の承認待ちのアクション、それらを生成した agent を 1 画面で。</sub></p>
+
+<br>
+
+```bash
+pip install "ecommerce-ai-skills[mcp] @ git+https://github.com/kangise/ecommerce-ai-skills"
+opc-ecommerce demo-seed --db ./demo.sqlite && opc-ecommerce demo --db ./demo.sqlite --port 8788
+# その後 http://127.0.0.1:8788/app を開く
+```
+
+<br>
 <p align="center">
   <img src="assets/hero-ja.svg" alt="1 つのソース、2 つの消費方法:69 章のコンテンツが CI ゲート検証を通過した後、人が読む 3 言語サイトと、agent がインストールできる能力パックの 2 系統にビルドされる" width="100%">
 </p>

@@ -9,6 +9,7 @@
 🇨🇳 中文&nbsp;·&nbsp;[🇺🇸 English](README.md)&nbsp;·&nbsp;[🇯🇵 日本語](README_JA.md)&nbsp;&nbsp;|&nbsp;&nbsp;📖 [在线阅读](https://kangise.github.io/ecommerce-ai-skills/)&nbsp;&nbsp;|&nbsp;&nbsp;📦 [给 agent 装](dist/)&nbsp;&nbsp;|&nbsp;&nbsp;🖥️ [跑起来](#跑起来--commerce-agent-os)
 
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![CI](https://github.com/kangise/ecommerce-ai-skills/actions/workflows/pages.yml/badge.svg)](https://github.com/kangise/ecommerce-ai-skills/actions/workflows/pages.yml)
 [![Stars](https://img.shields.io/github/stars/kangise/ecommerce-ai-skills?style=social)](https://github.com/kangise/ecommerce-ai-skills)
 [![AAAI China Chapter](https://img.shields.io/badge/AAAI_China_Chapter-Initiative-blue)](https://github.com/kangise/ecommerce-ai-skills)
 
@@ -16,6 +17,20 @@
 
 <br>
 
+<p align="center">
+  <img src="assets/screenshots/briefing-zh-dark.png" alt="Commerce Agent OS 的每日简报：已核验的证据趋势与销售曲线、两条待人工审批的提案、以及产出这些结论的 agent，在同一屏内。" width="100%">
+</p>
+<p align="center"><sub>Commerce Agent OS 运行在一个演示租户上：已核验的证据、待人工审批的动作、产出它们的 agent，同一屏内。</sub></p>
+
+<br>
+
+```bash
+pip install "ecommerce-ai-skills[mcp] @ git+https://github.com/kangise/ecommerce-ai-skills"
+opc-ecommerce demo-seed --db ./demo.sqlite && opc-ecommerce demo --db ./demo.sqlite --port 8788
+# 然后打开 http://127.0.0.1:8788/app
+```
+
+<br>
 <p align="center">
   <img src="assets/hero.svg" alt="一份源，两种消费方式：69 章内容经 CI 门禁校验后，一路构建成人读的三语站点，一路构建成 agent 可安装的能力包" width="100%">
 </p>
