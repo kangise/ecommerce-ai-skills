@@ -1,7 +1,7 @@
 [book]
 title = "越境EC AI 実践ナレッジベース"
 authors = ["kangise"]
-description = "越境EC の AI 実践ガイド 56 本 — 商品リサーチから成長まで、そのままコピーして使えるプロンプト付き"
+description = "越境EC の AI 実践ナレッジベース — 3 言語 69 章、データ前提を明示する 878 のプロンプト、MCP サーバー、人の承認を必須とするエージェントランタイム。CC0。"
 language = "ja"
 src = "src"
 
