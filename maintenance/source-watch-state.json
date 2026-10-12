@@ -1,21 +1,21 @@
 {
   "amazon-sp-api-models": {
-    "at": "2026-08-26T20:03:32Z",
-    "checked_at": "2026-09-18T08:07:57+00:00",
-    "revision": "3659f96867bfc669aca7a524c2f95744ff0e4478",
-    "url": "https://github.com/amzn/selling-partner-api-models/commit/3659f96867bfc669aca7a524c2f95744ff0e4478"
+    "at": "2026-09-30T21:07:44Z",
+    "checked_at": "2026-10-12T10:14:31+00:00",
+    "revision": "3677bb9d96f4450e6843f1f8207005e925d5c867",
+    "url": "https://github.com/amzn/selling-partner-api-models/commit/3677bb9d96f4450e6843f1f8207005e925d5c867"
   },
   "mcp-python-sdk": {
     "at": "2026-09-05T02:52:13Z",
-    "checked_at": "2026-09-18T08:07:59+00:00",
+    "checked_at": "2026-10-12T10:14:32+00:00",
     "revision": "8c2fa6eabacde869d75568e33b9d466b58c2f512",
     "tag": "v1.30.0",
     "url": "https://github.com/modelcontextprotocol/python-sdk/releases/tag/v1.30.0"
   },
   "openai-python": {
-    "at": "2026-09-18T06:00:35Z",
-    "checked_at": "2026-09-18T08:07:57+00:00",
-    "revision": "1ccaf07fb9a4d1a2be9d97c77604ce75214a9940",
-    "url": "https://github.com/openai/openai-python/commit/1ccaf07fb9a4d1a2be9d97c77604ce75214a9940"
+    "at": "2026-10-12T04:46:28Z",
+    "checked_at": "2026-10-12T10:14:32+00:00",
+    "revision": "5e7a23ee29bcad27a5f31e3e8c1f246488aacb97",
+    "url": "https://github.com/openai/openai-python/commit/5e7a23ee29bcad27a5f31e3e8c1f246488aacb97"
   }
 }
